@@ -1,0 +1,36 @@
+<header class="app-header glass-panel">
+    <div class="header-container container">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="Booklean Logo" class="logo-image" (error)="imageError.set(true)"
+                [style.display]="imageError() ? 'none' : 'block'" />
+            <span class="logo-text" [style.display]="imageError() ? 'block' : 'none'">BOOKLEAN</span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#team" class="nav-link">Team</a>
+            <a href="#careers" class="nav-link">Careers</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Mobile Toggle -->
+        <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Menu">
+            <span class="bar" [class.open]="isMenuOpen()"></span>
+            <span class="bar" [class.open]="isMenuOpen()"></span>
+            <span class="bar" [class.open]="isMenuOpen()"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    @if (isMenuOpen()) {
+    <nav class="mobile-nav">
+        <a href="#about" class="nav-link" (click)="toggleMenu()">About</a>
+        <a href="#services" class="nav-link" (click)="toggleMenu()">Services</a>
+        <a href="#team" class="nav-link" (click)="toggleMenu()">Team</a>
+        <a href="#careers" class="nav-link" (click)="toggleMenu()">Careers</a>
+        <a href="#contact" class="nav-link" (click)="toggleMenu()">Contact</a>
+    </nav>
+    }
+</header>

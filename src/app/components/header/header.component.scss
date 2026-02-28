@@ -1,0 +1,124 @@
+.app-header {
+    height: var(--header-height);
+    position: sticky;
+    top: 0;
+    z-index: 90; // Just below sidebar
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .logo-text {
+        font-size: 1.25rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: var(--color-primary);
+    }
+
+    .logo-image {
+        height: 32px;
+    }
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 2.5rem;
+
+    .nav-link {
+        font-size: 0.875rem;
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 0.5rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: width var(--transition-smooth);
+        }
+
+        &:hover {
+            color: var(--color-primary);
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 4px;
+
+    .bar {
+        width: 24px;
+        height: 2px;
+        background-color: var(--color-text-dark);
+        transition: transform var(--transition-fast), opacity var(--transition-fast);
+
+        &.open:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        &.open:nth-child(2) {
+            opacity: 0;
+        }
+
+        &.open:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+    }
+}
+
+.mobile-nav {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+    .nav-link {
+        font-size: 1.125rem;
+        font-weight: 500;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}

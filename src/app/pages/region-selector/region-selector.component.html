@@ -1,0 +1,42 @@
+<div class="region-gateway">
+    <div class="background-map"></div>
+    <div class="animated-shape shape-1"></div>
+    <div class="animated-shape shape-2"></div>
+    <div class="animated-shape shape-3"></div>
+
+    <div class="gateway-content">
+        <header class="gateway-header">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Booklean Logo" class="logo-image" />
+                <span class="logo-text">booklean</span>
+            </div>
+
+            <div class="tagline-box">
+                <!-- <span class="welcome-badge">Welcome to Booklean Gateway</span>
+                <h1 class="tagline-primary">
+                    Shaping the Future of <br>
+                    <span class="text-gradient">Global Enterprise</span>
+                </h1> -->
+                <p class="tagline-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+
+            <div class="prompt-section">
+                <p class="prompt-text">Choose your region</p>
+                <div class="prompt-line"></div>
+            </div>
+        </header>
+
+        <main class="regions-grid">
+            @for (region of regions; track region.id) {
+            <a [routerLink]="region.path" class="region-card cursor-pointer">
+                <div class="card-image" [style.background-image]="'url(' + region.imageUrl + ')'"></div>
+                <div class="card-overlay"></div>
+                <h2 class="region-name">{{ region.name }}</h2>
+            </a>
+            }
+        </main>
+    </div>
+</div>

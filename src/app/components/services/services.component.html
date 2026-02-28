@@ -1,0 +1,18 @@
+<section class="services-section container" id="services">
+    <div class="section-header">
+        <h2 class="section-title">Our Capabilities</h2>
+        <p class="section-subtitle">Delivering precision and wisdom through advanced technological paradigms.</p>
+    </div>
+
+    <div class="services-grid">
+        @for (service of services; track service.id) {
+        <div class="service-card glass-panel">
+            <div class="card-gradient-top"></div>
+            <div class="service-icon">{{ service.icon }}</div>
+            <h3 class="service-title">{{ service.title }}</h3>
+            <p class="service-desc">{{ service.description }}</p>
+            <a href="#" class="service-link">Learn more <span class="arrow">→</span></a>
+        </div>
+        }
+    </div>
+</section>

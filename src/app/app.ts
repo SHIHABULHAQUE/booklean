@@ -18,9 +18,12 @@ export class App implements OnInit {
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-      import('aos').then(AOS => {
+      import('aos').then((AOS: any) => {
+        // Handle Vite chunking dynamic import differences between module types
+        const aosPlugin = AOS && AOS.default ? AOS.default : AOS;
+
         // Initialize AOS
-        AOS.init({
+        aosPlugin.init({
           duration: 800,
           easing: 'ease-out-cubic',
           once: true,
@@ -32,7 +35,7 @@ export class App implements OnInit {
           filter(event => event instanceof NavigationEnd)
         ).subscribe(() => {
           setTimeout(() => {
-            AOS.refresh();
+            aosPlugin.refresh();
           }, 100);
         });
       });

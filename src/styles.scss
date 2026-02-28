@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import 'aos/dist/aos.css';
 
 :root {
   /* Booklean Color Palette */
@@ -7,12 +8,12 @@
   --color-secondary-2: #03c1f4;
   --color-accent: #09e0fe;
   --color-white: #ffffff;
-  
+
   --color-text-dark: #1a1a24;
   --color-text-muted: #6b7280;
   --color-bg-light: #f8fafc;
   --color-border: #e2e8f0;
-  
+
   /* Shared values */
   --font-family-sans: 'Inter', sans-serif;
   --sidebar-width: 80px;
@@ -28,7 +29,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   min-height: 100vh;
   font-family: var(--font-family-sans);
@@ -39,7 +41,12 @@ html, body {
 }
 
 /* Typography Utility */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
 }

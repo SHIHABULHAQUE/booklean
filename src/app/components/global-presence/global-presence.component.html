@@ -1,12 +1,14 @@
 <section class="presence-section container" id="contact">
     <div class="presence-content">
-        <h2 class="presence-title">Global Vision.<br>Local <span class="text-solid">Precision.</span></h2>
-        <p class="presence-subtitle">Our global network ensures that world-class expertise is always within your reach.
+        <h2 class="presence-title" data-aos="fade-up" data-aos-duration="800">Global Vision.<br>Local <span
+                class="text-solid">Precision.</span></h2>
+        <p class="presence-subtitle" data-aos="fade-up" data-aos-delay="200">Our global network ensures that world-class
+            expertise is always within your reach.
         </p>
 
         <div class="locations-grid">
-            @for (region of regions; track region.country) {
-            <div class="location-card">
+            @for (region of regions; track region.country; let i = $index) {
+            <div class="location-card" data-aos="fade-up" [attr.data-aos-delay]="i * 200" data-aos-duration="1000">
                 <div class="card-header">
                     <h3 class="country-name">{{ region.country }}</h3>
                     @if (region.badge) {

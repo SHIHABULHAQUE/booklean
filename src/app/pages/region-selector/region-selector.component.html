@@ -6,12 +6,12 @@
 
     <div class="gateway-content">
         <header class="gateway-header">
-            <div class="logo">
+            <div class="logo" data-aos="fade-down" data-aos-duration="1000">
                 <!-- <img src="assets/logo.svg" alt="Booklean Logo" class="logo-image" /> -->
                 <span class="logo-text">booklean</span>
             </div>
 
-            <div class="tagline-box">
+            <div class="tagline-box" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
                 <!-- <span class="welcome-badge">Welcome to Booklean Gateway</span>
                 <h1 class="tagline-primary">
                     Shaping the Future of <br>
@@ -31,8 +31,9 @@
         </header>
 
         <main class="regions-grid">
-            @for (region of regions; track region.id) {
-            <a [routerLink]="region.path" class="region-card cursor-pointer">
+            @for (region of regions; track region.id; let i = $index) {
+            <a [routerLink]="region.path" class="region-card cursor-pointer" data-aos="fade-up"
+                [attr.data-aos-delay]="i * 150 + 300" data-aos-duration="800">
                 <div class="card-image" [style.background-image]="'url(' + region.imageUrl + ')'"></div>
                 <div class="card-overlay"></div>
                 <h2 class="region-name">{{ region.name }}</h2>

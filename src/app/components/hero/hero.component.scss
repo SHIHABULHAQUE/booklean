@@ -131,7 +131,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: space-between;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.6);
@@ -147,9 +147,127 @@
     }
 }
 
+.financial-dashboard {
+    .dashboard-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+
+        .dash-circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary-1));
+        }
+
+        .dash-line-short {
+            height: 6px;
+            width: 40px;
+            border-radius: 3px;
+            background-color: var(--color-border);
+        }
+
+        .dash-badge {
+            margin-left: auto;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-primary);
+            background-color: rgba(0, 79, 225, 0.1);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+    }
+
+    .bar-chart-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 120px;
+        padding-bottom: 1rem;
+        border-bottom: 2px dashed var(--color-border);
+        margin-bottom: 1.5rem;
+
+        .bar-column {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            background-color: rgba(200, 200, 200, 0.1);
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            overflow: hidden;
+
+            .bar {
+                width: 100%;
+                background: linear-gradient(to top, var(--color-primary), var(--color-secondary-1));
+                border-radius: 4px 4px 0 0;
+                transform-origin: bottom;
+                animation: growBar 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                opacity: 0;
+
+                &.b1 {
+                    height: 40%;
+                    animation-delay: 0.2s;
+                }
+
+                &.b2 {
+                    height: 65%;
+                    animation-delay: 0.4s;
+                }
+
+                &.b3 {
+                    height: 50%;
+                    animation-delay: 0.6s;
+                }
+
+                &.b4 {
+                    height: 90%;
+                    animation-delay: 0.8s;
+                }
+            }
+        }
+    }
+
+    .ledger-lines {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: auto;
+
+        .offset-line {
+            margin-left: 10%;
+        }
+    }
+
+    .dashboard-footer {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--color-border);
+
+        .trend-up {
+            color: #10b981;
+            /* valid green color */
+            font-weight: 800;
+            font-size: 0.875rem;
+        }
+
+        .trend-text {
+            color: var(--color-text-dark);
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+    }
+}
+
 .data-line {
-    height: 12px;
-    border-radius: 6px;
+    height: 8px;
+    border-radius: 4px;
     background: linear-gradient(90deg, var(--color-border), rgba(200, 200, 200, 0.2));
     position: relative;
     overflow: hidden;
@@ -180,38 +298,6 @@
     }
 }
 
-.pulse-ring {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid var(--color-primary);
-    margin: 0 auto;
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        inset: -10px;
-        border-radius: 50%;
-        border: 2px solid var(--color-accent);
-        opacity: 0.5;
-        animation: pulse 2s infinite;
-    }
-}
-
-.connection-dots {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-
-    .dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background-color: var(--color-primary);
-    }
-}
-
 @keyframes float {
     0% {
         transform: translateY(0) scale(1);
@@ -222,6 +308,18 @@
     }
 }
 
+@keyframes growBar {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
 @keyframes loading {
     0% {
         left: -100%;
@@ -229,18 +327,6 @@
 
     100% {
         left: 200%;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.8);
-        opacity: 0.8;
-    }
-
-    100% {
-        transform: scale(1.5);
-        opacity: 0;
     }
 }
 

@@ -12,23 +12,23 @@ export class GlobalPresenceComponent {
     regions = [
         {
             country: 'United Arab Emirates',
-            title: 'UAE Headquarters',
+            title: 'UAE Regional Office',
             website: 'booklean.ae',
-            email: 'contact@booklean.ae',
+            email: 'tax.advisory@booklean.ae',
             badge: 'HQ'
         },
         {
             country: 'India',
-            title: 'Development Center',
+            title: 'Global Accounting Center',
             website: 'booklean.in',
-            email: 'hr@booklean.in',
+            email: 'financials@booklean.in',
             badge: ''
         },
         {
             country: 'United Kingdom',
-            title: 'European Operations',
-            website: 'booklean.uk',
-            email: 'tax@booklean.uk',
+            title: 'European Financial Operations',
+            website: 'booklean.co.uk',
+            email: 'consulting@booklean.co.uk',
             badge: ''
         }
     ];

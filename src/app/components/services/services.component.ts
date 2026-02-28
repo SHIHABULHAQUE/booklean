@@ -12,21 +12,21 @@ export class ServicesComponent {
     services = [
         {
             id: 1,
-            title: 'Digital Transformation',
-            description: 'Modernize your legacy systems with our state-of-the-art AI-driven architecture to stay ahead in the competitive landscape.',
-            icon: '🚀'
+            title: 'Bookkeeping & Accounting',
+            description: 'Maintain pristine financial records with our expert bookkeeping services, ensuring compliance and crystal-clear business insights.',
+            icon: '📊'
         },
         {
             id: 2,
-            title: 'Cloud Infrastructure',
-            description: 'Scalable, secure, and highly available cloud solutions designed for global enterprises with stringent compliance needs.',
-            icon: '☁️'
+            title: 'Financial Advisory',
+            description: 'Strategic financial engineering to optimize your capital structure, maneuver risks, and accelerate sustainable growth.',
+            icon: '💡'
         },
         {
             id: 3,
-            title: 'Data Intelligence',
-            description: 'Transform raw data into actionable wisdom through advanced analytics, machine learning, and intuitive visualizations.',
-            icon: '📊'
+            title: 'Tax Consultancy',
+            description: 'Navigate complex UAE tax landscapes with our proactive planning and rigorous compliance frameworks.',
+            icon: '📈'
         }
     ];
 }

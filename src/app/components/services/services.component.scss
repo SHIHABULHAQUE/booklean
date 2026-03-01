@@ -1,5 +1,6 @@
 .services-section {
-    padding: 2rem 5% 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     position: relative;
     z-index: 2;
 }
@@ -108,7 +109,8 @@
 
 @media (max-width: 768px) {
     .services-section {
-        padding: 2rem 5% 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     .services-grid {

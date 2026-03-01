@@ -3,11 +3,13 @@
     <div class="slide" [class.active]="currentSlide() === i" [style.background-image]="'url(' + slide.image + ')'">
         <div class="slide-overlay"></div>
         <div class="slide-content container">
-            <h1 class="slide-title" [class.animate-title]="currentSlide() === i">{{ slide.title }}</h1>
-            <p class="slide-subtitle" [class.animate-subtitle]="currentSlide() === i">{{ slide.subtitle }}</p>
-            <div class="slide-actions" [class.animate-actions]="currentSlide() === i">
-                <button class="btn btn-primary">Get Started</button>
-                <button class="btn btn-outline-white">Learn More</button>
+            <div class="hero-text-wrapper">
+                <h1 class="slide-title" [class.animate-title]="currentSlide() === i">{{ slide.title }}</h1>
+                <p class="slide-subtitle" [class.animate-subtitle]="currentSlide() === i">{{ slide.subtitle }}</p>
+                <div class="slide-actions" [class.animate-actions]="currentSlide() === i">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-outline-white">Learn More</button>
+                </div>
             </div>
         </div>
     </div>

@@ -1,16 +1,16 @@
 .site-footer {
     background-color: var(--color-text-dark);
     color: var(--color-white);
-    padding: 6rem 5% 2rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    /* This creates the literal white space gap */
     position: relative;
     overflow: hidden;
     z-index: 10;
 }
 
-.footer-container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
+
 
 .footer-content {
     display: flex;

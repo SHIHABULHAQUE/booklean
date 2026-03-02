@@ -111,6 +111,51 @@
             color: var(--color-primary);
         }
     }
+
+    .mobile-region-selector {
+        margin-top: 1rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--color-border);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .region-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .region-options {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            .region-pill {
+                padding: 0.5rem 1rem;
+                background-color: var(--color-bg-light);
+                border: 1px solid var(--color-border);
+                border-radius: 20px;
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: var(--color-text-dark);
+                transition: all var(--transition-fast);
+
+                &:hover {
+                    border-color: var(--color-primary);
+                    color: var(--color-primary);
+                }
+
+                &.active {
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                    border-color: var(--color-primary);
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {

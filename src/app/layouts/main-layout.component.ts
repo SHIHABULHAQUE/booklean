@@ -1,13 +1,15 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../components/header/header.component';
+import { SidebarComponent } from '../components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent, SidebarComponent],
   template: `
     <div class="app-container">
+      <app-sidebar></app-sidebar>
       <div class="main-content">
         <app-header></app-header>
         <main>
@@ -16,19 +18,7 @@ import { HeaderComponent } from '../components/header/header.component';
       </div>
     </div>
   `,
-  styles: [`
-    .app-container {
-      display: flex;
-      min-height: 100vh;
-      width: 100%;
-    }
-    .main-content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  `],
+  styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MainLayoutComponent { }

@@ -3,7 +3,8 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        loadComponent: () => import('./pages/region-selector/region-selector.component').then(m => m.RegionSelectorComponent)
+        redirectTo: 'uae/home',
+        pathMatch: 'full'
     },
     {
         path: ':region',

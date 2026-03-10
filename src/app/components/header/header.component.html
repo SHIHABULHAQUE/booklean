@@ -1,26 +1,30 @@
 <header class="app-header glass-panel">
     <div class="header-container container">
-        <div class="logo">
-            <img src="./assets/logo.svg" alt="Booklean Logo" class="logo-image" (error)="imageError.set(true)"
-                [style.display]="imageError() ? 'none' : 'block'" />
-            <span class="logo-text" [style.display]="imageError() ? 'block' : 'none'">BOOKLEAN</span>
-        </div>
+        <a href="#" class="logo">
+            <div class="logo-icon-cube">📦</div>
+            <span class="logo-text">BOOK<span>LEAN</span></span>
+        </a>
 
         <!-- Desktop Nav -->
-        <nav class="desktop-nav">
+        <nav class="desktop-nav-pill">
             <a href="#about" class="nav-link">About</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#team" class="nav-link">Team</a>
-            <a href="#careers" class="nav-link">Careers</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#services" class="nav-link active">Services</a>
+            <a href="#technology" class="nav-link">Technology</a>
+            <a href="#global" class="nav-link">Global</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
         </nav>
 
-        <!-- Mobile Toggle -->
-        <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Menu">
-            <span class="bar" [class.open]="isMenuOpen()"></span>
-            <span class="bar" [class.open]="isMenuOpen()"></span>
-            <span class="bar" [class.open]="isMenuOpen()"></span>
-        </button>
+        <div class="header-actions">
+            <!-- Book Consultation Button -->
+            <a href="#contact" class="btn-consultation">Book Consultation</a>
+
+            <!-- Mobile Toggle -->
+            <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Menu">
+                <span class="bar" [class.open]="isMenuOpen()"></span>
+                <span class="bar" [class.open]="isMenuOpen()"></span>
+                <span class="bar" [class.open]="isMenuOpen()"></span>
+            </button>
+        </div>
     </div>
 
     <!-- Mobile Nav Overlay -->
@@ -28,9 +32,11 @@
     <nav class="mobile-nav">
         <a href="#about" class="nav-link" (click)="toggleMenu()">About</a>
         <a href="#services" class="nav-link" (click)="toggleMenu()">Services</a>
-        <a href="#team" class="nav-link" (click)="toggleMenu()">Team</a>
-        <a href="#careers" class="nav-link" (click)="toggleMenu()">Careers</a>
-        <a href="#contact" class="nav-link" (click)="toggleMenu()">Contact</a>
+        <a href="#technology" class="nav-link" (click)="toggleMenu()">Technology</a>
+        <a href="#global" class="nav-link" (click)="toggleMenu()">Global</a>
+        <a href="#pricing" class="nav-link" (click)="toggleMenu()">Pricing</a>
+
+        <a href="#contact" class="btn-consultation mobile-btn" (click)="toggleMenu()">Book Consultation</a>
 
         <div class="mobile-region-selector">
             <span class="region-label">Region:</span>

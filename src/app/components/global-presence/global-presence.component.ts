@@ -15,21 +15,29 @@ export class GlobalPresenceComponent {
             title: 'UAE Regional Office',
             website: 'booklean.ae',
             email: 'tax.advisory@booklean.ae',
-            badge: 'HQ'
+            badge: 'HQ',
+            flag: '🇦🇪'
         },
         {
             country: 'India',
             title: 'Global Accounting Center',
             website: 'booklean.in',
             email: 'financials@booklean.in',
-            badge: ''
+            badge: '',
+            flag: '🇮🇳'
         },
         {
             country: 'United Kingdom',
             title: 'European Financial Operations',
             website: 'booklean.co.uk',
             email: 'consulting@booklean.co.uk',
-            badge: ''
+            badge: '',
+            flag: '🇬🇧'
         }
     ];
+
+    getFlag(country: string): string {
+        const region = this.regions.find(r => r.country === country);
+        return region?.flag || '🌍';
+    }
 }

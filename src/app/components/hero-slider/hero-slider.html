@@ -1,24 +1,101 @@
-<div class="hero-slider-container">
-    @for (slide of slides; track slide.id; let i = $index) {
-    <div class="slide" [class.active]="currentSlide() === i" [style.background-image]="'url(' + slide.image + ')'">
-        <div class="slide-overlay"></div>
-        <div class="slide-content container">
-            <div class="hero-text-wrapper">
-                <h1 class="slide-title" [class.animate-title]="currentSlide() === i">{{ slide.title }}</h1>
-                <p class="slide-subtitle" [class.animate-subtitle]="currentSlide() === i">{{ slide.subtitle }}</p>
-                <div class="slide-actions" [class.animate-actions]="currentSlide() === i">
-                    <button class="btn btn-primary">Get Started</button>
-                    <button class="btn btn-outline-white">Learn More</button>
+<div class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-orb-1"></div>
+    <div class="hero-orb-2"></div>
+
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <div class="hero-badge-dot"></div>
+                EST. 2026 &nbsp;·&nbsp; <a routerLink="/uae/home">UAE</a> &nbsp;·&nbsp; <a
+                    routerLink="/in/home">INDIA</a> &nbsp;·&nbsp; <a routerLink="/uk/home">UK</a>
+            </div>
+
+            <h1>Intelligent Financial <br /><span class="hl">Engineering</span></h1>
+
+            <p class="hero-sub">Booklean combines AI automation with expert human insight to deliver precision financial
+                intelligence for modern businesses.</p>
+
+            <div class="hero-pills">
+                <div class="hero-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 10 0 1 1-5.93-9.14"></path>
+                        <path d="M22 4L12 14.01l-3-3"></path>
+                    </svg>
+                    99.5% Accuracy
+                </div>
+                <div class="hero-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    24h Close
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <button class="btn-primary">Start Your Transformation</button>
+                <button class="btn-ghost" style="margin-left: 14px;">View Case Studies</button>
+            </div>
+
+            <div class="hero-trust">
+                <div class="trust-avatars">
+                    <div class="trust-avatar">JD</div>
+                    <div class="trust-avatar" style="background: var(--b2);">SA</div>
+                    <div class="trust-avatar" style="background: var(--ink);">MK</div>
+                </div>
+                <div class="trust-text"><strong>500+</strong> Enterprise Clients <span class="trust-stars">★★★★★</span>
                 </div>
             </div>
         </div>
-    </div>
-    }
 
-    <div class="slider-controls">
-        @for (slide of slides; track slide.id; let i = $index) {
-        <button class="dot" [class.active]="currentSlide() === i" (click)="goToSlide(i)"
-            [attr.aria-label]="'Go to slide ' + (i + 1)"></button>
-        }
+        <div class="hero-visual">
+            <div class="hero-card-main">
+                <div class="hc-label">REAL-TIME INSIGHTS</div>
+                <div class="hc-title">Financial Performance</div>
+
+                <div class="hc-metrics">
+                    <div class="hc-metric">
+                        <div class="hc-metric-val">$2.4M</div>
+                        <div class="hc-metric-key">Revenue</div>
+                    </div>
+                    <div class="hc-metric">
+                        <div class="hc-metric-val">+34%</div>
+                        <div class="hc-metric-key">Growth</div>
+                    </div>
+                    <div class="hc-metric">
+                        <div class="hc-metric-val">99%</div>
+                        <div class="hc-metric-key">Accuracy</div>
+                    </div>
+                </div>
+
+                <div class="hc-chart">
+                    <div class="hc-chart-label">Monthly Trend</div>
+                    <div class="chart-bars">
+                        <div class="chart-bar" style="height: 30%"></div>
+                        <div class="chart-bar" style="height: 50%"></div>
+                        <div class="chart-bar" style="height: 40%"></div>
+                        <div class="chart-bar" style="height: 70%"></div>
+                        <div class="chart-bar active" style="height: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="hc-chat">
+                    <div class="chat-header">
+                        <div class="chat-dot"></div>
+                        <div class="chat-name">Booklean AI</div>
+                    </div>
+                    <div class="chat-msg">Anomalies detected in Q3 expenses. Would you like me to resolve them?</div>
+                </div>
+
+                <div class="float-badge">
+                    <div class="fb-icon">✨</div>
+                    <div>
+                        <div class="fb-val">Reconciled</div>
+                        <div class="fb-label">Just now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

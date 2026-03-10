@@ -1,34 +1,21 @@
-<section class="presence-section container" id="contact">
-    <div class="presence-content">
-        <h2 class="presence-title" data-aos="fade-up" data-aos-duration="800">Global Vision.<br>Local <span
-                class="text-solid">Precision.</span></h2>
-        <p class="presence-subtitle" data-aos="fade-up" data-aos-delay="200">Our global network ensures that world-class
-            expertise is always within your reach.
-        </p>
-
-        <div class="locations-grid">
-            @for (region of regions; track region.country; let i = $index) {
-            <div class="location-card" data-aos="fade-up" [attr.data-aos-delay]="i * 200" data-aos-duration="1000">
-                <div class="card-header">
-                    <h3 class="country-name">{{ region.country }}</h3>
-                    @if (region.badge) {
-                    <span class="badge">{{ region.badge }}</span>
-                    }
-                </div>
-
-                <p class="location-title">{{ region.title }}</p>
-
-                <div class="contact-details">
-                    <div class="detail-row">
-                        <span class="detail-label">Web</span>
-                        <a [href]="'https://www.' + region.website" target="_blank" class="detail-link">{{
-                            region.website }}</a>
-                    </div>
-                    <div class="detail-row">
-                        <span class="detail-label">Email</span>
-                        <a [href]="'mailto:' + region.email" class="detail-link">{{ region.email }}</a>
-                    </div>
-                </div>
+<section class="global-section">
+    <div class="section-wrap">
+        <div class="section-header text-center">
+            <span class="section-eyebrow">Global Reach</span>
+            <h2 class="section-title serif">Seamless <span class="hl">Cross-Border</span> Operations</h2>
+            <p class="section-sub mx-auto">Unified financial management across our core markets.</p>
+        </div>
+        <div class="global-grid">
+            @for (region of regions; track region.country) {
+            <div class="region-card">
+                <div class="region-flag">{{ getFlag(region.country) }}</div>
+                <h3>{{ region.country }}</h3>
+                <span class="status">{{ region.badge || 'Active Hub' }}</span>
+                <ul>
+                    <li>{{ region.title }}</li>
+                    <li>{{ region.email }}</li>
+                    <li>{{ region.website }}</li>
+                </ul>
             </div>
             }
         </div>

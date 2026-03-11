@@ -1,5 +1,6 @@
-import { Component, ChangeDetectionStrategy, signal } from '@angular/core';
+import { Component, ChangeDetectionStrategy, signal, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RegionDataService } from '../../services/region-data.service';
 
 @Component({
     selector: 'app-header',
@@ -12,6 +13,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HeaderComponent {
     isMenuOpen = signal(false);
     imageError = signal(false);
+    regionDataService = inject(RegionDataService);
 
     toggleMenu() {
         this.isMenuOpen.update(v => !v);

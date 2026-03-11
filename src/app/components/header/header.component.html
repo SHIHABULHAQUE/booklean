@@ -16,7 +16,8 @@
 
         <div class="header-actions">
             <!-- Book Consultation Button -->
-            <a href="#contact" class="btn-consultation">Book Consultation</a>
+            <button class="btn-consultation" (click)="regionDataService.openModal()"
+                style="border:none;cursor:pointer;">Book Consultation</button>
 
             <!-- Mobile Toggle -->
             <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Menu">
@@ -36,7 +37,8 @@
         <a href="#global" class="nav-link" (click)="toggleMenu()">Global</a>
         <a href="#pricing" class="nav-link" (click)="toggleMenu()">Pricing</a>
 
-        <a href="#contact" class="btn-consultation mobile-btn" (click)="toggleMenu()">Book Consultation</a>
+        <button class="btn-consultation mobile-btn" (click)="toggleMenu(); regionDataService.openModal()"
+            style="border:none;cursor:pointer;">Book Consultation</button>
 
         <div class="mobile-region-selector">
             <span class="region-label">Region:</span>

@@ -1,0 +1,34 @@
+<section class="pricing-section" id="pricing">
+    <div class="section-wrap">
+        <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto">
+            <span class="section-eyebrow">Transparent & Fair Pricing</span>
+            <div class="divider-line" style="margin:12px auto"></div>
+            <h2 class="section-title">Find Your <span class="hl">Perfect Fit</span></h2>
+            <p class="section-sub">No hidden costs. No surprise bills. Fixed, transparent pricing with everything you
+                need included.</p>
+        </div>
+
+        <div class="pricing-grid">
+            @for (plan of regionDataService.data().pricingPlans; track plan.id) {
+            <div class="price-card reveal" [class.popular]="plan.isPopular"
+                [style.transition-delay]="(0.1 * (plan.id + 1)) + 's'">
+                @if (plan.isPopular) {
+                <div class="popular-badge">Most Popular</div>
+                }
+                <div class="pc-icon">{{ plan.icon }}</div>
+                <div class="pc-name">{{ plan.title }}</div>
+                <div class="pc-desc">{{ plan.description }}</div>
+                <div class="pc-price">{{ regionDataService.data().currency }} {{ plan.price }}</div>
+                <div class="pc-period">{{ plan.period }}</div>
+                <div class="pc-divider"></div>
+                <div class="pc-features">
+                    @for (feature of plan.features; track feature) {
+                    <div class="pc-feat"><span class="pc-feat-check">✓</span> {{ feature }}</div>
+                    }
+                </div>
+                <button (click)="regionDataService.openModal()" class="btn-price">{{ plan.buttonText }}</button>
+            </div>
+            }
+        </div>
+    </div>
+</section>

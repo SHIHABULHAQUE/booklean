@@ -85,7 +85,6 @@ export class RegionDataService {
 
     currentRegion = signal<string>('uae');
     data = signal<RegionData>(this.uaeData);
-    isModalOpen = signal<boolean>(false);
 
     constructor() {
         this.router.events.pipe(
@@ -107,15 +106,5 @@ export class RegionDataService {
         if (region === 'uk') this.data.set(this.ukData);
         else if (region === 'in') this.data.set(this.inData);
         else this.data.set(this.uaeData);
-    }
-
-    openModal() {
-        this.isModalOpen.set(true);
-        document.body.style.overflow = 'hidden';
-    }
-
-    closeModal() {
-        this.isModalOpen.set(false);
-        document.body.style.overflow = '';
     }
 }

@@ -1,56 +1,52 @@
-@if (regionDataService.isModalOpen()) {
-<section class="cta-modal-overlay" (click)="regionDataService.closeModal()">
-    <div class="cta-modal-content" (click)="$event.stopPropagation()">
-        <section class="cta-section" id="get-started">
-            <button class="modal-close" (click)="regionDataService.closeModal()" aria-label="Close modal">×</button>
-            <div class="cta-orb"></div>
-            <div class="cta-bg-ring cta-ring-1"></div>
-            <div class="cta-bg-ring cta-ring-2"></div>
-            <div class="cta-bg-ring cta-ring-3"></div>
-            <div class="section-wrap">
-                <div class="cta-inner reveal visible">
-                    <span class="cta-eyebrow">Get Started Today</span>
-                    <h2 class="cta-title">Ready to Experience the<br><span class="hl">Booklean Difference?</span></h2>
-                    <p class="cta-sub">Join 500+ ambitious businesses across {{ regionDataService.data().countryName }}
-                        who
-                        trust Booklean to keep their
-                        finances clean, compliant, and growth-ready.</p>
-                    <div class="cta-buttons">
-                        <a [href]="'tel:' + regionDataService.data().phone" class="btn-cta-white">📞 Book Free
-                            Consultation</a>
-                        <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
-                            class="btn-cta-outline" target="_blank">💬 WhatsApp Us Now</a>
-                    </div>
-                    <div class="cta-options">
-                        <div class="cta-opt">
-                            <div class="cta-opt-icon">📅</div>
-                            <div class="cta-opt-title">Free Consultation</div>
-                            <div class="cta-opt-desc">Schedule a 15-minute discovery call. No obligation, just clear
-                                answers to
-                                your questions.</div>
-                            <a href="#" class="cta-opt-link">Book Your Call →</a>
-                        </div>
-                        <div class="cta-opt">
-                            <div class="cta-opt-icon">💬</div>
-                            <div class="cta-opt-title">Chat with Hey Lean</div>
-                            <div class="cta-opt-desc">Get instant answers about pricing, services, and compliance from
-                                our AI
-                                assistant. 24/7.</div>
-                            <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
-                                class="cta-opt-link" target="_blank">Start Chat →</a>
-                        </div>
-                        <div class="cta-opt">
-                            <div class="cta-opt-icon">📋</div>
-                            <div class="cta-opt-title">Custom Quote</div>
-                            <div class="cta-opt-desc">Tell us about your business and receive a tailored proposal within
-                                24
-                                hours.</div>
-                            <a href="mailto:contact@bookleanglobal.com" class="cta-opt-link">Request Quote →</a>
-                        </div>
-                    </div>
+<section class="cta-section" id="contact">
+    <div class="cta-orb"></div>
+    <div class="cta-bg-ring cta-ring-1"></div>
+    <div class="cta-bg-ring cta-ring-2"></div>
+    <div class="cta-bg-ring cta-ring-3"></div>
+    <div class="section-wrap">
+        <div class="cta-inner reveal visible">
+            <span class="cta-eyebrow">Get Started Today</span>
+            <h2 class="cta-title">Ready to Experience the<br><span class="hl">Booklean Difference?</span></h2>
+            <p class="cta-sub">Join 500+ ambitious businesses across {{ regionDataService.data().countryName }}
+                who
+                trust Booklean to keep their
+                finances clean, compliant, and growth-ready.</p>
+            <div class="cta-buttons">
+                <a [href]="'tel:' + regionDataService.data().phone" class="btn-cta-white">📞 Book Free
+                    Consultation</a>
+                <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
+                    class="btn-cta-outline" target="_blank">💬 WhatsApp Us Now</a>
+            </div>
+            <div class="cta-options">
+                <div class="cta-opt">
+                    <div class="cta-opt-icon">📅</div>
+                    <div class="cta-opt-title">Free Consultation</div>
+                    <div class="cta-opt-desc">Schedule a 15-minute discovery call. No obligation, just clear
+                        answers to
+                        your questions.</div>
+                    <a href="#" class="cta-opt-link" style="display:block; text-align:center; padding: 12px 20px;">Book
+                        Your Call →</a>
+                </div>
+                <div class="cta-opt">
+                    <div class="cta-opt-icon">💬</div>
+                    <div class="cta-opt-title">Chat with Hey Lean</div>
+                    <div class="cta-opt-desc">Get instant answers about pricing, services, and compliance from
+                        our AI
+                        assistant. 24/7.</div>
+                    <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
+                        class="cta-opt-link" target="_blank"
+                        style="display:block; text-align:center; padding: 12px 20px;">Start Chat →</a>
+                </div>
+                <div class="cta-opt">
+                    <div class="cta-opt-icon">📋</div>
+                    <div class="cta-opt-title">Custom Quote</div>
+                    <div class="cta-opt-desc">Tell us about your business and receive a tailored proposal within
+                        24
+                        hours.</div>
+                    <a href="mailto:contact@bookleanglobal.com" class="cta-opt-link"
+                        style="display:block; text-align:center; padding: 12px 20px;">Request Quote →</a>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </section>
-}

@@ -107,7 +107,7 @@
         animation: fadeUp .6s .2s both;
         color: var(--ink);
 
-        .hl {
+        ::ng-deep .hl {
             background: var(--grad-main);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -141,6 +141,10 @@
 
         &:hover {
             color: var(--b2);
+        }
+
+        &.active {
+            color: var(--b4);
         }
     }
 }

@@ -7,14 +7,17 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <div class="hero-badge-dot"></div>
-                EST. 2026 &nbsp;·&nbsp; <a routerLink="/uae/home">UAE</a> &nbsp;·&nbsp; <a
-                    routerLink="/in/home">INDIA</a> &nbsp;·&nbsp; <a routerLink="/uk/home">UK</a>
+                EST. 2026 &nbsp;·&nbsp;
+                <a routerLink="/uae/home" [class.active]="regionDataService.currentRegion() === 'uae'">UAE</a>
+                &nbsp;·&nbsp;
+                <a routerLink="/in/home" [class.active]="regionDataService.currentRegion() === 'in'">INDIA</a>
+                &nbsp;·&nbsp;
+                <a routerLink="/uk/home" [class.active]="regionDataService.currentRegion() === 'uk'">UK</a>
             </div>
 
-            <h1>Intelligent Financial <br /><span class="hl">Engineering</span></h1>
+            <h1 [innerHTML]="regionDataService.data().heroTitle"></h1>
 
-            <p class="hero-sub">Booklean combines AI automation with expert human insight to deliver precision financial
-                intelligence for modern businesses.</p>
+            <p class="hero-sub" [innerHTML]="regionDataService.data().heroSubtitle"></p>
 
             <div class="hero-pills">
                 <div class="hero-pill">
@@ -44,7 +47,8 @@
                     <div class="trust-avatar" style="background: var(--b2);">SA</div>
                     <div class="trust-avatar" style="background: var(--ink);">MK</div>
                 </div>
-                <div class="trust-text"><strong>500+</strong> Enterprise Clients <span class="trust-stars">★★★★★</span>
+                <div class="trust-text"><strong>500+</strong> Enterprise Clients in {{
+                    regionDataService.data().countryName }} <span class="trust-stars">★★★★★</span>
                 </div>
             </div>
         </div>

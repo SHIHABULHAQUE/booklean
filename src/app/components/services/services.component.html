@@ -7,8 +7,8 @@
                 growth across global markets.</p>
         </div>
         <div class="services-grid">
-            @for (service of services; track service.id) {
-            <div class="service-card">
+            @for (service of regionDataService.data().services; track service.id) {
+            <div class="service-card reveal">
                 <div class="service-icon">{{ service.icon }}</div>
                 <h3>{{ service.title }}</h3>
                 <p>{{ service.description }}</p>

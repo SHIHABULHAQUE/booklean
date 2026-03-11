@@ -1,5 +1,6 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { RegionDataService } from '../../services/region-data.service';
 
 @Component({
   selector: 'app-hero-slider',
@@ -9,4 +10,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './hero-slider.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeroSliderComponent { }
+export class HeroSliderComponent {
+  regionDataService = inject(RegionDataService);
+}

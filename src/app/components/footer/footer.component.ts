@@ -1,4 +1,5 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
+import { RegionDataService } from '../../services/region-data.service';
 
 @Component({
     selector: 'app-footer',
@@ -9,5 +10,5 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
-    currentYear = new Date().getFullYear();
+    regionDataService = inject(RegionDataService);
 }

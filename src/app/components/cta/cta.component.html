@@ -7,11 +7,13 @@
         <div class="cta-inner reveal visible">
             <span class="cta-eyebrow">Get Started Today</span>
             <h2 class="cta-title">Ready to Experience the<br><span class="hl">Booklean Difference?</span></h2>
-            <p class="cta-sub">Join 500+ ambitious businesses across UAE, India, and UK who trust Booklean to keep their
+            <p class="cta-sub">Join 500+ ambitious businesses across {{ regionDataService.data().countryName }} who
+                trust Booklean to keep their
                 finances clean, compliant, and growth-ready.</p>
             <div class="cta-buttons">
-                <a href="tel:+97150000000" class="btn-cta-white">📞 Book Free Consultation</a>
-                <a href="https://wa.me/97150000000" class="btn-cta-outline">💬 WhatsApp Us Now</a>
+                <a [href]="'tel:' + regionDataService.data().phone" class="btn-cta-white">📞 Book Free Consultation</a>
+                <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
+                    class="btn-cta-outline" target="_blank">💬 WhatsApp Us Now</a>
             </div>
             <div class="cta-options">
                 <div class="cta-opt">
@@ -26,7 +28,8 @@
                     <div class="cta-opt-title">Chat with Hey Lean</div>
                     <div class="cta-opt-desc">Get instant answers about pricing, services, and compliance from our AI
                         assistant. 24/7.</div>
-                    <a href="https://wa.me/97150000000" class="cta-opt-link">Start Chat →</a>
+                    <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
+                        class="cta-opt-link" target="_blank">Start Chat →</a>
                 </div>
                 <div class="cta-opt">
                     <div class="cta-opt-icon">📋</div>

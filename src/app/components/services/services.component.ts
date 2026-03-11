@@ -1,4 +1,5 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
+import { RegionDataService } from '../../services/region-data.service';
 
 @Component({
     selector: 'app-services',
@@ -9,24 +10,5 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ServicesComponent {
-    services = [
-        {
-            id: 1,
-            title: 'Bookkeeping & Accounting',
-            description: 'Maintain pristine financial records with our expert bookkeeping services, ensuring compliance and crystal-clear business insights.',
-            icon: '📊'
-        },
-        {
-            id: 2,
-            title: 'Financial Advisory',
-            description: 'Strategic financial engineering to optimize your capital structure, maneuver risks, and accelerate sustainable growth.',
-            icon: '💡'
-        },
-        {
-            id: 3,
-            title: 'Tax Consultancy',
-            description: 'Navigate complex UAE tax landscapes with our proactive planning and rigorous compliance frameworks.',
-            icon: '📈'
-        }
-    ];
+    regionDataService = inject(RegionDataService);
 }

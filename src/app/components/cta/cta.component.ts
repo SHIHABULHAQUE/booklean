@@ -6,6 +6,7 @@ import { RegionDataService } from '../../services/region-data.service';
     standalone: true,
     imports: [],
     templateUrl: './cta.component.html',
+    styleUrl: './cta.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CtaComponent {

@@ -5,12 +5,11 @@ import { ServicesComponent } from '../../components/services/services.component'
 import { GlobalPresenceComponent } from '../../components/global-presence/global-presence.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CtaComponent } from '../../components/cta/cta.component';
-import { PricingComponent } from '../../components/pricing/pricing.component';
 
 @Component({
     selector: 'app-home',
     standalone: true,
-    imports: [HeroSliderComponent, HeroComponent, ServicesComponent, GlobalPresenceComponent, PricingComponent, CtaComponent, FooterComponent],
+    imports: [HeroSliderComponent, HeroComponent, ServicesComponent, GlobalPresenceComponent, CtaComponent, FooterComponent],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush

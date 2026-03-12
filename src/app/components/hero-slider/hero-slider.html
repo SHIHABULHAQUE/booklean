@@ -1,4 +1,10 @@
 <div class="hero">
+    <div class="bg-slider">
+        @for (img of bgImages; track $index) {
+        <div class="bg-slide" [class.active]="currentSlide() === $index" [style.backgroundImage]="'url(' + img + ')'">
+        </div>
+        }
+    </div>
     <div class="hero-grid"></div>
     <div class="hero-orb-1"></div>
     <div class="hero-orb-2"></div>
@@ -55,32 +61,50 @@
 
         <div class="hero-visual">
             <div class="hero-card-main">
-                <div class="hc-label">REAL-TIME INSIGHTS</div>
-                <div class="hc-title">Financial Performance</div>
+                <div class="hc-label">AI RECONCILIATION</div>
+                <div class="hc-title">Automated Ledger</div>
 
-                <div class="hc-metrics">
-                    <div class="hc-metric">
-                        <div class="hc-metric-val">$2.4M</div>
-                        <div class="hc-metric-key">Revenue</div>
+                <div class="ledger-list">
+                    <div class="ledger-item">
+                        <div class="li-left">
+                            <div class="li-icon">📄</div>
+                            <div>
+                                <div class="li-title">AWS Web Services</div>
+                                <div class="li-date">Oct 12 &middot; Invoice #402</div>
+                            </div>
+                        </div>
+                        <div class="li-right">
+                            <div class="li-amt negative">-$1,240.00</div>
+                            <div class="li-status matches">Matched</div>
+                        </div>
                     </div>
-                    <div class="hc-metric">
-                        <div class="hc-metric-val">+34%</div>
-                        <div class="hc-metric-key">Growth</div>
-                    </div>
-                    <div class="hc-metric">
-                        <div class="hc-metric-val">99%</div>
-                        <div class="hc-metric-key">Accuracy</div>
-                    </div>
-                </div>
 
-                <div class="hc-chart">
-                    <div class="hc-chart-label">Monthly Trend</div>
-                    <div class="chart-bars">
-                        <div class="chart-bar" style="height: 30%"></div>
-                        <div class="chart-bar" style="height: 50%"></div>
-                        <div class="chart-bar" style="height: 40%"></div>
-                        <div class="chart-bar" style="height: 70%"></div>
-                        <div class="chart-bar active" style="height: 90%"></div>
+                    <div class="ledger-item">
+                        <div class="li-left">
+                            <div class="li-icon">💳</div>
+                            <div>
+                                <div class="li-title">Stripe Payout</div>
+                                <div class="li-date">Oct 11 &middot; Deposit</div>
+                            </div>
+                        </div>
+                        <div class="li-right">
+                            <div class="li-amt positive">+$12,450.00</div>
+                            <div class="li-status matches">Reconciled</div>
+                        </div>
+                    </div>
+
+                    <div class="ledger-item">
+                        <div class="li-left">
+                            <div class="li-icon">🧾</div>
+                            <div>
+                                <div class="li-title">DHA Vendor Fee</div>
+                                <div class="li-date">Oct 10 &middot; Receipt scan</div>
+                            </div>
+                        </div>
+                        <div class="li-right">
+                            <div class="li-amt negative">-$340.00</div>
+                            <div class="li-status processing">Processing</div>
+                        </div>
                     </div>
                 </div>
 
@@ -89,14 +113,15 @@
                         <div class="chat-dot"></div>
                         <div class="chat-name">Booklean AI</div>
                     </div>
-                    <div class="chat-msg">Anomalies detected in Q3 expenses. Would you like me to resolve them?</div>
+                    <div class="chat-msg">I've automatically categorized and matched 142 transactions this morning. All
+                        accounts are audit-ready.</div>
                 </div>
 
                 <div class="float-badge">
-                    <div class="fb-icon">✨</div>
+                    <div class="fb-icon">✓</div>
                     <div>
-                        <div class="fb-val">Reconciled</div>
-                        <div class="fb-label">Just now</div>
+                        <div class="fb-val">Books Closed</div>
+                        <div class="fb-label">100% Accuracy</div>
                     </div>
                 </div>
             </div>

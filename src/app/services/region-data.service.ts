@@ -21,7 +21,7 @@ export class RegionDataService {
     private router = inject(Router);
 
     private uaeData: RegionData = {
-        heroTitle: 'Intelligent Financial <br /><span class="hl">Engineering UAE</span>',
+        heroTitle: 'Intelligent Financial <br /><em>Engineering</em> <strong>UAE</strong>',
         heroSubtitle: 'Booklean combines AI automation with expert human insight to deliver precision financial intelligence for UAE & GCC businesses.',
         phone: '+97150000000',
         whatsapp: '+97150000000',
@@ -42,7 +42,7 @@ export class RegionDataService {
     };
 
     private inData: RegionData = {
-        heroTitle: 'Smart Accounting <br />for <span class="hl">Modern India</span>',
+        heroTitle: 'Smart Accounting <br />for <em>Modern</em> <strong>India</strong>',
         heroSubtitle: 'Next-gen CA advisory and AI automation bridging the gap for Indian startups and established enterprises.',
         phone: '+919800000000',
         whatsapp: '+919800000000',
@@ -63,7 +63,7 @@ export class RegionDataService {
     };
 
     private ukData: RegionData = {
-        heroTitle: 'Financial Excellence <br />in the <span class="hl">United Kingdom</span>',
+        heroTitle: 'Financial Excellence <br />in the <em>United</em> <strong>Kingdom</strong>',
         heroSubtitle: 'World-class bookkeeping and CFO intelligence tailored to HMRC guidelines for progressive UK businesses.',
         phone: '+442070000000',
         whatsapp: '+442070000000',

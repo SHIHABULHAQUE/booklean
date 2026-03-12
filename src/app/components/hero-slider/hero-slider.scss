@@ -18,6 +18,37 @@
     }
 }
 
+.bg-slider {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background-color: var(--white);
+    /* Fallback */
+}
+
+.bg-slide {
+    position: absolute;
+    inset: -5%;
+    width: 110%;
+    height: 110%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 6s linear;
+    transform: scale(1);
+    filter: sepia(0.2) hue-rotate(180deg) saturate(1.5) contrast(1.1);
+    /* Adds a subtle blueish tint to blend nicely */
+
+    &.active {
+        opacity: 0.12;
+        /* Keep it faded */
+        transform: scale(1.05);
+        /* Slight zoom in */
+    }
+}
+
 .hero-grid {
     position: absolute;
     inset: 0;
@@ -100,14 +131,31 @@
 .hero-content {
     h1 {
         font-family: var(--font-family-heading);
-        font-size: clamp(2.8rem, 5vw, 4.2rem);
-        font-weight: 800;
+        font-size: clamp(3.2rem, 6vw, 4.8rem);
+        font-weight: 300;
         line-height: 1.08;
-        letter-spacing: -.03em;
+        letter-spacing: -.01em;
         animation: fadeUp .6s .2s both;
         color: var(--ink);
 
+        ::ng-deep em {
+            font-style: italic;
+            color: var(--b1);
+        }
+
+        ::ng-deep strong {
+            font-weight: 800;
+            background: var(--grad-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200%;
+            animation: shimmer 4s linear infinite;
+        }
+
         ::ng-deep .hl {
+            font-style: italic;
+            font-weight: 400;
             background: var(--grad-main);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -171,15 +219,7 @@
     }
 }
 
-@keyframes shimmer {
-    0% {
-        background-position: 0%
-    }
 
-    100% {
-        background-position: 200%
-    }
-}
 
 .hero-sub {
     margin-top: 24px;
@@ -371,60 +411,93 @@
     margin-bottom: 20px;
 }
 
-.hc-metrics {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.ledger-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.ledger-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 12px 16px;
+    border-radius: 12px;
+    transition: background 0.3s;
+
+    &:hover {
+        background: rgba(255, 255, 255, .1);
+    }
+}
+
+.li-left {
+    display: flex;
+    align-items: center;
     gap: 12px;
 }
 
-.hc-metric {
-    background: rgba(255, 255, 255, .07);
-    border-radius: 12px;
-    padding: 14px 12px;
-    border: 1px solid rgba(255, 255, 255, .1);
+.li-icon {
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, .1);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
 
-.hc-metric-val {
-    font-family: var(--font-family-heading);
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--b4);
-    line-height: 1;
+.li-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
 }
 
-.hc-metric-key {
-    font-size: .72rem;
+.li-date {
+    font-size: 0.72rem;
     color: rgba(255, 255, 255, .5);
     margin-top: 4px;
 }
 
-.hc-chart {
-    margin-top: 20px;
+.li-right {
+    text-align: right;
 }
 
-.hc-chart-label {
-    font-size: .72rem;
-    color: rgba(255, 255, 255, .4);
-    margin-bottom: 10px;
+.li-amt {
+    font-weight: 700;
+    font-size: 0.95rem;
+    font-family: var(--font-family-body);
+
+    &.positive {
+        color: var(--b4);
+    }
+
+    &.negative {
+        color: white;
+    }
 }
 
-.chart-bars {
-    display: flex;
-    align-items: flex-end;
-    gap: 5px;
-    height: 60px;
-}
+.li-status {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 100px;
+    margin-top: 6px;
+    display: inline-block;
 
-.chart-bar {
-    flex: 1;
-    border-radius: 4px 4px 0 0;
-    background: rgba(9, 224, 254, .2);
-    transition: height .3s;
-    position: relative;
-}
+    &.matches {
+        color: var(--b4);
+        background: rgba(9, 224, 254, 0.15);
+    }
 
-.chart-bar.active {
-    background: linear-gradient(180deg, var(--b4), var(--b2));
+    &.processing {
+        color: #f5a623;
+        background: rgba(245, 166, 35, 0.15);
+    }
 }
 
 .hc-chat {

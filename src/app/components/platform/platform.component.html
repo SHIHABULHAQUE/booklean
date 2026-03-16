@@ -1,0 +1,74 @@
+<section class="platform-section" id="leanbot">
+    <div class="container">
+        <div class="platform-header text-center">
+            <span class="eyebrow">LeanBot Platform</span>
+            <h2 class="title">Meet <em>Hey Lean</em> — Your AI <strong>Financial Brain</strong></h2>
+            <p class="subtitle">LeanBot is Booklean's proprietary AI platform — the intelligence backbone that orchestrates every process, answers every query, and keeps your finances compliant around the clock.</p>
+        </div>
+
+        <div class="platform-grid">
+            <!-- Features List -->
+            <div class="features-list">
+                @for (feature of features; track feature.title) {
+                <div class="feature-item">
+                    <div class="feature-icon">{{ feature.icon }}</div>
+                    <div class="feature-text">
+                        <h4>{{ feature.title }}</h4>
+                        <p>{{ feature.desc }}</p>
+                    </div>
+                </div>
+                }
+            </div>
+
+            <!-- Chat Simulator UI -->
+            <div class="chat-simulator">
+                <div class="sim-header">
+                    <div class="sim-bot-info">
+                        <div class="sim-avatar">🤖</div>
+                        <div class="sim-name-wrap">
+                            <span class="sim-name">Hey Lean · LeanBot</span>
+                            <span class="sim-status">● Online · Responds in seconds</span>
+                        </div>
+                    </div>
+                    <div class="sim-models">
+                        <span>GPT-4o</span>
+                        <span>Claude</span>
+                        <span>Gemini</span>
+                    </div>
+                </div>
+
+                <div class="sim-body">
+                    <div class="sim-msg user">What's our Corporate Tax filing status and when is the deadline?</div>
+                    <div class="sim-msg bot">
+                        <p>✅ <strong>Corporate Tax Status:</strong> Registered. Current financial year closes 31 Dec 2026.</p>
+                        <p>📅 <strong>Filing Deadline:</strong> 30 September 2027 (9 months after year-end).</p>
+                        <p>📋 <strong>Action Items:</strong> IFRS-compliant statements are being prepared. I'll send a reminder 60, 30, and 7 days before deadline. Do you want me to schedule a strategy session with your CA team?</p>
+                    </div>
+                    <div class="sim-msg user">Yes. Also check our PEPPOL e-invoicing readiness.</div>
+                    <div class="sim-msg bot">
+                        <p>📅 Strategy session booked for next Tuesday at 10am. Calendar invite sent.</p>
+                        <p>✅ <strong>PEPPOL Status:</strong> Fully configured for Jan 2027 mandatory rollout. XML invoice generation active. Network registration: Complete. You are ahead of 78% of UAE SMEs on this.</p>
+                    </div>
+                </div>
+
+                <div class="sim-footer">
+                    <div class="sim-channels">
+                        <span>📱 WhatsApp</span>
+                        <span>🌐 Web Portal</span>
+                        <span>🔊 Voice</span>
+                        <span>📧 Email</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="platform-powered">
+            <span class="powered-label">Powered by:</span>
+            <div class="powered-logos">
+                @for (model of models; track model) {
+                <span class="model-badge">{{ model }}</span>
+                }
+            </div>
+        </div>
+    </div>
+</section>

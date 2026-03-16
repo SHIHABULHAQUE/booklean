@@ -1,0 +1,21 @@
+<section class="industries section" id="industries">
+    <div class="container">
+        <div class="industries-header reveal">
+            <span class="label">Sector Intelligence</span>
+            <h2 class="title serif">Built for Every Industry<br>in the UAE Ecosystem</h2>
+        </div>
+        <div class="industries-grid">
+            @for (ind of industries; track ind.name) {
+            <div class="ind-card reveal">
+                <div class="ind-icon-wrap">{{ ind.icon }}</div>
+                <div class="ind-name">{{ ind.name }}</div>
+                <div class="ind-tags">
+                    @for (tag of ind.tags; track tag) {
+                    <span class="ind-tag">{{ tag }}</span>
+                    }
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

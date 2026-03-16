@@ -1,0 +1,134 @@
+:host {
+    display: block;
+}
+
+$navy: #0D2244;
+$teal: #0AB5C5;
+$teal-mist: rgba(10, 181, 197, 0.08);
+$border: #E4EAF2;
+$canvas: #F7F9FC;
+$text-body: #4A5568;
+$radius-md: 16px;
+$shadow-lg: 0 24px 64px rgba(13, 34, 68, 0.14);
+
+.section {
+    padding: clamp(5rem, 9vw, 9rem) 0;
+}
+
+.industries {
+    background: $canvas;
+
+    &-header {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        .label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $teal;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        h2.title {
+            color: $navy;
+            margin-bottom: 1rem;
+            font-size: clamp(2.2rem, 4vw, 3.8rem);
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            line-height: 1.1;
+        }
+    }
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ind-card {
+    background: white;
+    border: 1.5px solid $border;
+    border-radius: $radius-md;
+    padding: 1.5rem 1.2rem;
+    text-align: center;
+    transition: all 0.35s;
+    cursor: pointer;
+
+    &:hover {
+        background: $navy;
+        border-color: $navy;
+        transform: translateY(-4px);
+        box-shadow: $shadow-lg;
+
+        .ind-name {
+            color: white;
+        }
+
+        .ind-tag {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .ind-icon-wrap {
+            background: rgba(10, 181, 197, 0.2);
+        }
+    }
+}
+
+.ind-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    margin: 0 auto 0.9rem;
+    background: $teal-mist;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: background 0.35s;
+}
+
+.ind-name {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: $navy;
+    margin-bottom: 0.5rem;
+    transition: color 0.35s;
+}
+
+.ind-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.ind-tag {
+    font-size: 0.65rem;
+    background: $canvas;
+    color: $text-body;
+    padding: 0.15rem 0.5rem;
+    border-radius: 100px;
+    transition: all 0.35s;
+}
+
+.reveal {
+    opacity: 1;
+}

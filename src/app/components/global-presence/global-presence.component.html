@@ -1,21 +1,29 @@
-<section class="global-section">
+<section class="global-section" id="global">
     <div class="section-wrap">
         <div class="section-header text-center">
-            <span class="section-eyebrow">Global Reach</span>
-            <h2 class="section-title">Seamless <br><em>Cross-Border</em> <strong>Operations</strong></h2>
-            <p class="section-sub mx-auto">Unified financial management across our core markets.</p>
+            <span class="section-eyebrow">Global Presence</span>
+            <h2 class="section-title">Global Standards. <br><em>Local</em> <strong>Expertise.</strong></h2>
+            <p class="section-sub mx-auto">Three strategic hubs. One consistent standard of financial intelligence.</p>
         </div>
-        <div class="global-grid">
-            @for (region of regions; track region.country) {
-            <div class="region-card">
-                <div class="region-flag">{{ getFlag(region.country) }}</div>
-                <h3>{{ region.country }}</h3>
-                <span class="status">{{ region.badge || 'Active Hub' }}</span>
-                <ul>
-                    <li>{{ region.title }}</li>
-                    <li>{{ region.email }}</li>
-                    <li>{{ region.website }}</li>
-                </ul>
+
+        <div class="offices-grid">
+            @for (office of regions; track office.country) {
+            <div class="office-card">
+                @if (office.badge) {
+                <div class="office-badge">{{office.badge}}</div>
+                }
+                <div class="office-flag">{{office.flag}}</div>
+                <h3 class="office-country">{{office.country}}</h3>
+                <p class="office-title">{{office.title}}</p>
+                <div class="office-tags">
+                    @for (tag of office.tags; track tag) {
+                    <span class="office-tag">{{tag}}</span>
+                    }
+                </div>
+                <div class="office-links">
+                    <a [href]="'mailto:' + office.email" class="office-link">📧 {{office.email}}</a>
+                    <a [href]="'https://' + office.website" class="office-link" target="_blank">🌐 {{office.website}}</a>
+                </div>
             </div>
             }
         </div>

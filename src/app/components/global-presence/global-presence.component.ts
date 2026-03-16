@@ -16,7 +16,8 @@ export class GlobalPresenceComponent {
             website: 'booklean.ae',
             email: 'tax.advisory@booklean.ae',
             badge: 'HQ',
-            flag: '🇦🇪'
+            flag: '🇦🇪',
+            tags: ['Corporate Tax 9%', 'VAT & FTA', 'PEPPOL Ready', 'ESR & UBO']
         },
         {
             country: 'India',
@@ -24,7 +25,8 @@ export class GlobalPresenceComponent {
             website: 'booklean.in',
             email: 'financials@booklean.in',
             badge: '',
-            flag: '🇮🇳'
+            flag: '🇮🇳',
+            tags: ['GST Compliance', 'AI Processing', 'Cross-Border']
         },
         {
             country: 'United Kingdom',
@@ -32,7 +34,8 @@ export class GlobalPresenceComponent {
             website: 'booklean.co.uk',
             email: 'consulting@booklean.co.uk',
             badge: '',
-            flag: '🇬🇧'
+            flag: '🇬🇧',
+            tags: ['Making Tax Digital', 'Statutory Accounts', 'Post-Brexit']
         }
     ];
 

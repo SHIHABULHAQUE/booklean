@@ -1,0 +1,55 @@
+<div class="chat-wrapper" [class.open]="isOpen()">
+    <!-- Sticky Bubble -->
+    <button class="chat-bubble" (click)="toggleChat()" aria-label="Open Chat">
+        <span class="bot-status"></span>
+        <div class="chat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+    </button>
+
+    <!-- Chat Window -->
+    <div class="chat-window">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="bot-info">
+                <div class="bot-avatar">🤖</div>
+                <div class="bot-details">
+                    <span class="bot-name">LeenBot</span>
+                    <span class="bot-online">Online Financial Assistant</span>
+                </div>
+            </div>
+            <button class="close-btn" (click)="toggleChat()">✕</button>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="chat-messages" #scrollContainer>
+            @for (msg of messages(); track msg.time) {
+                <div class="message-row" [class.user]="msg.type === 'user'">
+                    <div class="message-content">
+                        {{ msg.text }}
+                        <span class="message-time">{{ msg.time | date:'shortTime' }}</span>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Suggestions -->
+        <div class="chat-suggestions">
+            <button (click)="sendMessage('Tell me about UAE Tax')">Tax Info 🇦🇪</button>
+            <button (click)="sendMessage('What services do you offer?')">Services 📋</button>
+            <button (click)="openWhatsApp()">WhatsApp us 💬</button>
+        </div>
+
+        <!-- Quick Input -->
+        <div class="chat-input-area">
+            <input type="text" #msgInput placeholder="Ask me about finance..." (keyup.enter)="sendMessage(msgInput.value); msgInput.value=''">
+            <button class="send-btn" (click)="sendMessage(msgInput.value); msgInput.value=''">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </div>
+        
+        <div class="chat-footer">
+            Powered by <span>Booklean AI</span>
+        </div>
+    </div>
+</div>

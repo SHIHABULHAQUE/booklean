@@ -1,19 +1,88 @@
-<section class="services-section">
-    <div class="section-wrap">
-        <div class="section-header text-center">
-            <span class="section-eyebrow">Financial Services</span>
-            <h2 class="section-title">Comprehensive Financial <br><span class="hl">Intelligence</span></h2>
-            <p class="section-sub mx-auto">End-to-end solutions designed to streamline your operations and accelerate
-                growth across global markets.</p>
-        </div>
-        <div class="services-grid">
-            @for (service of regionDataService.data().services; track service.id) {
-            <div class="service-card reveal">
-                <div class="service-icon">{{ service.icon }}</div>
-                <h3>{{ service.title }}</h3>
-                <p>{{ service.description }}</p>
-            </div>
-            }
-        </div>
+<section class="services section" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <span class="label">Full-Stack Capabilities</span>
+      <h2>Everything your business needs,<br>under one intelligent roof.</h2>
+      <p>From foundational bookkeeping to AI-powered business transformation — comprehensive financial intelligence for every stage of your growth journey.</p>
     </div>
+
+    <div class="services-grid">
+      @for (service of regionDataService.data().services; track service.id) {
+        @if (!service.isWide) {
+          <div class="svc-card reveal">
+            <div class="svc-num">{{ service.category }}</div>
+            <div class="svc-icon" [style.background]="service.icon === '📚' || service.icon === '🤖' ? 'rgba(10,181,197, 0.08)' : (service.icon === '👑' ? 'rgba(201,162,39, 0.1)' : 'rgba(13,34,68, 0.06)')">{{ service.icon }}</div>
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+            <div class="svc-tags">
+              @for (tag of service.tags; track tag) {
+                <span class="svc-tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+        } @else {
+          <!-- Full-width card for the last service -->
+          <div class="svc-card wide reveal">
+            <div class="svc-left">
+              <div class="svc-num">{{ service.category }}</div>
+              <div class="svc-icon" style="background:rgba(10,181,197, 0.08)">{{ service.icon }}</div>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.description }}</p>
+              <div class="svc-tags">
+                @for (tag of service.tags; track tag) {
+                  <span class="svc-tag">{{ tag }}</span>
+                }
+              </div>
+            </div>
+            <div class="svc-right">
+              @for (sub of service.subServices; track sub.title) {
+                <div class="svc-mini-item">
+                  <h5>{{ sub.title }}</h5>
+                  <p>{{ sub.description }}</p>
+                </div>
+              }
+            </div>
+          </div>
+        }
+      }
+    </div>
+  </div>
+
+  <!-- ══ METRICS ══ -->
+  <div class="metrics-band">
+    <div class="container">
+      <div class="metrics-row">
+        <div class="m-item reveal d1">
+          <div class="m-badge">▲ Top Tier</div>
+          <div class="m-num">99.5<span class="accent">%+</span></div>
+          <div class="m-label">Accuracy Rate</div>
+        </div>
+        <div class="m-item reveal d2">
+          <div class="m-badge">⚡ Industry Lead</div>
+          <div class="m-num">24<span class="accent">hrs</span></div>
+          <div class="m-label">Financial Close</div>
+        </div>
+        <div class="m-item reveal d3">
+          <div class="m-badge">★ High Trust</div>
+          <div class="m-num">95<span class="accent">%+</span></div>
+          <div class="m-label">Client Satisfaction</div>
+        </div>
+        <div class="m-item reveal d4">
+          <div class="m-badge">∞ Retention</div>
+          <div class="m-num">92<span class="accent">%+</span></div>
+          <div class="m-label">Client Retention</div>
+        </div>
+        <div class="m-item reveal d5">
+          <div class="m-badge">✓ Guaranteed</div>
+          <div class="m-num">&lt;4<span class="accent">hrs</span></div>
+          <div class="m-label">Response SLA</div>
+        </div>
+        <div class="m-item reveal d6">
+          <div class="m-badge">🏆 World Class</div>
+          <div class="m-num">50<span class="accent">+</span></div>
+          <div class="m-label">NPS Score</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

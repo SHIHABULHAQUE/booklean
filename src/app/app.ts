@@ -13,12 +13,18 @@ import { filter } from 'rxjs';
 })
 export class App implements OnInit {
   protected readonly title = signal('booklean');
+  protected readonly isLoading = signal(true);
   private router = inject(Router);
   private platformId = inject(PLATFORM_ID);
   private document = inject(DOCUMENT);
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
+      // Hide preloader after 2 seconds
+      setTimeout(() => {
+        this.isLoading.set(false);
+      }, 2000);
+
       this.initCustomCursor();
       import('aos').then((AOS: any) => {
         // Handle Vite chunking dynamic import differences between module types

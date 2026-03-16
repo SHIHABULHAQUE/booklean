@@ -1,16 +1,36 @@
-<aside class="sidebar">
-  <div class="logo-area">
-    <div class="brand-mark">B</div>
-  </div>
+<!-- Desktop Vertical Sidebar -->
+<aside class="desktop-sidebar">
+    <div class="sidebar-top">
+        <div class="dot-wrap">
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+    <div class="sidebar-bulge">
+        <div class="nav-container">
+            <a routerLink="/uae/home" routerLinkActive="active" class="nav-item">UAE</a>
+            <a routerLink="/in/home" routerLinkActive="active" class="nav-item">INDIA</a>
+            <a routerLink="/uk/home" routerLinkActive="active" class="nav-item">UK</a>
+        </div>
+    </div>
 
-  <div class="region-selector">
-    <a routerLink="/uk/home" routerLinkActive="active" class="region-item">UK</a>
-    <a routerLink="/in/home" routerLinkActive="active" class="region-item">IN</a>
-    <a routerLink="/uae/home" routerLinkActive="active" class="region-item">UAE</a>
-  </div>
-
-  <div class="social-links">
-    <a href="#" aria-label="LinkedIn" class="social-icon">IN</a>
-    <a href="#" aria-label="Twitter" class="social-icon">X</a>
-  </div>
+    <div class="sidebar-bottom">
+        <span class="year-label">EST. 2026</span>
+    </div>
 </aside>
+
+<!-- Mobile Floating Pill Bar -->
+<div class="mobile-floating-bar">
+    <div class="pill-container">
+        <span class="est-badge">
+            <span class="dot"></span>
+            EST. 2026
+        </span>
+        <span class="separator">·</span>
+        <a routerLink="/uae/home" routerLinkActive="active" class="region-link">UAE</a>
+        <span class="separator">·</span>
+        <a routerLink="/in/home" routerLinkActive="active" class="region-link">INDIA</a>
+        <span class="separator">·</span>
+        <a routerLink="/uk/home" routerLinkActive="active" class="region-link">UK</a>
+    </div>
+</div>

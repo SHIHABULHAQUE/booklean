@@ -1,89 +1,238 @@
-.sidebar {
+:host {
+    display: block;
+}
+
+/* ══════════════════════════════════════════════════════
+   COLOR CONFIG (Synced with App)
+   ══════════════════════════════════════════════════════ */
+$app-dark: #050E20; // Exact match for --ink / --dark-bg
+$accent-cyan: #09E0FE; 
+$text-dim: rgba(255, 255, 255, 0.45);
+
+/* ══════════════════════════════════════════════════════
+   DESKTOP SIDEBAR
+   ══════════════════════════════════════════════════════ */
+.desktop-sidebar {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
-    width: var(--sidebar-width);
-    background-color: var(--color-white);
-    border-right: 1px solid var(--color-border);
+    bottom: 0;
+    width: 20px;
+    background: $app-dark;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0;
-    z-index: 100;
-}
+    padding: 40px 0;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-.logo-area {
-    .brand-mark {
-        width: 40px;
-        height: 40px;
-        background: linear-gradient(135deg, var(--color-primary), var(--color-secondary-1));
-        color: var(--color-white);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        font-weight: 800;
-        border-radius: 8px;
+    @media (max-width: 768px) {
+        display: none;
     }
 }
 
-.region-selector {
+.sidebar-top {
+    .dot {
+        width: 8px;
+        height: 8px;
+        background-color: $accent-cyan;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba($accent-cyan, 0.6);
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: rgba($accent-cyan, 0.2);
+            animation: dotPulse 3s infinite;
+        }
+    }
+}
+
+/* ══════════════ PERFECT SEAMLESS WAVE (Slimmer) ══════════════ */
+.sidebar-bulge {
+    position: absolute;
+    top: 50%;
+    left: -1px; 
+    transform: translateY(-50%);
+    width: 55px; // Reduced width
+    height: 380px; // Slightly more compact height
+    background: $app-dark;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px; // Tighter padding
+    
+    // Adjusted elliptical curve for slimmer width
+    border-radius: 0 120px 120px 0 / 0 50% 50% 0; 
+    box-shadow: 10px 0 25px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    // The Shoulders
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        pointer-events: none;
+        transition: all 0.4s ease;
+    }
+
+    &::before {
+        top: -30px;
+        border-radius: 0 0 0 30px;
+        box-shadow: -15px 15px 0 0 $app-dark;
+    }
+
+    &::after {
+        bottom: -30px;
+        border-radius: 30px 0 0 0;
+        box-shadow: -15px -15px 0 0 $app-dark;
+    }
+
+    &:hover {
+        width: 65px;
+        box-shadow: 15px 0 35px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.nav-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-
-    .region-item {
+    align-items: center;
+    gap: 50px; // Compacted gap
+    
+    .nav-item {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
-        font-size: 0.875rem;
-        font-weight: 600;
-        color: var(--color-text-muted);
-        cursor: pointer;
-        transition: color var(--transition-fast);
-        padding: 0.5rem 0;
+        text-decoration: none;
+        color: $text-dim;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem; // Slightly smaller text
+        letter-spacing: 0.12em;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 4px;
+        white-space: nowrap;
+        position: relative;
 
         &:hover {
-            color: var(--color-primary);
+            color: $accent-cyan;
+            text-shadow: 0 0 15px rgba($accent-cyan, 0.4);
         }
 
         &.active {
-            color: var(--color-primary);
-            position: relative;
-
-            &::after {
+            color: $accent-cyan;
+            text-shadow: 0 0 15px rgba($accent-cyan, 0.8);
+            
+            &::before {
                 content: '';
                 position: absolute;
-                right: -8px;
-                top: 0;
-                height: 100%;
-                width: 3px;
-                background-color: var(--color-primary);
-                border-radius: 2px;
+                top: 50%;
+                left: -12px; // Adjusted for slimmer bulge
+                width: 4px;
+                height: 4px;
+                background: $accent-cyan;
+                border-radius: 50%;
+                transform: translateY(-50%);
+                box-shadow: 0 0 10px $accent-cyan;
+                animation: indicatorIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             }
         }
     }
 }
 
-.social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+@keyframes indicatorIn {
+    from { transform: translateY(-50%) scale(0) translateX(10px); opacity: 0; }
+    to { transform: translateY(-50%) scale(1) translateX(0); opacity: 1; }
+}
 
-    .social-icon {
-        font-size: 0.875rem;
-        font-weight: 600;
-        color: var(--color-text-dark);
+.year-label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.55rem;
+    font-weight: 800;
+    color: rgba($accent-cyan, 0.15);
+    letter-spacing: 0.2em;
+}
 
-        &:hover {
-            color: var(--color-primary);
-        }
+/* ══════════════════════════════════════════════════════
+   MOBILE FLOATING BAR
+   ══════════════════════════════════════════════════════ */
+.mobile-floating-bar {
+    position: fixed;
+    bottom: 100px; // Very high to clear all common chat widgets/bottom actions
+    left: 45%; // Shifted slightly left to leave room for bottom-right buttons
+    transform: translateX(-50%);
+    z-index: 2000;
+    display: none;
+    animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    width: auto;
+    padding: 0 16px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        width: 100%;
+        max-width: max-content;
+        justify-content: center;
     }
 }
 
-@media (max-width: 768px) {
-    .sidebar {
-        display: none;
+@keyframes slideUp {
+    from { transform: translateX(-50%) translateY(100px); opacity: 0; }
+    to { transform: translateX(-50%) translateY(0); opacity: 1; }
+}
+
+.pill-container {
+    background: rgba(5, 14, 32, 0.95); // Slightly transparent
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    white-space: nowrap; // Prevents wrapping
+}
+
+.est-badge {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        background-color: $accent-cyan;
+        border-radius: 50%;
+        box-shadow: 0 0 10px $accent-cyan;
     }
+}
+
+.region-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &.active {
+        color: $accent-cyan;
+    }
+}
+
+@keyframes dotPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
 }

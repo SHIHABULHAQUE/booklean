@@ -9,11 +9,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { CtaComponent } from '../../components/cta/cta.component';
 import { ChatAssistantComponent } from '../../components/chat/chat-assistant.component';
 import { PlatformComponent } from '../../components/platform/platform.component';
+import { FinalCtaComponent } from '../../components/final-cta/final-cta.component';
 
 @Component({
     selector: 'app-home',
     standalone: true,
-    imports: [HeroSliderComponent, HeroComponent, AboutComponent, ServicesComponent, IndustriesComponent, GlobalPresenceComponent, CtaComponent, FooterComponent, ChatAssistantComponent, PlatformComponent],
+    imports: [HeroSliderComponent, HeroComponent, AboutComponent, ServicesComponent, IndustriesComponent, GlobalPresenceComponent, CtaComponent, FooterComponent, ChatAssistantComponent, PlatformComponent, FinalCtaComponent],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush

@@ -12,8 +12,10 @@
                 @if (office.badge) {
                 <div class="office-badge">{{office.badge}}</div>
                 }
-                <div class="office-flag">{{office.flag}}</div>
-                <h3 class="office-country">{{office.country}}</h3>
+                <div class="office-flag-wrap">
+                    <div class="office-flag">{{office.flag}}</div>
+                    <h3 class="office-country">{{office.country}}</h3>
+                </div>
                 <p class="office-title">{{office.title}}</p>
                 <div class="office-tags">
                     @for (tag of office.tags; track tag) {

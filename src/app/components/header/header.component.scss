@@ -1,12 +1,16 @@
 .app-header {
-    height: 80px;
+    height: 65px;
     position: sticky;
     top: 0;
     z-index: 900;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0, 79, 225, 0.06);
-    transition: box-shadow 0.3s;
+    transition: all 0.3s;
+
+    @media (max-width: 1024px) {
+        height: 55px;
+    }
 }
 
 .header-container {
@@ -22,34 +26,30 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
+    transition: transform 0.2s;
 
-    .logo-icon-cube {
-        width: 36px;
-        height: 36px;
-        border-radius: 10px;
-        background: linear-gradient(135deg, var(--b1, #004fe1) 0%, var(--b2, #08a1f7) 60%, var(--b4, #09e0fe) 100%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.1rem;
-        color: white;
-        box-shadow: 0 4px 16px rgba(0, 79, 225, 0.35);
+    &:hover {
+        transform: scale(1.05);
     }
 
-    .logo-text {
-        font-family: var(--font-family-heading, inherit);
-        font-weight: 800;
-        font-size: 1.35rem;
-        color: var(--ink, #06183a);
-        letter-spacing: -0.02em;
+    .logo-image {
+        height: 45px;
+        width: auto;
+        display: block;
+        object-fit: contain;
+        transition: transform 0.3s ease;
 
-        span {
-            color: var(--b2, #08a1f7);
+        @media (max-width: 1024px) {
+            height: 38px;
+        }
+
+        @media (max-width: 640px) {
+            height: 32px;
         }
     }
 }
+
 
 /* Pill Navigation */
 .desktop-nav-pill {

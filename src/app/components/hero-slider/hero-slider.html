@@ -44,84 +44,62 @@
 
             <div class="hero-actions">
                 <a href="#contact" class="btn-primary" style="text-decoration: none;">Book Free Consultation</a>
-                <a href="#services" class="btn-ghost" style="margin-left: 14px; text-decoration: none;">Explore our Services</a>
+                <a href="#services" class="btn-ghost" style="margin-left: 14px; text-decoration: none;">Explore Services</a>
             </div>
 
-            <div class="hero-trust">
-                <div class="trust-avatars">
-                    <div class="trust-avatar">JD</div>
-                    <div class="trust-avatar" style="background: var(--b2);">SA</div>
-                    <div class="trust-avatar" style="background: var(--ink);">MK</div>
-                </div>
-                <div class="trust-text"><strong>500+</strong> Enterprise Clients in {{
-                    regionDataService.data().countryName }} <span class="trust-stars">★★★★★</span>
-                </div>
+            <div class="hero-slider-dots">
+                @for (dot of featureCards; track $index) {
+                <div class="hero-dot" [class.active]="currentSlide() === $index" (click)="currentSlide.set($index)"></div>
+                }
             </div>
         </div>
 
         <div class="hero-visual">
-            <div class="hero-card-main">
-                <div class="hc-label">AI RECONCILIATION</div>
-                <div class="hc-title">Automated Ledger</div>
+            <div class="slider-viewport">
+                <div class="cards-mask">
+                    <div class="cards-track" [style.transform]="'translateX(-' + (currentSlide() * 100) + '%)'">
+                        @for (card of featureCards; track $index) {
+                        <div class="hero-card-slide" [class.active]="currentSlide() === $index">
+                            <div class="hero-card-inner">
+                                <div class="hc-label">{{ card.label }}</div>
+                                <div class="hc-title">{{ card.title }}</div>
 
-                <div class="ledger-list">
-                    <div class="ledger-item">
-                        <div class="li-left">
-                            <div class="li-icon">📄</div>
-                            <div>
-                                <div class="li-title">AWS Web Services</div>
-                                <div class="li-date">Oct 12 &middot; Invoice #402</div>
+                                <div class="ledger-list">
+                                    @for (item of card.items; track item.title) {
+                                    <div class="ledger-item">
+                                        <div class="li-left">
+                                            <div class="li-icon">{{ item.icon }}</div>
+                                            <div>
+                                                <div class="li-title">{{ item.title }}</div>
+                                                <div class="li-date">{{ item.date }}</div>
+                                            </div>
+                                        </div>
+                                        <div class="li-right">
+                                            <div class="li-amt" [class.positive]="item.positive" [class.negative]="!item.positive">{{ item.amt }}</div>
+                                            <div class="li-status" [class]="item.statusClass">{{ item.status }}</div>
+                                        </div>
+                                    </div>
+                                    }
+                                </div>
+
+                                <div class="hc-chat">
+                                    <div class="chat-header">
+                                        <div class="chat-dot"></div>
+                                        <div class="chat-name">Booklean AI</div>
+                                    </div>
+                                    <div class="chat-msg">{{ card.chat }}</div>
+                                </div>
+
+                                <div class="float-badge">
+                                    <div class="fb-icon">✓</div>
+                                    <div>
+                                        <div class="fb-val">{{ card.badgeVal }}</div>
+                                        <div class="fb-label">{{ card.badgeLabel }}</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="li-right">
-                            <div class="li-amt negative">-$1,240.00</div>
-                            <div class="li-status matches">Matched</div>
-                        </div>
-                    </div>
-
-                    <div class="ledger-item">
-                        <div class="li-left">
-                            <div class="li-icon">💳</div>
-                            <div>
-                                <div class="li-title">Stripe Payout</div>
-                                <div class="li-date">Oct 11 &middot; Deposit</div>
-                            </div>
-                        </div>
-                        <div class="li-right">
-                            <div class="li-amt positive">+$12,450.00</div>
-                            <div class="li-status matches">Reconciled</div>
-                        </div>
-                    </div>
-
-                    <div class="ledger-item">
-                        <div class="li-left">
-                            <div class="li-icon">🧾</div>
-                            <div>
-                                <div class="li-title">DHA Vendor Fee</div>
-                                <div class="li-date">Oct 10 &middot; Receipt scan</div>
-                            </div>
-                        </div>
-                        <div class="li-right">
-                            <div class="li-amt negative">-$340.00</div>
-                            <div class="li-status processing">Processing</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hc-chat">
-                    <div class="chat-header">
-                        <div class="chat-dot"></div>
-                        <div class="chat-name">Booklean AI</div>
-                    </div>
-                    <div class="chat-msg">I've automatically categorized and matched 142 transactions this morning. All
-                        accounts are audit-ready.</div>
-                </div>
-
-                <div class="float-badge">
-                    <div class="fb-icon">✓</div>
-                    <div>
-                        <div class="fb-val">Books Closed</div>
-                        <div class="fb-label">100% Accuracy</div>
+                        }
                     </div>
                 </div>
             </div>

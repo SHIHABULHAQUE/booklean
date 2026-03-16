@@ -1,28 +1,114 @@
 <header class="app-header glass-panel">
-    <div class="header-container container">
-        <a routerLink="/" class="logo">
-            <img src="images/booklean-logo.png" alt="Booklean Logo" class="logo-image">
-        </a>
+    <!-- Level 1: Top Utility Bar -->
+    <div class="header-top-bar">
+        <div class="header-container container">
+            <div class="top-nav-links">
+                <a href="#" class="top-link">Locations</a>
+                <a href="#" class="top-link">Our People</a>
+                <a href="#" class="top-link">News</a>
+                <a href="#" class="top-link">Careers</a>
+            </div>
+            <a href="#contact" class="btn-contact-top">BOOK CONSULTATION</a>
+        </div>
+    </div>
 
-        <!-- Desktop Nav -->
-        <nav class="desktop-nav-pill">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#industries" class="nav-link">Industries</a>
-            <a href="#leanbot" class="nav-link">LeanBot</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
+    <!-- Level 2: Main Navigation Bar -->
+    <div class="header-main-bar">
+        <div class="header-container container">
+            <a routerLink="/" class="logo">
+                <img src="images/booklean-logo.png" alt="Booklean Logo" class="logo-image">
+            </a>
 
-        <div class="header-actions">
-            <!-- Book Consultation Button -->
-            <a href="#contact" class="btn-consultation">Book Consultation</a>
+            <!-- Desktop Nav -->
+            <nav class="main-nav">
+                <div class="nav-item has-dropdown">
+                    <a href="#services" class="nav-link">Services <span class="carat">⌄</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-container container">
+                            <div class="mega-column">
+                                <h4 class="mega-title">Financial Services</h4>
+                                <ul class="mega-list">
+                                    <li><a href="#">Cloud Accounting</a></li>
+                                    <li><a href="#">Audit & Assurance</a></li>
+                                    <li><a href="#">VAT Advisory</a></li>
+                                    <li><a href="#">Corporate Tax</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4 class="mega-title">CFO & Strategy</h4>
+                                <ul class="mega-list">
+                                    <li><a href="#">Virtual CFO</a></li>
+                                    <li><a href="#">Risk Advisory</a></li>
+                                    <li><a href="#">Business Valuation</a></li>
+                                    <li><a href="#">Exit Strategies</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4 class="mega-title">Our Solutions</h4>
+                                <div class="mega-featured">
+                                    <img src="images/leanbot-icon.png" alt="LeanBot" class="featured-icon">
+                                    <div>
+                                        <h5>LeanBot AI</h5>
+                                        <p>Automated reconciliation and tax filing platform.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Mobile Toggle -->
-            <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Menu">
-                <span class="bar" [class.open]="isMenuOpen()"></span>
-                <span class="bar" [class.open]="isMenuOpen()"></span>
-                <span class="bar" [class.open]="isMenuOpen()"></span>
-            </button>
+                <div class="nav-item has-dropdown">
+                    <a href="#industries" class="nav-link">Industries <span class="carat">⌄</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-container container">
+                            <div class="mega-column">
+                                <h4 class="mega-title">Growth Sectors</h4>
+                                <ul class="mega-list">
+                                    <li><a href="#">Tech & Startups</a></li>
+                                    <li><a href="#">E-commerce</a></li>
+                                    <li><a href="#">Real Estate</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4 class="mega-title">Specialized</h4>
+                                <ul class="mega-list">
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">Healthcare</a></li>
+                                    <li><a href="#">Pro Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <div class="mega-promo">
+                                    <h4>Industry Insights</h4>
+                                    <p>Download our latest report on UAE financial trends.</p>
+                                    <a href="#" class="btn-text">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#about" class="nav-link">About</a>
+                <a href="#leanbot" class="nav-link">LeanBot</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-right">
+                <div class="search-wrap">
+                    <button class="search-btn">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <span>Search</span>
+                    </button>
+                    <div class="divider"></div>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Menu">
+                    <span class="bar" [class.open]="isMenuOpen()"></span>
+                    <span class="bar" [class.open]="isMenuOpen()"></span>
+                    <span class="bar" [class.open]="isMenuOpen()"></span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -36,7 +122,6 @@
         <a href="#contact" class="nav-link" (click)="toggleMenu()">Contact</a>
 
         <a href="#contact" class="btn-consultation mobile-btn" (click)="toggleMenu()">Book Consultation</a>
-
     </nav>
     }
 </header>

@@ -20,10 +20,13 @@ export class App implements OnInit {
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-      // Hide preloader after 2 seconds
+      const hasLoaded = sessionStorage.getItem('hasLoaded');
+      const loadTime = hasLoaded ? 1000 : 2000;
+      
       setTimeout(() => {
         this.isLoading.set(false);
-      }, 2000);
+        if (!hasLoaded) sessionStorage.setItem('hasLoaded', 'true');
+      }, loadTime);
 
       this.initCustomCursor();
       import('aos').then((AOS: any) => {

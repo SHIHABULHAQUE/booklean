@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, signal } from '@angular/core';
+import { Component, ChangeDetectionStrategy, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RegionDataService } from '../../services/region-data.service';
 
@@ -10,13 +10,20 @@ import { RegionDataService } from '../../services/region-data.service';
   styleUrl: './chat-assistant.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ChatAssistantComponent {
+export class ChatAssistantComponent implements OnInit {
   isOpen = signal(false);
+  showBubble = signal(false);
   messages = signal([
-    { type: 'bot', text: 'Hi! I\'m LeenBot 🤖. How can I help you with your finances today?', time: new Date() }
+    { type: 'bot', text: 'Hi! I\'m LeenBot ∞. How can I help you with your finances today?', time: new Date() }
   ]);
 
-  constructor(public regionDataService: RegionDataService) {}
+  constructor(public regionDataService: RegionDataService) { }
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.showBubble.set(true);
+    }, 2000);
+  }
 
   toggleChat() {
     this.isOpen.update(v => !v);

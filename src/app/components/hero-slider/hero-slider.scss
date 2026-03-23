@@ -129,14 +129,38 @@
 }
 
 .hero-content {
+    .hero-text-slider {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "text-slide";
+    }
+
+    .hero-text-slide {
+        grid-area: text-slide;
+        opacity: 0;
+        transform: translateY(20px);
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            pointer-events: auto;
+            transition-delay: 0.15s; 
+        }
+    }
+
     h1 {
         font-family: var(--font-family-heading);
         font-size: clamp(3.2rem, 6vw, 4.8rem);
         font-weight: 300;
         line-height: 1.08;
         letter-spacing: -.01em;
-        animation: fadeUp .6s .2s both;
         color: var(--ink);
+        margin: 0;
 
         ::ng-deep em {
             font-style: italic;
@@ -227,7 +251,7 @@
     color: var(--muted);
     line-height: 1.75;
     max-width: 540px;
-    animation: fadeUp .6s .35s both;
+    margin-bottom: 0;
 }
 
 .hero-pills {

@@ -1,238 +1,53 @@
-:host {
-    display: block;
-}
-
-/* ══════════════════════════════════════════════════════
-   COLOR CONFIG (Synced with App)
-   ══════════════════════════════════════════════════════ */
-$app-dark: #050E20; // Exact match for --ink / --dark-bg
-$accent-cyan: #09E0FE; 
-$text-dim: rgba(255, 255, 255, 0.45);
-
-/* ══════════════════════════════════════════════════════
-   DESKTOP SIDEBAR
-   ══════════════════════════════════════════════════════ */
-.desktop-sidebar {
+/* Sidebar Settings */
+.country-sidebar {
     position: fixed;
     left: 0;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: $app-dark;
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 400;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 0;
-    z-index: 1000;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: linear-gradient(145deg, rgba(8, 20, 55, .90) 0%, rgba(12, 28, 70, .85) 50%, rgba(10, 24, 62, .92) 100%);
+    backdrop-filter: blur(14px);
+    border-radius: 0 10px 10px 0;
+    padding: 8px 0;
+    border: 1px solid rgba(0, 79, 225, .15);
+    border-left: none;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, .40);
 
     @media (max-width: 768px) {
         display: none;
     }
 }
 
-.sidebar-top {
-    .dot {
-        width: 8px;
-        height: 8px;
-        background-color: $accent-cyan;
-        border-radius: 50%;
-        box-shadow: 0 0 10px rgba($accent-cyan, 0.6);
-        position: relative;
-        
-        &::after {
-            content: '';
-            position: absolute;
-            inset: -4px;
-            border-radius: 50%;
-            background: rgba($accent-cyan, 0.2);
-            animation: dotPulse 3s infinite;
-        }
-    }
-}
-
-/* ══════════════ PERFECT SEAMLESS WAVE (Slimmer) ══════════════ */
-.sidebar-bulge {
-    position: absolute;
-    top: 50%;
-    left: -1px; 
-    transform: translateY(-50%);
-    width: 55px; // Reduced width
-    height: 380px; // Slightly more compact height
-    background: $app-dark;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 10px; // Tighter padding
-    
-    // Adjusted elliptical curve for slimmer width
-    border-radius: 0 120px 120px 0 / 0 50% 50% 0; 
-    box-shadow: 10px 0 25px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-    // The Shoulders
-    &::before, &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 30px;
-        height: 30px;
-        background: transparent;
-        pointer-events: none;
-        transition: all 0.4s ease;
-    }
-
-    &::before {
-        top: -30px;
-        border-radius: 0 0 0 30px;
-        box-shadow: -15px 15px 0 0 $app-dark;
-    }
-
-    &::after {
-        bottom: -30px;
-        border-radius: 30px 0 0 0;
-        box-shadow: -15px -15px 0 0 $app-dark;
-    }
-
-    &:hover {
-        width: 65px;
-        box-shadow: 15px 0 35px rgba(0, 0, 0, 0.5);
-    }
-}
-
-.nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px; // Compacted gap
-    
-    .nav-item {
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        text-decoration: none;
-        color: $text-dim;
-        font-family: 'Outfit', sans-serif;
-        font-weight: 700;
-        font-size: 0.8rem; // Slightly smaller text
-        letter-spacing: 0.12em;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 4px;
-        white-space: nowrap;
-        position: relative;
-
-        &:hover {
-            color: $accent-cyan;
-            text-shadow: 0 0 15px rgba($accent-cyan, 0.4);
-        }
-
-        &.active {
-            color: $accent-cyan;
-            text-shadow: 0 0 15px rgba($accent-cyan, 0.8);
-            
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: -12px; // Adjusted for slimmer bulge
-                width: 4px;
-                height: 4px;
-                background: $accent-cyan;
-                border-radius: 50%;
-                transform: translateY(-50%);
-                box-shadow: 0 0 10px $accent-cyan;
-                animation: indicatorIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            }
-        }
-    }
-}
-
-@keyframes indicatorIn {
-    from { transform: translateY(-50%) scale(0) translateX(10px); opacity: 0; }
-    to { transform: translateY(-50%) scale(1) translateX(0); opacity: 1; }
-}
-
-.year-label {
+.cs-item {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: 0.55rem;
-    font-weight: 800;
-    color: rgba($accent-cyan, 0.15);
-    letter-spacing: 0.2em;
-}
-
-/* ══════════════════════════════════════════════════════
-   MOBILE FLOATING BAR
-   ══════════════════════════════════════════════════════ */
-.mobile-floating-bar {
-    position: fixed;
-    bottom: 100px; // Very high to clear all common chat widgets/bottom actions
-    left: 45%; // Shifted slightly left to leave room for bottom-right buttons
-    transform: translateX(-50%);
-    z-index: 2000;
-    display: none;
-    animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    width: auto;
-    padding: 0 16px;
-
-    @media (max-width: 768px) {
-        display: flex;
-        width: 100%;
-        max-width: max-content;
-        justify-content: center;
-    }
-}
-
-@keyframes slideUp {
-    from { transform: translateX(-50%) translateY(100px); opacity: 0; }
-    to { transform: translateX(-50%) translateY(0); opacity: 1; }
-}
-
-.pill-container {
-    background: rgba(5, 14, 32, 0.95); // Slightly transparent
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 12px 20px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--fb);
+    font-size: 10px;
     font-weight: 700;
-    font-size: 0.72rem;
-    white-space: nowrap; // Prevents wrapping
-}
-
-.est-badge {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    .dot {
-        width: 8px;
-        height: 8px;
-        background-color: $accent-cyan;
-        border-radius: 50%;
-        box-shadow: 0 0 10px $accent-cyan;
-    }
-}
-
-.region-link {
-    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .40);
+    padding: 14px 10px;
+    cursor: pointer;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover, &.active {
-        color: $accent-cyan;
-    }
+    transition: color .2s;
+    border-radius: 4px;
 }
 
-@keyframes dotPulse {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.6); opacity: 0; }
-    100% { transform: scale(1); opacity: 0; }
+.cs-item.is-active {
+    color: #08A1F7;
+}
+
+.cs-item:hover {
+    color: rgba(255, 255, 255, .70);
+    background: rgba(0, 79, 225, .08);
+}
+
+.cs-div {
+    width: 1px;
+    height: 18px;
+    background: rgba(0, 79, 225, .15);
 }

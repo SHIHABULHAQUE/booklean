@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, signal, OnInit, inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser, DOCUMENT } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs';
 
@@ -16,19 +16,20 @@ export class App implements OnInit {
   protected readonly isLoading = signal(true);
   private router = inject(Router);
   private platformId = inject(PLATFORM_ID);
-  private document = inject(DOCUMENT);
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
       const hasLoaded = sessionStorage.getItem('hasLoaded');
-      const loadTime = hasLoaded ? 1000 : 2000;
       
-      setTimeout(() => {
+      if (hasLoaded) {
         this.isLoading.set(false);
-        if (!hasLoaded) sessionStorage.setItem('hasLoaded', 'true');
-      }, loadTime);
+      } else {
+        setTimeout(() => {
+          this.isLoading.set(false);
+          sessionStorage.setItem('hasLoaded', 'true');
+        }, 2000);
+      }
 
-      this.initCustomCursor();
       import('aos').then((AOS: any) => {
         // Handle Vite chunking dynamic import differences between module types
         const aosPlugin = AOS && AOS.default ? AOS.default : AOS;
@@ -51,53 +52,5 @@ export class App implements OnInit {
         });
       });
     }
-  }
-
-  private initCustomCursor() {
-    const dot = this.document.getElementById('dot');
-    const ring = this.document.getElementById('ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-
-    this.document.addEventListener('mousemove', (e: MouseEvent) => {
-      mx = e.clientX;
-      my = e.clientY;
-    });
-
-    const move = () => {
-      rx += (mx - rx) * 0.14;
-      ry += (my - ry) * 0.14;
-      if (dot) {
-        dot.style.left = mx + 'px';
-        dot.style.top = my + 'px';
-      }
-      if (ring) {
-        ring.style.left = rx + 'px';
-        ring.style.top = ry + 'px';
-      }
-      requestAnimationFrame(move);
-    };
-    requestAnimationFrame(move);
-
-    const isInteractive = (target: HTMLElement) => {
-      return target.closest('a, button, .btn, [role="button"], input, textarea, select');
-    };
-
-    this.document.addEventListener('mouseover', (e: MouseEvent) => {
-      if (e.target instanceof HTMLElement && isInteractive(e.target)) {
-        if (ring) {
-          ring.style.transform = 'translate(-50%, -50%) scale(1.7)';
-          ring.style.borderColor = 'rgba(9, 224, 254, .5)';
-        }
-      }
-    });
-
-    this.document.addEventListener('mouseout', (e: MouseEvent) => {
-      if (e.target instanceof HTMLElement && isInteractive(e.target)) {
-        if (ring) {
-          ring.style.transform = 'translate(-50%, -50%) scale(1)';
-          ring.style.borderColor = 'rgba(0, 79, 225, .35)';
-        }
-      }
-    });
   }
 }

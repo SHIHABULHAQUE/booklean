@@ -11,19 +11,14 @@
 
     <div class="hero-inner">
         <div class="hero-content">
-            <div class="hero-badge">
-                <div class="hero-badge-dot"></div>
-                EST. 2026 &nbsp;·&nbsp;
-                <a routerLink="/uae/home" [class.active]="regionDataService.currentRegion() === 'uae'">UAE</a>
-                &nbsp;·&nbsp;
-                <a routerLink="/in/home" [class.active]="regionDataService.currentRegion() === 'in'">INDIA</a>
-                &nbsp;·&nbsp;
-                <a routerLink="/uk/home" [class.active]="regionDataService.currentRegion() === 'uk'">UK</a>
+            <div class="hero-text-slider">
+                @for (slide of slidesText; track $index) {
+                <div class="hero-text-slide" [class.active]="currentSlide() === $index">
+                    <h1 [innerHTML]="slide.title"></h1>
+                    <p class="hero-sub" [innerHTML]="slide.desc"></p>
+                </div>
+                }
             </div>
-
-            <h1 [innerHTML]="regionDataService.data().heroTitle"></h1>
-
-            <p class="hero-sub" [innerHTML]="regionDataService.data().heroSubtitle"></p>
 
             <div class="hero-pills">
                 <div class="hero-pill">
@@ -48,61 +43,13 @@
             </div>
 
             <div class="hero-slider-dots">
-                @for (dot of featureCards; track $index) {
-                <div class="hero-dot" [class.active]="currentSlide() === $index" (click)="currentSlide.set($index)"></div>
+                @for (dot of slidesText; track $index) {
+                <div class="hero-dot" [class.active]="currentSlide() === $index" (click)="goToSlide($index)"></div>
                 }
             </div>
         </div>
 
         <div class="hero-visual">
-            <div class="slider-viewport">
-                <div class="cards-mask">
-                    <div class="cards-track" [style.transform]="'translateX(-' + (currentSlide() * 100) + '%)'">
-                        @for (card of featureCards; track $index) {
-                        <div class="hero-card-slide" [class.active]="currentSlide() === $index">
-                            <div class="hero-card-inner">
-                                <div class="hc-label">{{ card.label }}</div>
-                                <div class="hc-title">{{ card.title }}</div>
-
-                                <div class="ledger-list">
-                                    @for (item of card.items; track item.title) {
-                                    <div class="ledger-item">
-                                        <div class="li-left">
-                                            <div class="li-icon">{{ item.icon }}</div>
-                                            <div>
-                                                <div class="li-title">{{ item.title }}</div>
-                                                <div class="li-date">{{ item.date }}</div>
-                                            </div>
-                                        </div>
-                                        <div class="li-right">
-                                            <div class="li-amt" [class.positive]="item.positive" [class.negative]="!item.positive">{{ item.amt }}</div>
-                                            <div class="li-status" [class]="item.statusClass">{{ item.status }}</div>
-                                        </div>
-                                    </div>
-                                    }
-                                </div>
-
-                                <div class="hc-chat">
-                                    <div class="chat-header">
-                                        <div class="chat-dot"></div>
-                                        <div class="chat-name">Booklean AI</div>
-                                    </div>
-                                    <div class="chat-msg">{{ card.chat }}</div>
-                                </div>
-
-                                <div class="float-badge">
-                                    <div class="fb-icon">✓</div>
-                                    <div>
-                                        <div class="fb-val">{{ card.badgeVal }}</div>
-                                        <div class="fb-label">{{ card.badgeLabel }}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        }
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>

@@ -1,127 +1,130 @@
-<header class="app-header glass-panel">
-    <!-- Level 1: Top Utility Bar -->
-    <div class="header-top-bar">
-        <div class="header-container container">
-            <div class="top-nav-links">
-                <a href="#" class="top-link">Locations</a>
-                <a href="#" class="top-link">Our People</a>
-                <a href="#" class="top-link">News</a>
-                <a href="#" class="top-link">Careers</a>
-            </div>
-            <a href="#contact" class="btn-contact-top">BOOK CONSULTATION</a>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="tb-left">
+      <div class="tb-dot"></div>
+      <span>500+ UAE Businesses Served with Zero FTA Penalties · 15+ Yrs UAE Experience</span>
+    </div>
+    <div class="tb-right">
+      <a href="https://wa.me/971526203995" target="_blank" class="tb-link">Support & Consult: +971 52 620 3995</a>
+      <div style="width:1px;height:12px;background:rgba(255,255,255,.15);"></div>
+      <a href="#" class="tb-link">Knowledge Hub</a>
+      <div class="country-btn" (click)="toggleCountryMenu()" [class.is-open]="countryMenuOpen()">
+        <span class="cp-flag">🇦🇪</span> UAE <span class="cb-chev">▼</span>
+        <div class="country-panel">
+          <div class="cp-header">SELECT REGION & HUB</div>
+          <div class="cp-grid">
+            <a href="#" class="cp-item is-active"><span class="cp-flag">🇦🇪</span> United Arab Emirates</a>
+            <a href="#" class="cp-item"><span class="cp-flag">🇮🇳</span> India</a>
+            <a href="#" class="cp-item"><span class="cp-flag">🇬🇧</span> United Kingdom</a>
+            <a href="#" class="cp-item"><span class="cp-flag">🇸🇦</span> Saudi Arabia</a>
+            <a href="#" class="cp-item"><span class="cp-flag">🇶🇦</span> Qatar</a>
+            <a href="#" class="cp-item"><span class="cp-flag">🇪🇺</span> Europe</a>
+          </div>
         </div>
+      </div>
+      <a href="#" class="tb-portal">Client Login</a>
+    </div>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-wrap">
+    <a routerLink="/" class="n-logo">
+      <img src="assets/logo.jpg" alt="Booklean Global Logo" style="height:54px;"/>
+    </a>
+
+    <ul class="nav-list">
+      <li class="n-item" (mouseenter)="toggleMega('services')" (mouseleave)="toggleMega('')" [class.is-open]="openMenu() === 'services'">
+        <button class="n-btn">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2.5 3.75L5 6.25L7.5 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mega">
+          <div class="si" style="display:flex;width:100%;">
+            <div class="mega-col mega-col-wide">
+              <div class="mega-hd">Core Practices</div>
+              <ul class="mega-list">
+                <li><a routerLink="/uae/audit-assurance">Audit & Assurance</a></li>
+                <li><a routerLink="/uae/tax-compliance">Tax & Compliance (VAT/CT)</a></li>
+                <li><a routerLink="/uae/accounting-bso">Accounting & BSO</a></li>
+                <li><a routerLink="/uae/digital-finance">Digital & AI Finance</a></li>
+              </ul>
+            </div>
+            <div class="mega-col mega-col-wide">
+              <div class="mega-hd">Specialized Advisory</div>
+              <ul class="mega-list">
+                <li><a href="#">Virtual CFO & Strategy</a></li>
+                <li><a href="#">M&A and Transaction Advisory</a></li>
+                <li><a href="#">Governance & Risk Management</a></li>
+                <li><a href="#">UAE Market Entry & PRO</a></li>
+              </ul>
+            </div>
+            <div class="mega-feat">
+              <div class="mega-feat-tag">Featured</div>
+              <div class="mega-feat-title">UAE Corporate Tax 9% — Are you ready for your first filing?</div>
+              <a href="#" class="mega-feat-link">Get a CT Review →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="n-item" (mouseenter)="toggleMega('industries')" (mouseleave)="toggleMega('')" [class.is-open]="openMenu() === 'industries'">
+        <button class="n-btn">Industries <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2.5 3.75L5 6.25L7.5 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mega">
+          <div class="si" style="display:flex;width:100%;">
+            <div class="mega-col mega-col-wide">
+              <div class="mega-hd">Our Focus Sectors</div>
+              <ul class="mega-list">
+                <li><a href="#">Banking & Financial Services</a></li>
+                <li><a href="#">Real Estate & Construction</a></li>
+                <li><a href="#">Retail & Consumer</a></li>
+                <li><a href="#">Technology & Media</a></li>
+              </ul>
+            </div>
+            <div class="mega-col mega-col-wide">
+              <div class="mega-hd">Other Specialisms</div>
+              <ul class="mega-list">
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Manufacturing</a></li>
+                <li><a href="#">Logistics & Trading</a></li>
+                <li><a href="#">Hospitality & Tourism</a></li>
+              </ul>
+            </div>
+            <div class="mega-feat" style="background:linear-gradient(135deg,#F5F9FF,#EBF4FF);">
+              <div class="mega-feat-tag">Free Zone Expertise</div>
+              <div class="mega-feat-title">Tailored finance solutions for DMCC, DIFC, ADGM & DAFZA firms.</div>
+              <a href="#" class="mega-feat-link">Explore Freezone →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="n-item">
+        <button class="n-btn">Insights <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2.5 3.75L5 6.25L7.5 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </li>
+
+      <li class="n-item"><a routerLink="/uae/how-it-works" class="n-link">How It Works</a></li>
+      <li class="n-item"><a routerLink="/uae/about-us" class="n-link">About Us</a></li>
+      <li class="n-item"><a href="#" class="n-link">Careers</a></li>
+      <li class="n-item"><a href="#contact" class="n-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta-area">
+      <a href="#contact" class="n-cta-btn">Book Free Consultation</a>
     </div>
 
-    <!-- Level 2: Main Navigation Bar -->
-    <div class="header-main-bar">
-        <div class="header-container container">
-            <a routerLink="/" class="logo">
-                <img src="images/booklean-logo.png" alt="Booklean Logo" class="logo-image">
-            </a>
-
-            <!-- Desktop Nav -->
-            <nav class="main-nav">
-                <div class="nav-item has-dropdown">
-                    <a href="#services" class="nav-link">Services <span class="carat">⌄</span></a>
-                    <div class="mega-menu">
-                        <div class="mega-container container">
-                            <div class="mega-column">
-                                <h4 class="mega-title">Financial Services</h4>
-                                <ul class="mega-list">
-                                    <li><a href="#">Cloud Accounting</a></li>
-                                    <li><a href="#">Audit & Assurance</a></li>
-                                    <li><a href="#">VAT Advisory</a></li>
-                                    <li><a href="#">Corporate Tax</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-column">
-                                <h4 class="mega-title">CFO & Strategy</h4>
-                                <ul class="mega-list">
-                                    <li><a href="#">Virtual CFO</a></li>
-                                    <li><a href="#">Risk Advisory</a></li>
-                                    <li><a href="#">Business Valuation</a></li>
-                                    <li><a href="#">Exit Strategies</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-column">
-                                <h4 class="mega-title">Our Solutions</h4>
-                                <div class="mega-featured">
-                                    <img src="images/leanbot-icon.png" alt="LeanBot" class="featured-icon">
-                                    <div>
-                                        <h5>LeanBot AI</h5>
-                                        <p>Automated reconciliation and tax filing platform.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav-item has-dropdown">
-                    <a href="#industries" class="nav-link">Industries <span class="carat">⌄</span></a>
-                    <div class="mega-menu">
-                        <div class="mega-container container">
-                            <div class="mega-column">
-                                <h4 class="mega-title">Growth Sectors</h4>
-                                <ul class="mega-list">
-                                    <li><a href="#">Tech & Startups</a></li>
-                                    <li><a href="#">E-commerce</a></li>
-                                    <li><a href="#">Real Estate</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-column">
-                                <h4 class="mega-title">Specialized</h4>
-                                <ul class="mega-list">
-                                    <li><a href="#">Manufacturing</a></li>
-                                    <li><a href="#">Healthcare</a></li>
-                                    <li><a href="#">Pro Services</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-column">
-                                <div class="mega-promo">
-                                    <h4>Industry Insights</h4>
-                                    <p>Download our latest report on UAE financial trends.</p>
-                                    <a href="#" class="btn-text">Read More →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#about" class="nav-link">About</a>
-                <a href="#leanbot" class="nav-link">LeanBot</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-
-            <div class="header-right">
-                <div class="search-wrap">
-                    <button class="search-btn">
-                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        <span>Search</span>
-                    </button>
-                    <div class="divider"></div>
-                </div>
-
-                <!-- Mobile Toggle -->
-                <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Menu">
-                    <span class="bar" [class.open]="isMenuOpen()"></span>
-                    <span class="bar" [class.open]="isMenuOpen()"></span>
-                    <span class="bar" [class.open]="isMenuOpen()"></span>
-                </button>
-            </div>
-        </div>
+    <!-- Hamburger — Mobile only -->
+    <div class="hamburger" style="display:none;cursor:pointer;margin-left:auto;" (click)="toggleMenu()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#051C2A" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </div>
+  </div>
+</nav>
 
-    <!-- Mobile Nav Overlay -->
-    @if (isMenuOpen()) {
-    <nav class="mobile-nav">
-        <a href="#about" class="nav-link" (click)="toggleMenu()">About</a>
-        <a href="#services" class="nav-link" (click)="toggleMenu()">Services</a>
-        <a href="#industries" class="nav-link" (click)="toggleMenu()">Industries</a>
-        <a href="#leanbot" class="nav-link" (click)="toggleMenu()">LeanBot</a>
-        <a href="#contact" class="nav-link" (click)="toggleMenu()">Contact</a>
-
-        <a href="#contact" class="btn-consultation mobile-btn" (click)="toggleMenu()">Book Consultation</a>
-    </nav>
-    }
-</header>
+<!-- Mobile Nav -->
+@if (isMenuOpen()) {
+<div class="mobile-nav">
+  <button style="position:absolute;top:32px;right:32px;background:none;border:none;font-size:32px;color:#051C2A;" (click)="toggleMenu()">✕</button>
+  <a routerLink="/" (click)="toggleMenu()">Home</a>
+  <a routerLink="/uae/audit-assurance" (click)="toggleMenu()">Services</a>
+  <a routerLink="/uae/why-booklean" (click)="toggleMenu()">Why Booklean</a>
+  <a routerLink="/uae/about-us" (click)="toggleMenu()">About</a>
+  <a href="#contact" class="n-cta-btn mobile-btn" (click)="toggleMenu()">Book Free Consultation</a>
+</div>
+}

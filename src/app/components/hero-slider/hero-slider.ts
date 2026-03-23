@@ -1,11 +1,10 @@
 import { Component, ChangeDetectionStrategy, inject, signal, OnInit, OnDestroy } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { RegionDataService } from '../../services/region-data.service';
 
 @Component({
   selector: 'app-hero-slider',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './hero-slider.html',
   styleUrl: './hero-slider.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -14,47 +13,26 @@ export class HeroSliderComponent implements OnInit, OnDestroy {
   regionDataService = inject(RegionDataService);
 
   bgImages = [
-    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80', // Financial Dashboard
-    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80', // Analysis
-    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80'  // Reliable Fallback Chart
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80',
+    'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80',
+    'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&q=80'
   ];
 
-  featureCards = [
+  slidesText = [
     {
-      label: 'AI RECONCILIATION',
-      title: 'Automated Ledger',
-      items: [
-        { icon: '📄', title: 'AWS Web Services', date: 'Oct 12 · Invoice #402', amt: '-$1,240.00', status: 'Matched', statusClass: 'matches', positive: false },
-        { icon: '💳', title: 'Stripe Payout', date: 'Oct 11 · Deposit', amt: '+$12,450.00', status: 'Reconciled', statusClass: 'matches', positive: true },
-        { icon: '🧾', title: 'DHA Vendor Fee', date: 'Oct 10 · Receipt scan', amt: '-$340.00', status: 'Processing', statusClass: 'processing', positive: false }
-      ],
-      chat: "I've automatically categorized and matched 142 transactions this morning. All accounts are audit-ready.",
-      badgeVal: 'Books Closed',
-      badgeLabel: '100% Accuracy'
+      tag: 'Audit · Tax · Advisory',
+      title: 'Beyond Numbers.<br><strong>Building Trust.</strong>',
+      desc: 'Partnering with businesses across the UAE to deliver audit, tax, and advisory services that drive real outcomes.'
     },
     {
-      label: 'TAX OPTIMIZATION',
-      title: 'Real-time Tax Hub',
-      items: [
-        { icon: '📊', title: 'VAT Return Q3', date: 'Due in 14 days', amt: 'AED 12,480.00', status: 'Calculated', statusClass: 'matches', positive: false },
-        { icon: '🏛️', title: 'Corporate Tax', date: '9% Bracket Estimator', amt: 'AED 4,200.00', status: 'Projected', statusClass: 'processing', positive: false },
-        { icon: '📑', title: 'Input Tax Credit', date: 'Claimed this month', amt: '+AED 2,840.00', status: 'Verified', statusClass: 'matches', positive: true }
-      ],
-      chat: "Your input tax credits are being maximized. We've identified AED 2.8k in additional VAT savings this month.",
-      badgeVal: 'Tax Optimized',
-      badgeLabel: 'FTA Compliant'
+      tag: 'Corporate Tax · VAT · Transfer Pricing',
+      title: 'Navigate Tax with<br><strong>Confidence.</strong>',
+      desc: 'Expert tax advisory tailored to UAE regulations, helping you stay compliant and optimise your position.'
     },
     {
-      label: 'STRATEGIC INSIGHTS',
-      title: 'Direct CFO Dashboard',
-      items: [
-        { icon: '📈', title: 'Gross Margin', date: 'Vs Previous Month', amt: '+12.5%', status: 'Trending Up', statusClass: 'matches', positive: true },
-        { icon: '💰', title: 'Cash Runway', date: 'Current Liquidity', amt: '18 Months', status: 'Stable', statusClass: 'matches', positive: true },
-        { icon: '📉', title: 'Burn Rate', date: 'Monthly Fixed Costs', amt: '-$22.0k', status: 'Optimized', statusClass: 'processing', positive: true }
-      ],
-      chat: "Your seasonal burn rate has decreased by 5% through algorithmic cost-shaving. Your runway is extremely healthy.",
-      badgeVal: 'Strategy Set',
-      badgeLabel: 'Growth Ready'
+      tag: 'Careers at Booklean',
+      title: 'Join a Team That<br><strong>Shapes Futures.</strong>',
+      desc: 'We\'re hiring exceptional professionals who bring expertise, integrity, and ambition to everything they do.'
     }
   ];
 
@@ -63,13 +41,23 @@ export class HeroSliderComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.intervalId = setInterval(() => {
-      this.currentSlide.update(i => (i + 1) % this.featureCards.length);
+      this.currentSlide.update(i => (i + 1) % this.slidesText.length);
     }, 6000);
   }
 
   ngOnDestroy() {
     if (this.intervalId) {
       clearInterval(this.intervalId);
+    }
+  }
+
+  goToSlide(index: number) {
+    this.currentSlide.set(index);
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+      this.intervalId = setInterval(() => {
+        this.currentSlide.update(i => (i + 1) % this.slidesText.length);
+      }, 6000);
     }
   }
 }

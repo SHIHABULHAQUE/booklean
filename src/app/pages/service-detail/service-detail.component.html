@@ -1,77 +1,77 @@
-<div class="service-detail-page">
-    <div class="service-hero">
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-                <div class="breadcrumb">
-                    <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">Home</a> / 
-                    <span>Services</span> / 
-                    <span class="active">{{ serviceTitle$ | async }}</span>
-                </div>
-                <h1>{{ serviceTitle$ | async }}</h1>
-                <p class="hero-sub">Expert advisory perfectly tailored to local conditions, giving you clarity and confidence across every touchpoint.</p>
-            </div>
+<div class="service-detail-page page-shell">
+  <section class="service-hero">
+    <div class="container">
+      <div class="hero-content content-surface-dark" data-aos="fade-up">
+        <div class="breadcrumb">
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">Home</a> /
+          <span>Services</span> /
+          <span class="active">{{ serviceTitle$ | async }}</span>
         </div>
+        <h1>{{ serviceTitle$ | async }}</h1>
+        <p class="hero-sub">Expert advisory perfectly tailored to local conditions, giving you clarity and confidence across every touchpoint.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container main-layout">
+    <div class="main-content content-surface" data-aos="fade-up" data-aos-delay="100">
+      <h2>Overview</h2>
+      <p>In today's fast-paced corporate environment, maintaining regulatory compliance while optimizing your financial ecosystem requires precision. We bring clarity and robust frameworks customized to the specific needs of your operations.</p>
+
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80" alt="Analysis" class="content-img">
+
+      <h3>Our Approach</h3>
+      <p>Led by industry veterans, our team focuses on aligning your objectives with our actionable strategies. By doing so, we deliver outcomes that transform generic business challenges into distinct marketplace advantages.</p>
+      <ul class="service-list">
+        <li><strong>Comprehensive Analysis:</strong> We evaluate existing workflows against modern leading practices.</li>
+        <li><strong>Strategic Execution:</strong> Implementation guided by precision and strict timelines.</li>
+        <li><strong>Continuous Monitoring:</strong> Proactive adaptation to the shifting regulatory landscape.</li>
+        <li><strong>Tech-Enabled:</strong> Harnessing data and machine learning via our LeanBot AI engine.</li>
+      </ul>
+
+      <div class="promo-box">
+        <h4>Looking for specific guidance?</h4>
+        <p>Reach out directly to our principal partners to review your exact scenario.</p>
+        <a href="#contact" class="btn btn-primary">Schedule a Call</a>
+      </div>
+
+      <h3>Why it matters</h3>
+      <p>Our solutions don't just solve immediate technical challenges &mdash; they position your organization for scalable growth. A robust infrastructure is the cornerstone of sustainable success across every strategic tier.</p>
     </div>
 
-    <div class="container main-layout">
-        <div class="main-content" data-aos="fade-up" data-aos-delay="100">
-            <h2>Overview</h2>
-            <p>In today's fast-paced corporate environment, maintaining regulatory compliance while optimizing your financial ecosystem requires precision. We bring clarity and robust frameworks customized to the specific needs of your operations.</p>
-            
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80" alt="Analysis" class="content-img">
-            
-            <h3>Our Approach</h3>
-            <p>Led by industry veterans, our team focuses on aligning your objectives with our actionable strategies. By doing so, we deliver outcomes that transform generic business challenges into distinct marketplace advantages.</p>
-            <ul>
-                <li><strong>Comprehensive Analysis:</strong> We evaluate existing workflows against modern leading practices.</li>
-                <li><strong>Strategic Execution:</strong> Implementation guided by precision and strict timelines.</li>
-                <li><strong>Continuous Monitoring:</strong> Proactive adaptation to the shifting regulatory landscape.</li>
-                <li><strong>Tech-Enabled:</strong> Harnessing data and machine learning via our LeanBot AI engine.</li>
-            </ul>
+    <aside class="sidebar" data-aos="fade-left" data-aos-delay="200">
+      <div class="sidebar-widget nav-widget content-surface">
+        <h4 class="widget-title">Audit &amp; Assurance</h4>
+        <ul class="side-nav">
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'statutory-audit']" routerLinkActive="active">Statutory Audit</a></li>
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'internal-audit']" routerLinkActive="active">Internal Audit</a></li>
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'forensic-accounting']" routerLinkActive="active">Forensic Accounting</a></li>
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'risk-assurance']" routerLinkActive="active">Risk Assurance</a></li>
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'it-audit']" routerLinkActive="active">IT Audit</a></li>
+        </ul>
+      </div>
 
-            <div class="promo-box">
-                <h4>Looking for specific guidance?</h4>
-                <p>Reach out directly to our principal partners to review your exact scenario.</p>
-                <a href="#contact" class="btn btn-primary">Schedule a Call</a>
-            </div>
+      <div class="sidebar-widget nav-widget content-surface">
+        <h4 class="widget-title">Tax</h4>
+        <ul class="side-nav">
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'corporate-tax']" routerLinkActive="active">Corporate Tax</a></li>
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'vat-advisory']" routerLinkActive="active">VAT Advisory</a></li>
+          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'transfer-pricing']" routerLinkActive="active">Transfer Pricing</a></li>
+        </ul>
+      </div>
 
-            <h3>Why it matters</h3>
-            <p>Our solutions don't just solve immediate technical challenges — they position your organization for scalable growth. A robust infrastructure is the cornerstone of sustainable success across every strategic tier.</p>
-        </div>
+      <div class="sidebar-widget contact-widget content-surface-dark" id="contact">
+        <h4 class="widget-title">How can we help?</h4>
+        <p>Contact our experts to discover how our tailored solutions can benefit your business.</p>
+        <form class="quick-form">
+          <input class="field-control" type="text" placeholder="Full Name">
+          <input class="field-control" type="email" placeholder="Email Address">
+          <textarea class="field-control" placeholder="Your Message"></textarea>
+          <button class="btn btn-primary w-100" style="border: none;">Send Inquiry</button>
+        </form>
+      </div>
+    </aside>
+  </div>
 
-        <aside class="sidebar" data-aos="fade-left" data-aos-delay="200">
-            <div class="sidebar-widget nav-widget">
-                <h4 class="widget-title">Audit & Assurance</h4>
-                <ul class="side-nav">
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'statutory-audit']" routerLinkActive="active">Statutory Audit</a></li>
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'internal-audit']" routerLinkActive="active">Internal Audit</a></li>
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'forensic-accounting']" routerLinkActive="active">Forensic Accounting</a></li>
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'risk-assurance']" routerLinkActive="active">Risk Assurance</a></li>
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'it-audit']" routerLinkActive="active">IT Audit</a></li>
-                </ul>
-            </div>
-            
-            <div class="sidebar-widget nav-widget">
-                <h4 class="widget-title">Tax</h4>
-                <ul class="side-nav">
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'corporate-tax']" routerLinkActive="active">Corporate Tax</a></li>
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'vat-advisory']" routerLinkActive="active">VAT Advisory</a></li>
-                    <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'transfer-pricing']" routerLinkActive="active">Transfer Pricing</a></li>
-                </ul>
-            </div>
-            
-            <div class="sidebar-widget contact-widget">
-                <h4 class="widget-title">How can we help?</h4>
-                <p>Contact our experts to discover how our tailored solutions can benefit your business.</p>
-                <form class="quick-form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
-                    <textarea placeholder="Your Message"></textarea>
-                    <button class="btn btn-primary w-100" style="border: none;">Send Inquiry</button>
-                </form>
-            </div>
-        </aside>
-    </div>
-    
-    <app-footer></app-footer>
+  <app-footer></app-footer>
 </div>

@@ -2,6 +2,7 @@ import { Component, ChangeDetectionStrategy, signal, OnInit, inject, PLATFORM_ID
 import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ export class App implements OnInit {
   protected readonly isLoading = signal(true);
   private router = inject(Router);
   private platformId = inject(PLATFORM_ID);
+  private themeService = inject(ThemeService);
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -54,3 +56,4 @@ export class App implements OnInit {
     }
   }
 }
+

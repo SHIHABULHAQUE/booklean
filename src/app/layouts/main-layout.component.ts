@@ -12,7 +12,7 @@ import { ChatAssistantComponent } from '../components/chat/chat-assistant.compon
     <div class="app-container">
       <div class="main-content">
         <app-header></app-header>
-        <main>
+        <main class="app-main">
           <router-outlet></router-outlet>
         </main>
         <app-chat-assistant></app-chat-assistant>
@@ -20,7 +20,23 @@ import { ChatAssistantComponent } from '../components/chat/chat-assistant.compon
       </div>
     </div>
   `,
-  styles: [],
+  styles: [`
+    :host {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    .app-container {
+      min-height: 100vh;
+    }
+
+    .main-content,
+    .app-main {
+      position: relative;
+      z-index: 1;
+    }
+  `],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MainLayoutComponent { }
+export class MainLayoutComponent {}

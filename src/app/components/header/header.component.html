@@ -1,45 +1,33 @@
-<!-- ╔══════════════════════════════════════════
-     TOP BAR + COUNTRY DROPDOWN
-╚══════════════════════════════════════════ -->
 <div class="topbar">
   <div class="topbar-inner">
     <div class="tb-left">
       <div class="tb-dot"></div>
-      <span>Audit &nbsp;·&nbsp; Tax &nbsp;·&nbsp; Advisory &nbsp;·&nbsp; Digital &amp; AI Solutions</span>
+      <span>Audit � Tax � Advisory � Digital &amp; AI Solutions</span>
     </div>
     <div class="tb-right">
       <a href="#" class="tb-portal">Client Portal</a>
-      <a href="#" class="tb-link">🔍 Search</a>
+      <a href="#" class="tb-link">Search</a>
 
-      <!-- Country selector -->
       <div class="country-btn" [class.is-open]="countryMenuOpen()" (click)="toggleCountryMenu(); $event.stopPropagation()">
-        <span class="cp-flag cb-flag">🇦🇪</span>
-        <span class="cb-name" style="font-size:11px;font-weight:800;">UAE</span>
-        <span class="cb-chev">▼</span>
+        <span class="cp-flag cb-flag">UAE</span>
+        <span class="cb-name">UAE</span>
+        <span class="cb-chev">?</span>
 
         <div class="country-panel" (click)="$event.stopPropagation()">
           <div class="cp-header">Select Your Location</div>
           <div class="cp-grid">
-            <a href="#" class="cp-item is-active"><span class="cp-flag">🇦🇪</span>UAE</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇸🇦</span>Saudi Arabia</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇶🇦</span>Qatar</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇰🇼</span>Kuwait</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇧🇭</span>Bahrain</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇴🇲</span>Oman</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇮🇳</span>India</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇬🇧</span>United Kingdom</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇺🇸</span>United States</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇸🇬</span>Singapore</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇦🇺</span>Australia</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇨🇦</span>Canada</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇩🇪</span>Germany</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇫🇷</span>France</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇨🇭</span>Switzerland</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇳🇱</span>Netherlands</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇯🇵</span>Japan</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇭🇰</span>Hong Kong</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🇿🇦</span>South Africa</a>
-            <a href="#" class="cp-item"><span class="cp-flag">🌍</span>Global</a>
+            <a href="#" class="cp-item is-active"><span class="cp-flag">UAE</span>UAE</a>
+            <a href="#" class="cp-item"><span class="cp-flag">SA</span>Saudi Arabia</a>
+            <a href="#" class="cp-item"><span class="cp-flag">QA</span>Qatar</a>
+            <a href="#" class="cp-item"><span class="cp-flag">KW</span>Kuwait</a>
+            <a href="#" class="cp-item"><span class="cp-flag">BH</span>Bahrain</a>
+            <a href="#" class="cp-item"><span class="cp-flag">OM</span>Oman</a>
+            <a href="#" class="cp-item"><span class="cp-flag">IN</span>India</a>
+            <a href="#" class="cp-item"><span class="cp-flag">UK</span>United Kingdom</a>
+            <a href="#" class="cp-item"><span class="cp-flag">US</span>United States</a>
+            <a href="#" class="cp-item"><span class="cp-flag">SG</span>Singapore</a>
+            <a href="#" class="cp-item"><span class="cp-flag">AU</span>Australia</a>
+            <a href="#" class="cp-item"><span class="cp-flag">CA</span>Canada</a>
           </div>
         </div>
       </div>
@@ -47,25 +35,18 @@
   </div>
 </div>
 
-<!-- ╔══════════════════════════════════════════
-     NAVBAR — clean rebuild
-╚══════════════════════════════════════════ -->
 <nav id="navbar" [class.scrolled]="isScrolled()">
   <div class="nav-wrap">
-
-    <a routerLink="/" class="n-logo">
-      <img src="images/booklean-logo.png" alt="Booklean logo" height="44" style="display:block; object-fit: contain;">
+    <a routerLink="/" class="n-logo" (click)="closeMobileMenu()">
+      <img src="images/booklean-logo.png" alt="Booklean logo" />
     </a>
 
-    <!-- NAV LINKS -->
     <ul class="nav-list">
-
-      <!-- SERVICES -->
       <li class="n-item" [class.is-open]="openMenu() === 's'">
-        <button class="n-btn" (click)="toggleMega('s'); $event.stopPropagation()">
+        <button type="button" class="n-btn" (click)="toggleMega('s'); $event.stopPropagation()">
           Services
           <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2">
-            <polyline points="2,4 6,8 10,4"/>
+            <polyline points="2,4 6,8 10,4" />
           </svg>
         </button>
         <div class="mega">
@@ -111,24 +92,23 @@
           </div>
           <div class="mega-feat">
             <div class="mega-feat-tag">Spotlight</div>
-            <div class="mega-feat-title">Corporate Tax in the UAE — What Every Business Needs to Know in 2025</div>
-            <a href="#" class="mega-feat-link">Read insight →</a>
+            <div class="mega-feat-title">Corporate Tax in the UAE: what every business needs to know.</div>
+            <a href="#" class="mega-feat-link">Read insight</a>
           </div>
         </div>
       </li>
 
-      <!-- INDUSTRIES -->
       <li class="n-item" [class.is-open]="openMenu() === 'i'">
-        <button class="n-btn" (click)="toggleMega('i'); $event.stopPropagation()">
+        <button type="button" class="n-btn" (click)="toggleMega('i'); $event.stopPropagation()">
           Industries
           <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2">
-            <polyline points="2,4 6,8 10,4"/>
+            <polyline points="2,4 6,8 10,4" />
           </svg>
         </button>
         <div class="mega">
           <div class="mega-col mega-col-wide">
             <div class="mega-hd">Sectors We Serve</div>
-            <ul class="mega-list" style="columns:2;column-gap:28px;">
+            <ul class="mega-list mega-list-columns">
               <li><a href="#">Banking &amp; Financial Services</a></li>
               <li><a href="#">Real Estate &amp; Construction</a></li>
               <li><a href="#">Healthcare &amp; Life Sciences</a></li>
@@ -145,18 +125,17 @@
           </div>
           <div class="mega-feat">
             <div class="mega-feat-tag">Industry Focus</div>
-            <div class="mega-feat-title">Real Estate Compliance in 2025 — Key Changes to Act On</div>
-            <a href="#" class="mega-feat-link">Explore →</a>
+            <div class="mega-feat-title">Real estate compliance changes to act on this year.</div>
+            <a href="#" class="mega-feat-link">Explore</a>
           </div>
         </div>
       </li>
 
-      <!-- INSIGHTS -->
       <li class="n-item" [class.is-open]="openMenu() === 'ins'">
-        <button class="n-btn" (click)="toggleMega('ins'); $event.stopPropagation()">
+        <button type="button" class="n-btn" (click)="toggleMega('ins'); $event.stopPropagation()">
           Insights
           <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2">
-            <polyline points="2,4 6,8 10,4"/>
+            <polyline points="2,4 6,8 10,4" />
           </svg>
         </button>
         <div class="mega">
@@ -172,8 +151,8 @@
           </div>
           <div class="mega-feat">
             <div class="mega-feat-tag">Latest</div>
-            <div class="mega-feat-title">VAT Updates — Key Changes for FY 2025</div>
-            <a href="#" class="mega-feat-link">Read now →</a>
+            <div class="mega-feat-title">VAT updates and practical actions for FY 2025.</div>
+            <a href="#" class="mega-feat-link">Read now</a>
           </div>
         </div>
       </li>
@@ -200,12 +179,78 @@
       </svg>
     </button>
 
-    <button style="display:none;" class="hamburger" (click)="toggleMenu()">
-      <span style="display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;"></span>
-      <span style="display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;"></span>
-      <span style="display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;"></span>
+    <button
+      type="button"
+      class="hamburger"
+      [class.is-open]="isMenuOpen()"
+      [attr.aria-expanded]="isMenuOpen()"
+      aria-label="Toggle navigation menu"
+      (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
   </div>
+
+  <div class="mobile-menu" [class.is-open]="isMenuOpen()">
+    <div class="mobile-menu-inner">
+      <a href="#bk-diff" class="mobile-primary-cta" (click)="closeMobileMenu()">Book My Free 30-Min Review</a>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 's'" (click)="toggleMega('s')">
+          <span>Services</span>
+          <span class="mobile-chevron">+</span>
+        </button>
+        <div class="mobile-submenu" [class.is-open]="openMenu() === 's'">
+          <a href="#" (click)="closeMobileMenu()">Statutory Audit</a>
+          <a href="#" (click)="closeMobileMenu()">Corporate Tax</a>
+          <a href="#" (click)="closeMobileMenu()">VAT Advisory</a>
+          <a href="#" (click)="closeMobileMenu()">Business Advisory</a>
+          <a href="#" (click)="closeMobileMenu()">AI Bookkeeping</a>
+          <a href="#" (click)="closeMobileMenu()">CFO Services</a>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 'i'" (click)="toggleMega('i')">
+          <span>Industries</span>
+          <span class="mobile-chevron">+</span>
+        </button>
+        <div class="mobile-submenu" [class.is-open]="openMenu() === 'i'">
+          <a href="#" (click)="closeMobileMenu()">Real Estate &amp; Construction</a>
+          <a href="#" (click)="closeMobileMenu()">Technology &amp; Media</a>
+          <a href="#" (click)="closeMobileMenu()">Healthcare &amp; Life Sciences</a>
+          <a href="#" (click)="closeMobileMenu()">Retail &amp; Consumer</a>
+          <a href="#" (click)="closeMobileMenu()">Hospitality &amp; Tourism</a>
+          <a href="#" (click)="closeMobileMenu()">Logistics &amp; Transportation</a>
+        </div>
+      </div>
+
+      <div class="mobile-group">
+        <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 'ins'" (click)="toggleMega('ins')">
+          <span>Insights</span>
+          <span class="mobile-chevron">+</span>
+        </button>
+        <div class="mobile-submenu" [class.is-open]="openMenu() === 'ins'">
+          <a href="#" (click)="closeMobileMenu()">Articles &amp; Publications</a>
+          <a href="#" (click)="closeMobileMenu()">Tax Alerts</a>
+          <a href="#" (click)="closeMobileMenu()">Regulatory Updates</a>
+          <a href="#" (click)="closeMobileMenu()">Webinars</a>
+        </div>
+      </div>
+
+      <div class="mobile-links">
+        <a href="#how-it-works" (click)="closeMobileMenu()">How It Works</a>
+        <a href="#about" (click)="closeMobileMenu()">About Us</a>
+        <a href="#careers" (click)="closeMobileMenu()">Careers</a>
+        <a href="#faq" (click)="closeMobileMenu()">FAQ</a>
+        <a href="#bk-diff" (click)="closeMobileMenu()">Contact</a>
+      </div>
+
+      <div class="mobile-meta">
+        <div class="mobile-meta-copy">Serving UAE and GCC businesses with audit, tax, advisory, and AI-led finance operations.</div>
+        <a href="https://wa.me/971526203995" target="_blank" class="mobile-whatsapp" (click)="closeMobileMenu()">WhatsApp Our Team</a>
+      </div>
+    </div>
+  </div>
 </nav>
-
-

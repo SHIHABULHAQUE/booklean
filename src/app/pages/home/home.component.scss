@@ -1593,3 +1593,317 @@ footer { background:linear-gradient(180deg,#051C2A 0%,#020508 100%); color:#6474
 @media (max-width: 900px) {
   .success-grid { grid-template-columns:1fr; gap:32px; }
 }
+
+/* Mobile usability pass */
+@media (max-width: 1024px) {
+  .slide-content {
+    gap: 28px;
+    padding: 110px 24px 92px;
+  }
+
+  .si,
+  .gsi,
+  .bkd-inner,
+  .footer-inner,
+  .hero-dots,
+  .stats-inner,
+  .perf-inner,
+  .serve-band-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .perf-inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .careers-hero {
+    padding: 36px 28px;
+    gap: 28px;
+  }
+
+  .problem-solution-panel {
+    padding: 28px 24px;
+  }
+
+  .problem-help-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .problem-help-btn {
+    margin-left: 0;
+  }
+
+  .bkd-btn-white {
+    min-width: 0;
+  }
+
+  section [style*='grid-template-columns:1fr 1fr 1fr'] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+  }
+
+  section [style*='grid-template-columns:1fr 1fr'] {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  section,
+  #faq[style],
+  #problem[style],
+  #stakes[style] {
+    padding: 64px 0 !important;
+  }
+
+  .hero {
+    min-height: 860px;
+    height: auto;
+  }
+
+  .slide-content {
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: none;
+    align-content: center;
+    padding: 108px 20px 92px;
+  }
+
+  .s-tag {
+    margin-bottom: 12px;
+  }
+
+  .s-title {
+    font-size: clamp(30px, 9.5vw, 40px);
+    max-width: none;
+    margin-bottom: 16px;
+  }
+
+  .s-desc,
+  .s-tagline {
+    max-width: none;
+    font-size: 15px;
+  }
+
+  .s-desc {
+    margin-bottom: 22px;
+    line-height: 1.7;
+  }
+
+  .s-tagline {
+    margin-bottom: 22px;
+  }
+
+  .s-btns {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-outline,
+  .bkd-btn-white {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-dots {
+    bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .stats-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 20px 16px;
+  }
+
+  .stat-num {
+    font-size: 34px;
+  }
+
+  .serve-band {
+    padding: 14px 0;
+  }
+
+  .serve-band-inner {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .serve-band .sb-dot {
+    display: none;
+  }
+
+  .glass-strip,
+  .perf-strip,
+  .stats-ribbon,
+  .empathy-strip {
+    overflow: clip;
+  }
+
+  .gsi {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .g-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .perf-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .perf-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 79, 225, 0.12);
+  }
+
+  .perf-item:last-child {
+    border-bottom: none;
+  }
+
+  .careers-hero {
+    padding: 28px 22px;
+    margin-bottom: 36px;
+  }
+
+  .careers-img {
+    height: 220px;
+  }
+
+  .benefit-grid,
+  .bkd-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .job-pill {
+    width: 100%;
+    border-radius: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .job-type {
+    margin-left: auto;
+  }
+
+  .faq-q {
+    align-items: flex-start;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .faq-a {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .bkd-title {
+    font-size: clamp(30px, 10vw, 46px);
+  }
+
+  .bkd-sub {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .bkd-btns {
+    margin-bottom: 36px;
+  }
+
+  .bkd-btn-white {
+    min-width: 0;
+    padding: 14px 18px;
+  }
+
+  .team-card {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .team-connect {
+    margin-left: 0;
+  }
+
+  section [style*='display:flex;align-items:center;justify-content:space-between'][style*='flex-wrap:wrap'] {
+    align-items: flex-start !important;
+    padding: 22px 20px !important;
+  }
+
+  section [style*='display:grid;grid-template-columns:1fr 1fr 1fr'] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  #contact[style] {
+    display: block;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero {
+    min-height: 920px;
+  }
+
+  .slide-content,
+  .si,
+  .gsi,
+  .bkd-inner,
+  .footer-inner,
+  .hero-dots,
+  .stats-inner,
+  .perf-inner,
+  .serve-band-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .slide-content {
+    padding-top: 100px;
+    padding-bottom: 84px;
+  }
+
+  .stats-inner,
+  .perf-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .job-pill,
+  .problem-help-card,
+  .careers-hero,
+  .problem-solution-panel {
+    padding: 20px 18px;
+  }
+
+  .job-type {
+    margin-left: 0;
+  }
+
+  .problem-card,
+  .problem-feel-item,
+  .success-item,
+  .stat-card,
+  .bkd-card {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .btn-primary,
+  .btn-outline,
+  .bkd-btn-white,
+  .bkd-card-btn {
+    font-size: 12px;
+  }
+}

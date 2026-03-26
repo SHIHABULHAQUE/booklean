@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "deploy": "ng build --base-href=/booklean/ && powershell -Command \"Copy-Item dist/booklean/browser/index.html dist/booklean/browser/404.html\" && npx angular-cli-ghpages --dir=dist/booklean/browser",
     "serve:ssr:booklean": "node dist/booklean/server/server.mjs"
   },
   "prettier": {

@@ -98,7 +98,7 @@
   background: rgba(8, 161, 247, 0.15);
   color: #08a1f7;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   transition: all 0.2s;
 }
 
@@ -119,7 +119,7 @@
   border: 1px solid rgba(0, 79, 225, 0.25);
   color: #08a1f7;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 600;
   user-select: none;
 }
 
@@ -170,7 +170,7 @@
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 79, 225, 0.15);
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #004fe1;
@@ -333,7 +333,7 @@
 :host .mega-feat-tag {
   margin-bottom: 14px;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -405,14 +405,14 @@
   color: #0d1f42;
   font-family: var(--fh);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
 }
 
 :host .mega-feat-link {
   color: #004fe1;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--fb);
 }
 
@@ -431,7 +431,7 @@
   background: linear-gradient(135deg, #004fe1 0%, #08a1f7 100%);
   color: #ffffff;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   font-family: var(--fb);
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -625,7 +625,7 @@
     color: #051c2a;
     font-family: var(--fh);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     text-align: left;
   }
@@ -687,7 +687,7 @@
     border: 1px solid rgba(37, 211, 102, 0.24);
     background: rgba(37, 211, 102, 0.08);
     color: #128c4a;
-    font-weight: 700;
+    font-weight: 600;
     font-family: var(--fb);
   }
 }

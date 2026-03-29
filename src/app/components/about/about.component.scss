@@ -26,7 +26,7 @@ $shadow-lg: 0 24px 64px rgba(13, 34, 68, 0.14);
 .label {
   font-family: 'Outfit', sans-serif;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: $teal;
@@ -129,7 +129,7 @@ $shadow-lg: 0 24px 64px rgba(13, 34, 68, 0.14);
     align-items: center;
     justify-content: center;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.95rem;
     flex-shrink: 0;
   }
@@ -142,7 +142,7 @@ $shadow-lg: 0 24px 64px rgba(13, 34, 68, 0.14);
   }
   
   .founder-name {
-    font-weight: 700;
+    font-weight: 600;
     color: $navy;
     font-size: 0.92rem;
   }
@@ -217,7 +217,7 @@ $shadow-lg: 0 24px 64px rgba(13, 34, 68, 0.14);
 
   .stat-value {
     font-size: 2.2rem;
-    font-weight: 800;
+    font-weight: 600;
     font-family: 'JetBrains Mono', monospace;
     line-height: 1;
 
@@ -289,7 +289,7 @@ $shadow-lg: 0 24px 64px rgba(13, 34, 68, 0.14);
   }
   
   .value-title {
-    font-weight: 700;
+    font-weight: 600;
     color: $navy;
     font-size: 0.85rem;
     margin-bottom: 0.4rem;

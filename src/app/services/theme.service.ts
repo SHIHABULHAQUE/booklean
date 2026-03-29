@@ -3,7 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
-  readonly isLight = signal(false);
+  readonly isLight = signal(true);
   private readonly platformId = inject(PLATFORM_ID);
 
   constructor() {
@@ -12,7 +12,11 @@ export class ThemeService {
     }
 
     const savedTheme = localStorage.getItem('booklean-theme');
-    this.isLight.set(savedTheme === 'light');
+    const isLight = savedTheme !== 'dark';
+    this.isLight.set(isLight);
+    
+    // Apply theme class immediately before rendering
+    document.body.classList.toggle('theme-light', isLight);
 
     effect(() => {
       const isLight = this.isLight();

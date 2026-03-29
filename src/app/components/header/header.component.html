@@ -2,32 +2,22 @@
   <div class="topbar-inner">
     <div class="tb-left">
       <div class="tb-dot"></div>
-      <span>Audit · Tax · Advisory · Digital &amp; AI Solutions</span>
+      <span>Audit &bull; Tax &bull; Advisory &bull; Digital &amp; AI Solutions</span>
     </div>
     <div class="tb-right">
       <a href="#" class="tb-portal">Client Portal</a>
-      <a href="#" class="tb-link">Search</a>
-
-      <div class="country-btn" [class.is-open]="countryMenuOpen()" (click)="toggleCountryMenu(); $event.stopPropagation()">
+      <div class="country-btn" [class.is-open]="countryMenuOpen()"
+        (click)="toggleCountryMenu(); $event.stopPropagation()">
         <span class="cp-flag cb-flag">UAE</span>
-        <span class="cb-name">UAE</span>
-        <span class="cb-chev">?</span>
+        <!-- <span class="cb-name">UAE</span>
+        <span class="cb-chev">?</span> -->
 
         <div class="country-panel" (click)="$event.stopPropagation()">
           <div class="cp-header">Select Your Location</div>
           <div class="cp-grid">
-            <a href="#" class="cp-item is-active"><span class="cp-flag">UAE</span>UAE</a>
-            <a href="#" class="cp-item"><span class="cp-flag">SA</span>Saudi Arabia</a>
-            <a href="#" class="cp-item"><span class="cp-flag">QA</span>Qatar</a>
-            <a href="#" class="cp-item"><span class="cp-flag">KW</span>Kuwait</a>
-            <a href="#" class="cp-item"><span class="cp-flag">BH</span>Bahrain</a>
-            <a href="#" class="cp-item"><span class="cp-flag">OM</span>Oman</a>
+            <a href="#" class="cp-item is-active"><span class="cp-flag">UAE</span> United Arab Emirates</a>
             <a href="#" class="cp-item"><span class="cp-flag">IN</span>India</a>
             <a href="#" class="cp-item"><span class="cp-flag">UK</span>United Kingdom</a>
-            <a href="#" class="cp-item"><span class="cp-flag">US</span>United States</a>
-            <a href="#" class="cp-item"><span class="cp-flag">SG</span>Singapore</a>
-            <a href="#" class="cp-item"><span class="cp-flag">AU</span>Australia</a>
-            <a href="#" class="cp-item"><span class="cp-flag">CA</span>Canada</a>
           </div>
         </div>
       </div>
@@ -167,10 +157,7 @@
       <a href="#bk-diff" class="n-cta-btn">Book My Free 30-Min Review</a>
     </div>
 
-    <button
-      type="button"
-      class="theme-toggle"
-      [class.is-active]="themeService.isLight()"
+    <button type="button" class="theme-toggle" [class.is-active]="themeService.isLight()"
       [attr.aria-pressed]="themeService.isLight()"
       [attr.title]="themeService.isLight() ? 'Switch to current style' : 'Switch to premium light style'"
       (click)="toggleTheme()">
@@ -179,13 +166,8 @@
       </svg>
     </button>
 
-    <button
-      type="button"
-      class="hamburger"
-      [class.is-open]="isMenuOpen()"
-      [attr.aria-expanded]="isMenuOpen()"
-      aria-label="Toggle navigation menu"
-      (click)="toggleMenu()">
+    <button type="button" class="hamburger" [class.is-open]="isMenuOpen()" [attr.aria-expanded]="isMenuOpen()"
+      aria-label="Toggle navigation menu" (click)="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
@@ -227,7 +209,8 @@
       </div>
 
       <div class="mobile-group">
-        <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 'ins'" (click)="toggleMega('ins')">
+        <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 'ins'"
+          (click)="toggleMega('ins')">
           <span>Insights</span>
           <span class="mobile-chevron">+</span>
         </button>
@@ -248,8 +231,10 @@
       </div>
 
       <div class="mobile-meta">
-        <div class="mobile-meta-copy">Serving UAE and GCC businesses with audit, tax, advisory, and AI-led finance operations.</div>
-        <a href="https://wa.me/971526203995" target="_blank" class="mobile-whatsapp" (click)="closeMobileMenu()">WhatsApp Our Team</a>
+        <div class="mobile-meta-copy">Serving UAE and GCC businesses with audit, tax, advisory, and AI-led finance
+          operations.</div>
+        <a href="https://wa.me/971526203995" target="_blank" class="mobile-whatsapp"
+          (click)="closeMobileMenu()">WhatsApp Our Team</a>
       </div>
     </div>
   </div>

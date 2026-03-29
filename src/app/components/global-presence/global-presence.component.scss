@@ -23,7 +23,7 @@
 
     .section-eyebrow {
         font-size: 0.78rem;
-        font-weight: 700;
+        font-weight: 600;
         color: var(--b2, #08a1f7);
         letter-spacing: 0.12em;
         text-transform: uppercase;
@@ -45,7 +45,7 @@
         }
 
         strong {
-            font-weight: 800;
+            font-weight: 600;
         }
     }
 
@@ -90,7 +90,7 @@
     padding: 2px 8px;
     border-radius: 100px;
     font-size: 0.6rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .office-flag-wrap {
@@ -106,7 +106,7 @@
 
 .office-country {
     font-size: 1.15rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--ink, #06183a);
     margin-bottom: 0;
     font-family: var(--font-family-heading, inherit);

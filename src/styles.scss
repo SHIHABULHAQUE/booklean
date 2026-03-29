@@ -111,6 +111,7 @@ body::after {
 }
 
 @keyframes orbFloat {
+
   0%,
   100% {
     transform: translateY(0) scale(1);
@@ -195,7 +196,7 @@ select {
   align-items: center;
   gap: 10px;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--b2);
@@ -247,7 +248,7 @@ section {
 
 .s-stag {
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: .20em;
   text-transform: uppercase;
   color: #08A1F7;
@@ -258,7 +259,7 @@ section {
 .s-stitle {
   font-family: var(--fh);
   font-size: clamp(26px, 3vw, 42px);
-  font-weight: 800;
+  font-weight: 600;
   color: #051C2A;
   line-height: 1.15;
   letter-spacing: -.3px;
@@ -295,7 +296,7 @@ section {
   background: linear-gradient(135deg, #004FE1 0%, #08A1F7 100%);
   color: #fff;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -385,9 +386,10 @@ body.theme-light .btn-outline {
 }
 
 body.theme-light .btn-outline:hover {
-  color: var(--b1);
-  border-color: rgba(0, 79, 225, .34);
-  background: rgba(0, 79, 225, .08);
+  background: linear-gradient(135deg, rgba(8, 20, 55, .95) 0%, rgba(12, 28, 70, .90) 100%) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(8, 161, 247, .55) !important;
+  box-shadow: 0 12px 32px rgba(0, 79, 225, .35) !important;
 }
 
 body.theme-light :is(.glass-card, .glass-rect, .stat-card, .h-panel, .pkg-card, .pkg-card.featured, .benefit-card, .global-card, .value-card, .wb-promise, .bkd-card, .lean-feat, .svc-card-dark, .contact-widget, .content-surface-dark) {
@@ -398,18 +400,42 @@ body.theme-light :is(.glass-card, .glass-rect, .stat-card, .h-panel, .pkg-card, 
   box-shadow: var(--shadow-card), inset 0 1px 0 rgba(255, 255, 255, .88) !important;
 }
 
-body.theme-light :is(.glass-card, .glass-rect, .stat-card, .h-panel, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .svc-card-dark):hover {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 1) 0%, rgba(233, 244, 255, .98) 100%) !important;
-  border-color: rgba(0, 79, 225, .45) !important;
-  box-shadow: 0 24px 60px rgba(0, 79, 225, .16), inset 0 1px 0 rgba(255, 255, 255, .9) !important;
+body.theme-light :is(.glass-card, .glass-rect, .stat-card, .h-panel, .h-stat, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover {
+  background: var(--grad-premium) !important;
+  background-image: linear-gradient(rgba(5, 42, 72, 0.88), rgba(0, 79, 225, 0.72)), url('/images/storybrand_problem_bg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border-color: rgba(9, 224, 254, .55) !important;
+  box-shadow: 0 24px 64px rgba(0, 79, 225, .32), 0 8px 16px rgba(0, 79, 225, .15) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-5px) !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
-body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .serve-band, .empathy-strip, #problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) {
+body.theme-light :is(.glass-card, .glass-rect, .stat-card, .h-panel, .h-stat, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #08A1F7, #03C1F4, #004FE1);
+  z-index: 2;
+}
+
+body.theme-light :is(.glass-card, .glass-rect, .stat-card, .h-panel, .h-stat, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover :is(h1, h2, h3, h4, p, span, div, strong, li, i, em, .s-stitle, .s-ssub, .svc-title, .svc-desc, .svc-more, .tag, .pkg-name, .pkg-subtitle, .pkg-price-label, .pkg-price-value, .pkg-outcome, .founder-name, .founder-role, .global-country, .global-city, .g-rect-title, .g-rect-num, .h-stat-num, .h-stat-lbl, .bkd-title, .bkd-card-title, .benefit-title, .wb-promise-title, .lean-feat-title, .g-val, .g-lbl, .success-item-title, .success-item-copy, .faq-q, .faq-a) {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .serve-band, .empathy-strip, #heyLean, #careers, #bk-diff) {
   background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%) !important;
   border-color: rgba(0, 79, 225, .08) !important;
 }
 
-body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .serve-band, .empathy-strip, #problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff)::before {
+body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .serve-band, .empathy-strip, #heyLean, #careers, #bk-diff)::before {
   opacity: .18;
 }
 
@@ -455,6 +481,32 @@ body.theme-light .chat-footer {
 
 body.theme-light .serve-band .sb-dot {
   background: rgba(0, 79, 225, .28) !important;
+}
+
+/* -- LIGHT MODE BACKGROUND VISIBILITY ENHANCEMENTS -- 70% Visibility */
+body.theme-light .hero-grid {
+  background-image:
+    linear-gradient(rgba(0, 79, 225, .32) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 79, 225, .32) 1px, transparent 1px) !important;
+  opacity: 1 !important;
+}
+
+body.theme-light .hero-orb-1 {
+  opacity: 0.70 !important;
+  background: rgba(0, 79, 225, 0.50) !important;
+}
+
+body.theme-light .hero-orb-2 {
+  opacity: 0.70 !important;
+  background: rgba(9, 224, 254, 0.50) !important;
+}
+
+body.theme-light :is(#heyLean, #careers, #bk-diff) {
+  background: linear-gradient(180deg, #ffffff 0%, #dae8ff 100%) !important;
+}
+
+body.theme-light :is(#heyLean, #careers, #bk-diff)::before {
+  opacity: 0.70 !important;
 }
 
 body.theme-light .h-stat {
@@ -519,19 +571,20 @@ body.theme-light .lean-input::placeholder {
   color: var(--muted) !important;
 }
 
-body.theme-light [style*='background:#051C2A'],
-body.theme-light [style*='background:#0A0F1E'],
 body.theme-light [style*='background:var(--dn)'] {
   background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%) !important;
 }
 
 body.theme-light [style*='color:#fff'],
-body.theme-light [style*='color:#FFFFFF'] {
-  color: var(--ink2) !important;
+body.theme-light [style*='color:#FFFFFF'],
+body.theme-light :is(#problem, #stakes, #success-vision) [style*='color:#fff'],
+body.theme-light :is(#problem, #stakes, #success-vision) [style*='color:#FFFFFF'] {
+  color: #FFFFFF !important;
 }
 
 body.theme-light [style*='color:rgba(255,255,255,.85)'],
 body.theme-light [style*='color:rgba(255,255,255,.80)'],
+body.theme-light [style*='color:rgba(255,255,255,.75)'],
 body.theme-light [style*='color:rgba(255,255,255,.65)'],
 body.theme-light [style*='color:rgba(255,255,255,.60)'],
 body.theme-light [style*='color:rgba(255,255,255,.58)'],
@@ -542,13 +595,23 @@ body.theme-light [style*='color:rgba(255,255,255,.35)'] {
   color: var(--muted) !important;
 }
 
+/* Force light text in dark sections even in light mode */
+body.theme-light :is(#problem, #stakes, #success-vision) :is(p, span, div, h1, h2, h3, h4, strong) {
+  color: rgba(255, 255, 255, 0.90) !important;
+}
+body.theme-light :is(#problem, #stakes, #success-vision) .s-ssub,
+body.theme-light :is(#problem, #stakes, #success-vision) .stakes-subtitle,
+body.theme-light :is(#problem, #stakes, #success-vision) .problem-intro {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
 body.theme-light .hero {
   background: #ffffff !important;
 }
 
 body.theme-light .slide-bg {
-  filter: brightness(1.02) saturate(.82) !important;
-  opacity: .26;
+  filter: none !important;
+  opacity: 1 !important;
 }
 
 body.theme-light .slide-overlay {
@@ -618,41 +681,42 @@ body.theme-light .dot.active {
   background: linear-gradient(135deg, #004FE1, #08A1F7) !important;
 }
 
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) {
+body.theme-light :is(#heyLean, #careers, #bk-diff) {
   color: var(--ink2) !important;
 }
 
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) :is(h1, h2, h3, h4, p, span, div, strong, li) {
+body.theme-light :is(#heyLean, #careers, #bk-diff) :is(h1, h2, h3, h4, p, span, div, strong, li) {
   color: inherit;
 }
 
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .s-stitle,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .s-stitle span,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .value-name,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .benefit-title,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .job-title,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .bkd-title,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .bkd-card-title,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .g-rect-title,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .global-country,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .wb-val-name,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .wb-promise-title,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .perf-val,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .faq-q,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .svc-title {
+body.theme-light :is(#heyLean, #careers, #bk-diff) .s-stitle,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .s-stitle span,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .value-name,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .benefit-title,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .job-title,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .bkd-title,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .bkd-card-title,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .g-rect-title,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .global-country,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .wb-val-name,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .wb-promise-title,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .perf-val,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .faq-q,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .svc-title {
   color: var(--ink2) !important;
 }
 
 body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .s-stag,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .g-rect-tag,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .job-dept,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .job-type,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .bkd-card-btn,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .faq-arrow,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .svc-more,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .tag,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .global-service,
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .pkg-price-value {
+body.theme-light :is(#heyLean, #careers, #bk-diff) .g-rect-tag,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .job-dept,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .job-type,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .bkd-card-btn,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .faq-arrow,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .svc-more,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .tag,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .global-service,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .svc-tag,
+body.theme-light :is(#heyLean, #careers, #bk-diff) .pkg-price-value {
   color: var(--b1) !important;
 }
 
@@ -671,9 +735,10 @@ body.theme-light .bkd-btn-white {
 }
 
 body.theme-light .bkd-btn-white:hover {
-  background: rgba(0, 79, 225, .12) !important;
-  border-color: rgba(0, 79, 225, .28) !important;
-  color: var(--ink2) !important;
+  background: linear-gradient(135deg, rgba(0, 79, 225, .90) 0%, rgba(8, 161, 247, .85) 100%) !important;
+  border-color: rgba(8, 161, 247, .55) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 12px 32px rgba(0, 79, 225, .35) !important;
 }
 
 body.theme-light .bkd-btn-white svg {
@@ -694,24 +759,7 @@ body.theme-light #svc-detail {
   box-shadow: var(--shadow-card) !important;
 }
 
-body.theme-light #services .svc-card:hover,
-body.theme-light #services .svc-card-dark:hover,
-body.theme-light .founder-card:hover,
-body.theme-light .g-wide-item:hover {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 1) 0%, rgba(233, 244, 255, .98) 100%) !important;
-}
-
-body.theme-light #services .svc-card:hover .svc-title,
-body.theme-light #services .svc-card:hover .svc-desc,
-body.theme-light #services .svc-card:hover .svc-more,
-body.theme-light #services .svc-card:hover .tag,
-body.theme-light #services .svc-card-dark .svc-title,
-body.theme-light #services .svc-card-dark .svc-desc,
-body.theme-light #services .svc-card-dark .svc-more,
-body.theme-light #services .svc-card-dark .tag,
-body.theme-light #services .svc-card-dark .svc-badge-ai {
-  color: var(--ink2) !important;
-}
+/* Hover styles for cards are now handled globally above */
 
 body.theme-light #services .svc-card .tag,
 body.theme-light #services .svc-card-dark .tag,
@@ -773,7 +821,9 @@ body.theme-light .svc-detail-item {
 }
 
 body.theme-light .svc-detail-item:hover {
-  background: rgba(0, 79, 225, .08) !important;
+  background: linear-gradient(145deg, rgba(5, 28, 42, .95) 0%, rgba(0, 79, 225, .20) 100%) !important;
+  border-color: rgba(8, 161, 247, .45) !important;
+  color: #FFFFFF !important;
 }
 
 body.theme-light .faq-item,
@@ -845,7 +895,9 @@ body.theme-light footer .f-social-ico {
 body.theme-light footer .f-social-ico:hover,
 body.theme-light footer .f-col a:hover,
 body.theme-light footer .f-bottom a:hover {
-  color: var(--b1) !important;
+  background: linear-gradient(135deg, rgba(0, 79, 225, .85) 0%, rgba(8, 161, 247, .80) 100%) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(8, 161, 247, .55) !important;
 }
 
 body.theme-light .final-cta {
@@ -891,8 +943,10 @@ body.theme-light .final-cta .btn-outline-white {
 }
 
 body.theme-light .final-cta .btn-outline-white:hover {
-  background: rgba(0, 79, 225, .10) !important;
-  border-color: rgba(0, 79, 225, .30) !important;
+  background: linear-gradient(135deg, rgba(0, 79, 225, .90) 0%, rgba(8, 161, 247, .85) 100%) !important;
+  border-color: rgba(8, 161, 247, .55) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 12px 32px rgba(0, 79, 225, .35) !important;
 }
 
 body.theme-light .service-detail-page {
@@ -1012,8 +1066,9 @@ body.theme-light .lean-quick-btn {
 }
 
 body.theme-light .lean-quick-btn:hover {
-  background: rgba(0, 79, 225, .12) !important;
-  color: var(--ink2) !important;
+  background: linear-gradient(135deg, rgba(0, 79, 225, .90) 0%, rgba(8, 161, 247, .85) 100%) !important;
+  border-color: rgba(8, 161, 247, .55) !important;
+  color: #FFFFFF !important;
 }
 
 body.theme-light .lean-input {
@@ -1033,15 +1088,15 @@ body.theme-light .hero {
 }
 
 body.theme-light .hero .slide-bg {
-  filter: brightness(1.08) saturate(.72) contrast(.92) !important;
-  opacity: .34 !important;
+  filter: none !important;
+  opacity: 1 !important;
 }
 
 body.theme-light .hero .slide-overlay {
   background:
-    linear-gradient(115deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.90) 34%, rgba(239,246,255,.82) 64%, rgba(219,234,254,.64) 100%),
-    radial-gradient(ellipse at 82% 50%, rgba(0,79,225,.10) 0%, transparent 56%),
-    radial-gradient(ellipse at 20% 80%, rgba(3,193,244,.07) 0%, transparent 45%) !important;
+    linear-gradient(115deg, rgba(255, 255, 255, .94) 0%, rgba(255, 255, 255, .90) 34%, rgba(239, 246, 255, .82) 64%, rgba(219, 234, 254, .64) 100%),
+    radial-gradient(ellipse at 82% 50%, rgba(0, 79, 225, .10) 0%, transparent 56%),
+    radial-gradient(ellipse at 20% 80%, rgba(3, 193, 244, .07) 0%, transparent 45%) !important;
 }
 
 body.theme-light .hero .slide-content {
@@ -1075,39 +1130,41 @@ body.theme-light .hero .btn-outline {
 }
 
 body.theme-light .hero .btn-outline:hover {
-  background: rgba(0, 79, 225, .10) !important;
-  border-color: rgba(0, 79, 225, .30) !important;
-  color: var(--ink2) !important;
+  background: linear-gradient(135deg, rgba(0, 79, 225, .90) 0%, rgba(8, 161, 247, .85) 100%) !important;
+  border-color: rgba(8, 161, 247, .55) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 12px 32px rgba(0, 79, 225, .35) !important;
 }
 
 body.theme-light .hero .h-panel {
-  background: linear-gradient(145deg, rgba(255,255,255,.98) 0%, rgba(239,246,255,.96) 52%, rgba(230,240,255,.98) 100%) !important;
-  border: 1px solid rgba(0,79,225,.16) !important;
-  border-top-color: rgba(8,161,247,.24) !important;
-  box-shadow: 0 22px 54px rgba(15,40,90,.16), 0 0 0 1px rgba(0,79,225,.06), inset 0 1px 0 rgba(255,255,255,.92) !important;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .98) 0%, rgba(239, 246, 255, .96) 52%, rgba(230, 240, 255, .98) 100%) !important;
+  border: 1px solid rgba(0, 79, 225, .16) !important;
+  border-top-color: rgba(8, 161, 247, .24) !important;
+  box-shadow: 0 22px 54px rgba(15, 40, 90, .16), 0 0 0 1px rgba(0, 79, 225, .06), inset 0 1px 0 rgba(255, 255, 255, .92) !important;
 }
 
 body.theme-light .hero .h-panel::after {
-  background: radial-gradient(ellipse at 80% 0%, rgba(3,193,244,.06) 0%, transparent 50%) !important;
+  background: radial-gradient(ellipse at 80% 0%, rgba(3, 193, 244, .06) 0%, transparent 50%) !important;
 }
 
 body.theme-light .hero .h-stat {
-  background: linear-gradient(135deg, rgba(0,79,225,.04) 0%, rgba(8,161,247,.08) 100%) !important;
-  border-color: rgba(0,79,225,.12) !important;
-  border-top-color: rgba(8,161,247,.14) !important;
-  box-shadow: 0 2px 10px rgba(15,40,90,.06) !important;
+  background: linear-gradient(135deg, rgba(0, 79, 225, .04) 0%, rgba(8, 161, 247, .08) 100%) !important;
+  border-color: rgba(0, 79, 225, .12) !important;
+  border-top-color: rgba(8, 161, 247, .14) !important;
+  box-shadow: 0 2px 10px rgba(15, 40, 90, .06) !important;
 }
 
 body.theme-light .hero .h-stat:hover {
-  background: linear-gradient(135deg, rgba(255,255,255,.98) 0%, rgba(225,238,255,.96) 100%) !important;
-  border-color: rgba(8,161,247,.30) !important;
-  box-shadow: 0 10px 24px rgba(15,40,90,.10) !important;
+  background: linear-gradient(145deg, rgba(5, 28, 42, .95) 0%, rgba(0, 79, 225, .20) 100%) !important;
+  border-color: rgba(8, 161, 247, .55) !important;
+  box-shadow: 0 16px 40px rgba(0, 79, 225, .25) !important;
+  color: rgba(255, 255, 255, .95) !important;
 }
 
 body.theme-light .hero .h-stat-ico {
-  background: linear-gradient(135deg, rgba(0,79,225,.14), rgba(8,161,247,.12)) !important;
-  border-color: rgba(3,193,244,.18) !important;
-  box-shadow: 0 2px 8px rgba(0,79,225,.10) !important;
+  background: linear-gradient(135deg, rgba(0, 79, 225, .14), rgba(8, 161, 247, .12)) !important;
+  border-color: rgba(3, 193, 244, .18) !important;
+  box-shadow: 0 2px 8px rgba(0, 79, 225, .10) !important;
 }
 
 body.theme-light .hero .h-cta span {
@@ -1115,7 +1172,7 @@ body.theme-light .hero .h-cta span {
 }
 
 body.theme-light .hero .dot {
-  background: rgba(0,79,225,.18) !important;
+  background: rgba(0, 79, 225, .18) !important;
 }
 
 body.theme-light .hero .dot.active {
@@ -1123,7 +1180,7 @@ body.theme-light .hero .dot.active {
 }
 
 body.theme-light .hero .scroll-line {
-  background: rgba(0,79,225,.32) !important;
+  background: rgba(0, 79, 225, .32) !important;
 }
 
 body.theme-light .hero .s-title em {
@@ -1136,10 +1193,10 @@ body.theme-light .hero .s-title em {
 }
 
 body.theme-light .hero .h-panel {
-  background: linear-gradient(145deg, rgba(255,255,255,.995) 0%, rgba(244,249,255,.985) 52%, rgba(236,244,255,.99) 100%) !important;
-  border: 1px solid rgba(0,79,225,.18) !important;
-  border-top-color: rgba(8,161,247,.30) !important;
-  box-shadow: 0 24px 60px rgba(15,40,90,.18), 0 0 0 1px rgba(0,79,225,.05), inset 0 1px 0 rgba(255,255,255,.96) !important;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .995) 0%, rgba(244, 249, 255, .985) 52%, rgba(236, 244, 255, .99) 100%) !important;
+  border: 1px solid rgba(0, 79, 225, .18) !important;
+  border-top-color: rgba(8, 161, 247, .30) !important;
+  box-shadow: 0 24px 60px rgba(15, 40, 90, .18), 0 0 0 1px rgba(0, 79, 225, .05), inset 0 1px 0 rgba(255, 255, 255, .96) !important;
 }
 
 body.theme-light .hero .h-panel-lbl {
@@ -1147,19 +1204,20 @@ body.theme-light .hero .h-panel-lbl {
 }
 
 body.theme-light .hero .h-panel-lbl::after {
-  background: rgba(0,79,225,.16) !important;
+  background: rgba(0, 79, 225, .16) !important;
 }
 
 body.theme-light .hero .h-stat {
-  background: linear-gradient(135deg, rgba(255,255,255,.96) 0%, rgba(234,244,255,.92) 100%) !important;
-  border-color: rgba(0,79,225,.14) !important;
-  border-top-color: rgba(8,161,247,.16) !important;
-  box-shadow: 0 3px 12px rgba(15,40,90,.07) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .96) 0%, rgba(234, 244, 255, .92) 100%) !important;
+  border-color: rgba(0, 79, 225, .14) !important;
+  border-top-color: rgba(8, 161, 247, .16) !important;
+  box-shadow: 0 3px 12px rgba(15, 40, 90, .07) !important;
 }
 
 body.theme-light .hero .h-stat:hover {
-  background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(225,238,255,.97) 100%) !important;
-  border-color: rgba(8,161,247,.28) !important;
+  background: var(--grad-premium) !important;
+  border-color: rgba(9, 224, 254, .45) !important;
+  color: #FFFFFF !important;
 }
 
 body.theme-light .hero .h-stat-num {
@@ -1172,8 +1230,8 @@ body.theme-light .hero .h-stat-lbl {
 
 body.theme-light .hero .h-stat[style*='opacity:.6'] {
   opacity: 1 !important;
-  background: linear-gradient(135deg, rgba(255,245,245,.98) 0%, rgba(255,235,235,.92) 100%) !important;
-  border-color: rgba(239,68,68,.16) !important;
+  background: linear-gradient(135deg, rgba(255, 245, 245, .98) 0%, rgba(255, 235, 235, .92) 100%) !important;
+  border-color: rgba(239, 68, 68, .16) !important;
 }
 
 body.theme-light .hero .h-stat[style*='opacity:.6'] .h-stat-num {
@@ -1190,7 +1248,6 @@ body.theme-light .hero .h-stat[style*='opacity:.6'] .h-stat-num {
   -webkit-background-clip: border-box !important;
   background-clip: border-box !important;
   -webkit-text-fill-color: currentColor !important;
-  text-fill-color: currentColor !important;
   color: #14365f !important;
   opacity: 1 !important;
 }
@@ -1205,91 +1262,28 @@ body.theme-light .hero .h-stat * {
 }
 
 body.theme-light .hero .h-panel .h-stat:nth-child(n + 2) {
-  background: linear-gradient(135deg, rgba(255,255,255,.985) 0%, rgba(232,242,255,.94) 100%) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .985) 0%, rgba(232, 242, 255, .94) 100%) !important;
 }
 
 
 
-body.theme-light #problem .si > div > div:first-child > p {
-  color: #5c7694 !important;
-}
 
-body.theme-light #problem .si > div > div:first-child > div:nth-child(4),
-body.theme-light #problem .si > div > div:first-child > div:nth-child(6) {
-  color: #7a8fa8 !important;
-}
+/* Purged old #problem light theme overrides */
 
-body.theme-light #problem .si > div > div:first-child > div:nth-child(5) > div {
-  background: linear-gradient(135deg, rgba(255,248,248,.98) 0%, rgba(255,239,239,.94) 100%) !important;
-  border-color: rgba(239,68,68,.18) !important;
-}
-
-body.theme-light #problem .si > div > div:first-child > div:nth-child(5) > div > div > div:first-child {
-  color: #14365f !important;
-}
-
-body.theme-light #problem .si > div > div:first-child > div:nth-child(5) > div > div > div:last-child {
-  color: #5c7694 !important;
-}
-
-body.theme-light #problem .si > div > div:first-child > div:nth-child(7) > div {
-  background: rgba(0,79,225,.04) !important;
-  border-color: rgba(0,79,225,.10) !important;
-}
-
-body.theme-light #problem .si > div > div:first-child > div:nth-child(7) > div > span:last-child {
-  color: #5c7694 !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:first-child {
-  background: linear-gradient(145deg, rgba(255,255,255,.98) 0%, rgba(240,247,255,.96) 100%) !important;
-  border-color: rgba(144,191,255,.26) !important;
-  box-shadow: 0 16px 36px rgba(15,40,90,.10) !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:first-child > div:nth-child(2) {
-  color: #14365f !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:first-child > div:nth-child(3) > div {
-  background: linear-gradient(135deg, rgba(255,255,255,.98) 0%, rgba(235,245,255,.94) 100%) !important;
-  border-color: rgba(8,161,247,.18) !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:first-child > div:nth-child(3) > div > div > div:first-child {
-  color: #14365f !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:first-child > div:nth-child(3) > div > div > div:last-child {
-  color: #5c7694 !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:last-child {
-  background: linear-gradient(135deg, rgba(255,251,241,.98) 0%, rgba(255,247,227,.94) 100%) !important;
-  border-color: rgba(201,168,76,.26) !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:last-child > div > div:first-child {
-  color: #c79428 !important;
-}
-
-body.theme-light #problem .si > div > div:last-child > div:last-child > div > div:last-child {
-  color: #7b8796 !important;
-}
 
 
 body.theme-light #heyLean .lean-feat,
 body.theme-light #heyLean .lean-feat-hl {
-  background: linear-gradient(145deg, rgba(255,255,255,.98) 0%, rgba(240,247,255,.96) 100%) !important;
-  border-color: rgba(144,191,255,.26) !important;
-  box-shadow: 0 12px 28px rgba(15,40,90,.08) !important;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .98) 0%, rgba(240, 247, 255, .96) 100%) !important;
+  border-color: rgba(144, 191, 255, .26) !important;
+  box-shadow: 0 12px 28px rgba(15, 40, 90, .08) !important;
   opacity: 1 !important;
 }
 
 body.theme-light #heyLean .lean-feat:hover,
 body.theme-light #heyLean .lean-feat-hl:hover {
-  background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(232,243,255,.98) 100%) !important;
-  border-color: rgba(8,161,247,.30) !important;
+  background: var(--grad-premium) !important;
+  border-color: rgba(9, 224, 254, .45) !important;
 }
 
 body.theme-light #heyLean .lean-feat-title,
@@ -1303,7 +1297,7 @@ body.theme-light #heyLean .lean-feat .lean-feat-title {
 body.theme-light #heyLean .lean-feat-desc,
 body.theme-light #heyLean .lean-feat .lean-feat-desc,
 body.theme-light #heyLean .lean-feat-hl .lean-feat-desc,
-body.theme-light #heyLean > .si > div:first-child > p {
+body.theme-light #heyLean>.si>div:first-child>p {
   color: #5c7694 !important;
   opacity: 1 !important;
 }
@@ -1317,6 +1311,7 @@ body.theme-light #heyLean .chat-hdr-status,
 body.theme-light #heyLean .chat-model-tag {
   color: #ffffff !important;
 }
+
 body.theme-light .country-sidebar {
   background: linear-gradient(145deg, rgba(8, 20, 55, .90) 0%, rgba(12, 28, 70, .85) 50%, rgba(10, 24, 62, .92) 100%) !important;
   border-color: rgba(0, 79, 225, .15) !important;
@@ -1329,7 +1324,7 @@ body.theme-light .cs-item {
 
 body.theme-light .cs-item:hover {
   background: rgba(0, 79, 225, .08) !important;
-  color: rgba(255, 255, 255, .70) !important;
+  color: #08A1F7 !important;
 }
 
 body.theme-light .cs-item.is-active {
@@ -1339,10 +1334,107 @@ body.theme-light .cs-item.is-active {
 body.theme-light .cs-div {
   background: rgba(0, 79, 225, .15) !important;
 }
+
 body.theme-light #bk-diff .bkd-card-btn,
 body.theme-light #bk-diff .bkd-card-btn:visited,
 body.theme-light #bk-diff .bkd-card-btn:hover,
 body.theme-light #bk-diff .bkd-card-btn:focus {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Industry Ticker Styling */
+.ind-ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background: #FFFFFF;
+  /* News-style gradient masks on edges */
+  &::before, &::after {
+    content: '';
+    position: absolute; top: 0; bottom: 0; width: 80px; z-index: 5;
+    pointer-events: none;
+  }
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, #FFFFFF 10%, transparent 100%);
+  }
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, #FFFFFF 10%, transparent 100%);
+  }
+}
+
+.ind-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: max-content;
+  animation: indTicker 32s linear infinite;
+  padding: 14px 0;
+  
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.ind-icon-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: transparent;
+  white-space: nowrap;
+  color: var(--ink2);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  
+  span {
+    color: #4A5A6A;
+    font-family: var(--fb);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    span {
+      color: var(--b1);
+    }
+  }
+}
+
+.iic-box {
+  width: 38px;
+  height: 38px;
+  background: #F4F8FF;
+  border: 1px solid #E6F0FF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 79, 225, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ind-icon-card:hover .iic-box {
+  background: white;
+  border-color: var(--b1);
+  box-shadow: 0 8px 24px rgba(0, 79, 225, 0.12);
+}
+
+@keyframes indTicker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Light Theme Enhancements */
+body.theme-light .ind-icon-card span {
+  color: #3A4A5A !important;
+}
+
+body.theme-light .iic-box {
+  background: #f9fbff !important;
+  border-color: #eef2f8 !important;
 }

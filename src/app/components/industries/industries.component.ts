@@ -10,7 +10,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 })
 export class IndustriesComponent {
     industries = [
-        { icon: '🛒', name: 'Retail & E-commerce', tags: ['Omnichannel', 'Inventory'] },
+        { icon: '🛒', name: 'Retail & E-commerce1', tags: ['Omnichannel', 'Inventory'] },
         { icon: '🏗️', name: 'Construction & Real Estate', tags: ['Project Accounting', 'Cost Control'] },
         { icon: '💻', name: 'Technology & SaaS', tags: ['SaaS Metrics', 'Burn Rate'] },
         { icon: '🏥', name: 'Healthcare & Wellness', tags: ['Multi-location', 'Clinic Finance'] },

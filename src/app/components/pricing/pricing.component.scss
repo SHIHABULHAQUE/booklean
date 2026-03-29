@@ -62,7 +62,7 @@
     background: var(--grad-main);
     color: white;
     font-size: .72rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: .06em;
     text-transform: uppercase;
     padding: 6px 16px;
@@ -77,7 +77,7 @@
 .pc-name {
     font-family: var(--font-family-heading);
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--ink);
     margin-bottom: 4px;
 }
@@ -100,7 +100,7 @@
 .pc-price {
     font-family: var(--font-family-heading);
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--b1);
     line-height: 1;
     margin-bottom: 4px;
@@ -153,7 +153,7 @@
 
 .pc-feat-check {
     color: var(--b3);
-    font-weight: 800;
+    font-weight: 600;
     flex-shrink: 0;
     font-size: .9rem;
 }
@@ -169,7 +169,7 @@
     width: 100%;
     cursor: pointer;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: .9rem;
     text-decoration: none;
     border: 2px solid var(--b2);

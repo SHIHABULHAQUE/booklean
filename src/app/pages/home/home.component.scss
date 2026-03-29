@@ -190,7 +190,7 @@
 }
 
 .pkg-card:hover {
-  background-image: linear-gradient(rgba(5, 28, 42, 0.88), rgba(0, 79, 225, 0.75)), url('/images/storybrand_problem_bg.png');
+  background-image: linear-gradient(rgba(5, 28, 42, 0.88), rgba(0, 79, 225, 0.75)), url('assets/images/storybrand_problem_bg.png');
   background-size: cover;
   background-position: center;
   border-color: rgba(0, 79, 225, .30);
@@ -1964,7 +1964,7 @@ section {
 }
 
 .svc-card:hover {
-  background-image: linear-gradient(rgba(5, 28, 42, 0.88), rgba(0, 79, 225, 0.72)), url('/images/storybrand_problem_bg.png');
+  background-image: linear-gradient(rgba(5, 28, 42, 0.88), rgba(0, 79, 225, 0.72)), url('assets/images/storybrand_problem_bg.png');
   background-size: cover;
   background-position: center;
   border-color: rgba(0, 79, 225, .55);
@@ -2330,7 +2330,7 @@ section {
 }
 
 .lean-feat:hover {
-  background-image: linear-gradient(rgba(5, 28, 42, 0.85), rgba(8, 161, 247, 0.70)), url('/images/storybrand_problem_bg.png');
+  background-image: linear-gradient(rgba(5, 28, 42, 0.85), rgba(8, 161, 247, 0.70)), url('assets/images/storybrand_problem_bg.png');
   background-size: cover;
   background-position: center;
   border-color: rgba(8, 161, 247, .40);
@@ -4168,7 +4168,7 @@ footer {
 
 /* bkd-card hover glow */
 .bkd-card:hover {
-  background-image: linear-gradient(rgba(5, 28, 42, 0.90), rgba(0, 79, 225, 0.75)), url('/images/storybrand_problem_bg.png') !important;
+  background-image: linear-gradient(rgba(5, 28, 42, 0.90), rgba(0, 79, 225, 0.75)), url('assets/images/storybrand_problem_bg.png') !important;
   background-size: cover !important;
   background-position: center !important;
   border-color: rgba(0, 79, 225, .55) !important;
@@ -5738,4 +5738,4 @@ footer {
 
 @media (max-width: 540px) {
   .step-card { padding: 32px 24px; }
-}
+}

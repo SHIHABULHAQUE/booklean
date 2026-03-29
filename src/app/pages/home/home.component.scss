@@ -5739,3 +5739,27 @@ footer {
 @media (max-width: 540px) {
   .step-card { padding: 32px 24px; }
 }
+
+/* -- STORYBRAND BACKGROUND CLASSES -- */
+.story-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.problem-bg {
+  background-image: url('../../../assets/images/storybrand_problem_bg.png');
+  opacity: 0.65;
+  filter: brightness(0.9) contrast(1.1);
+}
+.stakes-bg {
+  background-image: url('../../../assets/images/storybrand_stakes_bg.png');
+  opacity: 0.55;
+  filter: grayscale(0.3) brightness(0.85) contrast(1.1);
+}
+.success-bg {
+  background-image: url('../../../assets/images/storybrand_success_bg.png');
+  opacity: 0.50;
+  filter: grayscale(0.1) brightness(0.9) contrast(1.1);
+}

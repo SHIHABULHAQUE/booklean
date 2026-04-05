@@ -157,14 +157,6 @@
       <a href="#bk-diff" class="n-cta-btn">Book My Free 30-Min Review</a>
     </div>
 
-    <button type="button" class="theme-toggle" [class.is-active]="themeService.isLight()"
-      [attr.aria-pressed]="themeService.isLight()"
-      [attr.title]="themeService.isLight() ? 'Switch to current style' : 'Switch to premium light style'"
-      (click)="toggleTheme()">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"></path>
-      </svg>
-    </button>
 
     <button type="button" class="hamburger" [class.is-open]="isMenuOpen()" [attr.aria-expanded]="isMenuOpen()"
       aria-label="Toggle navigation menu" (click)="toggleMenu()">

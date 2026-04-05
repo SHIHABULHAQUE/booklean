@@ -75,7 +75,7 @@ export class HomeComponent implements AfterViewInit {
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.glass-rect, .benefit-card, .pkg-card, .svc-card, .global-card, .wb-val-card, .faq-item').forEach((el: any) => {
+    document.querySelectorAll('.glass-rect, .benefit-card, .pkg-card, .svc-card, .svc-card-dark, .global-card, .wb-val-card, .faq-item').forEach((el: any) => {
       el.style.opacity = '0';
       el.style.transform = 'translateY(20px)';
       el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';

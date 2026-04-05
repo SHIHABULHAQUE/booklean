@@ -11,21 +11,14 @@ export class ThemeService {
       return;
     }
 
-    const savedTheme = localStorage.getItem('booklean-theme');
-    const isLight = savedTheme !== 'dark';
-    this.isLight.set(isLight);
-    
-    // Apply theme class immediately before rendering
-    document.body.classList.toggle('theme-light', isLight);
-
-    effect(() => {
-      const isLight = this.isLight();
-      document.body.classList.toggle('theme-light', isLight);
-      localStorage.setItem('booklean-theme', isLight ? 'light' : 'dark');
-    });
+    // Permanently lock Light Mode
+    this.isLight.set(true);
+    document.body.classList.add('theme-light');
+    localStorage.setItem('booklean-theme', 'light');
   }
 
   toggleTheme() {
-    this.isLight.update((value) => !value);
+    // Disabled. Always light.
+    this.isLight.set(true);
   }
 }

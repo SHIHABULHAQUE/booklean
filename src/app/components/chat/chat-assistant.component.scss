@@ -127,6 +127,13 @@
   pointer-events: none;
   width: auto;
   z-index: 9999;
+
+  @media (max-width: 768px) {
+    right: 56px;
+    top: 5px;
+    padding: 8px 12px;
+    font-size: 11px;
+  }
 }
 
 .popup-arrow {
@@ -138,6 +145,10 @@
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-left: 8px solid rgba(8, 20, 55, .96);
+
+  @media (max-width: 768px) {
+    top: 6px;
+  }
 }
 
 .pop-anim {

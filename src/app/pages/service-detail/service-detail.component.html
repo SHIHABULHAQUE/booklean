@@ -1,77 +1,85 @@
 <div class="service-detail-page page-shell">
-  <section class="service-hero">
-    <div class="container">
-      <div class="hero-content content-surface-dark" data-aos="fade-up">
-        <div class="breadcrumb">
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">Home</a> /
-          <span>Services</span> /
-          <span class="active">{{ serviceTitle$ | async }}</span>
+  @if (currentService(); as svc) {
+    <section class="service-hero">
+      <div class="container">
+        <div class="hero-content content-surface-dark" data-aos="fade-up">
+          <div class="breadcrumb">
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">Home</a> /
+            <span class="active">{{ svc.title }}</span>
+          </div>
+          <h1>{{ svc.title }}</h1>
+          <p class="hero-sub">Expert advisory perfectly tailored to local conditions, giving you clarity and confidence across every touchpoint.</p>
         </div>
-        <h1>{{ serviceTitle$ | async }}</h1>
-        <p class="hero-sub">Expert advisory perfectly tailored to local conditions, giving you clarity and confidence across every touchpoint.</p>
       </div>
+    </section>
+
+    <div class="container main-layout">
+      <div class="main-content content-surface" data-aos="fade-up" data-aos-delay="100">
+        @if (activeTab(); as tab) {
+          <div class="tab-content-wrapper">
+            <div class="content-header">
+              <span class="category-tag">{{ svc.title }}</span>
+              <h2>{{ tab.title }}</h2>
+            </div>
+            
+            <p class="tab-desc">{{ tab.description }}</p>
+
+            <img [src]="tab.image" [alt]="tab.title" class="content-img">
+
+            <h3>Capabilities & Benefits</h3>
+            <ul class="service-list">
+              @for (feat of tab.features; track feat) {
+                <li><strong>{{ feat.split(': ')[0] }}:</strong> {{ feat.split(': ')[1] || '' }}</li>
+              }
+            </ul>
+
+            <div class="promo-box">
+              <h4>Ready to discuss {{ tab.title }}?</h4>
+              <p>Our specialists are standby to provide a deep-dive review of your requirements.</p>
+              <a href="#contact" class="btn btn-primary">Schedule a Call</a>
+            </div>
+          </div>
+        }
+      </div>
+
+      <aside class="sidebar" data-aos="fade-left" data-aos-delay="200">
+        <div class="sidebar-widget nav-widget content-surface">
+          <h4 class="widget-title">Explore Services</h4>
+          <ul class="side-nav">
+            @for (sub of svc.subServices; track sub.id) {
+              <li>
+                <button 
+                  type="button" 
+                  class="tab-btn" 
+                  [class.active]="activeTab()?.id === sub.id"
+                  (click)="selectTab(sub.id)">
+                  {{ sub.title }}
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="tab-chev">
+                    <path d="M4 2L8 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </li>
+            }
+          </ul>
+        </div>
+
+        <div class="sidebar-widget contact-widget content-surface-dark" id="contact">
+          <h4 class="widget-title">Request a Proposal</h4>
+          <p>Get a tailored roadmap and transparent pricing for your specific needs.</p>
+          <form class="quick-form">
+            <input class="field-control" type="text" placeholder="Full Name">
+            <input class="field-control" type="email" placeholder="Work Email">
+            <textarea class="field-control" placeholder="Briefly describe your requirements..."></textarea>
+            <button class="btn btn-primary w-100" style="border: none;">Send Inquiry</button>
+          </form>
+        </div>
+      </aside>
     </div>
-  </section>
-
-  <div class="container main-layout">
-    <div class="main-content content-surface" data-aos="fade-up" data-aos-delay="100">
-      <h2>Overview</h2>
-      <p>In today's fast-paced corporate environment, maintaining regulatory compliance while optimizing your financial ecosystem requires precision. We bring clarity and robust frameworks customized to the specific needs of your operations.</p>
-
-      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80" alt="Analysis" class="content-img">
-
-      <h3>Our Approach</h3>
-      <p>Led by industry veterans, our team focuses on aligning your objectives with our actionable strategies. By doing so, we deliver outcomes that transform generic business challenges into distinct marketplace advantages.</p>
-      <ul class="service-list">
-        <li><strong>Comprehensive Analysis:</strong> We evaluate existing workflows against modern leading practices.</li>
-        <li><strong>Strategic Execution:</strong> Implementation guided by precision and strict timelines.</li>
-        <li><strong>Continuous Monitoring:</strong> Proactive adaptation to the shifting regulatory landscape.</li>
-        <li><strong>Tech-Enabled:</strong> Harnessing data and machine learning via our LeanBot AI engine.</li>
-      </ul>
-
-      <div class="promo-box">
-        <h4>Looking for specific guidance?</h4>
-        <p>Reach out directly to our principal partners to review your exact scenario.</p>
-        <a href="#contact" class="btn btn-primary">Schedule a Call</a>
-      </div>
-
-      <h3>Why it matters</h3>
-      <p>Our solutions don't just solve immediate technical challenges &mdash; they position your organization for scalable growth. A robust infrastructure is the cornerstone of sustainable success across every strategic tier.</p>
+  } @else {
+    <div class="container py-5 text-center">
+      <h3>Service category not found.</h3>
+      <a routerLink="/" class="btn btn-primary mt-3">Return Home</a>
     </div>
-
-    <aside class="sidebar" data-aos="fade-left" data-aos-delay="200">
-      <div class="sidebar-widget nav-widget content-surface">
-        <h4 class="widget-title">Audit &amp; Assurance</h4>
-        <ul class="side-nav">
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'statutory-audit']" routerLinkActive="active">Statutory Audit</a></li>
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'internal-audit']" routerLinkActive="active">Internal Audit</a></li>
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'forensic-accounting']" routerLinkActive="active">Forensic Accounting</a></li>
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'risk-assurance']" routerLinkActive="active">Risk Assurance</a></li>
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'it-audit']" routerLinkActive="active">IT Audit</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget nav-widget content-surface">
-        <h4 class="widget-title">Tax</h4>
-        <ul class="side-nav">
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'corporate-tax']" routerLinkActive="active">Corporate Tax</a></li>
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'vat-advisory']" routerLinkActive="active">VAT Advisory</a></li>
-          <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'transfer-pricing']" routerLinkActive="active">Transfer Pricing</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget contact-widget content-surface-dark" id="contact">
-        <h4 class="widget-title">How can we help?</h4>
-        <p>Contact our experts to discover how our tailored solutions can benefit your business.</p>
-        <form class="quick-form">
-          <input class="field-control" type="text" placeholder="Full Name">
-          <input class="field-control" type="email" placeholder="Email Address">
-          <textarea class="field-control" placeholder="Your Message"></textarea>
-          <button class="btn btn-primary w-100" style="border: none;">Send Inquiry</button>
-        </form>
-      </div>
-    </aside>
-  </div>
-
+  }
   <app-footer></app-footer>
 </div>

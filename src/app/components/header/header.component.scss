@@ -240,7 +240,7 @@
 
 :host .n-logo img {
   display: block;
-  height: 44px;
+  height: clamp(32px, 5vw, 44px);
   width: auto;
   object-fit: contain;
 }
@@ -339,7 +339,16 @@
 }
 
 :host .mega-hd {
+  display: block;
   color: #004fe1;
+  text-decoration: none;
+  transition: color 0.15s, transform 0.15s;
+  cursor: pointer;
+}
+
+:host .mega-hd:hover {
+  color: #051c2a;
+  transform: translateX(2px);
 }
 
 :host .mega-list {
@@ -553,6 +562,9 @@
   :host .nav-wrap {
     gap: 12px;
     padding: 0 20px;
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
   }
 
   :host .nav-list,
@@ -568,6 +580,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
   }
 
   :host .mobile-menu {

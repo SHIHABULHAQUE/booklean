@@ -1,9 +1,9 @@
 /* ----------------------------------------------------------------
-   BOOKLEAN GLOBAL � ULTRA GLASS GRADIENT SYSTEM v2
+   BOOKLEAN GLOBAL ï¿½ ULTRA GLASS GRADIENT SYSTEM v2
    Palette from screenshot: #C8E8FF ? #09E0FE ? #08A1F7 ? #004FE1
 ---------------------------------------------------------------- */
 :root {
-  /* -- BOOKLEAN BRAND SYSTEM � McKinsey/Stripe/Fintech Grade -- */
+  /* -- BOOKLEAN BRAND SYSTEM ï¿½ McKinsey/Stripe/Fintech Grade -- */
   --p1: #004FE1;
   /* Primary Blue                    */
   --p2: #08A1F7;
@@ -334,6 +334,7 @@ body.theme-light .global-city,
 body.theme-light .global-contact,
 body.theme-light .job-dept,
 body.theme-light .about-badge-txt,
+body.theme-light .svc-title,
 body.theme-light .svc-desc,
 body.theme-light .g-rect-desc,
 body.theme-light .pkg-subtitle,
@@ -1342,7 +1343,7 @@ body::after {
   font-family: var(--fh);
   font-size: clamp(34px, 4.8vw, 68px);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.15;
   max-width: 680px;
   margin-bottom: 24px;
   letter-spacing: -1px;
@@ -4423,14 +4424,14 @@ footer {
   transition: color .2s;
 }
 
-/* Flip text to white when card background turns dark on hover — DARK THEME Only */
+/* Flip text to white when card background turns dark on hover â€” DARK THEME Only */
 :host-context(body.theme-dark) #services .svc-card:hover {
   .svc-title { color: #FFFFFF !important; }
   .svc-desc { color: rgba(255, 255, 255, 0.85) !important; }
   .svc-more { color: #03C1F4 !important; }
 }
 
-/* Light Mode Hover — keep text dark on light background */
+/* Light Mode Hover â€” keep text dark on light background */
 :host-context(body.theme-light) #services .svc-card:hover {
   background: #FFFFFF !important;
   box-shadow: 0 15px 45px rgba(0, 79, 225, 0.12) !important;
@@ -4482,20 +4483,18 @@ footer {
   border-color: rgba(8, 161, 247, 0.40) !important;
 }
 
-/* Light Mode AI Card Fix */
-:host-context(body.theme-light) #services .svc-card-dark {
-  background: #FFFFFF !important;
-  border-color: rgba(0, 79, 225, 0.15) !important;
-  box-shadow: 0 4px 20px rgba(0, 79, 225, 0.08) !important;
-  .svc-title { color: #051C2A !important; }
-  .svc-desc { color: #3A4A5A !important; }
-  .svc-more { color: #004FE1 !important; }
-  .svc-badge-ai { background: rgba(0, 79, 225, 0.08) !important; color: #004FE1 !important; border-color: rgba(0,79,225,0.15); }
+/* Restore AI Card dark premium theme even in light mode for standout effect */
+#services .svc-card-dark {
+  background: linear-gradient(145deg, #051C2A 0%, #004FE1 100%) !important;
+  border: 1px solid rgba(0, 79, 225, 0.4) !important;
+  .svc-title { color: #FFFFFF !important; }
+  .svc-desc { color: rgba(255, 255, 255, 0.85) !important; }
+  .svc-more { color: #09E0FE !important; }
 }
 
-:host-context(body.theme-light) #services .svc-card-dark:hover {
-  background: #F5F9FF !important;
-  box-shadow: 0 15px 45px rgba(0, 79, 225, 0.12) !important;
+#services .svc-card-dark:hover {
+  background: linear-gradient(135deg, #001A33 0%, #004FE1 100%) !important;
+  box-shadow: 0 12px 48px rgba(0, 79, 225, 0.45) !important;
 }
 
 /* Global country visibility restore */
@@ -5995,3 +5994,78 @@ footer {
   filter: grayscale(0.1) brightness(0.9) contrast(1.1);
 }
 
+/* RESPONSIVE GRIDS FOR MOBILE */
+.steps-grid, 
+.packages-grid, 
+.testimonials-metrics-grid {
+  display: grid;
+  gap: 32px;
+  width: 100%;
+}
+
+.steps-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 52px;
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.packages-grid {
+  grid-template-columns: repeat(3, 1fr);
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.testimonials-metrics-grid {
+  grid-template-columns: repeat(3, 1fr);
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* FIX CARD CLIPPING */
+.step-card, 
+.pkg-card, 
+.wb-promise div[onmouseover] {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+@media (max-width: 991px) {
+  .slide-content {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    top: 55% !important;
+    padding: 0 24px !important;
+  }
+  .s-title {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
+  }
+  .s-desc {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+    max-width: 100% !important;
+  }
+  .h-panel {
+    max-width: 100% !important;
+    margin-top: 32px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .si {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}

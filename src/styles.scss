@@ -424,7 +424,7 @@ body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-c
   z-index: 2;
 }
 
-body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover :is(h1, h2, h3, h4, p, span, div, strong, li, i, em, .s-stitle, .s-ssub, .svc-title, .svc-desc, .svc-more, .tag, .pkg-name, .pkg-subtitle, .pkg-price-label, .pkg-price-value, .pkg-outcome, .founder-name, .founder-role, .global-country, .global-city, .g-rect-title, .g-rect-num, .bkd-title, .bkd-card-title, .benefit-title, .wb-promise-title, .lean-feat-title, .g-val, .g-lbl, .success-item-title, .success-item-copy, .faq-q, .faq-a) {
+body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover :is(h1, h2, h3, h4, p, span, div, strong, li, i, em, .s-stitle, .s-ssub, .svc-title, .svc-desc, .svc-more, .tag, .svc-badge-ai, .pkg-name, .pkg-subtitle, .pkg-price-label, .pkg-price-value, .pkg-outcome, .founder-name, .founder-role, .global-country, .global-city, .g-rect-title, .g-rect-num, .bkd-title, .bkd-card-title, .benefit-title, .wb-promise-title, .lean-feat-title, .g-val, .g-lbl, .success-item-title, .success-item-copy, .faq-q, .faq-a) {
   color: #FFFFFF !important;
   -webkit-text-fill-color: #FFFFFF !important;
   opacity: 1 !important;
@@ -448,7 +448,6 @@ body.theme-light .benefit-title,
 body.theme-light .global-country,
 body.theme-light .wb-promise-title,
 body.theme-light .lean-feat-title,
-body.theme-light .svc-card-dark .svc-title,
 body.theme-light .pkg-card.featured .pkg-name,
 body.theme-light .pkg-card.featured .pkg-price-value,
 body.theme-light .pkg-card.featured .pkg-subtitle,
@@ -466,7 +465,6 @@ body.theme-light .global-city,
 body.theme-light .value-desc,
 body.theme-light .wb-promise-desc,
 body.theme-light .lean-feat-desc,
-body.theme-light .svc-card-dark .svc-desc,
 body.theme-light .pkg-subtitle,
 body.theme-light .pkg-outcome,
 body.theme-light .pkg-price-label,
@@ -611,34 +609,34 @@ body.theme-light :is(#heyLean, #careers, #bk-diff) :is(h1, h2, h3, h4, p, span, 
   color: inherit;
 }
 
-body.theme-light :is(#heyLean, #careers, #bk-diff) .s-stitle,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .s-stitle span,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .value-name,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .benefit-title,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .job-title,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .bkd-title,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .bkd-card-title,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .g-rect-title,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .global-country,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .wb-val-name,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .wb-promise-title,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .perf-val,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .faq-q,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .svc-title {
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .s-stitle,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .s-stitle span,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .value-name,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .benefit-title,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .job-title,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .bkd-title,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .bkd-card-title,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .g-rect-title,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .global-country,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .wb-val-name,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .wb-promise-title,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .perf-val,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .faq-q,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .svc-title {
   color: var(--ink2) !important;
 }
 
-body.theme-light :is(#problem, #stakes, #success-vision, #heyLean, #careers, #bk-diff) .s-stag,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .g-rect-tag,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .job-dept,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .job-type,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .bkd-card-btn,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .faq-arrow,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .svc-more,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .tag,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .global-service,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .svc-tag,
-body.theme-light :is(#heyLean, #careers, #bk-diff) .pkg-price-value {
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .s-stag,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .g-rect-tag,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .job-dept,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .job-type,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .bkd-card-btn,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .faq-arrow,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .svc-more,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .tag,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .global-service,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .svc-tag,
+body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .pkg-price-value {
   color: var(--b1) !important;
 }
 
@@ -669,7 +667,6 @@ body.theme-light .bkd-btn-white svg {
 }
 
 body.theme-light #services .svc-card,
-body.theme-light #services .svc-card-dark,
 body.theme-light #global .global-card-main,
 body.theme-light #global .global-card-sec,
 body.theme-light .founder-card,
@@ -682,11 +679,13 @@ body.theme-light #svc-detail {
   box-shadow: var(--shadow-card) !important;
 }
 
-/* Hover styles for cards are now handled globally above */
+/* Hover styles for cards are now handled globally above, but #services needs extra specificity to override light surface */
+body.theme-light #services :is(.svc-card, .svc-card-dark):hover {
+  background: var(--grad-premium) !important;
+  color: #FFFFFF !important;
+}
 
-body.theme-light #services .svc-card .tag,
-body.theme-light #services .svc-card-dark .tag,
-body.theme-light #services .svc-card-dark .svc-badge-ai {
+body.theme-light #services .svc-card .tag {
   background: rgba(0, 79, 225, .08) !important;
   border-color: rgba(0, 79, 225, .16) !important;
 }
@@ -1267,3 +1266,12 @@ body.theme-light .svc-card .svc-desc { color: #3A4A5A !important; }
 .svc-card:hover .tag, .svc-card-dark:hover .tag { background: rgba(255, 255, 255, 0.15) !important; color: #FFFFFF !important; border-color: rgba(255, 255, 255, 0.3) !important; }
 .svc-card:hover .svc-more, .svc-card-dark:hover .svc-more { color: #FFFFFF !important; font-weight: 700 !important; }
 
+/* GLOBAL RESPONSIVE TYPOGRAPHY */
+@media (max-width: 768px) {
+  h1 { font-size: 2.2rem !important; }
+  h2 { font-size: 1.8rem !important; }
+  .si, .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}

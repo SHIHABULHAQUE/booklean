@@ -59,6 +59,14 @@ export class HeaderComponent {
         this.countryMenuOpen.update((value) => !value);
     }
 
+    get currentFlag(): { img: string, text: string } {
+        switch(this.regionDataService.currentRegion()) {
+            case 'uk': return { img: 'https://flagcdn.com/w40/gb.png', text: 'UK' };
+            case 'in': return { img: 'https://flagcdn.com/w40/in.png', text: 'IN' };
+            default: return { img: 'https://flagcdn.com/w40/ae.png', text: 'UAE' };
+        }
+    }
+
     toggleTheme() {
         this.themeService.toggleTheme();
     }

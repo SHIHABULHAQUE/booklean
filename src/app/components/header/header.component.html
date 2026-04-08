@@ -8,16 +8,16 @@
       <a href="#" class="tb-portal">Client Portal</a>
       <div class="country-btn" [class.is-open]="countryMenuOpen()"
         (click)="toggleCountryMenu(); $event.stopPropagation()">
-        <span class="cp-flag cb-flag">UAE</span>
-        <!-- <span class="cb-name">UAE</span>
-        <span class="cb-chev">?</span> -->
+        <span class="cp-flag cb-flag" style="display: flex; align-items: center; gap: 6px; padding: 4px 10px;">
+          <img [src]="currentFlag.img" width="18" style="border-radius:2px;" alt="flag"> {{ currentFlag.text }}
+        </span>
 
         <div class="country-panel" (click)="$event.stopPropagation()">
           <div class="cp-header">Select Your Location</div>
           <div class="cp-grid">
-            <a href="#" class="cp-item is-active"><span class="cp-flag">UAE</span> United Arab Emirates</a>
-            <a href="#" class="cp-item"><span class="cp-flag">IN</span>India</a>
-            <a href="#" class="cp-item"><span class="cp-flag">UK</span>United Kingdom</a>
+            <a routerLink="/uae" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uae'" (click)="closeMobileMenu()"><span class="cp-flag" style="display: flex; align-items: center; justify-content: center;"><img src="https://flagcdn.com/w40/ae.png" width="20" style="border-radius:2px;" alt="UAE"></span> United Arab Emirates</a>
+            <a routerLink="/in" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'in'" (click)="closeMobileMenu()"><span class="cp-flag" style="display: flex; align-items: center; justify-content: center;"><img src="https://flagcdn.com/w40/in.png" width="20" style="border-radius:2px;" alt="IN"></span> India</a>
+            <a routerLink="/uk" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uk'" (click)="closeMobileMenu()"><span class="cp-flag" style="display: flex; align-items: center; justify-content: center;"><img src="https://flagcdn.com/w40/gb.png" width="20" style="border-radius:2px;" alt="UK"></span> United Kingdom</a>
           </div>
         </div>
       </div>

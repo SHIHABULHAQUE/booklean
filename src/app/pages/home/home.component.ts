@@ -22,7 +22,6 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit() {
     if (typeof window !== "undefined") {
       this.startAutoSlide();
-      this.initIntersectionObserver();
     }
   }
 
@@ -65,25 +64,5 @@ export class HomeComponent implements AfterViewInit {
     console.log('Sending message:', text);
   }
 
-  private initIntersectionObserver() {
-    const revObs = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal-active');
-          revObs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
 
-    document.querySelectorAll('.glass-rect, .benefit-card, .pkg-card, .svc-card, .svc-card-dark, .global-card, .wb-val-card, .faq-item').forEach((el: any) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-      revObs.observe(el);
-    });
-
-    const style = document.createElement('style');
-    style.innerHTML = '.reveal-active { opacity: 1 !important; transform: translateY(0) !important; }';
-    document.head.appendChild(style);
-  }
 }

@@ -23,7 +23,10 @@ export class HeaderComponent {
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-        this.isScrolled.set(window.pageYOffset > 20);
+        const scrolled = window.pageYOffset > 20;
+        if (this.isScrolled() !== scrolled) {
+            this.isScrolled.set(scrolled);
+        }
     }
 
     @HostListener('window:resize', [])

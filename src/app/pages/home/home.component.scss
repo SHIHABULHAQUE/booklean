@@ -64,6 +64,9 @@
   /* -- TYPE -- */
   --fh: 'Montserrat', sans-serif;
   --fb: 'Inter', sans-serif;
+  --cb: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -- WHO-WE-SERVE BAND -- */
@@ -471,6 +474,8 @@ body::after {
   -webkit-backdrop-filter: blur(28px) saturate(150%) brightness(1.02);
   border: 1px solid rgba(144, 191, 255, .55);
   box-shadow: 0 8px 24px rgba(0, 79, 225, .10), inset 0 1px 0 rgba(255, 255, 255, .90);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .glass-card {
@@ -481,7 +486,9 @@ body::after {
   border-top: 1px solid rgba(99, 160, 255, .25);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(5, 15, 45, .35), 0 2px 8px rgba(0, 0, 0, .20), inset 0 1px 0 rgba(255, 255, 255, .08);
-  transition: background .35s, box-shadow .35s, transform .35s, border-color .35s;
+  transition: background .35s, box-shadow .35s, transform .35s var(--ease-premium), border-color .35s;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .glass-card:hover {
@@ -503,9 +510,11 @@ body::after {
   box-shadow:
     0 8px 32px rgba(5, 15, 45, .35), 0 2px 8px rgba(0, 0, 0, .20),
     inset 0 1px 0 rgba(255, 255, 255, .08);
-  transition: all .38s cubic-bezier(.16, 1, .3, 1);
+  transition: transform .38s var(--ease-premium), box-shadow .38s var(--ease-premium), background .38s var(--ease-premium);
   position: relative;
   overflow: hidden;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 /* Gradient shimmer line top */
@@ -573,6 +582,8 @@ body::after {
   border: 1px solid rgba(0, 79, 225, .30);
   border-top: 1px solid rgba(99, 160, 255, .22);
   box-shadow: 0 8px 32px rgba(5, 15, 45, .35), 0 2px 8px rgba(0, 0, 0, .20), inset 0 1px 0 rgba(255, 255, 255, .08);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .h-panel {
@@ -1355,7 +1366,6 @@ body::after {
   opacity: 0;
   transform: translateY(20px);
   transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) .2s;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .slide.active .s-tag {
@@ -1375,7 +1385,6 @@ body::after {
   transform: translateY(30px) scale(0.95);
   transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275) .35s;
   color: #F8FAFC;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .slide.active .s-title {
@@ -1405,7 +1414,6 @@ body::after {
   transform: translateY(20px);
   transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
   font-family: var(--fb);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .slide.active .s-desc {
@@ -1422,7 +1430,6 @@ body::after {
   opacity: 0;
   transform: translateY(16px);
   transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) .55s;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .slide.active .s-tagline {
@@ -1858,7 +1865,6 @@ body::after {
   color: #004FE1;
   line-height: 1;
   margin-bottom: 8px;
-  text-shadow: 0 0 24px rgba(0, 79, 225, .40);
 }
 
 .stat-lbl {
@@ -1996,7 +2002,8 @@ section {
 }
 
 #careers {
-  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
 }
 
 #bk-diff {
@@ -2066,7 +2073,6 @@ section {
   color: #004FE1;
   line-height: 1;
   margin-bottom: 6px;
-  text-shadow: 0 0 24px rgba(0, 79, 225, .40);
 }
 
 .g-rect-title {
@@ -3377,7 +3383,6 @@ section {
   font-size: 24px;
   font-weight: 800;
   color: #08A1F7;
-  text-shadow: 0 0 16px rgba(8, 161, 247, .40);
 }
 
 .perf-lbl {
@@ -3391,15 +3396,31 @@ section {
 
 /* -- CAREERS -- */
 .careers-hero {
-  background: linear-gradient(135deg, #051C2A 0%, #082030 50%, #051C2A 100%);
+  background: linear-gradient(90deg, #020b12 0%, #051c2a 35%, #004fe1 100%) !important;
   padding: 56px;
   margin-bottom: 56px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 52px;
   align-items: center;
-  border-radius: 16px;
-  border: 1px solid rgba(0, 79, 225, .20);
+  border-radius: 20px;
+  border-top: 2px solid #08A1F7 !important;
+  position: relative;
+  overflow: hidden;
+
+  // Force pure white text inside the card
+  .s-stitle,
+  h2,
+  .s-stag,
+  .s-ssub {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+  }
+
+  .s-stitle span {
+    -webkit-text-fill-color: #FFFFFF !important;
+    background: none !important;
+  }
 }
 
 .careers-img {
@@ -6108,7 +6129,8 @@ footer {
 
 /* Visibility fixes for specific cards */
 .benefit-card {
-  transition: all 0.35s var(--cb);
+  transition: transform 0.4s var(--ease-premium), box-shadow 0.4s var(--ease-premium), background 0.4s var(--ease-premium);
+  will-change: transform;
 
   &:hover {
     transform: translateY(-6px);
@@ -6118,7 +6140,8 @@ footer {
 }
 
 .job-pill {
-  transition: all 0.3s var(--cb);
+  transition: transform 0.3s var(--ease-premium), background 0.3s var(--ease-premium);
+  will-change: transform;
 
   &:hover {
     background: var(--grad-premium) !important;
@@ -6376,6 +6399,41 @@ footer {
     width: 100% !important;
     text-align: left !important;
   }
+}
+
+@media (max-width: 480px) {
+  .si {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+.s-title {
+  font-size: 28px !important;
+  line-height: 1.2 !important;
+  margin-bottom: 12px !important;
+}
+
+.s-desc {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 16px !important;
+  max-width: 100% !important;
+}
+
+.s-btns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+.h-panel {
+  max-width: 100% !important;
+  margin-top: 10px !important;
+  width: 100% !important;
+  text-align: left !important;
+}
 }
 
 @media (max-width: 480px) {

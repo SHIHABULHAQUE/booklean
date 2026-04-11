@@ -38,10 +38,13 @@ export class App implements OnInit {
 
         // Initialize AOS
         aosPlugin.init({
-          duration: 800,
-          easing: 'ease-out-cubic',
+          duration: 1000,
+          easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
           once: true,
-          offset: 50
+          offset: 100,
+          disableMutationObserver: false,
+          debounceDelay: 50,
+          throttleDelay: 99
         });
 
         // Refresh AOS on route changes for dynamically loaded components

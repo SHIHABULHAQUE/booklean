@@ -56,6 +56,8 @@
   --shadow-card: 0 24px 60px rgba(7, 35, 86, .12);
   --shadow-glass: 0 20px 56px rgba(5, 15, 60, .22);
   --radius-card: 22px;
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *,
@@ -139,6 +141,8 @@ select {
   -webkit-backdrop-filter: blur(28px) saturate(150%) brightness(1.02);
   border: 1px solid rgba(144, 191, 255, .55);
   box-shadow: 0 8px 24px rgba(0, 79, 225, .10), inset 0 1px 0 rgba(255, 255, 255, .90);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .glass-card {
@@ -149,7 +153,9 @@ select {
   border-top: 1px solid rgba(99, 160, 255, .25);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(5, 15, 45, .35), 0 2px 8px rgba(0, 0, 0, .20), inset 0 1px 0 rgba(255, 255, 255, .08);
-  transition: all .35s ease;
+  transition: transform .35s var(--ease-premium), opacity .35s var(--ease-premium);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .container {
@@ -430,12 +436,12 @@ body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-c
   opacity: 1 !important;
 }
 
-body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .empathy-strip, #heyLean, #careers, #bk-diff) {
+body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .empathy-strip, #careers, #bk-diff) {
   background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%) !important;
   border-color: rgba(0, 79, 225, .08) !important;
 }
 
-body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .empathy-strip, #heyLean, #careers, #bk-diff)::before {
+body.theme-light :is(.stats-ribbon, .glass-strip, .perf-strip, .empathy-strip, #careers, #bk-diff)::before {
   opacity: .18;
 }
 
@@ -494,11 +500,11 @@ body.theme-light .hero-orb-2 {
   background: rgba(9, 224, 254, 0.50) !important;
 }
 
-body.theme-light :is(#heyLean, #careers, #bk-diff) {
+body.theme-light :is(#careers, #bk-diff) {
   background: linear-gradient(180deg, #ffffff 0%, #dae8ff 100%) !important;
 }
 
-body.theme-light :is(#heyLean, #careers, #bk-diff)::before {
+body.theme-light :is(#careers, #bk-diff)::before {
   opacity: 0.70 !important;
 }
 
@@ -601,42 +607,42 @@ body.theme-light :is(#problem, #stakes, #success-vision) .problem-intro {
 
 
 
-body.theme-light :is(#heyLean, #careers, #bk-diff) {
+body.theme-light :is(#careers, #bk-diff) {
   color: var(--ink2) !important;
 }
 
-body.theme-light :is(#heyLean, #careers, #bk-diff) :is(h1, h2, h3, h4, p, span, div, strong, li) {
+body.theme-light :is(#careers, #bk-diff) :is(h1, h2, h3, h4, p, span, div, strong, li) {
   color: inherit;
 }
 
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .s-stitle,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .s-stitle span,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .value-name,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .benefit-title,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .job-title,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .bkd-title,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .bkd-card-title,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .g-rect-title,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .global-country,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .wb-val-name,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .wb-promise-title,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .perf-val,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .faq-q,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .svc-title {
+body.theme-light :is(#services, #careers, #bk-diff) .s-stitle,
+body.theme-light :is(#services, #careers, #bk-diff) .s-stitle span,
+body.theme-light :is(#services, #careers, #bk-diff) .value-name,
+body.theme-light :is(#services, #careers, #bk-diff) .benefit-title,
+body.theme-light :is(#services, #careers, #bk-diff) .job-title,
+body.theme-light :is(#services, #careers, #bk-diff) .bkd-title,
+body.theme-light :is(#services, #careers, #bk-diff) .bkd-card-title,
+body.theme-light :is(#services, #careers, #bk-diff) .g-rect-title,
+body.theme-light :is(#services, #careers, #bk-diff) .global-country,
+body.theme-light :is(#services, #careers, #bk-diff) .wb-val-name,
+body.theme-light :is(#services, #careers, #bk-diff) .wb-promise-title,
+body.theme-light :is(#services, #careers, #bk-diff) .perf-val,
+body.theme-light :is(#services, #careers, #bk-diff) .faq-q,
+body.theme-light :is(#services, #careers, #bk-diff) .svc-title {
   color: var(--ink2) !important;
 }
 
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .s-stag,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .g-rect-tag,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .job-dept,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .job-type,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .bkd-card-btn,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .faq-arrow,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .svc-more,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .tag,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .global-service,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .svc-tag,
-body.theme-light :is(#services, #heyLean, #careers, #bk-diff) .pkg-price-value {
+body.theme-light :is(#services, #careers, #bk-diff) .s-stag,
+body.theme-light :is(#services, #careers, #bk-diff) .g-rect-tag,
+body.theme-light :is(#services, #careers, #bk-diff) .job-dept,
+body.theme-light :is(#services, #careers, #bk-diff) .job-type,
+body.theme-light :is(#services, #careers, #bk-diff) .bkd-card-btn,
+body.theme-light :is(#services, #careers, #bk-diff) .faq-arrow,
+body.theme-light :is(#services, #careers, #bk-diff) .svc-more,
+body.theme-light :is(#services, #careers, #bk-diff) .tag,
+body.theme-light :is(#services, #careers, #bk-diff) .global-service,
+body.theme-light :is(#services, #careers, #bk-diff) .svc-tag,
+body.theme-light :is(#services, #careers, #bk-diff) .pkg-price-value {
   color: var(--b1) !important;
 }
 
@@ -1120,7 +1126,7 @@ body.theme-light #bk-diff .bkd-card-btn:focus {
   color: var(--ink2);
   font-weight: 700;
   font-size: 14px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s var(--ease-premium), color 0.3s var(--ease-premium);
   box-shadow: none;
   /* Removed individual shadow */
 
@@ -1326,6 +1332,14 @@ body.theme-light .svc-card .svc-title {
 
 body.theme-light .svc-card .svc-desc {
   color: #3A4A5A !important;
+}
+
+.svc-card,
+.svc-card-dark {
+  transition: transform 0.45s var(--ease-premium), box-shadow 0.45s var(--ease-premium), background 0.45s var(--ease-premium);
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .svc-card:hover,

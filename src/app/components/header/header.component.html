@@ -15,9 +15,20 @@
         <div class="country-panel" (click)="$event.stopPropagation()">
           <div class="cp-header">Select Your Location</div>
           <div class="cp-grid">
-            <a routerLink="/uae" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uae'" (click)="closeMobileMenu()"><span class="cp-flag" style="display: flex; align-items: center; justify-content: center;"><img src="https://flagcdn.com/w40/ae.png" width="20" style="border-radius:2px;" alt="UAE"></span> United Arab Emirates</a>
-            <a routerLink="/in" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'in'" (click)="closeMobileMenu()"><span class="cp-flag" style="display: flex; align-items: center; justify-content: center;"><img src="https://flagcdn.com/w40/in.png" width="20" style="border-radius:2px;" alt="IN"></span> India</a>
-            <a routerLink="/uk" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uk'" (click)="closeMobileMenu()"><span class="cp-flag" style="display: flex; align-items: center; justify-content: center;"><img src="https://flagcdn.com/w40/gb.png" width="20" style="border-radius:2px;" alt="UK"></span> United Kingdom</a>
+            <a routerLink="/uae" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uae'"
+              (click)="closeMobileMenu()"><span class="cp-flag"
+                style="display: flex; align-items: center; justify-content: center;"><img
+                  src="https://flagcdn.com/w40/ae.png" width="20" style="border-radius:2px;" alt="UAE"></span> United
+              Arab Emirates</a>
+            <a routerLink="/in" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'in'"
+              (click)="closeMobileMenu()"><span class="cp-flag"
+                style="display: flex; align-items: center; justify-content: center;"><img
+                  src="https://flagcdn.com/w40/in.png" width="20" style="border-radius:2px;" alt="IN"></span> India</a>
+            <a routerLink="/uk" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uk'"
+              (click)="closeMobileMenu()"><span class="cp-flag"
+                style="display: flex; align-items: center; justify-content: center;"><img
+                  src="https://flagcdn.com/w40/gb.png" width="20" style="border-radius:2px;" alt="UK"></span> United
+              Kingdom</a>
           </div>
         </div>
       </div>
@@ -28,7 +39,7 @@
 <nav id="navbar" [class.scrolled]="isScrolled()">
   <div class="nav-wrap">
     <a routerLink="/" class="n-logo" (click)="closeMobileMenu()">
-      <img src="assets/images/booklean-logo.png" alt="Booklean logo" />
+      <img src="assets/images/booklean-logo.png" alt="BookLean Global — AI-Powered Accounting and Tax Consultancy UAE" />
     </a>
 
     <ul class="nav-list">
@@ -41,43 +52,67 @@
         </button>
         <div class="mega">
           <div class="mega-col">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" class="mega-hd" (click)="closeMobileMenu()">Audit &amp; Assurance</a>
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" class="mega-hd"
+              (click)="closeMobileMenu()">Audit &amp; Assurance</a>
             <ul class="mega-list">
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" [queryParams]="{tab: 'statutory-audit'}">Statutory Audit</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" [queryParams]="{tab: 'internal-audit'}">Internal Audit</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" [queryParams]="{tab: 'forensic-accounting'}">Forensic Accounting</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" [queryParams]="{tab: 'risk-assurance'}">Risk Assurance</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" [queryParams]="{tab: 'ifrs-advisory'}">IFRS Advisory</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'statutory-audit'}">Statutory Audit</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'internal-audit'}">Internal Audit</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'forensic-accounting'}">Forensic Accounting</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'risk-assurance'}">Risk Assurance</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'ifrs-advisory'}">IFRS Advisory</a></li>
             </ul>
           </div>
           <div class="mega-col">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" class="mega-hd" (click)="closeMobileMenu()">Tax</a>
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" class="mega-hd"
+              (click)="closeMobileMenu()">Tax</a>
             <ul class="mega-list">
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" [queryParams]="{tab: 'corporate-tax'}">Corporate Tax (9%)</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" [queryParams]="{tab: 'vat-advisory'}">VAT Advisory</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" [queryParams]="{tab: 'transfer-pricing'}">Transfer Pricing</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" [queryParams]="{tab: 'fta-compliance'}">FTA Compliance</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" [queryParams]="{tab: 'international-tax'}">International Tax</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+                  [queryParams]="{tab: 'corporate-tax'}">Corporate Tax (9%)</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+                  [queryParams]="{tab: 'vat-advisory'}">VAT Advisory</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+                  [queryParams]="{tab: 'transfer-pricing'}">Transfer Pricing</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+                  [queryParams]="{tab: 'fta-compliance'}">FTA Compliance</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+                  [queryParams]="{tab: 'international-tax'}">International Tax</a></li>
             </ul>
           </div>
           <div class="mega-col">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" class="mega-hd" (click)="closeMobileMenu()">Advisory</a>
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" class="mega-hd"
+              (click)="closeMobileMenu()">Advisory</a>
             <ul class="mega-list">
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" [queryParams]="{tab: 'business-advisory'}">Business Advisory</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" [queryParams]="{tab: 'm-and-a-advisory'}">M&amp;A Advisory</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" [queryParams]="{tab: 'restructuring'}">Restructuring</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" [queryParams]="{tab: 'valuations'}">Valuations</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" [queryParams]="{tab: 'esg-and-sustainability'}">ESG &amp; Sustainability</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'business-advisory'}">Business Advisory</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'm-and-a-advisory'}">M&amp;A Advisory</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'restructuring'}">Restructuring</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'valuations'}">Valuations</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'esg-and-sustainability'}">ESG &amp; Sustainability</a></li>
             </ul>
           </div>
           <div class="mega-col">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" class="mega-hd" (click)="closeMobileMenu()">Digital &amp; AI</a>
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" class="mega-hd"
+              (click)="closeMobileMenu()">Digital &amp; AI</a>
             <ul class="mega-list">
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" [queryParams]="{tab: 'ai-bookkeeping'}">AI Bookkeeping</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" [queryParams]="{tab: 'cfo-services'}">CFO Services</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" [queryParams]="{tab: 'erp-setup'}">ERP Setup</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" [queryParams]="{tab: 'peppol-e-invoicing'}">PEPPOL E-Invoicing</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" [queryParams]="{tab: 'power-bi'}">Power BI</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+                  [queryParams]="{tab: 'ai-bookkeeping'}">AI Bookkeeping</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+                  [queryParams]="{tab: 'cfo-services'}">CFO Services</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+                  [queryParams]="{tab: 'erp-setup'}">ERP Setup</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+                  [queryParams]="{tab: 'peppol-e-invoicing'}">PEPPOL E-Invoicing</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+                  [queryParams]="{tab: 'power-bi'}">Power BI</a></li>
             </ul>
           </div>
           <div class="mega-feat">
@@ -176,12 +211,18 @@
           <span class="mobile-chevron">+</span>
         </button>
         <div class="mobile-submenu" [class.is-open]="openMenu() === 's'">
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" [queryParams]="{tab: 'statutory-audit'}" (click)="closeMobileMenu()">Statutory Audit</a>
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" [queryParams]="{tab: 'corporate-tax'}" (click)="closeMobileMenu()">Corporate Tax</a>
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" [queryParams]="{tab: 'vat-advisory'}" (click)="closeMobileMenu()">VAT Advisory</a>
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" [queryParams]="{tab: 'business-advisory'}" (click)="closeMobileMenu()">Business Advisory</a>
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" [queryParams]="{tab: 'ai-bookkeeping'}" (click)="closeMobileMenu()">AI Bookkeeping</a>
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" [queryParams]="{tab: 'cfo-services'}" (click)="closeMobileMenu()">CFO Services</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+            [queryParams]="{tab: 'statutory-audit'}" (click)="closeMobileMenu()">Statutory Audit</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+            [queryParams]="{tab: 'corporate-tax'}" (click)="closeMobileMenu()">Corporate Tax</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+            [queryParams]="{tab: 'vat-advisory'}" (click)="closeMobileMenu()">VAT Advisory</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+            [queryParams]="{tab: 'business-advisory'}" (click)="closeMobileMenu()">Business Advisory</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+            [queryParams]="{tab: 'ai-bookkeeping'}" (click)="closeMobileMenu()">AI Bookkeeping</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+            [queryParams]="{tab: 'cfo-services'}" (click)="closeMobileMenu()">CFO Services</a>
         </div>
       </div>
 

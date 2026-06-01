@@ -40,8 +40,9 @@
 }
 
 :host .tb-left {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.04em;
+  font-weight: 800;
 }
 
 :host .tb-dot {
@@ -52,9 +53,11 @@
   background: linear-gradient(135deg, #004fe1, #08a1f7);
   box-shadow: 0 0 10px rgba(3, 193, 244, 0.6);
   animation: pulse 2s infinite;
+
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
@@ -286,7 +289,7 @@
   border-bottom-color: #004fe1;
 }
 
-:host .n-item.is-open > .n-btn {
+:host .n-item.is-open>.n-btn {
   color: #004fe1;
   border-bottom-color: #004fe1;
 }
@@ -295,7 +298,7 @@
   transition: transform 0.25s;
 }
 
-:host .n-item.is-open > .n-btn svg {
+:host .n-item.is-open>.n-btn svg {
   transform: rotate(180deg);
 }
 
@@ -717,6 +720,7 @@
 }
 
 @media (max-width: 640px) {
+
   :host .nav-wrap,
   :host .mobile-menu-inner,
   :host .topbar-inner {

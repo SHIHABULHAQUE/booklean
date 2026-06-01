@@ -769,40 +769,8 @@ body.theme-light .cs-item.is-active {
   color: #fff !important;
 }
 
-body.theme-light footer {
-  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%) !important;
-  color: var(--muted) !important;
-  border-top-color: rgba(0, 79, 225, .10) !important;
-}
+/* Footer light-theme styles are now handled in footer.component.scss */
 
-body.theme-light footer .f-col h4,
-body.theme-light footer .f-brand [style*='color:var(--white)'],
-body.theme-light footer .f-bottom,
-body.theme-light footer .f-bottom span {
-  color: var(--ink2) !important;
-}
-
-body.theme-light footer .f-col a,
-body.theme-light footer .f-brand p,
-body.theme-light footer .f-bottom a,
-body.theme-light footer [style*='color:rgba(255,255,255,.50)'],
-body.theme-light footer [style*='color:rgba(255,255,255,.40)'] {
-  color: var(--muted) !important;
-}
-
-body.theme-light footer .f-social-ico {
-  background: rgba(0, 79, 225, .04) !important;
-  border-color: rgba(0, 79, 225, .14) !important;
-  color: var(--b1) !important;
-}
-
-body.theme-light footer .f-social-ico:hover,
-body.theme-light footer .f-col a:hover,
-body.theme-light footer .f-bottom a:hover {
-  background: linear-gradient(135deg, rgba(0, 79, 225, .85) 0%, rgba(8, 161, 247, .80) 100%) !important;
-  color: #FFFFFF !important;
-  border-color: rgba(8, 161, 247, .55) !important;
-}
 
 body.theme-light .final-cta {
   background: linear-gradient(180deg, #ffffff 0%, #eef6ff 100%) !important;

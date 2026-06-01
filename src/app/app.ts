@@ -29,7 +29,7 @@ export class App implements OnInit {
         setTimeout(() => {
           this.isLoading.set(false);
           sessionStorage.setItem('hasLoaded', 'true');
-        }, 2000);
+        }, 300);
       }
 
       import('aos').then((AOS: any) => {

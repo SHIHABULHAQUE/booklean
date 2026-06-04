@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, AfterViewInit, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { BookingModalService } from '../../services/booking-modal.service';
 
 
 @Component({
@@ -17,7 +18,15 @@ export class HomeComponent implements AfterViewInit {
   currentSlide = 0;
   activeFaq: number | null = null;
 
-  constructor(private cdr: ChangeDetectorRef) { }
+  constructor(
+    private cdr: ChangeDetectorRef,
+    private bookingService: BookingModalService
+  ) { }
+
+  openBookingModal(event: Event) {
+    event.preventDefault();
+    this.bookingService.open();
+  }
 
   ngAfterViewInit() {
     if (typeof window !== "undefined") {

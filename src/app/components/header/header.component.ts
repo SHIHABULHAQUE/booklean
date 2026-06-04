@@ -2,6 +2,7 @@ import { Component, ChangeDetectionStrategy, signal, inject, HostListener, Eleme
 import { RouterLink } from '@angular/router';
 import { RegionDataService } from '../../services/region-data.service';
 import { ThemeService } from '../../services/theme.service';
+import { BookingModalService } from '../../services/booking-modal.service';
 
 @Component({
     selector: 'app-header',
@@ -19,6 +20,7 @@ export class HeaderComponent {
     imageError = signal(false);
     regionDataService = inject(RegionDataService);
     themeService = inject(ThemeService);
+    bookingService = inject(BookingModalService);
     private elementRef = inject(ElementRef);
 
     @HostListener('window:scroll', [])
@@ -78,5 +80,10 @@ export class HeaderComponent {
         this.isMenuOpen.set(false);
         this.openMenu.set('');
         this.countryMenuOpen.set(false);
+    }
+
+    openBookingModal(event: Event) {
+        event.preventDefault();
+        this.bookingService.open();
     }
 }

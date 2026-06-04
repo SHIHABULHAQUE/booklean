@@ -21,7 +21,7 @@
           — powered by AI, led by Chartered Accountants.</p>
         <div class="s-tagline"><span class="ai">For free zone & mainland SMEs in Dubai, Abu Dhabi & GCC.</span></div>
         <div class="s-btns">
-          <a href="#contact" class="btn-primary" data-aos="zoom-in" data-aos-delay="600">Book My Free 30-Min Review
+          <a href="#contact" class="btn-primary" data-aos="zoom-in" data-aos-delay="600" (click)="openBookingModal($event)">Book My Free 30-Min Review
             →</a>
           <a href="https://wa.me/971526203995" target="_blank" class="btn-outline" data-aos="zoom-in"
             data-aos-delay="800">💬 WhatsApp Our Team</a>
@@ -57,7 +57,7 @@
             <div class="h-stat-lbl">Big 4–trained, always on call</div>
           </div>
         </div>
-        <a href="#contact" class="h-cta"><span>Book My Free 30-Min Review →</span></a>
+        <a href="#contact" class="h-cta" (click)="openBookingModal($event)"><span>Book My Free 30-Min Review →</span></a>
       </div>
     </div>
   </div>
@@ -109,7 +109,7 @@
             <div class="h-stat-lbl">Data-backed, expert-guided</div>
           </div>
         </div>
-        <a href="#contact" class="h-cta"><span>Book My Free 30-Min Review →</span></a>
+        <a href="#contact" class="h-cta" (click)="openBookingModal($event)"><span>Book My Free 30-Min Review →</span></a>
       </div>
     </div>
   </div>
@@ -349,7 +349,7 @@
               </div>
             </div>
           </div>
-          <a href="#contact" class="btn-primary problem-solution-btn">Book My Free 30-Min Review →</a>
+          <a href="#contact" class="btn-primary problem-solution-btn" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
         </div>
 
         <div class="problem-help-card">
@@ -501,7 +501,7 @@
       </div>
     </div>
     <div class="stakes-cta" style="margin-top:52px;text-align:center;">
-      <a href="#contact" class="btn-primary" style="padding:16px 40px;font-size:13px;letter-spacing:.08em;">Book My Free
+      <a href="#contact" class="btn-primary" style="padding:16px 40px;font-size:13px;letter-spacing:.08em;" (click)="openBookingModal($event)">Book My Free
         30-Min Review →</a>
     </div>
   </div>
@@ -618,7 +618,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:12px;">
-      <a href="#contact" class="btn-primary">Book My Free 30-Min Review →</a>
+      <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
       <div class="timeline-badge">⏱ Most clients are fully set up within 2–4 weeks</div>
     </div>
   </div>
@@ -655,7 +655,7 @@
           feel every single Monday after
           switching to Booklean. You're one 30-minute call away from this.</p>
         <a href="#contact" class="btn-primary" style="margin-top:24px;display:inline-block;" data-aos="fade-up"
-          data-aos-delay="400">Book My Free 30-Min Review →</a>
+          data-aos-delay="400" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
       </div>
       <div class="success-list">
         <div class="success-item" data-aos="fade-up" data-aos-delay="100">
@@ -870,7 +870,7 @@
             assess your setup and recommend the right fit — with a transparent quote within 24 hours.</div>
         </div>
       </div>
-      <a href="#contact" class="btn-primary" style="white-space:nowrap;flex-shrink:0;">Book My Free 30-Min Review →</a>
+      <a href="#contact" class="btn-primary" style="white-space:nowrap;flex-shrink:0;" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
     </div>
   </div>
 </section>
@@ -1176,7 +1176,7 @@
           Mainland · Multi-entity · All covered.</div>
       </div>
       <div style="display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap;">
-        <a href="#contact" class="btn-primary" style="white-space:nowrap;">Book My Free 30-Min Review →</a>
+        <a href="#contact" class="btn-primary" style="white-space:nowrap;" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
         <a href="https://wa.me/971526203995" target="_blank"
           style="padding:13px 24px;background:rgba(37,211,102,.15);border:2px solid rgba(37,211,102,.35);color:#25D366;font-size:12px;font-weight:800;font-family:var(--fb);text-decoration:none;border-radius:10px;white-space:nowrap;letter-spacing:.04em;transition:all .22s;"
           onmouseover="this.style.background='rgba(37,211,102,.25)'"
@@ -1508,7 +1508,7 @@
             →</a>
         </div>
         <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="#contact" class="btn-primary">Book My Free 30-Min Review →</a>
+          <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
           <a href="#services"
             style="padding:14px 28px;border:2px solid rgba(8,161,247,.55);color:#004FE1;font-size:13px;font-weight:700;font-family:var(--fb);text-decoration:none;border-radius:8px;letter-spacing:.04em;transition:all .2s;background:#EEF5FF;"
             onmouseover="this.style.borderColor='#004FE1';this.style.color='#FFFFFF';this.style.background='#004FE1'"
@@ -1901,7 +1901,7 @@
             style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.75;font-family:var(--fb);margin-bottom:20px;">
             Book a free 30-minute call with one of our Chartered Accountants. No sales pitch — just honest advice for
             your business.</p>
-          <a href="#contact" class="btn-primary" style="display:inline-block;">Book My Free 30-Min Review →</a>
+          <a href="#contact" class="btn-primary" style="display:inline-block;" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
         </div>
       </div>
 
@@ -2038,7 +2038,7 @@
         <div class="bkd-card-title">Free 30-Min UAE Finance Review</div>
         <div class="bkd-card-desc">Talk to a Chartered Accountant about your VAT, Corporate Tax, or bookkeeping. No
           sales pitch — just honest answers about your specific situation.</div>
-        <a href="#" class="bkd-card-btn">Book My Free Review →</a>
+        <a href="#" class="bkd-card-btn" (click)="openBookingModal($event)">Book My Free Review →</a>
       </div>
       <div class="bkd-card">
         <div class="bkd-card-ico">💬</div>

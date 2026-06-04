@@ -52,73 +52,74 @@
         </button>
         <div class="mega">
           <div class="mega-col">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']" class="mega-hd"
-              (click)="closeMobileMenu()">Audit &amp; Assurance</a>
-            <ul class="mega-list">
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
-                  [queryParams]="{tab: 'statutory-audit'}">Statutory Audit</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
-                  [queryParams]="{tab: 'internal-audit'}">Internal Audit</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
-                  [queryParams]="{tab: 'forensic-accounting'}">Forensic Accounting</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
-                  [queryParams]="{tab: 'risk-assurance'}">Risk Assurance</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
-                  [queryParams]="{tab: 'ifrs-advisory'}">IFRS Advisory</a></li>
-            </ul>
-          </div>
-          <div class="mega-col">
             <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" class="mega-hd"
-              (click)="closeMobileMenu()">Tax</a>
+              (click)="closeMobileMenu()">Tax &amp; FTA Compliance</a>
             <ul class="mega-list">
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
-                  [queryParams]="{tab: 'corporate-tax'}">Corporate Tax (9%)</a></li>
+                  [queryParams]="{tab: 'corporate-tax'}">Corporate Tax Filing (9%) UAE</a></li>
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
-                  [queryParams]="{tab: 'vat-advisory'}">VAT Advisory</a></li>
+                  [queryParams]="{tab: 'vat-advisory'}">VAT Registration &amp; Filing UAE</a></li>
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
-                  [queryParams]="{tab: 'transfer-pricing'}">Transfer Pricing</a></li>
+                  [queryParams]="{tab: 'fta-compliance'}">FTA Audit Support &amp; Defence</a></li>
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
-                  [queryParams]="{tab: 'fta-compliance'}">FTA Compliance</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
-                  [queryParams]="{tab: 'international-tax'}">International Tax</a></li>
-            </ul>
-          </div>
-          <div class="mega-col">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" class="mega-hd"
-              (click)="closeMobileMenu()">Advisory</a>
-            <ul class="mega-list">
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
-                  [queryParams]="{tab: 'business-advisory'}">Business Advisory</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
-                  [queryParams]="{tab: 'm-and-a-advisory'}">M&amp;A Advisory</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
-                  [queryParams]="{tab: 'restructuring'}">Restructuring</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
-                  [queryParams]="{tab: 'valuations'}">Valuations</a></li>
-              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
-                  [queryParams]="{tab: 'esg-and-sustainability'}">ESG &amp; Sustainability</a></li>
+                  [queryParams]="{tab: 'transfer-pricing'}">Transfer Pricing Advisory</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'ifrs-advisory'}">IFRS Compliance UAE</a></li>
             </ul>
           </div>
           <div class="mega-col">
             <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" class="mega-hd"
-              (click)="closeMobileMenu()">Digital &amp; AI</a>
+              (click)="closeMobileMenu()">Accounting &amp; Bookkeeping</a>
             <ul class="mega-list">
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-                  [queryParams]="{tab: 'ai-bookkeeping'}">AI Bookkeeping</a></li>
+                  [queryParams]="{tab: 'ai-bookkeeping'}">AI-Powered Cloud Bookkeeping</a></li>
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-                  [queryParams]="{tab: 'cfo-services'}">CFO Services</a></li>
+                  [queryParams]="{tab: 'ai-bookkeeping'}">Payroll &amp; WPS Processing</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'cfo-services']"
+                  [queryParams]="{tab: 'cfo-services'}">Virtual CFO Services UAE</a></li>
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-                  [queryParams]="{tab: 'erp-setup'}">ERP Setup</a></li>
+                  [queryParams]="{tab: 'power-bi'}">Management Reporting &amp; MIS</a></li>
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-                  [queryParams]="{tab: 'peppol-e-invoicing'}">PEPPOL E-Invoicing</a></li>
+                  [queryParams]="{tab: 'cfo-services'}">Cash Flow Management UAE</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" class="mega-hd"
+              (click)="closeMobileMenu()">Business Setup &amp; Growth</a>
+            <ul class="mega-list">
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'business-advisory'}">Dubai Mainland Company Setup</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'business-advisory'}">Freezone Company Formation</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'business-advisory'}">Visa &amp; PRO Services UAE</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'business-advisory'}">Business Advisory UAE</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+                  [queryParams]="{tab: 'business-advisory'}">UAE Golden Visa Services</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" class="mega-hd"
+              (click)="closeMobileMenu()">Digital Finance &amp; Audit</a>
+            <ul class="mega-list">
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-                  [queryParams]="{tab: 'power-bi'}">Power BI</a></li>
+                  [queryParams]="{tab: 'peppol-e-invoicing'}">PEPPOL E-Invoicing UAE 2026</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+                  [queryParams]="{tab: 'international-tax'}">ESR &amp; UBO Filing UAE</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'risk-assurance'}">AML Compliance UAE</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+                  [queryParams]="{tab: 'statutory-audit'}">Statutory &amp; Internal Audit</a></li>
+              <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+                  [queryParams]="{tab: 'power-bi'}">AI Financial Intelligence</a></li>
             </ul>
           </div>
           <div class="mega-feat">
-            <div class="mega-feat-tag">Spotlight</div>
-            <div class="mega-feat-title">Corporate Tax in the UAE: what every business needs to know.</div>
-            <a href="#" class="mega-feat-link">Read insight</a>
+            <div class="mega-feat-tag">2026 Priority</div>
+            <div class="mega-feat-title">UAE PEPPOL E-Invoicing: ready for digital transition.</div>
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+              [queryParams]="{tab: 'peppol-e-invoicing'}" class="mega-feat-link" (click)="closeMobileMenu()">Get Compliance Ready &rarr;</a>
           </div>
         </div>
       </li>
@@ -132,26 +133,26 @@
         </button>
         <div class="mega">
           <div class="mega-col mega-col-wide">
-            <div class="mega-hd">Sectors We Serve</div>
+            <div class="mega-hd">Industries We Serve Across UAE &amp; GCC</div>
             <ul class="mega-list mega-list-columns">
-              <li><a href="#">Banking &amp; Financial Services</a></li>
+              <li><a href="#">Restaurants &amp; Cafés (VAT &amp; POS)</a></li>
               <li><a href="#">Real Estate &amp; Construction</a></li>
+              <li><a href="#">Ecommerce &amp; Amazon Sellers</a></li>
+              <li><a href="#">Technology &amp; SaaS</a></li>
               <li><a href="#">Healthcare &amp; Life Sciences</a></li>
-              <li><a href="#">Technology &amp; Media</a></li>
-              <li><a href="#">Oil, Gas &amp; Energy</a></li>
-              <li><a href="#">Retail &amp; Consumer</a></li>
-              <li><a href="#">Manufacturing</a></li>
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Hospitality &amp; Tourism</a></li>
-              <li><a href="#">Government &amp; Public Sector</a></li>
-              <li><a href="#">Non-Profit Organisations</a></li>
+              <li><a href="#">Retail &amp; Consumer Goods</a></li>
               <li><a href="#">Logistics &amp; Transportation</a></li>
+              <li><a href="#">Banking &amp; Financial Services</a></li>
+              <li><a href="#">Hospitality &amp; Tourism</a></li>
+              <li><a href="#">Manufacturing &amp; Trading</a></li>
+              <li><a href="#">Freelancers &amp; Sole Establishments</a></li>
+              <li><a href="#">Oil, Gas &amp; Energy</a></li>
             </ul>
           </div>
           <div class="mega-feat">
-            <div class="mega-feat-tag">Industry Focus</div>
-            <div class="mega-feat-title">Real estate compliance changes to act on this year.</div>
-            <a href="#" class="mega-feat-link">Explore</a>
+            <div class="mega-feat-tag">Industry Intelligence</div>
+            <div class="mega-feat-title">Restaurant &amp; F&amp;B VAT Compliance in UAE — What Every Owner Must Know in 2026</div>
+            <a href="#" class="mega-feat-link">Read the Guide &rarr;</a>
           </div>
         </div>
       </li>
@@ -163,21 +164,21 @@
             <polyline points="2,4 6,8 10,4" />
           </svg>
         </button>
-        <div class="mega">
+        <div class="mega mega-insights">
           <div class="mega-col">
-            <div class="mega-hd">Resources</div>
+            <div class="mega-hd">FINANCIAL INTELLIGENCE HUB</div>
             <ul class="mega-list">
-              <li><a href="#">Articles &amp; Publications</a></li>
-              <li><a href="#">Tax Alerts</a></li>
-              <li><a href="#">Regulatory Updates</a></li>
-              <li><a href="#">Webinars</a></li>
-              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">UAE Corporate Tax Guide 2026</a></li>
+              <li><a href="#">VAT Filing Deadlines &amp; Mistakes</a></li>
+              <li><a href="#">PEPPOL E-Invoicing UAE 2026</a></li>
+              <li><a href="#">Mainland vs Freezone UAE Guide</a></li>
+              <li><a href="#">UAE Payroll &amp; WPS Guide</a></li>
             </ul>
           </div>
           <div class="mega-feat">
-            <div class="mega-feat-tag">Latest</div>
-            <div class="mega-feat-title">VAT updates and practical actions for FY 2025.</div>
-            <a href="#" class="mega-feat-link">Read now</a>
+            <div class="mega-feat-tag">MUST READ · 2026</div>
+            <div class="mega-feat-title">UAE Corporate Tax 2026 — Deadlines, Exemptions &amp; What SMEs Must Do Right Now</div>
+            <a href="#" class="mega-feat-link">Read the Full Guide &rarr;</a>
           </div>
         </div>
       </li>
@@ -189,7 +190,7 @@
     </ul>
 
     <div class="nav-cta-area">
-      <a href="#bk-diff" class="n-cta-btn">Book My Free 30-Min Review</a>
+      <a href="#bk-diff" class="n-cta-btn" (click)="openBookingModal($event)">Book My Free 30-Min Review</a>
     </div>
 
 
@@ -203,7 +204,7 @@
 
   <div class="mobile-menu" [class.is-open]="isMenuOpen()">
     <div class="mobile-menu-inner">
-      <a href="#bk-diff" class="mobile-primary-cta" (click)="closeMobileMenu()">Book My Free 30-Min Review</a>
+      <a href="#bk-diff" class="mobile-primary-cta" (click)="closeMobileMenu(); openBookingModal($event)">Book My Free 30-Min Review</a>
 
       <div class="mobile-group">
         <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 's'" (click)="toggleMega('s')">
@@ -211,18 +212,31 @@
           <span class="mobile-chevron">+</span>
         </button>
         <div class="mobile-submenu" [class.is-open]="openMenu() === 's'">
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
-            [queryParams]="{tab: 'statutory-audit'}" (click)="closeMobileMenu()">Statutory Audit</a>
+          <div class="mobile-sub-hd">Tax &amp; FTA Compliance</div>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
-            [queryParams]="{tab: 'corporate-tax'}" (click)="closeMobileMenu()">Corporate Tax</a>
+            [queryParams]="{tab: 'corporate-tax'}" (click)="closeMobileMenu()">Corporate Tax Filing (9%) UAE</a>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
-            [queryParams]="{tab: 'vat-advisory'}" (click)="closeMobileMenu()">VAT Advisory</a>
+            [queryParams]="{tab: 'vat-advisory'}" (click)="closeMobileMenu()">VAT Registration &amp; Filing UAE</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
+            [queryParams]="{tab: 'fta-compliance'}" (click)="closeMobileMenu()">FTA Audit Support &amp; Defence</a>
+
+          <div class="mobile-sub-hd">Accounting &amp; Bookkeeping</div>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+            [queryParams]="{tab: 'ai-bookkeeping'}" (click)="closeMobileMenu()">AI-Powered Cloud Bookkeeping</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
+            [queryParams]="{tab: 'cfo-services'}" (click)="closeMobileMenu()">Virtual CFO Services UAE</a>
+
+          <div class="mobile-sub-hd">Business Setup &amp; Growth</div>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
-            [queryParams]="{tab: 'business-advisory'}" (click)="closeMobileMenu()">Business Advisory</a>
+            [queryParams]="{tab: 'business-advisory'}" (click)="closeMobileMenu()">Dubai Mainland Company Setup</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
+            [queryParams]="{tab: 'business-advisory'}" (click)="closeMobileMenu()">Freezone Company Formation</a>
+
+          <div class="mobile-sub-hd">Digital Finance &amp; Audit</div>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-            [queryParams]="{tab: 'ai-bookkeeping'}" (click)="closeMobileMenu()">AI Bookkeeping</a>
-          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-            [queryParams]="{tab: 'cfo-services'}" (click)="closeMobileMenu()">CFO Services</a>
+            [queryParams]="{tab: 'peppol-e-invoicing'}" (click)="closeMobileMenu()">PEPPOL E-Invoicing UAE 2026</a>
+          <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'audit-assurance']"
+            [queryParams]="{tab: 'statutory-audit'}" (click)="closeMobileMenu()">Statutory &amp; Internal Audit</a>
         </div>
       </div>
 
@@ -232,12 +246,12 @@
           <span class="mobile-chevron">+</span>
         </button>
         <div class="mobile-submenu" [class.is-open]="openMenu() === 'i'">
+          <a href="#" (click)="closeMobileMenu()">Restaurants &amp; Cafés (VAT &amp; POS)</a>
           <a href="#" (click)="closeMobileMenu()">Real Estate &amp; Construction</a>
-          <a href="#" (click)="closeMobileMenu()">Technology &amp; Media</a>
+          <a href="#" (click)="closeMobileMenu()">Ecommerce &amp; Amazon Sellers</a>
+          <a href="#" (click)="closeMobileMenu()">Technology &amp; SaaS</a>
           <a href="#" (click)="closeMobileMenu()">Healthcare &amp; Life Sciences</a>
-          <a href="#" (click)="closeMobileMenu()">Retail &amp; Consumer</a>
-          <a href="#" (click)="closeMobileMenu()">Hospitality &amp; Tourism</a>
-          <a href="#" (click)="closeMobileMenu()">Logistics &amp; Transportation</a>
+          <a href="#" (click)="closeMobileMenu()">Freelancers &amp; Sole Establishments</a>
         </div>
       </div>
 
@@ -248,10 +262,11 @@
           <span class="mobile-chevron">+</span>
         </button>
         <div class="mobile-submenu" [class.is-open]="openMenu() === 'ins'">
-          <a href="#" (click)="closeMobileMenu()">Articles &amp; Publications</a>
-          <a href="#" (click)="closeMobileMenu()">Tax Alerts</a>
-          <a href="#" (click)="closeMobileMenu()">Regulatory Updates</a>
-          <a href="#" (click)="closeMobileMenu()">Webinars</a>
+          <a href="#" (click)="closeMobileMenu()">UAE Corporate Tax Guide 2026</a>
+          <a href="#" (click)="closeMobileMenu()">VAT Filing Deadlines &amp; Mistakes</a>
+          <a href="#" (click)="closeMobileMenu()">PEPPOL E-Invoicing UAE 2026</a>
+          <a href="#" (click)="closeMobileMenu()">Mainland vs Freezone UAE Guide</a>
+          <a href="#" (click)="closeMobileMenu()">UAE Payroll &amp; WPS Guide</a>
         </div>
       </div>
 

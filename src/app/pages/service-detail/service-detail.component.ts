@@ -3,6 +3,7 @@ import { RouterLink, RouterLinkActive, ActivatedRoute } from '@angular/router';
 import { RegionDataService } from '../../services/region-data.service';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { BookingModalService } from '../../services/booking-modal.service';
 
 interface SubService {
   id: string;
@@ -28,7 +29,13 @@ interface ServiceCategory {
 })
 export class ServiceDetailComponent {
     regionDataService = inject(RegionDataService);
+    bookingService = inject(BookingModalService);
     private route = inject(ActivatedRoute);
+
+    openBookingModal(event: Event) {
+        event.preventDefault();
+        this.bookingService.open();
+    }
 
     // Data Mapping
     private serviceData: Record<string, ServiceCategory> = {

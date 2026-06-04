@@ -1,13 +1,13 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../components/header/header.component';
-import { SidebarComponent } from '../components/sidebar/sidebar.component';
 import { ChatAssistantComponent } from '../components/chat/chat-assistant.component';
+import { BookingModalComponent } from '../components/booking-modal/booking-modal.component';
 
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, SidebarComponent, ChatAssistantComponent],
+  imports: [RouterOutlet, HeaderComponent, ChatAssistantComponent, BookingModalComponent],
   template: `
     <div class="app-container">
       <div class="main-content">
@@ -16,7 +16,7 @@ import { ChatAssistantComponent } from '../components/chat/chat-assistant.compon
           <router-outlet></router-outlet>
         </main>
         <app-chat-assistant></app-chat-assistant>
-        <app-sidebar></app-sidebar>
+        <app-booking-modal></app-booking-modal>
       </div>
     </div>
   `,

@@ -3,6 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs';
 import { ThemeService } from './services/theme.service';
+import { TranslationService } from './services/translation.service';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +19,10 @@ export class App implements OnInit {
   private router = inject(Router);
   private platformId = inject(PLATFORM_ID);
   private themeService = inject(ThemeService);
+  private translationService = inject(TranslationService);
 
   ngOnInit() {
+    this.translationService.init();
     if (isPlatformBrowser(this.platformId)) {
       const hasLoaded = sessionStorage.getItem('hasLoaded');
       

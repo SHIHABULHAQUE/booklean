@@ -3,19 +3,24 @@ import { RouterLink } from '@angular/router';
 import { RegionDataService } from '../../services/region-data.service';
 import { ThemeService } from '../../services/theme.service';
 import { BookingModalService } from '../../services/booking-modal.service';
+import { TranslationService } from '../../services/translation.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-header',
     standalone: true,
-    imports: [RouterLink],
+    imports: [RouterLink, TranslateModule, CommonModule],
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
+    translationService = inject(TranslationService);
     isMenuOpen = signal(false);
     openMenu = signal('');
     countryMenuOpen = signal(false);
+    langMenuOpen = signal(false);
     isScrolled = signal(false);
     imageError = signal(false);
     regionDataService = inject(RegionDataService);
@@ -43,6 +48,7 @@ export class HeaderComponent {
         if (!this.elementRef.nativeElement.contains(event.target)) {
             this.openMenu.set('');
             this.countryMenuOpen.set(false);
+            this.langMenuOpen.set(false);
             this.isMenuOpen.set(false);
         }
     }
@@ -62,6 +68,12 @@ export class HeaderComponent {
 
     toggleCountryMenu() {
         this.countryMenuOpen.update((value) => !value);
+        this.langMenuOpen.set(false);
+    }
+
+    toggleLangMenu() {
+        this.langMenuOpen.update((value) => !value);
+        this.countryMenuOpen.set(false);
     }
 
     get currentFlag(): { img: string, text: string } {
@@ -80,6 +92,7 @@ export class HeaderComponent {
         this.isMenuOpen.set(false);
         this.openMenu.set('');
         this.countryMenuOpen.set(false);
+        this.langMenuOpen.set(false);
     }
 
     openBookingModal(event: Event) {

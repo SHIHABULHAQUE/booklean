@@ -2,10 +2,16 @@
   <div class="topbar-inner">
     <div class="tb-left">
       <div class="tb-dot"></div>
-      <span>Audit &bull; Tax &bull; Advisory &bull; Digital &amp; AI Solutions</span>
+      <span>{{ 'NAV.TAG_SLIDE1' | translate }}</span>
     </div>
     <div class="tb-right">
-      <a href="#" class="tb-portal">Client Portal</a>
+      <a href="#" class="tb-portal">{{ 'NAV.CLIENT_PORTAL' | translate }}</a>
+      
+      <!-- Language Switcher -->
+      <button class="lang-switch-btn" (click)="translationService.toggleLanguage(); $event.stopPropagation()">
+        {{ translationService.currentLang() === 'en' ? 'العربية' : 'English' }}
+      </button>
+
       <div class="country-btn" [class.is-open]="countryMenuOpen()"
         (click)="toggleCountryMenu(); $event.stopPropagation()">
         <span class="cp-flag cb-flag" style="display: flex; align-items: center; gap: 6px; padding: 4px 10px;">
@@ -13,22 +19,20 @@
         </span>
 
         <div class="country-panel" (click)="$event.stopPropagation()">
-          <div class="cp-header">Select Your Location</div>
+          <div class="cp-header">{{ 'NAV.SELECT_LOCATION' | translate }}</div>
           <div class="cp-grid">
             <a routerLink="/uae" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uae'"
               (click)="closeMobileMenu()"><span class="cp-flag"
                 style="display: flex; align-items: center; justify-content: center;"><img
-                  src="https://flagcdn.com/w40/ae.png" width="20" style="border-radius:2px;" alt="UAE"></span> United
-              Arab Emirates</a>
+                  src="https://flagcdn.com/w40/ae.png" width="20" style="border-radius:2px;" alt="UAE"></span> {{ 'NAV.UAE' | translate }}</a>
             <a routerLink="/in" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'in'"
               (click)="closeMobileMenu()"><span class="cp-flag"
                 style="display: flex; align-items: center; justify-content: center;"><img
-                  src="https://flagcdn.com/w40/in.png" width="20" style="border-radius:2px;" alt="IN"></span> India</a>
+                  src="https://flagcdn.com/w40/in.png" width="20" style="border-radius:2px;" alt="IN"></span> {{ 'NAV.INDIA' | translate }}</a>
             <a routerLink="/uk" class="cp-item" [class.is-active]="regionDataService.currentRegion() === 'uk'"
               (click)="closeMobileMenu()"><span class="cp-flag"
                 style="display: flex; align-items: center; justify-content: center;"><img
-                  src="https://flagcdn.com/w40/gb.png" width="20" style="border-radius:2px;" alt="UK"></span> United
-              Kingdom</a>
+                  src="https://flagcdn.com/w40/gb.png" width="20" style="border-radius:2px;" alt="UK"></span> {{ 'NAV.UK' | translate }}</a>
           </div>
         </div>
       </div>
@@ -45,7 +49,7 @@
     <ul class="nav-list">
       <li class="n-item" [class.is-open]="openMenu() === 's'">
         <button type="button" class="n-btn" (click)="toggleMega('s'); $event.stopPropagation()">
-          Services
+          {{ 'NAV.SERVICES' | translate }}
           <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2">
             <polyline points="2,4 6,8 10,4" />
           </svg>
@@ -53,7 +57,7 @@
         <div class="mega">
           <div class="mega-col">
             <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']" class="mega-hd"
-              (click)="closeMobileMenu()">Tax &amp; FTA Compliance</a>
+              (click)="closeMobileMenu()">{{ 'SERVICES.TAX_COMPLIANCE' | translate }}</a>
             <ul class="mega-list">
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
                   [queryParams]="{tab: 'corporate-tax'}">Corporate Tax Filing (9%) UAE</a></li>
@@ -69,7 +73,7 @@
           </div>
           <div class="mega-col">
             <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" class="mega-hd"
-              (click)="closeMobileMenu()">Accounting &amp; Bookkeeping</a>
+              (click)="closeMobileMenu()">{{ 'SERVICES.ACCOUNTING' | translate }}</a>
             <ul class="mega-list">
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
                   [queryParams]="{tab: 'ai-bookkeeping'}">AI-Powered Cloud Bookkeeping</a></li>
@@ -85,7 +89,7 @@
           </div>
           <div class="mega-col">
             <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']" class="mega-hd"
-              (click)="closeMobileMenu()">Business Setup &amp; Growth</a>
+              (click)="closeMobileMenu()">{{ 'SERVICES.ADVISORY' | translate }}</a>
             <ul class="mega-list">
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
                   [queryParams]="{tab: 'business-advisory'}">Dubai Mainland Company Setup</a></li>
@@ -101,7 +105,7 @@
           </div>
           <div class="mega-col">
             <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']" class="mega-hd"
-              (click)="closeMobileMenu()">Digital Finance &amp; Audit</a>
+              (click)="closeMobileMenu()">{{ 'SERVICES.TAX_COMPLIANCE' | translate }}</a>
             <ul class="mega-list">
               <li><a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
                   [queryParams]="{tab: 'peppol-e-invoicing'}">PEPPOL E-Invoicing UAE 2026</a></li>
@@ -116,17 +120,17 @@
             </ul>
           </div>
           <div class="mega-feat">
-            <div class="mega-feat-tag">2026 Priority</div>
-            <div class="mega-feat-title">UAE PEPPOL E-Invoicing: ready for digital transition.</div>
+            <div class="mega-feat-tag">{{ 'NAV.PEPPOL_PRIORITY' | translate }}</div>
+            <div class="mega-feat-title">{{ 'NAV.PEPPOL_DESC' | translate }}</div>
             <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
-              [queryParams]="{tab: 'peppol-e-invoicing'}" class="mega-feat-link" (click)="closeMobileMenu()">Get Compliance Ready &rarr;</a>
+              [queryParams]="{tab: 'peppol-e-invoicing'}" class="mega-feat-link" (click)="closeMobileMenu()">{{ 'NAV.GET_COMPLIANCE_READY' | translate }} &rarr;</a>
           </div>
         </div>
       </li>
 
       <li class="n-item" [class.is-open]="openMenu() === 'i'">
         <button type="button" class="n-btn" (click)="toggleMega('i'); $event.stopPropagation()">
-          Industries
+          {{ 'NAV.INDUSTRIES' | translate }}
           <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2">
             <polyline points="2,4 6,8 10,4" />
           </svg>
@@ -159,14 +163,14 @@
 
       <li class="n-item" [class.is-open]="openMenu() === 'ins'">
         <button type="button" class="n-btn" (click)="toggleMega('ins'); $event.stopPropagation()">
-          Insights
+          {{ 'NAV.INSIGHTS' | translate }}
           <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2">
             <polyline points="2,4 6,8 10,4" />
           </svg>
         </button>
         <div class="mega mega-insights">
           <div class="mega-col">
-            <div class="mega-hd">FINANCIAL INTELLIGENCE HUB</div>
+            <div class="mega-hd">{{ 'NAV.FINANCIAL_HUB' | translate }}</div>
             <ul class="mega-list">
               <li><a href="#">UAE Corporate Tax Guide 2026</a></li>
               <li><a href="#">VAT Filing Deadlines &amp; Mistakes</a></li>
@@ -176,23 +180,27 @@
             </ul>
           </div>
           <div class="mega-feat">
-            <div class="mega-feat-tag">MUST READ · 2026</div>
-            <div class="mega-feat-title">UAE Corporate Tax 2026 — Deadlines, Exemptions &amp; What SMEs Must Do Right Now</div>
-            <a href="#" class="mega-feat-link">Read the Full Guide &rarr;</a>
+            <div class="mega-feat-tag">{{ 'NAV.MUST_READ' | translate }}</div>
+            <div class="mega-feat-title">{{ 'NAV.FEATURED_TITLE' | translate }}</div>
+            <a href="#" class="mega-feat-link">{{ 'NAV.READ_FULL_GUIDE' | translate }} &rarr;</a>
           </div>
         </div>
       </li>
 
-      <li class="n-item"><a href="#how-it-works" class="n-link">How It Works</a></li>
-      <li class="n-item"><a href="#about" class="n-link">About Us</a></li>
-      <li class="n-item"><a href="#careers" class="n-link">Careers</a></li>
-      <li class="n-item"><a href="#bk-diff" class="n-link">Contact</a></li>
+      <li class="n-item"><a href="#how-it-works" class="n-link">{{ 'NAV.HOW_IT_WORKS' | translate }}</a></li>
+      <li class="n-item"><a href="#about" class="n-link">{{ 'NAV.ABOUT_US' | translate }}</a></li>
+      <li class="n-item"><a href="#careers" class="n-link">{{ 'NAV.CAREERS' | translate }}</a></li>
+      <li class="n-item"><a href="#bk-diff" class="n-link">{{ 'NAV.CONTACT' | translate }}</a></li>
     </ul>
 
     <div class="nav-cta-area">
-      <a href="#bk-diff" class="n-cta-btn" (click)="openBookingModal($event)">Book My Free 30-Min Review</a>
+      <a href="#bk-diff" class="n-cta-btn" (click)="openBookingModal($event)">{{ 'NAV.BOOK_REVIEW' | translate }}</a>
     </div>
 
+    <!-- Mobile Language Switcher (Visible only on mobile/tablet) -->
+    <button type="button" class="mobile-nav-lang-btn" (click)="translationService.toggleLanguage(); $event.stopPropagation()">
+      {{ translationService.currentLang() === 'en' ? 'العربية' : 'English' }}
+    </button>
 
     <button type="button" class="hamburger" [class.is-open]="isMenuOpen()" [attr.aria-expanded]="isMenuOpen()"
       aria-label="Toggle navigation menu" (click)="toggleMenu()">
@@ -204,15 +212,20 @@
 
   <div class="mobile-menu" [class.is-open]="isMenuOpen()">
     <div class="mobile-menu-inner">
-      <a href="#bk-diff" class="mobile-primary-cta" (click)="closeMobileMenu(); openBookingModal($event)">Book My Free 30-Min Review</a>
+      <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 15px;">
+        <a href="#bk-diff" class="mobile-primary-cta" style="flex: 1; margin-bottom: 0;" (click)="closeMobileMenu(); openBookingModal($event)">{{ 'NAV.BOOK_REVIEW' | translate }}</a>
+        <button class="mobile-lang-btn" (click)="translationService.toggleLanguage(); $event.stopPropagation()" style="background: none; border: 1px solid rgba(0,79,225,0.2); color: #004fe1; padding: 12px 18px; border-radius: 12px; font-size: 13px; font-weight: 700; cursor: pointer;">
+          {{ translationService.currentLang() === 'en' ? 'العربية' : 'English' }}
+        </button>
+      </div>
 
       <div class="mobile-group">
         <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 's'" (click)="toggleMega('s')">
-          <span>Services</span>
+          <span>{{ 'NAV.SERVICES' | translate }}</span>
           <span class="mobile-chevron">+</span>
         </button>
         <div class="mobile-submenu" [class.is-open]="openMenu() === 's'">
-          <div class="mobile-sub-hd">Tax &amp; FTA Compliance</div>
+          <div class="mobile-sub-hd">{{ 'SERVICES.TAX_COMPLIANCE' | translate }}</div>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
             [queryParams]="{tab: 'corporate-tax'}" (click)="closeMobileMenu()">Corporate Tax Filing (9%) UAE</a>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
@@ -220,13 +233,13 @@
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'tax-compliance']"
             [queryParams]="{tab: 'fta-compliance'}" (click)="closeMobileMenu()">FTA Audit Support &amp; Defence</a>
 
-          <div class="mobile-sub-hd">Accounting &amp; Bookkeeping</div>
+          <div class="mobile-sub-hd">{{ 'SERVICES.ACCOUNTING' | translate }}</div>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
             [queryParams]="{tab: 'ai-bookkeeping'}" (click)="closeMobileMenu()">AI-Powered Cloud Bookkeeping</a>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'digital-ai']"
             [queryParams]="{tab: 'cfo-services'}" (click)="closeMobileMenu()">Virtual CFO Services UAE</a>
 
-          <div class="mobile-sub-hd">Business Setup &amp; Growth</div>
+          <div class="mobile-sub-hd">{{ 'SERVICES.ADVISORY' | translate }}</div>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
             [queryParams]="{tab: 'business-advisory'}" (click)="closeMobileMenu()">Dubai Mainland Company Setup</a>
           <a [routerLink]="['/', regionDataService.currentRegion(), 'service', 'advisory-strategy']"
@@ -242,7 +255,7 @@
 
       <div class="mobile-group">
         <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 'i'" (click)="toggleMega('i')">
-          <span>Industries</span>
+          <span>{{ 'NAV.INDUSTRIES' | translate }}</span>
           <span class="mobile-chevron">+</span>
         </button>
         <div class="mobile-submenu" [class.is-open]="openMenu() === 'i'">
@@ -258,7 +271,7 @@
       <div class="mobile-group">
         <button type="button" class="mobile-group-btn" [class.is-open]="openMenu() === 'ins'"
           (click)="toggleMega('ins')">
-          <span>Insights</span>
+          <span>{{ 'NAV.INSIGHTS' | translate }}</span>
           <span class="mobile-chevron">+</span>
         </button>
         <div class="mobile-submenu" [class.is-open]="openMenu() === 'ins'">
@@ -271,18 +284,16 @@
       </div>
 
       <div class="mobile-links">
-        <a href="#how-it-works" (click)="closeMobileMenu()">How It Works</a>
-        <a href="#about" (click)="closeMobileMenu()">About Us</a>
-        <a href="#careers" (click)="closeMobileMenu()">Careers</a>
-        <a href="#faq" (click)="closeMobileMenu()">FAQ</a>
-        <a href="#bk-diff" (click)="closeMobileMenu()">Contact</a>
+        <a href="#how-it-works" (click)="closeMobileMenu()">{{ 'NAV.HOW_IT_WORKS' | translate }}</a>
+        <a href="#about" (click)="closeMobileMenu()">{{ 'NAV.ABOUT_US' | translate }}</a>
+        <a href="#careers" (click)="closeMobileMenu()">{{ 'NAV.CAREERS' | translate }}</a>
+        <a href="#bk-diff" (click)="closeMobileMenu()">{{ 'NAV.CONTACT' | translate }}</a>
       </div>
 
       <div class="mobile-meta">
-        <div class="mobile-meta-copy">Serving UAE and GCC businesses with audit, tax, advisory, and AI-led finance
-          operations.</div>
+        <div class="mobile-meta-copy">{{ 'FOOTER.DISCLAIMER' | translate }}</div>
         <a href="https://wa.me/971526203995" target="_blank" class="mobile-whatsapp"
-          (click)="closeMobileMenu()">WhatsApp Our Team</a>
+          (click)="closeMobileMenu()">{{ 'HERO.WHATSAPP_TEAM' | translate }}</a>
       </div>
     </div>
   </div>

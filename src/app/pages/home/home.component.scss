@@ -1233,7 +1233,7 @@ body::after {
 .hero {
   position: relative;
   height: 90vh;
-  min-height: 600px;
+  min-height: 780px;
   overflow: hidden;
 }
 
@@ -1379,7 +1379,7 @@ body::after {
   font-weight: 900;
   line-height: 1.15;
   max-width: 680px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   letter-spacing: -1px;
   opacity: 0;
   transform: translateY(30px) scale(0.95);
@@ -1409,7 +1409,7 @@ body::after {
   max-width: 520px;
   line-height: 1.8;
   color: #E2E8F0;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   opacity: 0;
   transform: translateY(20px);
   transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
@@ -1425,7 +1425,7 @@ body::after {
   font-size: 14px;
   font-weight: 700;
   color: #94A3B8;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   font-family: var(--fb);
   opacity: 0;
   transform: translateY(16px);

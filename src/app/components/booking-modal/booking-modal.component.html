@@ -12,40 +12,40 @@
       @if (!isSuccess()) {
         <div class="modal-header">
           <span class="eyebrow">30-Min Consultation</span>
-          <h3 class="modal-title serif">Book Your Free <span class="hl">Review</span></h3>
-          <p class="modal-subtitle">Get professional financial, tax, and compliance answers for your business.</p>
+          <h3 class="modal-title serif">{{ 'BOOKING.TITLE' | translate }}</h3>
+          <p class="modal-subtitle">{{ 'BOOKING.SUBTITLE' | translate }}</p>
         </div>
 
         <form class="modal-form" (submit)="$event.preventDefault(); onSubmit()">
           <div class="form-group">
-            <label for="modal-name">Full Name</label>
-            <input type="text" id="modal-name" name="fullName" placeholder="John Doe" 
+            <label for="modal-name">{{ 'BOOKING.NAME' | translate }}</label>
+            <input type="text" id="modal-name" name="fullName" [placeholder]="'BOOKING.NAME' | translate" 
                    [ngModel]="name()" (ngModelChange)="name.set($event)" class="field-control">
           </div>
 
           <div class="form-group">
-            <label for="modal-company">Company Name</label>
-            <input type="text" id="modal-company" name="companyName" placeholder="My Company LLC" 
+            <label for="modal-company">{{ 'BOOKING.COMPANY' | translate }}</label>
+            <input type="text" id="modal-company" name="companyName" [placeholder]="'BOOKING.COMPANY' | translate" 
                    [ngModel]="company()" (ngModelChange)="company.set($event)" class="field-control">
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="modal-mobile">Mobile Number *</label>
+              <label for="modal-mobile">{{ 'BOOKING.MOBILE' | translate }} *</label>
               <input type="tel" id="modal-mobile" name="mobile" placeholder="+971 50 123 4567" 
                      [ngModel]="mobile()" (ngModelChange)="mobile.set($event)" required class="field-control">
             </div>
 
             <div class="form-group">
-              <label for="modal-email">Work Email *</label>
-              <input type="email" id="modal-email" name="email" placeholder="john@mycompany.com" 
+              <label for="modal-email">{{ 'BOOKING.EMAIL' | translate }} *</label>
+              <input type="email" id="modal-email" name="email" [placeholder]="'BOOKING.EMAIL' | translate" 
                      [ngModel]="email()" (ngModelChange)="email.set($event)" required class="field-control">
             </div>
           </div>
 
           <div class="form-group">
-            <label for="modal-message">I want to know more / Notes</label>
-            <textarea id="modal-message" name="message" rows="3" placeholder="Tell us what you'd like to discuss..."
+            <label for="modal-message">{{ 'BOOKING.MESSAGE' | translate }}</label>
+            <textarea id="modal-message" name="message" rows="3" [placeholder]="'SERVICES.PROPOSAL_DESC' | translate"
                       [ngModel]="message()" (ngModelChange)="message.set($event)" class="field-control"></textarea>
           </div>
 
@@ -57,17 +57,17 @@
 
           <button type="submit" class="btn-submit" [disabled]="isSubmitting()">
             @if (isSubmitting()) {
-              <span class="spinner"></span> Sending...
+              <span class="spinner"></span> {{ 'BOOKING.SUBMITTING' | translate }}
             } @else {
-              <span>Confirm Booking &rarr;</span>
+              <span>{{ 'BOOKING.SUBMIT' | translate }} &rarr;</span>
             }
           </button>
         </form>
       } @else {
         <div class="success-screen">
           <div class="success-icon">🎉</div>
-          <h3 class="success-title serif">Booking Requested!</h3>
-          <p class="success-subtitle">We have received your details. Our team will contact you shortly at <strong>{{ email() }}</strong> to schedule your free 30-minute review.</p>
+          <h3 class="success-title serif">{{ 'BOOKING.SUCCESS_MSG' | translate }}</h3>
+          <p class="success-subtitle">We have received your details. Our team will contact you shortly to schedule your free review.</p>
           <button class="btn-primary" style="margin-top: 24px; width: 100%;" (click)="close()">Got it</button>
         </div>
       }

@@ -4,6 +4,7 @@ import { RegionDataService } from '../../services/region-data.service';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { BookingModalService } from '../../services/booking-modal.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface SubService {
   id: string;
@@ -22,7 +23,7 @@ interface ServiceCategory {
 @Component({
     selector: 'app-service-detail',
     standalone: true,
-    imports: [RouterLink, RouterLinkActive, FooterComponent],
+    imports: [RouterLink, RouterLinkActive, FooterComponent, TranslateModule],
     templateUrl: './service-detail.component.html',
     styleUrl: './service-detail.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush

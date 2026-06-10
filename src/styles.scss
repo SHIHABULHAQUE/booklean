@@ -1356,3 +1356,189 @@ body.theme-light .svc-card .svc-desc {
     padding-right: 20px !important;
   }
 }
+
+/* ==========================================================================
+   RTL Layout Mirroring & Arabic Typography (Support for dir="rtl")
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap');
+
+html[dir="rtl"] {
+  /* Use Noto Sans Arabic for body & headings */
+  --fb: 'Noto Sans Arabic', sans-serif;
+  --fh: 'Noto Sans Arabic', sans-serif;
+  font-family: 'Noto Sans Arabic', sans-serif;
+
+  body {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    text-align: right;
+  }
+
+  /* Swap text alignments globally where needed */
+  h1, h2, h3, h4, h5, h6, p, label, input, textarea, select {
+    text-align: right;
+  }
+
+  /* 1. Header component logical overrides */
+  .tb-left {
+    flex-direction: row-reverse;
+  }
+  
+  .tb-right {
+    flex-direction: row-reverse;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  
+  .country-panel {
+    right: auto !important;
+    left: 0 !important;
+  }
+
+  .nav-cta-area {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .theme-toggle {
+    margin-right: 14px !important;
+    margin-left: 0 !important;
+  }
+
+  .hamburger {
+    right: auto !important;
+    left: 20px !important;
+  }
+
+  /* 2. Hero and slider text adjustments */
+  .hero .slide-content {
+    text-align: right;
+  }
+  
+  .hero .s-btns {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .hero .h-panel {
+    text-align: right;
+  }
+
+  /* 3. Steps and grids alignment */
+  .step-card {
+    text-align: right;
+    
+    .step-line {
+      left: auto !important;
+      right: 0 !important;
+    }
+  }
+
+  /* 4. Chat Assistant Panel floating placement */
+  .fab-container {
+    right: auto !important;
+    left: 28px !important;
+    @media (max-width: 768px) {
+      left: 16px !important;
+    }
+  }
+
+  .chat-fab {
+    right: auto !important;
+    left: 0 !important;
+  }
+
+  .fab-dot {
+    right: auto !important;
+    left: 2px !important;
+  }
+
+  .fab-popup {
+    right: auto !important;
+    left: 80px !important;
+    transform: translateX(-10px) !important;
+    border-radius: 12px 12px 12px 2px !important;
+    @media (max-width: 768px) {
+      left: 56px !important;
+    }
+  }
+
+  .popup-arrow {
+    right: auto !important;
+    left: -8px !important;
+    border-left: none !important;
+    border-right: 8px solid rgba(8, 20, 55, .96) !important;
+  }
+
+  body.theme-light .popup-arrow {
+    border-left: none !important;
+    border-right-color: rgba(255, 255, 255, .98) !important;
+  }
+
+  .lean-panel {
+    right: auto !important;
+    left: 28px !important;
+    @media (max-width: 480px) {
+      left: 16px !important;
+    }
+  }
+
+  /* Chat list messages mirroring */
+  .lean-bot-msg-wrap {
+    flex-direction: row-reverse !important;
+  }
+
+  .lean-bot-bubble {
+    border-radius: 16px 2px 16px 16px !important;
+  }
+
+  .lean-user-bubble {
+    justify-content: flex-start !important;
+    div {
+      border-radius: 16px 16px 16px 2px !important;
+    }
+  }
+
+  /* 5. Booking Modal alignments */
+  .modal-close {
+    right: auto !important;
+    left: 20px !important;
+  }
+
+  .modal-header {
+    text-align: right !important;
+  }
+
+  .modal-form {
+    text-align: right !important;
+  }
+
+  .error-msg {
+    flex-direction: row-reverse !important;
+  }
+
+  /* 6. General lists, bullet points, arrows, icons flip */
+  .svc-card .svc-more, 
+  .btn-primary, 
+  .btn-submit, 
+  .bkd-card-btn,
+  .founder-link {
+    /* Flip horizontal */
+    svg, span {
+      transform: scaleX(-1);
+      display: inline-block;
+    }
+  }
+
+  .about-badge {
+    left: auto !important;
+    right: 20px !important;
+  }
+
+  .mega-hd:hover {
+    transform: translateX(-2px) !important;
+  }
+
+  .mega-list a:hover {
+    transform: translateX(-4px) !important;
+  }
+}

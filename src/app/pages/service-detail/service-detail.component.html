@@ -4,11 +4,11 @@
       <div class="container">
         <div class="hero-content content-surface-dark" data-aos="fade-up">
           <div class="breadcrumb">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">Home</a> /
-            <span class="active">{{ svc.title }}</span>
+            <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">{{ 'NAV.HOME' | translate }}</a> /
+            <span class="active">{{ 'SERVICES.' + svc.id.toUpperCase().replace('-', '_') | translate }}</span>
           </div>
-          <h1>{{ svc.title }}</h1>
-          <p class="hero-sub">Expert advisory perfectly tailored to local conditions, giving you clarity and confidence across every touchpoint.</p>
+          <h1>{{ 'SERVICES.' + svc.id.toUpperCase().replace('-', '_') | translate }}</h1>
+          <p class="hero-sub">{{ 'SERVICES.PROPOSAL_DESC' | translate }}</p>
         </div>
       </div>
     </section>
@@ -18,15 +18,15 @@
         @if (activeTab(); as tab) {
           <div class="tab-content-wrapper">
             <div class="content-header">
-              <span class="category-tag">{{ svc.title }}</span>
-              <h2>{{ tab.title }}</h2>
+              <span class="category-tag">{{ 'SERVICES.' + svc.id.toUpperCase().replace('-', '_') | translate }}</span>
+              <h2>{{ 'SERVICES.' + tab.id.toUpperCase().replace('-', '_') + '_TITLE' | translate }}</h2>
             </div>
             
-            <p class="tab-desc">{{ tab.description }}</p>
+            <p class="tab-desc">{{ 'SERVICES.' + tab.id.toUpperCase().replace('-', '_') + '_DESC' | translate }}</p>
 
             <img [src]="tab.image" [alt]="tab.title" class="content-img">
 
-            <h3>Capabilities & Benefits</h3>
+            <h3>{{ 'SERVICES.CAPABILITIES' | translate }}</h3>
             <ul class="service-list">
               @for (feat of tab.features; track feat) {
                 <li><strong>{{ feat.split(': ')[0] }}:</strong> {{ feat.split(': ')[1] || '' }}</li>
@@ -34,9 +34,9 @@
             </ul>
 
             <div class="promo-box">
-              <h4>Ready to discuss {{ tab.title }}?</h4>
-              <p>Our specialists are standby to provide a deep-dive review of your requirements.</p>
-              <a href="#contact" class="btn btn-primary" (click)="openBookingModal($event)">Schedule a Call</a>
+              <h4>{{ 'SERVICES.READY_TO_DISCUSS' | translate }}</h4>
+              <p>{{ 'SERVICES.SPECIALISTS_STANDBY' | translate }}</p>
+              <a href="#contact" class="btn btn-primary" (click)="openBookingModal($event)">{{ 'SERVICES.SCHEDULE_CALL' | translate }}</a>
             </div>
           </div>
         }
@@ -44,7 +44,7 @@
 
       <aside class="sidebar" data-aos="fade-left" data-aos-delay="200">
         <div class="sidebar-widget nav-widget content-surface">
-          <h4 class="widget-title">Explore Services</h4>
+          <h4 class="widget-title">{{ 'SERVICES.EXPLORE' | translate }}</h4>
           <ul class="side-nav">
             @for (sub of svc.subServices; track sub.id) {
               <li>
@@ -53,7 +53,7 @@
                   class="tab-btn" 
                   [class.active]="activeTab()?.id === sub.id"
                   (click)="selectTab(sub.id)">
-                  {{ sub.title }}
+                  {{ 'SERVICES.' + sub.id.toUpperCase().replace('-', '_') + '_TITLE' | translate }}
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="tab-chev">
                     <path d="M4 2L8 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -64,13 +64,13 @@
         </div>
 
         <div class="sidebar-widget contact-widget content-surface-dark" id="contact">
-          <h4 class="widget-title">Request a Proposal</h4>
-          <p>Get a tailored roadmap and transparent pricing for your specific needs.</p>
+          <h4 class="widget-title">{{ 'SERVICES.PROPOSAL' | translate }}</h4>
+          <p>{{ 'SERVICES.PROPOSAL_DESC' | translate }}</p>
           <form class="quick-form">
-            <input class="field-control" type="text" placeholder="Full Name">
-            <input class="field-control" type="email" placeholder="Work Email">
-            <textarea class="field-control" placeholder="Briefly describe your requirements..."></textarea>
-            <button class="btn btn-primary w-100" style="border: none;">Send Inquiry</button>
+            <input class="field-control" type="text" [placeholder]="'BOOKING.NAME' | translate">
+            <input class="field-control" type="email" [placeholder]="'BOOKING.EMAIL' | translate">
+            <textarea class="field-control" [placeholder]="'SERVICES.PROPOSAL_DESC' | translate"></textarea>
+            <button class="btn btn-primary w-100" style="border: none;">{{ 'SERVICES.SEND_INQUIRY' | translate }}</button>
           </form>
         </div>
       </aside>

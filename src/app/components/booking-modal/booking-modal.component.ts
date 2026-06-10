@@ -2,17 +2,19 @@ import { Component, ChangeDetectionStrategy, inject, signal } from '@angular/cor
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BookingModalService } from '../../services/booking-modal.service';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-booking-modal',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslateModule],
   templateUrl: './booking-modal.component.html',
   styleUrl: './booking-modal.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BookingModalComponent {
   bookingService = inject(BookingModalService);
+  private translateService = inject(TranslateService);
 
   // Form fields as signals
   name = signal('');
@@ -38,7 +40,7 @@ export class BookingModalComponent {
 
   async onSubmit() {
     if (!this.mobile().trim() || !this.email().trim()) {
-      this.errorMessage.set('Please enter both your mobile number and email.');
+      this.errorMessage.set(this.translateService.instant('BOOKING.ERR_REQUIRED'));
       return;
     }
 
@@ -55,7 +57,7 @@ export class BookingModalComponent {
       });
       this.isSuccess.set(true);
     } catch (error: any) {
-      this.errorMessage.set(error.message || 'An error occurred. Please try again.');
+      this.errorMessage.set(error.message || this.translateService.instant('BOOKING.ERR_API'));
     } finally {
       this.isSubmitting.set(false);
     }

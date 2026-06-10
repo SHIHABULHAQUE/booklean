@@ -2,12 +2,13 @@ import { Component, ChangeDetectionStrategy, AfterViewInit, ViewEncapsulation, C
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { BookingModalService } from '../../services/booking-modal.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FooterComponent],
+  imports: [CommonModule, FooterComponent, TranslateModule],
 
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

@@ -15,101 +15,102 @@
     </div>
     <div class="slide-content">
       <div data-aos="fade-right" data-aos-duration="1000">
-        <div class="s-tag">For SMEs & Growing Businesses in UAE & GCC</div>
-        <h1 class="s-title">Stop Losing Sleep Over<br><em>UAE Tax & Compliance.</em></h1>
-        <p class="s-desc">Booklean gives UAE businesses clean books, zero FTA penalties, and real-time financial clarity
-          — powered by AI, led by Chartered Accountants.</p>
-        <div class="s-tagline"><span class="ai">For free zone & mainland SMEs in Dubai, Abu Dhabi & GCC.</span></div>
+        <div class="s-tag">{{ 'HERO.TAG_SLIDE1' | translate }}</div>
+        <h1 class="s-title">{{ 'HERO.TITLE_SLIDE1' | translate }}<br><em>{{ 'HERO.TITLE_SLIDE1_EM' | translate }}</em>
+        </h1>
+        <div class="s-desc" [innerHTML]="'HERO.DESC_SLIDE1' | translate"></div>
+        <div class="s-tagline"><span class="ai">{{ 'HERO.TAGLINE_SLIDE1' | translate }}</span></div>
         <div class="s-btns">
-          <a href="#contact" class="btn-primary" data-aos="zoom-in" data-aos-delay="600" (click)="openBookingModal($event)">Book My Free 30-Min Review
-            →</a>
+          <a href="#contact" class="btn-primary" data-aos="zoom-in" data-aos-delay="600"
+            (click)="openBookingModal($event)">{{ 'HERO.BTN_SLIDE1' | translate }} →</a>
           <a href="https://wa.me/971526203995" target="_blank" class="btn-outline" data-aos="zoom-in"
-            data-aos-delay="800">💬 WhatsApp Our Team</a>
+            data-aos-delay="800">💬 {{ 'HERO.WHATSAPP_TEAM' | translate }}</a>
         </div>
       </div>
       <div class="h-panel" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-        <div class="h-panel-lbl">What You Get</div>
+        <div class="h-panel-lbl">{{ 'HERO.WHAT_YOU_GET' | translate }}</div>
         <div class="h-stat" data-aos="fade-up" data-aos-delay="400">
           <div class="h-stat-ico">🛡️</div>
           <div>
-            <div class="h-stat-num">Zero FTA Penalties</div>
-            <div class="h-stat-lbl">Guaranteed — across all client accounts</div>
+            <div class="h-stat-num">{{ 'HERO.STAT1_NUM' | translate }}</div>
+            <div class="h-stat-lbl">{{ 'HERO.STAT1_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat" data-aos="fade-up" data-aos-delay="500">
           <div class="h-stat-ico">📊</div>
           <div>
-            <div class="h-stat-num">VAT & Corp Tax Done</div>
-            <div class="h-stat-lbl">Filed on time, every time</div>
+            <div class="h-stat-num">{{ 'HERO.STAT2_NUM' | translate }}</div>
+            <div class="h-stat-lbl">{{ 'HERO.STAT2_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat" data-aos="fade-up" data-aos-delay="600">
           <div class="h-stat-ico">⚡</div>
           <div>
-            <div class="h-stat-num">Real-Time Dashboard</div>
-            <div class="h-stat-lbl">See cash, profit & tax in one view</div>
+            <div class="h-stat-num">{{ 'HERO.STAT3_NUM' | translate }}</div>
+            <div class="h-stat-lbl">{{ 'HERO.STAT3_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat" data-aos="fade-up" data-aos-delay="700">
           <div class="h-stat-ico">🤝</div>
           <div>
-            <div class="h-stat-num">Dedicated CA Expert</div>
-            <div class="h-stat-lbl">Big 4–trained, always on call</div>
+            <div class="h-stat-num">{{ 'HERO.STAT4_NUM' | translate }}</div>
+            <div class="h-stat-lbl">{{ 'HERO.STAT4_LBL' | translate }}</div>
           </div>
         </div>
-        <a href="#contact" class="h-cta" (click)="openBookingModal($event)"><span>Book My Free 30-Min Review →</span></a>
+        <a href="#contact" class="h-cta" (click)="openBookingModal($event)"><span>{{ 'NAV.BOOK_REVIEW' | translate }}
+            →</span></a>
       </div>
     </div>
   </div>
 
   <!-- Slide 2 -->
   <div class="slide" [class.active]="currentSlide === 1">
-    <img class="slide-bg" src="assets/images/hero-slide2-business.jpg" alt="Dubai Business Bay — BookLean Global UAE" loading="lazy" />
+    <img class="slide-bg" src="assets/images/hero-slide2-business.jpg" alt="Dubai Business Bay — BookLean Global UAE"
+      loading="lazy" />
     <div class="slide-overlay">
       <div class="h-shape h-shape-1"></div>
       <div class="h-shape h-shape-2"></div>
     </div>
     <div class="slide-content">
       <div>
-        <div class="s-tag" data-aos="fade-right" data-aos-duration="1000">Sound Familiar? You're Not Alone.</div>
-        <h1 class="s-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Running a UAE
-          Business<br><em>Shouldn't Be This Stressful.</em></h1>
-        <p class="s-desc" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">VAT filings feel
-          last-minute and risky. You're unsure if your books would survive an FTA
-          audit. You don't have a simple, real-time view of cash, profit, and tax exposure.</p>
-        <div class="s-tagline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><span class="ai">Most
-            UAE founders didn't start their business to become tax
-            experts.</span></div>
+        <div class="s-tag" data-aos="fade-right" data-aos-duration="1000">{{ 'HERO.TAG_SLIDE2' | translate }}</div>
+        <h1 class="s-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">{{ 'HERO.TITLE_SLIDE2' |
+          translate }}<br><em>{{ 'HERO.TITLE_SLIDE2_EM' | translate }}</em></h1>
+        <div class="s-desc" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" [innerHTML]="'HERO.DESC_SLIDE2' | translate"></div>
+        <div class="s-tagline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><span class="ai">{{
+            'HERO.TAGLINE_SLIDE2' | translate }}</span></div>
         <div class="s-btns">
-          <a href="#problem" class="btn-primary" data-aos="zoom-in" data-aos-delay="800">See How We Fix This →</a>
+          <a href="#problem" class="btn-primary" data-aos="zoom-in" data-aos-delay="800">{{ 'HERO.SEE_FIX' | translate
+            }} →</a>
           <a href="https://wa.me/971526203995" target="_blank" class="btn-outline btn-whatsapp-hero" data-aos="zoom-in"
-            data-aos-delay="1000">💬 WhatsApp Our Team</a>
+            data-aos-delay="1000">💬 {{ 'HERO.WHATSAPP_TEAM' | translate }}</a>
         </div>
       </div>
       <div class="h-panel">
-        <div class="h-panel-lbl">Outcome Comparison</div>
+        <div class="h-panel-lbl">{{ 'HERO.OUTCOME_COMPARE' | translate }}</div>
         <div class="h-stat" style="opacity:.6;text-decoration:line-through;text-decoration-color:rgba(255,80,80,.5);">
           <div class="h-stat-ico">😰</div>
           <div>
-            <div class="h-stat-num">Compliance risks</div>
-            <div class="h-stat-lbl">FTA penalties, missed deadlines</div>
+            <div class="h-stat-num">{{ 'HERO.OUTCOME_RISK_NUM' | translate }}</div>
+            <div class="h-stat-lbl">{{ 'HERO.OUTCOME_RISK_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat">
           <div class="h-stat-ico">✅</div>
           <div>
-            <div class="h-stat-num">Full financial clarity</div>
-            <div class="h-stat-lbl">Real-time, always accurate</div>
+            <div class="h-stat-num">{{ 'HERO.OUTCOME_CLEAN_NUM' | translate }}</div>
+            <div class="h-stat-lbl">{{ 'HERO.OUTCOME_CLEAN_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat">
           <div class="h-stat-ico">✅</div>
           <div>
-            <div class="h-stat-num">Confident decisions</div>
-            <div class="h-stat-lbl">Data-backed, expert-guided</div>
+            <div class="h-stat-num">{{ 'HERO.STAT3_NUM' | translate }}</div>
+            <div class="h-stat-lbl">{{ 'HERO.STAT3_LBL' | translate }}</div>
           </div>
         </div>
-        <a href="#contact" class="h-cta" (click)="openBookingModal($event)"><span>Book My Free 30-Min Review →</span></a>
+        <a href="#contact" class="h-cta" (click)="openBookingModal($event)"><span>{{ 'NAV.BOOK_REVIEW' | translate }}
+            →</span></a>
       </div>
     </div>
   </div>
@@ -128,19 +129,19 @@
   <div class="stats-inner">
     <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
       <div class="stat-num">500+</div>
-      <div class="stat-lbl">UAE Businesses<br>with Zero FTA Penalties</div>
+      <div class="stat-lbl" [innerHTML]="'STATS_RIBBON.ACTIVE_CLIENTS' | translate"></div>
     </div>
     <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
       <div class="stat-num">15+</div>
-      <div class="stat-lbl">Years Combined UAE<br>Tax & Audit Experience</div>
+      <div class="stat-lbl" [innerHTML]="'STATS_RIBBON.TAX_SAVED' | translate"></div>
     </div>
     <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
       <div class="stat-num">Big 4</div>
-      <div class="stat-lbl">–Trained Chartered<br>Accountants on Your Team</div>
+      <div class="stat-lbl" [innerHTML]="'STATS_RIBBON.FTA_COMPLIANT' | translate"></div>
     </div>
     <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
       <div class="stat-num">2–4w</div>
-      <div class="stat-lbl">Typical Setup Timeline<br>Free Zone or Mainland</div>
+      <div class="stat-lbl" [innerHTML]="'STATS_RIBBON.RECONCILIATION' | translate"></div>
     </div>
   </div>
 </div>
@@ -154,59 +155,59 @@
       <span
         style="display:inline-block; padding:3px 10px; background:#004FE1; color:#fff; font-size:8px; font-weight:900; border-radius:4px; letter-spacing:.05em; line-height:1; box-shadow:0 0 10px rgba(0,79,225,0.4);">LIVE</span>
       <span
-        style="font-size:10px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:#4A5A6A;font-family:var(--fb);">Trusted
-        Global Presence Across Key Growth Sectors</span>
+        style="font-size:10px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:#4A5A6A;font-family:var(--fb);">{{
+        'HOME.TICKER_TITLE' | translate }}</span>
     </div>
     <div class="ind-ticker-wrap">
       <div class="ind-ticker-track">
         <div class="ind-icon-card">
-          <div class="iic-box">🏢</div><span>Real Estate</span>
+          <div class="iic-box">🏢</div><span>{{ 'HOME.SECTORS.REAL_ESTATE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">💻</div><span>Technology</span>
+          <div class="iic-box">💻</div><span>{{ 'HOME.SECTORS.TECHNOLOGY' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🛒</div><span>Retail & E-Commerce</span>
+          <div class="iic-box">🛒</div><span>{{ 'HOME.SECTORS.RETAIL_ECOMMERCE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏥</div><span>Healthcare</span>
+          <div class="iic-box">🏥</div><span>{{ 'HOME.SECTORS.HEALTHCARE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🍽️</div><span>F&B & Hospitality</span>
+          <div class="iic-box">🍽️</div><span>{{ 'HOME.SECTORS.FB_HOSPITALITY' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏗️</div><span>Construction</span>
+          <div class="iic-box">🏗️</div><span>{{ 'HOME.SECTORS.CONSTRUCTION' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏦</div><span>Financial Services</span>
+          <div class="iic-box">🏦</div><span>{{ 'HOME.SECTORS.FINANCIAL_SERVICES' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">⚡</div><span>Energy & Oil & Gas</span>
+          <div class="iic-box">⚡</div><span>{{ 'HOME.SECTORS.ENERGY_OIL_GAS' | translate }}</span>
         </div>
         <!-- Duplicates for seamless loop -->
         <div class="ind-icon-card">
-          <div class="iic-box">🏢</div><span>Real Estate</span>
+          <div class="iic-box">🏢</div><span>{{ 'HOME.SECTORS.REAL_ESTATE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">💻</div><span>Technology</span>
+          <div class="iic-box">💻</div><span>{{ 'HOME.SECTORS.TECHNOLOGY' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🛒</div><span>Retail & E-Commerce</span>
+          <div class="iic-box">🛒</div><span>{{ 'HOME.SECTORS.RETAIL_ECOMMERCE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏥</div><span>Healthcare</span>
+          <div class="iic-box">🏥</div><span>{{ 'HOME.SECTORS.HEALTHCARE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🍽️</div><span>F&B & Hospitality</span>
+          <div class="iic-box">🍽️</div><span>{{ 'HOME.SECTORS.FB_HOSPITALITY' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏗️</div><span>Construction</span>
+          <div class="iic-box">🏗️</div><span>{{ 'HOME.SECTORS.CONSTRUCTION' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏦</div><span>Financial Services</span>
+          <div class="iic-box">🏦</div><span>{{ 'HOME.SECTORS.FINANCIAL_SERVICES' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">⚡</div><span>Energy & Oil & Gas</span>
+          <div class="iic-box">⚡</div><span>{{ 'HOME.SECTORS.ENERGY_OIL_GAS' | translate }}</span>
         </div>
       </div>
     </div>
@@ -216,19 +217,19 @@
 <!-- WHO WE SERVE BAND -->
 <div class="serve-band">
   <div class="serve-band-inner">
-    <strong>Who we serve:</strong>
+    <strong>{{ 'WHO_WE_SERVE.TAG' | translate }}:</strong>
     <div class="sb-dot"></div>
-    <span>🏢 Free Zone Startups</span>
+    <span>🏢 {{ 'WHO_WE_SERVE.FREEZONE' | translate }}</span>
     <div class="sb-dot"></div>
-    <span>📦 Mainland SMEs</span>
+    <span>📦 {{ 'WHO_WE_SERVE.DUBAI_MAINLAND' | translate }}</span>
     <div class="sb-dot"></div>
-    <span>👨‍👩‍👧 Family Businesses</span>
+    <span>👨‍👩‍👧 {{ 'WHO_WE_SERVE.TITLE' | translate }}</span>
     <div class="sb-dot"></div>
-    <span>🚀 Fast-Growing Companies</span>
+    <span>🚀 {{ 'PRICING.GROWING' | translate }}</span>
     <div class="sb-dot"></div>
-    <span>🌍 GCC-Expanding Businesses</span>
+    <span>🌍 {{ 'WHO_WE_SERVE.GCC' | translate }}</span>
     <div class="sb-dot"></div>
-    <span style="font-size:11px;opacity:.75;">Dubai · Abu Dhabi · Sharjah · Riyadh · Doha</span>
+    <span style="font-size:11px;opacity:.75;">{{ 'HOME.CITIES' | translate }}</span>
   </div>
 </div>
 
@@ -251,115 +252,116 @@
   <div class="si" style="position:relative;z-index:2;">
     <div class="problem-grid">
       <div class="problem-left">
-        <div class="s-stag" style="color:var(--b4);" data-aos="fade-up">Does This Sound Like You?</div>
-        <h2 class="s-stitle problem-heading" data-aos="fade-up" data-aos-delay="100" style="color:#FFFFFF !important;">
-          Managing UAE Finances<br>Is <span
-            style="background:linear-gradient(90deg, #09E0FE, #004FE1); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Holding
-            You Back.</span></h2>
+        <div class="s-stag" style="color:var(--b4);" data-aos="fade-up">{{ 'PROBLEM.TAG' | translate }}</div>
+        <h2 class="s-stitle problem-heading" data-aos="fade-up" data-aos-delay="100" style="color:#FFFFFF !important;"
+          [innerHTML]="'PROBLEM.TITLE' | translate"></h2>
 
-        <p class="problem-intro" data-aos="fade-up" data-aos-delay="200" style="color:rgba(255,255,255,0.75);">We know
-          FTA notices and compliance audits can feel scary - especially when the rules
-          keep changing. Most UAE founders didn't start their business to become tax experts. It's completely normal to
-          feel overwhelmed.</p>
+        <p class="problem-intro" data-aos="fade-up" data-aos-delay="200" style="color:rgba(255,255,255,0.75);">
+          {{ 'PROBLEM.DESC' | translate }}</p>
 
         <div class="problem-label" data-aos="fade-right" data-aos-delay="300"
-          style="color:var(--b4); font-weight:700; letter-spacing:.12em;">External - What's Happening</div>
+          style="color:var(--b4); font-weight:700; letter-spacing:.12em;">{{ 'HOME.PROBLEM_EXTERNAL' | translate }}
+        </div>
         <div class="problem-card-list problem-card-list-danger">
           <div class="problem-card problem-card-danger" data-aos="zoom-in-up" data-aos-delay="400">
-            <span class="problem-card-icon">📅</span>
+            <span class="problem-card-icon">⚠️</span>
             <div>
-              <div class="risk-badge">⚠️ Risk Factor</div>
-              <div class="problem-card-title">VAT &amp; Corporate Tax filings feel last-minute and risky</div>
-              <div class="problem-card-desc">One missed deadline with the FTA means penalties, interest, and unwanted
-                scrutiny.</div>
+              <div class="problem-card-title">{{ 'HOME.PROBLEM_RISK1_TITLE' | translate }}</div>
+              <div class="problem-card-desc">{{ 'HOME.PROBLEM_RISK1_DESC' | translate }}</div>
             </div>
           </div>
           <div class="problem-card problem-card-danger" data-aos="zoom-in-up" data-aos-delay="500">
-            <span class="problem-card-icon">🔍</span>
+            <span class="problem-card-icon">📋</span>
             <div>
-              <div class="risk-badge">⚠️ Risk Factor</div>
-              <div class="problem-card-title">You're unsure your books would survive an FTA review</div>
-              <div class="problem-card-desc">Incomplete records and misclassified expenses create real audit exposure.
-              </div>
+              <div class="problem-card-title">{{ 'HOME.PROBLEM_RISK2_TITLE' | translate }}</div>
+              <div class="problem-card-desc">{{ 'HOME.PROBLEM_RISK2_DESC' | translate }}</div>
             </div>
           </div>
           <div class="problem-card problem-card-danger" data-aos="zoom-in-up" data-aos-delay="600">
             <span class="problem-card-icon">📉</span>
             <div>
-              <div class="risk-badge">⚠️ Risk Factor</div>
-              <div class="problem-card-title">No real-time view of cash, profit, or tax exposure</div>
-              <div class="problem-card-desc">You're making big decisions on gut feeling, not clean, current numbers.
-              </div>
+              <div class="problem-card-title">{{ 'HOME.PROBLEM_RISK3_TITLE' | translate }}</div>
+              <div class="problem-card-desc">{{ 'HOME.PROBLEM_RISK3_DESC' | translate }}</div>
             </div>
           </div>
         </div>
 
         <div class="problem-label" data-aos="fade-right" data-aos-delay="350"
-          style="color:var(--b4); font-weight:700; letter-spacing:.12em; margin-top:32px;">Internal - How It Feels</div>
+          style="color:var(--b4); font-weight:700; letter-spacing:.12em; margin-top:32px;">{{ 'HOME.PROBLEM_INTERNAL' |
+          translate }}</div>
         <div class="problem-feels" data-aos="fade-up" data-aos-delay="400">
           <div class="problem-feel-item">
-            <span class="problem-feel-icon" style="filter:drop-shadow(0 0 8px rgba(255,255,255,0.2));">🧘</span>
-            <span class="problem-feel-text" style="color:rgba(255,255,255,0.85);">Stress and sleepless nights before
-              every FTA deadline</span>
+            <span class="problem-feel-icon" style="filter:drop-shadow(0 0 8px rgba(255,255,255,0.2));">🤯</span>
+            <span class="problem-feel-text" style="color:rgba(255,255,255,0.85);">{{ 'HOME.PROBLEM_FEEL1' | translate
+              }}</span>
           </div>
           <div class="problem-feel-item">
-            <span class="problem-feel-icon" style="filter:drop-shadow(0 0 8px rgba(255,255,255,0.2));">📊</span>
-            <span class="problem-feel-text" style="color:rgba(255,255,255,0.85);">You built this business - you
-              shouldn't be drowning in spreadsheets</span>
+            <span class="problem-feel-icon" style="filter:drop-shadow(0 0 8px rgba(255,255,255,0.2));">🥵</span>
+            <span class="problem-feel-text" style="color:rgba(255,255,255,0.85);">{{ 'HOME.PROBLEM_FEEL2' | translate
+              }}</span>
           </div>
           <div class="problem-feel-item">
-            <span class="problem-feel-icon" style="filter:drop-shadow(0 0 8px rgba(255,255,255,0.2));">🤝</span>
-            <span class="problem-feel-text" style="color:rgba(255,255,255,0.85);">You deserve expert, honest financial
-              advice - not guesswork</span>
+            <span class="problem-feel-icon" style="filter:drop-shadow(0 0 8px rgba(255,255,255,0.2));">⚖️</span>
+            <span class="problem-feel-text" style="color:rgba(255,255,255,0.85);">{{ 'HOME.PROBLEM_FEEL3' | translate
+              }}</span>
           </div>
         </div>
       </div>
 
       <div class="problem-right" data-aos="fade-left" data-aos-delay="400">
         <div class="problem-solution-panel h-panel-black">
-          <div class="problem-solution-label">After Working with Booklean?</div>
-          <div class="problem-solution-title">What life looks like<br>when your finances are sorted.</div>
+          <div class="problem-solution-label">{{ 'HOME.PROBLEM_SOLUTION_LABEL' | translate }}</div>
+          <div class="problem-solution-title" [innerHTML]="'HOME.PROBLEM_SOLUTION_TITLE' | translate"></div>
           <div class="problem-card-list problem-card-list-success">
             <div class="problem-card problem-card-success" data-aos="fade-up" data-aos-delay="500">
               <span class="problem-card-icon">✅</span>
               <div>
-                <div class="problem-card-title">No more surprise FTA notices</div>
-                <div class="problem-card-desc">Every filing done on time. Every record audit-ready.</div>
+                <div class="problem-card-title">{{ 'HOME.PROBLEM_SOL1_TITLE' | translate }}</div>
+                <div class="problem-card-desc">{{ 'HOME.PROBLEM_SOL1_DESC' | translate }}</div>
+              </div>
+            </div>
+            <div class="problem-card problem-card-success" data-aos="fade-up" data-aos-delay="550">
+              <span class="problem-card-icon">✅</span>
+              <div>
+                <div class="problem-card-title">{{ 'HOME.PROBLEM_SOL2_TITLE' | translate }}</div>
+                <div class="problem-card-desc">{{ 'HOME.PROBLEM_SOL2_DESC' | translate }}</div>
               </div>
             </div>
             <div class="problem-card problem-card-success" data-aos="fade-up" data-aos-delay="600">
-              <span class="problem-card-icon">📊</span>
+              <span class="problem-card-icon">✅</span>
               <div>
-                <div class="problem-card-title">Investors see a credible financial picture</div>
-                <div class="problem-card-desc">Board-ready reports you actually understand.</div>
+                <div class="problem-card-title">{{ 'HOME.PROBLEM_SOL3_TITLE' | translate }}</div>
+                <div class="problem-card-desc">{{ 'HOME.PROBLEM_SOL3_DESC' | translate }}</div>
+              </div>
+            </div>
+            <div class="problem-card problem-card-success" data-aos="fade-up" data-aos-delay="650">
+              <span class="problem-card-icon">✅</span>
+              <div>
+                <div class="problem-card-title">{{ 'HOME.PROBLEM_SOL4_TITLE' | translate }}</div>
+                <div class="problem-card-desc">{{ 'HOME.PROBLEM_SOL4_DESC' | translate }}</div>
               </div>
             </div>
             <div class="problem-card problem-card-success" data-aos="fade-up" data-aos-delay="700">
-              <span class="problem-card-icon">💰</span>
+              <span class="problem-card-icon">✅</span>
               <div>
-                <div class="problem-card-title">You know exactly how much tax you owe and when</div>
-                <div class="problem-card-desc">No surprises. No stress. Just clarity.</div>
-              </div>
-            </div>
-            <div class="problem-card problem-card-success" data-aos="fade-up" data-aos-delay="800">
-              <span class="problem-card-icon">⚙️</span>
-              <div>
-                <div class="problem-card-title">Your finance function runs without you</div>
-                <div class="problem-card-desc">Automated invoicing, reconciliation, and reports - every day.</div>
+                <div class="problem-card-title">{{ 'HOME.PROBLEM_SOL5_TITLE' | translate }}</div>
+                <div class="problem-card-desc">{{ 'HOME.PROBLEM_SOL5_DESC' | translate }}</div>
               </div>
             </div>
           </div>
-          <a href="#contact" class="btn-primary problem-solution-btn" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
+          <a href="#contact" class="btn-primary problem-solution-btn" (click)="openBookingModal($event)">{{
+            'HOME.PROBLEM_SOLUTION_BTN' | translate }}</a>
         </div>
 
         <div class="problem-help-card">
           <span class="problem-help-icon">💬</span>
           <div>
-            <div class="problem-help-title" style="color:var(--gold2) !important;">Have a question about your specific
-              situation?</div>
-            <div class="problem-help-copy">WhatsApp our team now - we respond within the hour.</div>
+            <div class="problem-help-title" style="color:var(--gold2) !important;">{{ 'HOME.PROBLEM_HELP_TITLE' |
+              translate }}</div>
+            <div class="problem-help-copy">{{ 'HOME.PROBLEM_HELP_COPY' | translate }}</div>
           </div>
-          <a href="https://wa.me/971526203995" target="_blank" class="problem-help-btn">WhatsApp ?</a>
+          <a href="https://wa.me/971526203995" target="_blank" class="problem-help-btn">{{ 'HOME.PROBLEM_HELP_BTN' |
+            translate }}</a>
         </div>
       </div>
     </div>
@@ -373,79 +375,71 @@
 <div class="glass-strip">
   <div class="gsi">
     <div class="gsi-hdr">
-      <div class="s-stag" style="color:var(--b4);">Why UAE Businesses Choose Booklean</div>
-      <h2 class="s-stitle" style="color:#fff;">AI Speed.<br><span>Expert Accountability.</span></h2>
-      <p>Most UAE businesses either overpay for manual accountants or use software that doesn't understand UAE tax
-        rules. Booklean combines AI that never sleeps with Chartered Accountants who know FTA, VAT, and Corporate Tax
-        inside out.</p>
+      <div class="s-stag" style="color:var(--b4);">{{ 'HOME.WHY_CHOOSE_TAG' | translate }}</div>
+      <h2 class="s-stitle" style="color:#fff;" [innerHTML]="'HOME.WHY_CHOOSE_TITLE' | translate"></h2>
+      <p>{{ 'HOME.WHY_CHOOSE_DESC' | translate }}</p>
     </div>
     <div class="glass-grid">
       <div class="glass-rect">
         <div class="g-rect-icon">🤖</div>
         <div class="g-rect-num">70–80%</div>
-        <div class="g-rect-title">Save 70–80% of Finance Admin Time</div>
-        <div class="g-rect-desc">Automated invoicing, reconciliations, and tax calculations that run every day — without
-          you checking spreadsheets. Books done. Reports ready. No chasing.</div>
-        <div class="g-rect-tag">✦ UAE AI Automation</div>
+        <div class="g-rect-title">{{ 'HOME.WHY_CHOOSE_C1_TITLE' | translate }}</div>
+        <div class="g-rect-desc">{{ 'HOME.WHY_CHOOSE_C1_DESC' | translate }}</div>
+        <div class="g-rect-tag">{{ 'HOME.WHY_CHOOSE_C1_TAG' | translate }}</div>
       </div>
       <div class="glass-rect">
         <div class="g-rect-icon">📄</div>
         <div class="g-rect-num">99%+</div>
-        <div class="g-rect-title">99%+ Accurate — Every Report</div>
-        <div class="g-rect-desc">Upload any document — invoice, receipt, bank statement. Instantly extracted, validated,
-          and reconciled. Arabic invoices fully supported. Error-free by default.</div>
-        <div class="g-rect-tag">✦ Smart OCR Processing</div>
+        <div class="g-rect-title">{{ 'HOME.WHY_CHOOSE_C2_TITLE' | translate }}</div>
+        <div class="g-rect-desc">{{ 'HOME.WHY_CHOOSE_C2_DESC' | translate }}</div>
+        <div class="g-rect-tag">{{ 'HOME.WHY_CHOOSE_C2_TAG' | translate }}</div>
       </div>
       <div class="glass-rect">
         <div class="g-rect-icon">👑</div>
         <div class="g-rect-num">Big 4+</div>
-        <div class="g-rect-title">Big 4 &amp; Top UAE Firm Experience</div>
-        <div class="g-rect-desc">Our Chartered Accountants bring Big 4 &amp; Top UAE Firm–Trained | ICAI, ACCA, CPA
-          qualified | 8+ years average experience. Enterprise-grade expertise at SME-friendly cost.</div>
-        <div class="g-rect-tag">✦ CA-Reviewed Always</div>
+        <div class="g-rect-title">{{ 'HOME.WHY_CHOOSE_C3_TITLE' | translate }}</div>
+        <div class="g-rect-desc">{{ 'HOME.WHY_CHOOSE_C3_DESC' | translate }}</div>
+        <div class="g-rect-tag">{{ 'HOME.WHY_CHOOSE_C3_TAG' | translate }}</div>
       </div>
       <div class="glass-rect">
         <div class="g-rect-icon">🛡️</div>
         <div class="g-rect-num">0</div>
-        <div class="g-rect-title">Zero FTA Penalties. Guaranteed.</div>
-        <div class="g-rect-desc">We handle Corporate Tax (9%), VAT, and FTA compliance before every deadline. Zero
-          penalties across all client accounts — that's our track record and our promise.</div>
-        <div class="g-rect-tag">✦ FTA Compliance</div>
+        <div class="g-rect-title">{{ 'HOME.WHY_CHOOSE_C4_TITLE' | translate }}</div>
+        <div class="g-rect-desc">{{ 'HOME.WHY_CHOOSE_C4_DESC' | translate }}</div>
+        <div class="g-rect-tag">{{ 'HOME.WHY_CHOOSE_C4_TAG' | translate }}</div>
       </div>
       <div class="glass-rect">
         <div class="g-rect-icon">⚖️</div>
         <div class="g-rect-num">100%</div>
-        <div class="g-rect-title">Always UAE-Current. You Don't Have to Be.</div>
-        <div class="g-rect-desc">UAE regulations change fast. We track every FTA update, Corporate Tax ruling, PEPPOL
-          deadline, and ESR requirement so you're never caught off guard.</div>
-        <div class="g-rect-tag">✦ Regulatory Intelligence</div>
+        <div class="g-rect-title">{{ 'HOME.WHY_CHOOSE_C5_TITLE' | translate }}</div>
+        <div class="g-rect-desc">{{ 'HOME.WHY_CHOOSE_C5_DESC' | translate }}</div>
+        <div class="g-rect-tag">{{ 'HOME.WHY_CHOOSE_C5_TAG' | translate }}</div>
       </div>
       <div class="glass-rect">
         <div class="g-rect-icon">🤝</div>
         <div class="g-rect-num">1:1</div>
-        <div class="g-rect-title">One Dedicated Expert Who Knows Your Business</div>
-        <div class="g-rect-desc">Your dedicated CA knows your accounts, your industry, your free zone or mainland
-          structure. One call — not a helpdesk queue.</div>
-        <div class="g-rect-tag">✦ Your CA Partner</div>
+        <div class="g-rect-title">{{ 'HOME.WHY_CHOOSE_C6_TITLE' | translate }}</div>
+        <div class="g-rect-desc">{{ 'HOME.WHY_CHOOSE_C6_DESC' | translate }}</div>
+        <div class="g-rect-tag">{{ 'HOME.WHY_CHOOSE_C6_TAG' | translate }}</div>
       </div>
     </div>
     <!-- Wide performance glass -->
     <div class="g-wide" style="margin-top:18px;">
       <div class="g-wide-item">
         <div class="g-val">99.5%+</div>
-        <div class="g-lbl">Books Accurate Every Month</div>
+        <div class="g-lbl">{{ 'HOME.METRIC_BOOKS_LBL' | translate }}</div>
       </div>
       <div class="g-wide-item">
         <div class="g-val">24hrs</div>
-        <div class="g-lbl">Reports Ready — Every Month</div>
+        <div class="g-lbl">{{ 'HOME.METRIC_REPORTS_LBL' | translate }}</div>
       </div>
       <div class="g-wide-item">
         <div class="g-val">95%+</div>
-        <div class="g-lbl">Client Satisfaction Score</div>
+        <div class="g-lbl">{{ 'HOME.METRIC_SATISFACTION_LBL' | translate }}</div>
       </div>
       <div class="g-wide-item">
         <div class="g-val">NPS 50+</div>
-        <div class="g-lbl">World-Class Recommend Score</div>
+        <div class="g-lbl">{{ 'HOME.METRIC_NPS_LBL' | translate }}</div>
       </div>
     </div>
   </div>
@@ -461,48 +455,35 @@
 
   <div class="si" style="position:relative;z-index:2;">
     <div class="stakes-header">
-      <div class="s-stag stakes-tag" data-aos="fade-up">The Cost of Waiting</div>
-      <h2 class="s-stitle stakes-title" data-aos="fade-up" data-aos-delay="100" style="color:#FFFFFF !important;">What
-        Happens If You<br><span
-          style="background:linear-gradient(90deg,#F87171,#EF4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Don't
-          Fix Your Finances</span></h2>
+      <div class="s-stag stakes-tag" data-aos="fade-up">{{ 'HOME.STAKES_TAG' | translate }}</div>
+      <h2 class="s-stitle stakes-title" data-aos="fade-up" data-aos-delay="100" style="color:#FFFFFF !important;"
+        [innerHTML]="'HOME.STAKES_TITLE' | translate"></h2>
       <p class="stakes-subtitle" data-aos="fade-up" data-aos-delay="200"
-        style="color:rgba(255,255,255,0.7) !important;">This isn't fear-mongering - these are real consequences UAE
-        business owners face every
-        year when their finances aren't handled properly.</p>
+        style="color:rgba(255,255,255,0.7) !important;">{{ 'HOME.STAKES_SUBTITLE' | translate }}</p>
     </div>
     <div class="stakes-grid">
       <div class="stakes-card" data-aos="fade-right" data-aos-delay="300">
         <div class="stakes-card-line"></div>
-        <div class="stakes-card-icon">🏛️</div>
-        <div class="stakes-card-title" style="color:inherit;">FTA Penalties &amp; Fines</div>
-        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">Late VAT filings carry penalties from AED 1,000
-          upward per period. Corporate Tax
-          errors trigger much larger fines. One missed deadline with the FTA can cost more than a year of professional
-          accounting fees.</p>
+        <div class="stakes-card-icon">🚨</div>
+        <div class="stakes-card-title" style="color:inherit;">{{ 'HOME.STAKES_C1_TITLE' | translate }}</div>
+        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.STAKES_C1_DESC' | translate }}</p>
       </div>
       <div class="stakes-card" data-aos="fade-up" data-aos-delay="400">
         <div class="stakes-card-line"></div>
-        <div class="stakes-card-icon">📉</div>
-        <div class="stakes-card-title" style="color:inherit;">Missed Funding &amp; Investment</div>
-        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">Banks and investors require clean, audited
-          financials before they approve loans or
-          back your business. Messy books mean missed opportunities - or worse, deals falling through at the last
-          minute.</p>
+        <div class="stakes-card-icon">🏛️</div>
+        <div class="stakes-card-title" style="color:inherit;">{{ 'HOME.STAKES_C2_TITLE' | translate }}</div>
+        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.STAKES_C2_DESC' | translate }}</p>
       </div>
       <div class="stakes-card" data-aos="fade-left" data-aos-delay="500">
         <div class="stakes-card-line"></div>
         <div class="stakes-card-icon">💸</div>
-        <div class="stakes-card-title" style="color:inherit;">Cashflow Problems</div>
-        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">Without real-time financial visibility, you
-          can't see cashflow problems coming.
-          Businesses that look profitable on paper run out of cash - not because they failed, but because nobody was
-          watching the numbers.</p>
+        <div class="stakes-card-title" style="color:inherit;">{{ 'HOME.STAKES_C3_TITLE' | translate }}</div>
+        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.STAKES_C3_DESC' | translate }}</p>
       </div>
     </div>
     <div class="stakes-cta" style="margin-top:52px;text-align:center;">
-      <a href="#contact" class="btn-primary" style="padding:16px 40px;font-size:13px;letter-spacing:.08em;" (click)="openBookingModal($event)">Book My Free
-        30-Min Review →</a>
+      <a href="#contact" class="btn-primary" style="padding:16px 40px;font-size:13px;letter-spacing:.08em;"
+        (click)="openBookingModal($event)">{{ 'HOME.PROBLEM_SOLUTION_BTN' | translate }}</a>
     </div>
   </div>
 </section>
@@ -517,53 +498,53 @@
       <span
         style="display:inline-block; padding:3px 10px; background:#004FE1; color:#fff; font-size:8px; font-weight:900; border-radius:4px; letter-spacing:.05em; line-height:1; box-shadow:0 0 10px rgba(0,79,225,0.4);">LIVE</span>
       <span
-        style="font-size:10px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:#4A5A6A;font-family:var(--fb);">Trusted
-        Global Presence Across Key Growth Sectors</span>
+        style="font-size:10px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:#4A5A6A;font-family:var(--fb);">{{
+        'HOME.TICKER_TITLE' | translate }}</span>
     </div>
     <div class="ind-ticker-wrap">
       <div class="ind-ticker-track">
         <div class="ind-icon-card">
-          <div class="iic-box">🏢</div><span>Real Estate</span>
+          <div class="iic-box">🏢</div><span>{{ 'HOME.SECTORS.REAL_ESTATE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">⚙️</div><span>Manufacturing</span>
+          <div class="iic-box">⚙️</div><span>{{ 'HOME.SECTORS.MANUFACTURING' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🛒</div><span>Retail &amp; E-com</span>
+          <div class="iic-box">🛒</div><span>{{ 'HOME.SECTORS.RETAIL_ECOM' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏥</div><span>Healthcare</span>
+          <div class="iic-box">🏥</div><span>{{ 'HOME.SECTORS.HEALTHCARE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">💻</div><span>Tech &amp; Media</span>
+          <div class="iic-box">💻</div><span>{{ 'HOME.SECTORS.TECH_MEDIA' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🍽️</div><span>Hospitality</span>
+          <div class="iic-box">🍽️</div><span>{{ 'HOME.SECTORS.HOSPITALITY' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">⚡</div><span>Energy &amp; Utility</span>
+          <div class="iic-box">⚡</div><span>{{ 'HOME.SECTORS.ENERGY_UTILITY' | translate }}</span>
         </div>
         <!-- Duplicates for seamless loop -->
         <div class="ind-icon-card">
-          <div class="iic-box">🏢</div><span>Real Estate</span>
+          <div class="iic-box">🏢</div><span>{{ 'HOME.SECTORS.REAL_ESTATE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">⚙️</div><span>Manufacturing</span>
+          <div class="iic-box">⚙️</div><span>{{ 'HOME.SECTORS.MANUFACTURING' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🛒</div><span>Retail &amp; E-com</span>
+          <div class="iic-box">🛒</div><span>{{ 'HOME.SECTORS.RETAIL_ECOM' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🏥</div><span>Healthcare</span>
+          <div class="iic-box">🏥</div><span>{{ 'HOME.SECTORS.HEALTHCARE' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">💻</div><span>Tech &amp; Media</span>
+          <div class="iic-box">💻</div><span>{{ 'HOME.SECTORS.TECH_MEDIA' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">🍽️</div><span>Hospitality</span>
+          <div class="iic-box">🍽️</div><span>{{ 'HOME.SECTORS.HOSPITALITY' | translate }}</span>
         </div>
         <div class="ind-icon-card">
-          <div class="iic-box">⚡</div><span>Energy &amp; Utility</span>
+          <div class="iic-box">⚡</div><span>{{ 'HOME.SECTORS.ENERGY_UTILITY' | translate }}</span>
         </div>
       </div>
     </div>
@@ -576,11 +557,10 @@
 <section id="how-it-works" style="background:var(--white);padding:90px 0;">
   <div class="si">
     <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
-      <div class="s-stag" style="color:#004FE1;">Simple to Get Started</div>
-      <h2 class="s-stitle" style="color:#051C2A;">Three Steps to <span>Financial Clarity</span></h2>
-      <p class="s-ssub" style="margin:14px auto 0;text-align:center;color:#3A4A5A;max-width:560px;">No complicated
-        onboarding. No jargon. A clear path from financial stress to total confidence — in three steps. This entire
-        setup usually takes <strong style="color:#004FE1;">2–4 weeks</strong>, depending on complexity.</p>
+      <div class="s-stag" style="color:#004FE1;">{{ 'HOME.HOW_TAG' | translate }}</div>
+      <h2 class="s-stitle" style="color:#051C2A;" [innerHTML]="'HOME.HOW_TITLE' | translate"></h2>
+      <p class="s-ssub" style="margin:14px auto 0;text-align:center;color:#3A4A5A;max-width:560px;"
+        [innerHTML]="'HOME.HOW_SUBTITLE' | translate"></p>
     </div>
     <div class="steps-grid">
 
@@ -588,38 +568,35 @@
       <div class="step-card" data-aos="fade-up" data-aos-delay="100">
         <div class="step-line"></div>
         <div class="step-num-blob">1</div>
-        <div class="step-tag">Step One · Week 1</div>
-        <div class="step-title">Talk to Us</div>
-        <p class="step-desc">We understand your structure, entities, and current tax and accounting challenges — in one
-          no-pressure call. Free zone, mainland, or multi-entity: we've seen it all.</p>
-        <div class="step-footer">→ Free 30-min call · No commitment</div>
+        <div class="step-tag">{{ 'HOME.HOW_STEP1_TAG' | translate }}</div>
+        <div class="step-title">{{ 'HOME.HOW_STEP1_TITLE' | translate }}</div>
+        <p class="step-desc">{{ 'HOME.HOW_STEP1_DESC' | translate }}</p>
+        <div class="step-footer">{{ 'HOME.HOW_STEP1_FOOTER' | translate }}</div>
       </div>
 
       <!-- Step 2 -->
       <div class="step-card step-card-primary" data-aos="fade-up" data-aos-delay="200">
         <div class="step-line"></div>
         <div class="step-num-blob">2</div>
-        <div class="step-tag">Step Two · Week 2</div>
-        <div class="step-title">Set Up Your System</div>
-        <p class="step-desc">We implement AI-powered bookkeeping and tax workflows tailored to your free zone or
-          mainland setup. Your books become clean, compliant, and automated.</p>
-        <div class="step-footer">→ Live in days · Zero disruption</div>
+        <div class="step-tag">{{ 'HOME.HOW_STEP2_TAG' | translate }}</div>
+        <div class="step-title">{{ 'HOME.HOW_STEP2_TITLE' | translate }}</div>
+        <p class="step-desc">{{ 'HOME.HOW_STEP2_DESC' | translate }}</p>
+        <div class="step-footer">{{ 'HOME.HOW_STEP2_FOOTER' | translate }}</div>
       </div>
 
       <!-- Step 3 -->
       <div class="step-card" data-aos="fade-up" data-aos-delay="300">
         <div class="step-line"></div>
         <div class="step-num-blob">3</div>
-        <div class="step-tag">Step Three · Month 1+</div>
-        <div class="step-title">Grow with Clarity</div>
-        <p class="step-desc">You get clean, compliant books and proactive tax and cashflow insights every month. You see
-          your cash runway, tax exposure, and profit — at a glance.</p>
-        <div class="step-footer">→ Monthly board-ready reports</div>
+        <div class="step-tag">{{ 'HOME.HOW_STEP3_TAG' | translate }}</div>
+        <div class="step-title">{{ 'HOME.HOW_STEP3_TITLE' | translate }}</div>
+        <p class="step-desc">{{ 'HOME.HOW_STEP3_DESC' | translate }}</p>
+        <div class="step-footer">{{ 'HOME.HOW_STEP3_FOOTER' | translate }}</div>
       </div>
     </div>
     <div style="text-align:center;margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:12px;">
-      <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
-      <div class="timeline-badge">⏱ Most clients are fully set up within 2–4 weeks</div>
+      <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'HOME.PROBLEM_SOLUTION_BTN' | translate }}</a>
+      <div class="timeline-badge">{{ 'HOME.HOW_TIMELINE_BADGE' | translate }}</div>
     </div>
   </div>
 </section>
@@ -640,56 +617,49 @@
   <div class="si" style="position:relative;z-index:2;">
     <div class="success-grid">
       <div class="success-copy" data-aos="fade-right">
-        <div class="s-stag success-tag" style="color:var(--b4);">The Transformation</div>
-        <h2 class="s-stitle success-title" style="color:#FFFFFF !important;">Imagine Opening Your Laptop<br><em
-            class="success-em">Next Monday
-            Morning...</em></h2>
-        <p class="success-text" style="color:rgba(255,255,255,0.7) !important;">Your real-time dashboard shows cash in,
-          cash out, and profit - in one clean view. Your
-          books are reconciled. Your VAT return is already filed. Your Corporate Tax position is exactly as expected.
+        <div class="s-stag success-tag" style="color:var(--b4);">{{ 'HOME.SUCCESS_TAG' | translate }}</div>
+        <h2 class="s-stitle success-title" style="color:#FFFFFF !important;"
+          [innerHTML]="'HOME.SUCCESS_TITLE' | translate"></h2>
+        <p class="success-text" style="color:rgba(255,255,255,0.7) !important;">{{ 'HOME.SUCCESS_DESC1' | translate }}
         </p>
-        <p class="success-text" style="color:rgba(255,255,255,0.7) !important;">No FTA letters. No panicked calls to
-          your accountant. No spreadsheet anxiety. You know
-          exactly how much money you have, where it came from, and what's coming next.</p>
-        <p class="success-text success-text-strong" style="color:#FFFFFF !important;">That's what 500+ UAE businesses
-          feel every single Monday after
-          switching to Booklean. You're one 30-minute call away from this.</p>
+        <p class="success-text" style="color:rgba(255,255,255,0.7) !important;">{{ 'HOME.SUCCESS_DESC2' | translate }}
+        </p>
+        <p class="success-text success-text-strong" style="color:#FFFFFF !important;">{{ 'HOME.SUCCESS_DESC3' |
+          translate }}</p>
         <a href="#contact" class="btn-primary" style="margin-top:24px;display:inline-block;" data-aos="fade-up"
-          data-aos-delay="400" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
+          data-aos-delay="400" (click)="openBookingModal($event)">{{ 'NAV.BOOK_REVIEW' | translate }} →</a>
       </div>
       <div class="success-list">
         <div class="success-item" data-aos="fade-up" data-aos-delay="100">
           <div class="success-item-icon">🌙</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">You sleep soundly before every FTA deadline</div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">Every filing is done. Every record is
-              ready. Nothing to worry about.</div>
+            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM1_TITLE' | translate }}</div>
+            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM1_DESC' | translate
+              }}</div>
           </div>
         </div>
         <div class="success-item" data-aos="fade-up" data-aos-delay="200">
           <div class="success-item-icon">🚀</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">Your cash runway is visible at a glance</div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">Real-time dashboard - cash, profit, and
-              tax in one clear view.</div>
+            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM2_TITLE' | translate }}</div>
+            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM2_DESC' | translate
+              }}</div>
           </div>
         </div>
         <div class="success-item" data-aos="fade-up" data-aos-delay="300">
           <div class="success-item-icon">🏦</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">Investors see a credible, professional financial
-              picture</div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">Board-ready reports. Audited books.
-              Fundable business.</div>
+            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM3_TITLE' | translate }}</div>
+            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM3_DESC' | translate
+              }}</div>
           </div>
         </div>
         <div class="success-item" data-aos="fade-up" data-aos-delay="400">
           <div class="success-item-icon">💎</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">You make decisions with confidence - not guesswork
-            </div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">Data-backed, expert-guided. Your next
-              move is always the right one.</div>
+            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM4_TITLE' | translate }}</div>
+            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM4_DESC' | translate
+              }}</div>
           </div>
         </div>
       </div>
@@ -703,159 +673,161 @@
 <section id="packages" style="padding:90px 0;background:#F5F9FF;">
   <div class="si">
     <div style="text-align:center;margin-bottom:56px;">
-      <div class="s-stag" style="color:#004FE1;">Pick Your Starting Point</div>
-      <h2 class="s-stitle" style="color:#051C2A;">The Right Package for<br><span>Your Business Stage</span></h2>
-      <p class="s-ssub" style="color:#3A4A5A;margin:14px auto 0;text-align:center;">Every plan is a fixed monthly fee —
-        no surprise invoices, no hidden extras. Book a free call and we'll confirm the right fit within 24 hours.</p>
+      <div class="s-stag" style="color:#004FE1;">{{ 'HOME.PKG_TAG' | translate }}</div>
+      <h2 class="s-stitle" style="color:#051C2A;" [innerHTML]="'HOME.PKG_TITLE' | translate"></h2>
+      <p class="s-ssub" style="color:#3A4A5A;margin:14px auto 0;text-align:center;">{{ 'HOME.PKG_SUBTITLE' | translate
+        }}</p>
     </div>
     <!-- Urgency trigger -->
     <div style="text-align:center;margin-bottom:32px;">
       <div
         style="display:inline-flex;align-items:center;gap:10px;background:rgba(201,168,76,.10);border:1.5px solid rgba(201,168,76,.30);border-radius:50px;padding:10px 24px;">
         <span style="font-size:16px;">⏳</span>
-        <span style="font-family:var(--fb);font-size:13px;font-weight:700;color:var(--gold2);">We take on 3–5 new
-          clients per month to maintain quality. Currently accepting Q2 2026 onboarding.</span>
+        <span style="font-family:var(--fb);font-size:13px;font-weight:700;color:var(--gold2);">{{ 'HOME.PKG_URGENCY' |
+          translate }}</span>
       </div>
     </div>
     <div class="packages-grid">
 
       <!-- Tier 1: Founders & Startups -->
       <div class="pkg-card">
-        <div class="pkg-badge pkg-badge-blue">Founders &amp; Startups</div>
-        <div class="pkg-name">Clarity Starter</div>
-        <div class="pkg-subtitle">Free zone &amp; mainland startups · 0–10M AED revenue</div>
+        <div class="pkg-badge pkg-badge-blue">{{ 'HOME.PKG1_BADGE' | translate }}</div>
+        <div class="pkg-name">{{ 'HOME.PKG1_NAME' | translate }}</div>
+        <div class="pkg-subtitle">{{ 'HOME.PKG1_SUBTITLE' | translate }}</div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>VAT registration &amp; quarterly filings
+            </svg></div>{{ 'HOME.PKG1_F1' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Monthly AI bookkeeping &amp; bank reconciliation
+            </svg></div>{{ 'HOME.PKG1_F2' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Corporate Tax (9%) compliance &amp; filing
+            </svg></div>{{ 'HOME.PKG1_F3' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Simple monthly P&amp;L &amp; cashflow dashboard
+            </svg></div>{{ 'HOME.PKG1_F4' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Dedicated CA contact — responds same day
+            </svg></div>{{ 'HOME.PKG1_F5' | translate }}
         </div>
         <div class="pkg-price">
-          <div class="pkg-price-label">Starting from</div>
-          <div class="pkg-price-value">Fixed monthly fee · No surprises</div>
+          <div class="pkg-price-label">{{ 'HOME.PKG_PRICE_START' | translate }}</div>
+          <div class="pkg-price-value">{{ 'HOME.PKG_PRICE_STARTER_VAL' | translate }}</div>
         </div>
         <a href="#contact" class="btn-primary"
-          style="display:block;text-align:center;margin-top:20px;font-size:12px;">Get My Starter Quote →</a>
+          style="display:block;text-align:center;margin-top:20px;font-size:12px;">{{ 'HOME.PKG1_QUOTE' | translate
+          }}</a>
       </div>
 
       <!-- Tier 2: Growing SMEs (Featured) -->
       <div class="pkg-card featured">
         <div
           style="position:absolute;top:16px;right:16px;background:rgba(201,168,76,.20);border:1px solid rgba(201,168,76,.40);color:var(--gold2);font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:50px;font-family:var(--fb);">
-          Most Popular</div>
-        <div class="pkg-badge pkg-badge-gold">Growing SMEs</div>
-        <div class="pkg-name">Growth Partner</div>
-        <div class="pkg-subtitle">10–100M AED revenue · Multi-entity welcome</div>
+          {{ 'PRICING.POPULAR' | translate }}</div>
+        <div class="pkg-badge pkg-badge-gold">{{ 'HOME.PKG2_BADGE' | translate }}</div>
+        <div class="pkg-name">{{ 'HOME.PKG2_NAME' | translate }}</div>
+        <div class="pkg-subtitle">{{ 'HOME.PKG2_SUBTITLE' | translate }}</div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Everything in Clarity Starter, plus:
+            </svg></div>{{ 'HOME.PKG2_F1' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Multi-entity accounting &amp; consolidation
+            </svg></div>{{ 'HOME.PKG2_F2' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Monthly board-ready management reports
+            </svg></div>{{ 'HOME.PKG2_F3' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Virtual CFO advisory &amp; budget reviews
+            </svg></div>{{ 'HOME.PKG2_F4' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Payroll &amp; WPS compliance
+            </svg></div>{{ 'HOME.PKG2_F5' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>FTA audit support &amp; representation
+            </svg></div>{{ 'HOME.PKG2_F6' | translate }}
         </div>
         <div class="pkg-price">
-          <div class="pkg-price-label">Starting from</div>
-          <div class="pkg-price-value">Fixed monthly fee · Tailored to your complexity</div>
+          <div class="pkg-price-label">{{ 'HOME.PKG_PRICE_START' | translate }}</div>
+          <div class="pkg-price-value">{{ 'HOME.PKG_PRICE_GROWTH_VAL' | translate }}</div>
         </div>
         <a href="#contact" class="btn-primary"
-          style="display:block;text-align:center;margin-top:20px;font-size:12px;background:linear-gradient(135deg,#C9A84C,#E8C67A);box-shadow:0 6px 20px rgba(201,168,76,.30);">Get
-          My Growth Quote →</a>
+          style="display:block;text-align:center;margin-top:20px;font-size:12px;background:linear-gradient(135deg,#C9A84C,#E8C67A);box-shadow:0 6px 20px rgba(201,168,76,.30);">{{
+          'HOME.PKG2_QUOTE' | translate }}</a>
       </div>
 
       <!-- Tier 3: GCC Expanding -->
       <div class="pkg-card">
-        <div class="pkg-badge pkg-badge-dark">GCC-Expanding Businesses</div>
-        <div class="pkg-name">Cross-Border Elite</div>
-        <div class="pkg-subtitle">UAE + India + UK structures · Complex multi-jurisdiction</div>
+        <div class="pkg-badge pkg-badge-dark">{{ 'HOME.PKG3_BADGE' | translate }}</div>
+        <div class="pkg-name">{{ 'HOME.PKG3_NAME' | translate }}</div>
+        <div class="pkg-subtitle">{{ 'HOME.PKG3_SUBTITLE' | translate }}</div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Everything in Growth Partner, plus:
+            </svg></div>{{ 'HOME.PKG3_F1' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>UAE holding entity + India + UK coordination
+            </svg></div>{{ 'HOME.PKG3_F2' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>International tax structuring &amp; transfer pricing
+            </svg></div>{{ 'HOME.PKG3_F3' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>ESR, UBO &amp; AML compliance across entities
+            </svg></div>{{ 'HOME.PKG3_F4' | translate }}
         </div>
         <div class="pkg-outcome">
           <div class="pkg-outcome-chk"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
               stroke-width="3">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div>Dedicated senior CA team + monthly strategy call
+            </svg></div>{{ 'HOME.PKG3_F5' | translate }}
         </div>
         <div class="pkg-price">
-          <div class="pkg-price-label">Starting from</div>
-          <div class="pkg-price-value">Bespoke pricing · Fixed scope · No surprises</div>
+          <div class="pkg-price-label">{{ 'HOME.PKG_PRICE_START' | translate }}</div>
+          <div class="pkg-price-value">{{ 'HOME.PKG_PRICE_ELITE_VAL' | translate }}</div>
         </div>
         <a href="#contact" class="btn-primary"
-          style="display:block;text-align:center;margin-top:20px;font-size:12px;">Discuss My Requirements →</a>
+          style="display:block;text-align:center;margin-top:20px;font-size:12px;">{{ 'HOME.PKG3_QUOTE' | translate
+          }}</a>
       </div>
     </div>
 
@@ -864,13 +836,14 @@
       <div style="display:flex;align-items:center;gap:12px;">
         <span style="font-size:22px;">🛡️</span>
         <div>
-          <div style="font-family:var(--fh);font-size:14px;font-weight:800;color:#051C2A;">Not sure which plan is right
-            for you?</div>
-          <div style="font-size:12px;color:#3A4A5A;font-family:var(--fb);margin-top:2px;">Book a free 30-min call. We'll
-            assess your setup and recommend the right fit — with a transparent quote within 24 hours.</div>
+          <div style="font-family:var(--fh);font-size:14px;font-weight:800;color:#051C2A;">{{ 'HOME.PKG_HELP_TITLE' |
+            translate }}</div>
+          <div style="font-size:12px;color:#3A4A5A;font-family:var(--fb);margin-top:2px;">{{ 'HOME.PKG_HELP_DESC' |
+            translate }}</div>
         </div>
       </div>
-      <a href="#contact" class="btn-primary" style="white-space:nowrap;flex-shrink:0;" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
+      <a href="#contact" class="btn-primary" style="white-space:nowrap;flex-shrink:0;"
+        (click)="openBookingModal($event)">{{ 'NAV.BOOK_REVIEW' | translate }} →</a>
     </div>
   </div>
 </section>
@@ -881,14 +854,12 @@
 <section id="testimonials" style="background:var(--light);padding:90px 0;">
   <div class="si">
     <div style="text-align:center;margin-bottom:56px;">
-      <div class="s-stag" style="color:#08A1F7;">Real Results from Real UAE Businesses</div>
+      <div class="s-stag" style="color:#08A1F7;">{{ 'HOME.TESTIMONIALS_TAG' | translate }}</div>
       <h2 class="s-stitle"
-        style="background:linear-gradient(90deg,#FFFFFF 0%,#08A1F7 55%,#03C1F4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
-        What Changed When They<br><span
-          style="-webkit-text-fill-color:transparent;background:linear-gradient(90deg,#08A1F7,#09E0FE);-webkit-background-clip:text;background-clip:text;">Switched
-          to Booklean</span></h2>
-      <p class="s-ssub" style="text-align:center;margin:14px auto 0;color:rgba(255,255,255,.65);">No jargon — just
-        measurable outcomes from UAE businesses that made the switch. Numbers are real.</p>
+        style="background:linear-gradient(90deg,#FFFFFF 0%,#08A1F7 55%,#03C1F4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"
+        [innerHTML]="'HOME.TESTIMONIALS_TITLE' | translate"></h2>
+      <p class="s-ssub" style="text-align:center;margin:14px auto 0;color:rgba(255,255,255,.65);">{{
+        'HOME.TESTIMONIALS_SUBTITLE' | translate }}</p>
     </div>
 
     <!-- Quote strip -->
@@ -904,17 +875,16 @@
         <div>
           <div
             style="font-family:var(--fh);font-size:22px;font-weight:700;color:#fff;line-height:1.55;margin-bottom:20px;">
-            "Before Booklean, I had no idea where my business stood financially. Now I have a real-time dashboard, zero
-            VAT worries, and a CA who actually picks up the phone. They got our books fully cleaned up within three
-            weeks — it changed how I run my business."</div>
+            {{ 'HOME.TESTIMONIAL_SARA_QUOTE' | translate }}</div>
           <div style="display:flex;align-items:center;gap:14px;">
             <div
               style="width:48px;height:48px;background:linear-gradient(135deg, #004FE1, #08A1F7);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:18px;font-weight:800;color:#fff;flex-shrink:0;">
               SA</div>
             <div>
-              <div style="font-family:var(--fh);font-size:14px;font-weight:700;color:#fff;">Sara Al-Mansoori</div>
-              <div style="font-size:12px;color:rgba(255,255,255,.55);font-family:var(--fb);">Founder, Al-Mansoori
-                Trading LLC · Dubai Mainland</div>
+              <div style="font-family:var(--fh);font-size:14px;font-weight:700;color:#fff;">{{ 'HOME.TESTIMONIAL_SARA' |
+                translate }}</div>
+              <div style="font-size:12px;color:rgba(255,255,255,.55);font-family:var(--fb);">{{
+                'HOME.TESTIMONIAL_SARA_TITLE' | translate }}</div>
             </div>
             <div style="margin-left:auto;display:flex;gap:4px;">
               <span style="color:var(--b4);font-size:16px;">★★★★★</span>
@@ -924,8 +894,8 @@
         <div
           style="text-align:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:24px 28px;min-width:160px;">
           <div style="font-family:var(--fh);font-size:36px;font-weight:800;color:var(--b4);">80%</div>
-          <div style="font-size:11px;color:rgba(255,255,255,.55);font-family:var(--fb);margin-top:4px;">Less time
-            on<br>finance admin</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.55);font-family:var(--fb);margin-top:4px;"
+            [innerHTML]="'HOME.TESTIMONIAL_SARA_STAT' | translate"></div>
         </div>
       </div>
     </div>
@@ -944,21 +914,21 @@
           <div style="font-size:14px;color:var(--b4);letter-spacing:2px;">★★★★★</div>
           <div
             style="background:#EEF5FF;border:1px solid #D0E4FF;border-radius:8px;padding:4px 10px;font-family:var(--fh);font-size:13px;font-weight:800;color:#004FE1;">
-            VAT: ✅ Zero penalties</div>
+            {{ 'HOME.TESTIMONIAL_RAHUL_STAT' | translate }}</div>
         </div>
         <p
           style="font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);margin-bottom:20px;font-style:italic;">
-          "Booklean sorted our Corporate Tax registration, VAT filings, and full bookkeeping in under a week. The AI
-          system saves us at least 3 days per month. Monthly close dropped from 20 days to 5. Best decision we've made."
+          {{ 'HOME.TESTIMONIAL_RAHUL_QUOTE' | translate }}
         </p>
         <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--border);padding-top:16px;">
           <div
             style="width:40px;height:40px;background:linear-gradient(135deg, #004FE1 0%, #08A1F7 55%, #03C1F4 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:14px;font-weight:800;color:#fff;flex-shrink:0;">
             RK</div>
           <div>
-            <div style="font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);">Rahul Kumar</div>
-            <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);">Director, TechFlow Solutions · DMCC
-              Free Zone</div>
+            <div style="font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);">{{
+              'HOME.TESTIMONIAL_RAHUL' | translate }}</div>
+            <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);">{{ 'HOME.TESTIMONIAL_RAHUL_TITLE' |
+              translate }}</div>
           </div>
         </div>
       </div>
@@ -974,20 +944,20 @@
           <div style="font-size:14px;color:var(--b4);letter-spacing:2px;">★★★★★</div>
           <div
             style="background:#EEF5FF;border:1px solid #D0E4FF;border-radius:8px;padding:4px 10px;font-family:var(--fh);font-size:13px;font-weight:800;color:#004FE1;">
-            FTA Audit: ✅ Passed</div>
+            {{ 'HOME.TESTIMONIAL_FATIMA_STAT' | translate }}</div>
         </div>
         <p
           style="font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);margin-bottom:20px;font-style:italic;">
-          "We had an FTA audit last quarter. Booklean had everything ready — every invoice, every filing, records going
-          back 5 years. We passed without a single query. That peace of mind is worth every dirham."</p>
+          {{ 'HOME.TESTIMONIAL_FATIMA_QUOTE' | translate }}</p>
         <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--border);padding-top:16px;">
           <div
             style="width:40px;height:40px;background:linear-gradient(135deg, #004FE1 0%, #08A1F7 55%, #03C1F4 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:14px;font-weight:800;color:#fff;flex-shrink:0;">
             FA</div>
           <div>
-            <div style="font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);">Fatima Al-Hashimi</div>
-            <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);">CEO, Al-Hashimi Group · Abu Dhabi
-            </div>
+            <div style="font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);">{{
+              'HOME.TESTIMONIAL_FATIMA' | translate }}</div>
+            <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);">{{ 'HOME.TESTIMONIAL_FATIMA_TITLE' |
+              translate }}</div>
           </div>
         </div>
       </div>
@@ -1003,22 +973,20 @@
           <div style="font-size:14px;color:var(--b4);letter-spacing:2px;">★★★★★</div>
           <div
             style="background:#EEF5FF;border:1px solid #D0E4FF;border-radius:8px;padding:4px 10px;font-family:var(--fh);font-size:13px;font-weight:800;color:#004FE1;">
-            Net profit +18%</div>
+            {{ 'HOME.TESTIMONIAL_MOHAMMED_STAT' | translate }}</div>
         </div>
         <p
           style="font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);margin-bottom:20px;font-style:italic;">
-          "As a startup I couldn't afford a full finance team. Booklean gives me a virtual CFO, bookkeeping, and tax
-          advisory for a fraction of the cost. Within 9 months I actually understood my margins and increased net profit
-          by 18%."</p>
+          {{ 'HOME.TESTIMONIAL_MOHAMMED_QUOTE' | translate }}</p>
         <div style="display:flex;align-items:center;gap:12px;border-top:1px solid var(--border);padding-top:16px;">
           <div
             style="width:40px;height:40px;background:linear-gradient(135deg, #004FE1 0%, #08A1F7 55%, #03C1F4 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:14px;font-weight:800;color:#fff;flex-shrink:0;">
             MA</div>
           <div>
-            <div style="font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);">Mohammed Al-Rashid
-            </div>
-            <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);">Founder, Rashid Ventures · Sharjah
-            </div>
+            <div style="font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);">{{
+              'HOME.TESTIMONIAL_MOHAMMED' | translate }}</div>
+            <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);">{{ 'HOME.TESTIMONIAL_MOHAMMED_TITLE'
+              | translate }}</div>
           </div>
         </div>
       </div>
@@ -1028,24 +996,27 @@
       style="margin-top:44px;padding:28px 32px;background:var(--white);border:1.5px solid var(--border);border-radius:14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
       <div style="display:flex;align-items:center;gap:8px;"><span
           style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--navy);">500+</span><span
-          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);">UAE businesses<br>trust Booklean</span>
+          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);"
+          [innerHTML]="'HOME.METRICS_TRUST_LBL' | translate"></span>
       </div>
       <div style="width:1px;height:40px;background:var(--border);"></div>
       <div style="display:flex;align-items:center;gap:8px;"><span
           style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--navy);">4.9/5</span><span
-          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);">Average client<br>satisfaction score</span>
+          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);"
+          [innerHTML]="'HOME.METRICS_SAT_LBL' | translate"></span>
       </div>
       <div style="width:1px;height:40px;background:var(--border);"></div>
       <div style="display:flex;align-items:center;gap:8px;"><span
           style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--navy);">0</span><span
-          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);">FTA penalties across<br>all client
-          accounts</span></div>
+          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);"
+          [innerHTML]="'HOME.METRICS_PENALTY_LBL' | translate"></span></div>
       <div style="width:1px;height:40px;background:var(--border);"></div>
       <div style="display:flex;align-items:center;gap:8px;"><span
           style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--navy);">2–4w</span><span
-          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);">Average setup<br>time for UAE
-          clients</span></div>
-      <a href="#contact" class="btn-primary" style="white-space:nowrap;">Join 500+ UAE Businesses →</a>
+          style="font-size:13px;color:var(--t-muted);font-family:var(--fb);"
+          [innerHTML]="'HOME.METRICS_SETUP_LBL' | translate"></span></div>
+      <a href="#contact" class="btn-primary" style="white-space:nowrap;" (click)="openBookingModal($event)">{{
+        'HOME.JOIN_BUSINESSES' | translate }}</a>
     </div>
   </div>
 </section>
@@ -1057,13 +1028,12 @@
   <div class="si">
     <div class="s-hdr">
       <div>
-        <div class="s-stag" style="color:#004FE1;">What You Get</div>
-        <h2 class="s-stitle" style="color:#051C2A;">Everything Your UAE Business Needs,<br><span>Under One Roof</span>
-        </h2>
-        <p class="s-ssub" style="color:#3A4A5A;">From day-to-day bookkeeping and VAT filing to CFO advisory and M&amp;A
-          — one Chartered Accountant team handles it all. Click any service to see what's included.</p>
+        <div class="s-stag" style="color:#004FE1;">{{ 'HERO.WHAT_YOU_GET' | translate }}</div>
+        <h2 class="s-stitle" style="color:#051C2A;" [innerHTML]="'HOME.SERVICES_TITLE' | translate"></h2>
+        <p class="s-ssub" style="color:#3A4A5A;">{{ 'HOME.SERVICES_DESC' | translate }}</p>
       </div>
-      <a href="#contact" class="see-all">Book Consultation →</a>
+      <a href="#contact" class="see-all" (click)="openBookingModal($event)">{{ 'HOME.SERVICES_BOOK_CONS' | translate
+        }}</a>
     </div>
 
     <!-- Service Cards — enriched with capability detail -->
@@ -1071,43 +1041,38 @@
 
       <a href="#" class="svc-card" onclick="showSvc('audit');return false;">
         <div class="svc-icon">🔍</div>
-        <div class="svc-title">Audit &amp; Assurance</div>
-        <div class="svc-desc">Know your numbers are right. Internal audit with AI-assisted anomaly detection, statutory
-          audit, and real-time risk reporting — so investors, banks, and the FTA trust your financials.</div>
+        <div class="svc-title">{{ 'HOME.SERVICES_AUDIT_TITLE' | translate }}</div>
+        <div class="svc-desc">{{ 'HOME.SERVICES_AUDIT_DESC' | translate }}</div>
         <div class="svc-tags"><span class="tag">Statutory Audit</span><span class="tag">Internal Audit</span><span
             class="tag">IFRS</span><span class="tag">AML · GoAML</span><span class="tag">Risk Assessment</span></div>
-        <div class="svc-more">View what's included →</div>
+        <div class="svc-more">{{ 'HOME.SERVICES_VIEW_INCLUDED' | translate }}</div>
       </a>
 
       <a href="#" class="svc-card" onclick="showSvc('tax');return false;">
         <div class="svc-icon">🧾</div>
-        <div class="svc-title">Tax &amp; FTA Compliance</div>
-        <div class="svc-desc">Never miss a UAE tax deadline. We handle Corporate Tax (9%), VAT, FTA audit defence, ESR,
-          UBO, and PEPPOL e-invoicing — so you pay exactly what's right and not a dirham more.</div>
+        <div class="svc-title">{{ 'HOME.SERVICES_TAX_TITLE' | translate }}</div>
+        <div class="svc-desc">{{ 'HOME.SERVICES_TAX_DESC' | translate }}</div>
         <div class="svc-tags"><span class="tag">Corp Tax 9%</span><span class="tag">VAT Filing</span><span
             class="tag">FTA Representation</span><span class="tag">ESR · UBO</span><span class="tag">PEPPOL 2027
             🔥</span></div>
-        <div class="svc-more">View what's included →</div>
+        <div class="svc-more">{{ 'HOME.SERVICES_VIEW_INCLUDED' | translate }}</div>
       </a>
 
       <a href="#" class="svc-card" onclick="showSvc('bso');return false;">
         <div class="svc-icon">📚</div>
-        <div class="svc-title">Accounting &amp; Finance Outsourcing</div>
-        <div class="svc-desc">Get a full finance team without hiring one. AI-powered monthly bookkeeping, automated bank
-          reconciliation, payroll/WPS, cloud migration (Xero/QuickBooks/Zoho), and Virtual CFO services.</div>
+        <div class="svc-title">{{ 'HOME.SERVICES_ACCG_TITLE' | translate }}</div>
+        <div class="svc-desc">{{ 'HOME.SERVICES_ACCG_DESC' | translate }}</div>
         <div class="svc-tags"><span class="tag">Bookkeeping</span><span class="tag">Payroll / WPS</span><span
             class="tag">Virtual CFO</span><span class="tag">Xero · QBO · Zoho</span><span class="tag">MIS
             Reporting</span></div>
-        <div class="svc-more">View what's included →</div>
+        <div class="svc-more">{{ 'HOME.SERVICES_VIEW_INCLUDED' | translate }}</div>
       </a>
 
       <a href="#" class="svc-card" onclick="showSvc('digital');return false;">
         <div class="svc-badge-ai">🚀 AI ADVANTAGE</div>
         <div class="svc-icon">🤖</div>
-        <div class="svc-title">Digital &amp; AI Finance Automation</div>
-        <div class="svc-desc">Cut admin time by 70–80%. Automated invoicing, reconciliation, and tax calculations
-          running every day — without you checking spreadsheets. ERP implementation, OCR extraction, and fraud detection
-          built for UAE businesses.</div>
+        <div class="svc-title">{{ 'HOME.SERVICES_AI_TITLE' | translate }}</div>
+        <div class="svc-desc">{{ 'HOME.SERVICES_AI_DESC' | translate }}</div>
         <div class="svc-tags">
           <span class="tag">AI Bookkeeping</span>
           <span class="tag">ERP Setup</span>
@@ -1115,15 +1080,13 @@
           <span class="tag">Fraud Detection</span>
           <span class="tag">Predictive Analytics</span>
         </div>
-        <div class="svc-more">View what's included →</div>
+        <div class="svc-more">{{ 'HOME.SERVICES_VIEW_INCLUDED' | translate }}</div>
       </a>
 
       <a href="#" class="svc-card" onclick="showSvc('advisory');return false;">
         <div class="svc-icon">📈</div>
-        <div class="svc-title">CFO Advisory &amp; Strategy</div>
-        <div class="svc-desc">Strategic financial leadership without a full-time CFO cost. Budgeting, forecasting,
-          fundraising, board reporting, M&amp;A advisory, business valuation, and IPO readiness — expert-led,
-          data-driven.</div>
+        <div class="svc-title">{{ 'HOME.SERVICES_CFO_TITLE' | translate }}</div>
+        <div class="svc-desc">{{ 'HOME.SERVICES_CFO_DESC' | translate }}</div>
         <div class="svc-tags">
           <span class="tag">Virtual CFO</span>
           <span class="tag">M&amp;A Advisory</span>
@@ -1131,22 +1094,20 @@
           <span class="tag">Due Diligence</span>
           <span class="tag">IPO Ready</span>
         </div>
-        <div class="svc-more">View what's included →</div>
+        <div class="svc-more">{{ 'HOME.SERVICES_VIEW_INCLUDED' | translate }}</div>
       </a>
 
       <a href="#" class="svc-card" onclick="showSvc('corporate');return false;">
         <div class="svc-icon">🚀</div>
-        <div class="svc-title">Business Setup &amp; UAE Market Entry</div>
-        <div class="svc-desc">Starting or scaling in UAE? We handle Mainland,
-          Freezone, and Offshore company formation,
-          PRO services, bank account opening, ICV certification, and Golden Visa support — end to end.</div>
+        <div class="svc-title">{{ 'HOME.SERVICES_SETUP_TITLE' | translate }}</div>
+        <div class="svc-desc">{{ 'HOME.SERVICES_SETUP_DESC' | translate }}</div>
         <div class="svc-tags">
           <span class="tag">Mainland · Freezone</span>
           <span class="tag">Offshore</span>
           <span class="tag">PRO Services</span>
           <span class="tag">Golden Visa</span>
         </div>
-        <div class="svc-more">View what's included →</div>
+        <div class="svc-more">{{ 'HOME.SERVICES_VIEW_INCLUDED' | translate }}</div>
       </a>
 
     </div>
@@ -1169,14 +1130,15 @@
       <div>
         <div
           style="font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--b4);margin-bottom:8px;font-family:var(--fb);">
-          Not sure which service you need?</div>
-        <div style="font-family:var(--fh);font-size:20px;font-weight:800;color:#fff;">Book a free 30-min call — we'll
-          assess your situation<br>and recommend exactly what your business needs.</div>
-        <div style="font-size:12px;color:rgba(255,255,255,.50);font-family:var(--fb);margin-top:6px;">Free zone ·
-          Mainland · Multi-entity · All covered.</div>
+          {{ 'HOME.SERVICES_BOTTOM_SUB' | translate }}</div>
+        <div style="font-family:var(--fh);font-size:20px;font-weight:800;color:#fff;"
+          [innerHTML]="'HOME.SERVICES_BOTTOM_TITLE' | translate"></div>
+        <div style="font-size:12px;color:rgba(255,255,255,.50);font-family:var(--fb);margin-top:6px;">{{
+          'HOME.SERVICES_BOTTOM_DESC' | translate }}</div>
       </div>
       <div style="display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap;">
-        <a href="#contact" class="btn-primary" style="white-space:nowrap;" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
+        <a href="#contact" class="btn-primary" style="white-space:nowrap;" (click)="openBookingModal($event)">Book My
+          Free 30-Min Review →</a>
         <a href="https://wa.me/971526203995" target="_blank"
           style="padding:13px 24px;background:rgba(37,211,102,.15);border:2px solid rgba(37,211,102,.35);color:#25D366;font-size:12px;font-weight:800;font-family:var(--fb);text-decoration:none;border-radius:10px;white-space:nowrap;letter-spacing:.04em;transition:all .22s;"
           onmouseover="this.style.background='rgba(37,211,102,.25)'"
@@ -1194,68 +1156,71 @@
   <div class="si">
     <div class="s-hdr" data-aos="fade-up">
       <div>
-        <div class="s-stag" style="color:#004FE1;">Sector Expertise</div>
-        <h2 class="s-stitle" style="color:#051C2A;">Industries We <span>Serve</span></h2>
-        <p class="s-ssub" style="color:#3A4A5A;">Deep knowledge of UAE sector-specific accounting, tax, and compliance
-          rules across every major industry — not generic advice.</p>
+        <div class="s-stag" style="color:#004FE1;">{{ 'HOME.INDUSTRIES_TAG' | translate }}</div>
+        <h2 class="s-stitle" style="color:#051C2A;" [innerHTML]="'HOME.INDUSTRIES_TITLE' | translate"></h2>
+        <p class="s-ssub" style="color:#3A4A5A;">{{ 'HOME.INDUSTRIES_SUBTITLE' | translate }}</p>
       </div>
-      <a href="#" class="see-all">All Industries →</a>
+      <a href="#" class="see-all">{{ 'HOME.INDUSTRIES_ALL' | translate }}</a>
     </div>
     <div class="ind-grid">
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="100"><img class="ind-bg"
-          src="assets/images/ind-banking.jpg" alt="Banking &amp; Financial Services — BookLean Global UAE" loading="lazy" />
+          src="assets/images/ind-banking.jpg" alt="Banking &amp; Financial Services — BookLean Global UAE"
+          loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Banking &amp; Financial Services</div>
-          <div class="ind-count">12 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.FINANCIAL_SERVICES' | translate }}</div>
+          <div class="ind-count">12 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="150"><img class="ind-bg"
-          src="assets/images/ind-realestate.jpg" alt="Real Estate &amp; Construction — BookLean Global UAE" loading="lazy" />
+          src="assets/images/ind-realestate.jpg" alt="Real Estate &amp; Construction — BookLean Global UAE"
+          loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Real Estate &amp; Construction</div>
-          <div class="ind-count">9 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.REAL_ESTATE' | translate }}</div>
+          <div class="ind-count">9 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="200"><img class="ind-bg"
-          src="assets/images/ind-healthcare.jpg" alt="Healthcare &amp; Life Sciences — BookLean Global UAE" loading="lazy" />
+          src="assets/images/ind-healthcare.jpg" alt="Healthcare &amp; Life Sciences — BookLean Global UAE"
+          loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Healthcare &amp; Life Sciences</div>
-          <div class="ind-count">8 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.HEALTHCARE' | translate }}</div>
+          <div class="ind-count">8 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="250"><img class="ind-bg"
           src="assets/images/ind-technology.jpg" alt="Technology &amp; Media — BookLean Global UAE" loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Technology &amp; Media</div>
-          <div class="ind-count">11 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.TECH_MEDIA' | translate }}</div>
+          <div class="ind-count">11 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="300"><img class="ind-bg"
           src="assets/images/ind-energy.jpg" alt="Oil, Gas &amp; Energy — BookLean Global UAE" loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Oil, Gas &amp; Energy</div>
-          <div class="ind-count">7 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.ENERGY_OIL_GAS' | translate }}</div>
+          <div class="ind-count">7 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="350"><img class="ind-bg"
           src="assets/images/ind-retail.jpg" alt="Retail &amp; Consumer — BookLean Global UAE" loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Retail &amp; Consumer</div>
-          <div class="ind-count">10 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.RETAIL_ECOM' | translate }}</div>
+          <div class="ind-count">10 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="400"><img class="ind-bg"
-          src="assets/images/ind-hospitality.jpg" alt="Hospitality &amp; Tourism — BookLean Global UAE" loading="lazy" />
+          src="assets/images/ind-hospitality.jpg" alt="Hospitality &amp; Tourism — BookLean Global UAE"
+          loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Hospitality &amp; Tourism</div>
-          <div class="ind-count">6 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.HOSPITALITY' | translate }}</div>
+          <div class="ind-count">6 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
       <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="450"><img class="ind-bg"
           src="assets/images/ind-manufacturing.jpg" alt="Manufacturing — BookLean Global UAE" loading="lazy" />
         <div class="ind-overlay">
-          <div class="ind-name">Manufacturing</div>
-          <div class="ind-count">5 specialists</div>
+          <div class="ind-name">{{ 'HOME.SECTORS.MANUFACTURING' | translate }}</div>
+          <div class="ind-count">5 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
         </div>
       </a>
     </div>
@@ -1268,55 +1233,43 @@
 <section id="heyLean">
   <div class="si" style="position:relative;z-index:1;">
     <div style="text-align:center;margin-bottom:52px;" data-aos="fade-up">
-      <div class="s-stag" style="color:var(--b4);">LeanBot Platform</div>
-      <h2 class="s-stitle" style="color:#fff;">Meet <span
-          style="background:linear-gradient(90deg,#08A1F7,#004FE1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Hey
-          Lean</span> — Your AI Financial Brain</h2>
-      <p
-        style="font-size:15px;color:rgba(255,255,255,.58);max-width:640px;margin:14px auto 0;line-height:1.80;font-family:var(--fb);">
-        Booklean's AI platform gives every client <strong style="color:var(--b4);">full, unrestricted access</strong> —
-        ask any UAE VAT or Corporate Tax question, upload any financial document, get expert-grade answers instantly.
-        Our AI is trained specifically on UAE VAT and Corporate Tax law and is supervised by qualified tax experts, so
-        you're not relying on generic internet answers. Available 24/7. No limits.</p>
+      <div class="s-stag" style="color:var(--b4);">{{ 'HOME.LEAN_TAG' | translate }}</div>
+      <h2 class="s-stitle" style="color:#fff;" [innerHTML]="'HOME.LEAN_TITLE' | translate"></h2>
+      <p style="font-size:15px;color:rgba(255,255,255,.58);max-width:640px;margin:14px auto 0;line-height:1.80;font-family:var(--fb);"
+        [innerHTML]="'HOME.LEAN_DESC' | translate"></p>
     </div>
     <div class="lean-grid">
       <!-- Features -->
       <div class="lean-feat-grid">
         <div class="lean-feat" data-aos="fade-right" data-aos-delay="100">
           <div class="lean-feat-icon">🧠</div>
-          <div class="lean-feat-title">Multi-Model AI</div>
-          <div class="lean-feat-desc">GPT-4o, Claude 3, Gemini &amp; DeepSeek working in concert — fast models for
-            triage, reasoning models for complex tax queries.</div>
+          <div class="lean-feat-title">{{ 'HOME.LEAN_FEAT1_TITLE' | translate }}</div>
+          <div class="lean-feat-desc">{{ 'HOME.LEAN_FEAT1_DESC' | translate }}</div>
         </div>
         <div class="lean-feat" data-aos="fade-right" data-aos-delay="200">
           <div class="lean-feat-icon">📄</div>
-          <div class="lean-feat-title">Smart Document OCR</div>
-          <div class="lean-feat-desc">Upload invoices, bills, receipts, bank statements. Extracted, validated &amp;
-            reconciled instantly with 99%+ accuracy. Arabic supported.</div>
+          <div class="lean-feat-title">{{ 'HOME.LEAN_FEAT2_TITLE' | translate }}</div>
+          <div class="lean-feat-desc">{{ 'HOME.LEAN_FEAT2_DESC' | translate }}</div>
         </div>
         <div class="lean-feat" data-aos="fade-right" data-aos-delay="300">
           <div class="lean-feat-icon">💬</div>
-          <div class="lean-feat-title">Full-Access Client Portal</div>
-          <div class="lean-feat-desc">Ask any tax law, VAT, FTA, or business query — unrestricted. Available on
-            WhatsApp, Web Portal &amp; Voice. 24/7.</div>
+          <div class="lean-feat-title">{{ 'HOME.LEAN_FEAT3_TITLE' | translate }}</div>
+          <div class="lean-feat-desc">{{ 'HOME.LEAN_FEAT3_DESC' | translate }}</div>
         </div>
         <div class="lean-feat" data-aos="fade-right" data-aos-delay="400">
           <div class="lean-feat-icon">🔒</div>
-          <div class="lean-feat-title">UAE Data Sovereignty</div>
-          <div class="lean-feat-desc">All data processed in UAE (Azure/AWS UAE). AES-256 encryption. Zero-retention AI
-            policies. Full PDPL compliance.</div>
+          <div class="lean-feat-title">{{ 'HOME.LEAN_FEAT4_TITLE' | translate }}</div>
+          <div class="lean-feat-desc">{{ 'HOME.LEAN_FEAT4_DESC' | translate }}</div>
         </div>
         <div class="lean-feat" data-aos="fade-right" data-aos-delay="500">
           <div class="lean-feat-icon">📊</div>
-          <div class="lean-feat-title">RAG-Powered Research</div>
-          <div class="lean-feat-desc">Real-time FTA rulings, UAE tax law lookups, and predictive financial modelling —
-            always current, always accurate.</div>
+          <div class="lean-feat-title">{{ 'HOME.LEAN_FEAT5_TITLE' | translate }}</div>
+          <div class="lean-feat-desc">{{ 'HOME.LEAN_FEAT5_DESC' | translate }}</div>
         </div>
         <div class="lean-feat lean-feat-hl" data-aos="fade-right" data-aos-delay="600">
           <div class="lean-feat-icon">📱</div>
-          <div class="lean-feat-title">Multi-Channel Access</div>
-          <div class="lean-feat-desc">WhatsApp · Web Portal · Voice · Email. Hey Lean meets your clients wherever they
-            are, in the language they prefer.</div>
+          <div class="lean-feat-title">{{ 'HOME.LEAN_FEAT6_TITLE' | translate }}</div>
+          <div class="lean-feat-desc">{{ 'HOME.LEAN_FEAT6_DESC' | translate }}</div>
         </div>
       </div>
       <!-- Chat Demo -->
@@ -1324,9 +1277,9 @@
         <div class="chat-hdr">
           <div class="chat-avatar">∞</div>
           <div class="chat-hdr-info">
-            <div class="chat-hdr-name">Hey Lean · LeanBot</div>
+            <div class="chat-hdr-name">{{ 'HOME.LEAN_DEMO_TITLE' | translate }}</div>
             <div class="chat-hdr-status">
-              <div class="chat-hdr-dot"></div>Online · Full Access · Responds instantly
+              <div class="chat-hdr-dot"></div>{{ 'HOME.LEAN_DEMO_STATUS' | translate }}
             </div>
           </div>
           <div class="chat-models"><span class="chat-model-tag">GPT-4o</span><span class="chat-model-tag">Claude</span>
@@ -1334,31 +1287,25 @@
         </div>
         <div class="chat-body">
           <div class="chat-user">
-            <div class="chat-user-msg">Does our holding company qualify for 0% Corporate Tax under Qualifying Free Zone
-              rules?</div>
+            <div class="chat-user-msg">{{ 'HOME.LEAN_DEMO_Q1' | translate }}</div>
           </div>
           <div class="chat-bot">
             <div class="chat-bot-avatar">∞</div>
-            <div class="chat-bot-msg">✅ <strong style="color:#fff;">Yes — subject to conditions.</strong> Under UAE CT
-              Law Article 18, QFZP status requires: (1) adequate substance in the Freezone, (2) qualifying income only,
-              (3) non-qualifying revenue ≤5% or AED 5M. Want me to run a full QFZP eligibility check?</div>
+            <div class="chat-bot-msg" [innerHTML]="'HOME.LEAN_DEMO_A1' | translate"></div>
           </div>
           <div class="chat-user">
-            <div class="chat-user-msg">📎 invoice_march.pdf — please process this bill</div>
+            <div class="chat-user-msg">{{ 'HOME.LEAN_DEMO_Q2' | translate }}</div>
           </div>
           <div class="chat-bot">
             <div class="chat-bot-avatar">∞</div>
-            <div class="chat-bot-msg">📄 <strong style="color:#fff;">Processed.</strong> Al Fardan Trading · AED 18,450
-              · VAT AED 922.50 · TRN ✅ Verified · Category: Office Supplies. Reconciled &amp; archived. <span
-                style="color:var(--b4);">⚠️ Invoice date outside VAT period — flagged.</span></div>
+            <div class="chat-bot-msg" [innerHTML]="'HOME.LEAN_DEMO_A2' | translate"></div>
           </div>
         </div>
         <div class="chat-input-row">
-          <input class="chat-input" type="text" placeholder="Ask tax law, VAT, upload doc…" />
-          <button class="chat-send">Open Chat ∞</button>
+          <input class="chat-input" type="text" [placeholder]="'HOME.LEAN_DEMO_INPUT' | translate" />
+          <button class="chat-send">{{ 'HOME.LEAN_DEMO_OPEN_CHAT' | translate }}</button>
         </div>
-        <div class="chat-footer">Powered by <strong style="color:rgba(255,255,255,.42);">GPT-4o · Claude 3 ·
-            Gemini</strong> · UAE PDPL Compliant 🔒</div>
+        <div class="chat-footer" [innerHTML]="'HOME.LEAN_DEMO_POWERED_BY' | translate"></div>
       </div>
     </div>
   </div>
@@ -1371,57 +1318,54 @@
   <div class="si">
     <div class="s-hdr" data-aos="fade-up">
       <div>
-        <div class="s-stag" style="color:#004FE1;">Global Presence</div>
-        <h2 class="s-stitle" style="color:#051C2A;">Global Standards.<br><span>UAE-First Expertise.</span></h2>
-        <p class="s-ssub" style="color:#3A4A5A;">Three strategic hubs — UAE, India, UK — coordinated as one. Accounting,
-          tax, and compliance across UAE holding entities, Indian back-office operations, and UK structures, all handled
-          seamlessly.</p>
+        <div class="s-stag" style="color:#004FE1;">{{ 'HOME.GLOBAL_TAG' | translate }}</div>
+        <h2 class="s-stitle" style="color:#051C2A;" [innerHTML]="'HOME.GLOBAL_TITLE' | translate"></h2>
+        <p class="s-ssub" style="color:#3A4A5A;">{{ 'HOME.GLOBAL_SUBTITLE' | translate }}</p>
       </div>
     </div>
     <div class="global-grid">
       <div class="global-card global-card-main" data-aos="fade-up" data-aos-delay="100">
         <div class="global-hq">HQ</div>
         <div class="global-flag">🇦🇪</div>
-        <div class="global-country">United Arab Emirates</div>
-        <div class="global-city">Business Bay, Dubai · UAE Regional Office</div>
+        <div class="global-country">{{ 'HOME.GLOBAL_C1_COUNTRY' | translate }}</div>
+        <div class="global-city">{{ 'HOME.GLOBAL_C1_CITY' | translate }}</div>
         <div class="global-services">
-          <div class="global-service">Corporate Tax 9%</div>
-          <div class="global-service">VAT &amp; FTA Compliance</div>
-          <div class="global-service">PEPPOL E-Invoicing Ready</div>
-          <div class="global-service">ESR &amp; UBO Registry</div>
-          <div class="global-service">ICV Certification</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C1_S1' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C1_S2' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C1_S3' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C1_S4' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C1_S5' | translate }}</div>
         </div>
-        <div class="global-contact">📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-            data-cfemail="137b767f7f7c53717c7c787f76727d3d7276">[email&#160;protected]</a> &nbsp;·&nbsp; 🌐 booklean.ae
+        <div class="global-contact">📧 <a href="mailto:info@bookleanglobal.com"
+            class="__cf_email__">info@bookleanglobal.com</a> &nbsp;·&nbsp; 🌐 booklean.ae
         </div>
       </div>
       <div class="global-card global-card-sec" data-aos="fade-up" data-aos-delay="200">
         <div class="global-flag">🇮🇳</div>
-        <div class="global-country">India</div>
-        <div class="global-city">Global Accounting &amp; AI Processing Center</div>
+        <div class="global-country">{{ 'HOME.GLOBAL_C2_COUNTRY' | translate }}</div>
+        <div class="global-city">{{ 'HOME.GLOBAL_C2_CITY' | translate }}</div>
         <div class="global-services">
-          <div class="global-service">GST Compliance</div>
-          <div class="global-service">AI Processing Center</div>
-          <div class="global-service">Cross-Border Advisory</div>
-          <div class="global-service">Outsourced Finance Teams</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C2_S1' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C2_S2' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C2_S3' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C2_S4' | translate }}</div>
         </div>
-        <div class="global-contact">📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-            data-cfemail="d2bab7bebebd92b0bdbdb9beb7b3bcfcbbbc">[email&#160;protected]</a> &nbsp;·&nbsp; 🌐 booklean.in
+        <div class="global-contact">📧 <a href="mailto:info@bookleanglobal.com"
+            class="__cf_email__">info@bookleanglobal.com</a> &nbsp;·&nbsp; 🌐 booklean.in
         </div>
       </div>
       <div class="global-card global-card-sec" data-aos="fade-up" data-aos-delay="300">
         <div class="global-flag">🇬🇧</div>
-        <div class="global-country">United Kingdom</div>
-        <div class="global-city">European Financial Operations</div>
+        <div class="global-country">{{ 'HOME.GLOBAL_C3_COUNTRY' | translate }}</div>
+        <div class="global-city">{{ 'HOME.GLOBAL_C3_CITY' | translate }}</div>
         <div class="global-services">
-          <div class="global-service">Making Tax Digital (MTD)</div>
-          <div class="global-service">Statutory Accounts</div>
-          <div class="global-service">Post-Brexit Structuring</div>
-          <div class="global-service">UK Corporation Tax</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C3_S1' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C3_S2' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C3_S3' | translate }}</div>
+          <div class="global-service">{{ 'HOME.GLOBAL_C3_S4' | translate }}</div>
         </div>
-        <div class="global-contact">📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-            data-cfemail="6c04090000032c0e03030700090d02420f03421907">[email&#160;protected]</a> &nbsp;·&nbsp; 🌐
-          booklean.co.uk</div>
+        <div class="global-contact">📧 <a href="mailto:info@bookleanglobal.com"
+            class="__cf_email__">info@bookleanglobal.com</a> &nbsp;·&nbsp; 🌐 booklean.co.uk</div>
       </div>
     </div>
   </div>
@@ -1433,31 +1377,23 @@
 <section id="why-booklean">
   <div class="wb-inner">
     <div class="wb-header" data-aos="fade-up">
-      <div class="wb-stag">Why Booklean</div>
-      <h2 class="wb-title">We Know FTA Audits Feel Scary.<br>We Make Sure They Never Have to Be.</h2>
-      <p class="wb-subtitle">Booklean was built by Chartered Accountants who saw UAE businesses struggling — not because
-        they were bad at business, but because their finances were a mess. We fix that, permanently.</p>
+      <div class="wb-stag">{{ 'HOME.WHY_TAG' | translate }}</div>
+      <h2 class="wb-title" [innerHTML]="'HOME.WHY_TITLE' | translate"></h2>
+      <p class="wb-subtitle">{{ 'HOME.WHY_SUBTITLE' | translate }}</p>
       <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px;">
-        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="100">🎓 Big 4 &amp; Top UAE Firm Experience</div>
-        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="200">🏆 ICAI · ACCA · CPA | 8+ Yrs Avg Experience
-        </div>
-        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="300">🇦🇪 500+ UAE Businesses Served</div>
-        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="400">🌍 UAE · India · UK</div>
+        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="100">{{ 'HOME.WHY_TRUST1' | translate }}</div>
+        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="200">{{ 'HOME.WHY_TRUST2' | translate }}</div>
+        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="300">{{ 'HOME.WHY_TRUST3' | translate }}</div>
+        <div class="uae-trust" data-aos="zoom-in" data-aos-delay="400">{{ 'HOME.WHY_TRUST4' | translate }}</div>
       </div>
     </div>
 
     <div class="wb-body" data-aos="fade-up">
       <div data-aos="fade-right" data-aos-delay="200">
-        <div class="wb-left-head">You shouldn't need to be a finance expert to run your UAE business.</div>
-        <p class="wb-left-text">You built something great. Your finances should support that ambition — not slow it
-          down. That's why Booklean exists.</p>
-        <p class="wb-left-text">If you've been drowning in spreadsheets, panicking before FTA deadlines, or making big
-          decisions without a clear financial picture — that changes the moment you join Booklean. We've seen it happen
-          for 500+ UAE businesses, from free zone startups to family groups.</p>
-        <p class="wb-left-text">Booklean combines AI-powered accounting with Chartered Accountants who hold Big 4 and
-          top UAE firm experience — 8+ years average. Our AI is trained specifically on UAE VAT and Corporate Tax law
-          and supervised by qualified tax experts. You get real, accountable expertise — not generic internet answers.
-        </p>
+        <div class="wb-left-head">{{ 'HOME.WHY_LHEAD' | translate }}</div>
+        <p class="wb-left-text">{{ 'HOME.WHY_LTEXT1' | translate }}</p>
+        <p class="wb-left-text">{{ 'HOME.WHY_LTEXT2' | translate }}</p>
+        <p class="wb-left-text">{{ 'HOME.WHY_LTEXT3' | translate }}</p>
         <div style="margin-top:28px;display:flex;flex-direction:column;gap:10px;">
           <div style="display:flex;align-items:center;gap:12px;font-family:var(--fb);font-size:14px;color:#051C2A;">
             <div
@@ -1465,7 +1401,7 @@
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-            </div>Your books are accurate — always. AI-verified, expert-reviewed.
+            </div>{{ 'HOME.WHY_CHK1' | translate }}
           </div>
           <div style="display:flex;align-items:center;gap:12px;font-family:var(--fb);font-size:14px;color:#051C2A;">
             <div
@@ -1473,7 +1409,7 @@
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-            </div>Tax done right — Corporate Tax, VAT, FTA compliance. Zero penalties.
+            </div>{{ 'HOME.WHY_CHK2' | translate }}
           </div>
           <div style="display:flex;align-items:center;gap:12px;font-family:var(--fb);font-size:14px;color:#051C2A;">
             <div
@@ -1481,7 +1417,7 @@
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-            </div>Real-time insights — know exactly where your business stands, right now.
+            </div>{{ 'HOME.WHY_CHK3' | translate }}
           </div>
           <div style="display:flex;align-items:center;gap:12px;font-family:var(--fb);font-size:14px;color:#051C2A;">
             <div
@@ -1489,7 +1425,7 @@
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-            </div>One team, everything handled — accounting, tax, advisory, all in one place.
+            </div>{{ 'HOME.WHY_CHK4' | translate }}
           </div>
         </div>
 
@@ -1497,40 +1433,39 @@
           style="margin-top:16px;padding:18px 22px;background:#EEF5FF;border:1.5px solid rgba(0,79,225,.18);border-radius:12px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
           <span style="font-size:24px;flex-shrink:0;">📋</span>
           <div style="flex:1;">
-            <div style="font-family:var(--fh);font-size:14px;font-weight:800;color:#051C2A;margin-bottom:3px;">Free
-              Download: UAE Business Tax Compliance Checklist 2026</div>
-            <div style="font-size:12px;color:#3A4A5A;font-family:var(--fb);">Know exactly what VAT, Corporate Tax, and
-              FTA require — in plain English. Used by 500+ UAE businesses.</div>
+            <div style="font-family:var(--fh);font-size:14px;font-weight:800;color:#051C2A;margin-bottom:3px;">{{
+              'HOME.WHY_DL_TITLE' | translate }}</div>
+            <div style="font-size:12px;color:#3A4A5A;font-family:var(--fb);">{{ 'HOME.WHY_DL_DESC' | translate }}</div>
           </div>
           <a href="#contact"
             style="padding:10px 20px;background:#004FE1;color:#fff;font-size:12px;font-weight:800;font-family:var(--fb);text-decoration:none;border-radius:8px;white-space:nowrap;letter-spacing:.04em;flex-shrink:0;"
-            onmouseover="this.style.background='#003BB5'" onmouseout="this.style.background='#004FE1'">Download Free
-            →</a>
+            onmouseover="this.style.background='#003BB5'" onmouseout="this.style.background='#004FE1'">{{
+            'HOME.WHY_DL_BTN' | translate }}</a>
         </div>
         <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
+          <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'NAV.BOOK_REVIEW' | translate }}
+            →</a>
           <a href="#services"
             style="padding:14px 28px;border:2px solid rgba(8,161,247,.55);color:#004FE1;font-size:13px;font-weight:700;font-family:var(--fb);text-decoration:none;border-radius:8px;letter-spacing:.04em;transition:all .2s;background:#EEF5FF;"
             onmouseover="this.style.borderColor='#004FE1';this.style.color='#FFFFFF';this.style.background='#004FE1'"
-            onmouseout="this.style.borderColor='rgba(0,79,225,.30)';this.style.color='#004FE1';this.style.background='#EEF5FF'">See
-            What We Handle →</a>
+            onmouseout="this.style.borderColor='rgba(0,79,225,.30)';this.style.color='#004FE1';this.style.background='#EEF5FF'">{{
+            'HOME.WHY_SEE_WHAT_WE_HANDLE' | translate }}</a>
         </div>
       </div>
       <div class="wb-promise">
-        <div class="wb-promise-tag">Our Promise to You</div>
-        <div class="wb-promise-title">Clear Books.<br>Zero Worry.</div>
-        <div class="wb-promise-desc">When you work with Booklean, your finances are always accurate, always compliant,
-          and always ready — whether it's month-end or an FTA audit.</div>
+        <div class="wb-promise-tag">{{ 'HOME.PROMISE_TAG' | translate }}</div>
+        <div class="wb-promise-title" [innerHTML]="'HOME.PROMISE_TITLE' | translate"></div>
+        <div class="wb-promise-desc">{{ 'HOME.PROMISE_DESC' | translate }}</div>
         <div style="margin-top:28px;display:flex;flex-direction:column;gap:12px;">
           <div
             style="display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--white);border:1px solid var(--border);border-radius:10px;transition:box-shadow .2s;"
             onmouseover="this.style.boxShadow='0 4px 16px rgba(0,79,225,.12)'" onmouseout="this.style.boxShadow='none'">
             <div style="font-size:22px;">⚡</div>
             <div>
-              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">Save 70–80% on
-                Finance Admin Time</div>
-              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">Books done fast. No
-                delays, no chasing.</div>
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">{{
+                'HOME.PROMISE_I1_TITLE' | translate }}</div>
+              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">{{
+                'HOME.PROMISE_I1_DESC' | translate }}</div>
             </div>
           </div>
           <div
@@ -1538,10 +1473,10 @@
             onmouseover="this.style.boxShadow='0 4px 16px rgba(0,79,225,.12)'" onmouseout="this.style.boxShadow='none'">
             <div style="font-size:22px;">🎯</div>
             <div>
-              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">99.5%+ Accuracy —
-                Every Report</div>
-              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">AI-checked,
-                expert-approved. Always right.</div>
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">{{
+                'HOME.PROMISE_I2_TITLE' | translate }}</div>
+              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">{{
+                'HOME.PROMISE_I2_DESC' | translate }}</div>
             </div>
           </div>
           <div
@@ -1549,10 +1484,10 @@
             onmouseover="this.style.boxShadow='0 4px 16px rgba(0,79,225,.12)'" onmouseout="this.style.boxShadow='none'">
             <div style="font-size:22px;">🔒</div>
             <div>
-              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">Your Data is Secure.
-                Always.</div>
-              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">UAE PDPL compliant
-                · AES-256 encrypted</div>
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">{{
+                'HOME.PROMISE_I3_TITLE' | translate }}</div>
+              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">{{
+                'HOME.PROMISE_I3_DESC' | translate }}</div>
             </div>
           </div>
           <div
@@ -1560,10 +1495,10 @@
             onmouseover="this.style.boxShadow='0 4px 16px rgba(0,79,225,.12)'" onmouseout="this.style.boxShadow='none'">
             <div style="font-size:22px;">⚖️</div>
             <div>
-              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">Zero FTA Penalties.
-                Ever.</div>
-              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">We handle
-                compliance so you never face a fine.</div>
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);">{{
+                'HOME.PROMISE_I4_TITLE' | translate }}</div>
+              <div style="font-size:11px;color:var(--t-muted);font-family:var(--fb);margin-top:2px;">{{
+                'HOME.PROMISE_I4_DESC' | translate }}</div>
             </div>
           </div>
         </div>
@@ -1574,31 +1509,27 @@
     <div style="margin-top:20px;">
       <div
         style="font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--b1);margin-bottom:28px;font-family:var(--fb);text-align:center;">
-        Our Core Values</div>
+        {{ 'HOME.VALUES_TITLE' | translate }}</div>
       <div class="wb-values">
         <div class="wb-val-card">
           <div class="wb-val-icon">⚖️</div>
-          <div class="wb-val-name">Integrity</div>
-          <div class="wb-val-desc">We do what's right for your business — honest numbers, honest advice, every time.
-          </div>
+          <div class="wb-val-name">{{ 'HOME.VALUES_C1_TITLE' | translate }}</div>
+          <div class="wb-val-desc">{{ 'HOME.VALUES_C1_DESC' | translate }}</div>
         </div>
         <div class="wb-val-card">
           <div class="wb-val-icon">🎯</div>
-          <div class="wb-val-name">Accuracy</div>
-          <div class="wb-val-desc">99.5%+ accuracy in every report. AI checks it. Our CAs approve it. You rely on it.
-          </div>
+          <div class="wb-val-name">{{ 'HOME.VALUES_C2_TITLE' | translate }}</div>
+          <div class="wb-val-desc">{{ 'HOME.VALUES_C2_DESC' | translate }}</div>
         </div>
         <div class="wb-val-card">
           <div class="wb-val-icon">💡</div>
-          <div class="wb-val-name">Innovation</div>
-          <div class="wb-val-desc">Continuous adoption of AI, automation, and cutting-edge technology to deliver faster,
-            smarter, and more insightful financial services.</div>
+          <div class="wb-val-name">{{ 'HOME.VALUES_C3_TITLE' | translate }}</div>
+          <div class="wb-val-desc">{{ 'HOME.VALUES_C3_DESC' | translate }}</div>
         </div>
         <div class="wb-val-card">
           <div class="wb-val-icon">🤝</div>
-          <div class="wb-val-name">Partnership</div>
-          <div class="wb-val-desc">One dedicated expert who knows your business. Not a helpdesk. A real partner who's
-            invested in your growth.</div>
+          <div class="wb-val-name">{{ 'HOME.VALUES_C4_TITLE' | translate }}</div>
+          <div class="wb-val-desc">{{ 'HOME.VALUES_C4_DESC' | translate }}</div>
         </div>
       </div>
     </div>
@@ -1611,50 +1542,42 @@
 <section id="about" style="padding:0;">
   <div class="about-inner" style="padding-top:80px;padding-bottom:80px;">
     <div class="about-left">
-      <div class="s-stag">Our Story</div>
-      <h2 class="s-stitle" style="color:#fff;">Founded in Dubai Because UAE<br>Businesses <span>Deserved Better.</span>
-      </h2>
-      <p class="s-ssub" style="color:rgba(255,255,255,.65);">UAE founders told us the same story: too expensive for Big
-        4, too risky with low-cost software, and no one who truly understood their business. You deserved better.
-        Booklean was built for you.</p>
-      <div class="about-highlight">Founded in <strong style="color:var(--b4);">2026</strong> in Business Bay, Dubai — by
-        three Chartered Accountants with Big 4 and top UAE firm experience, who decided UAE businesses deserved CA-grade
-        expertise without a Big 4 price tag.</div>
+      <div class="s-stag">{{ 'HOME.ABOUT_TAG' | translate }}</div>
+      <h2 class="s-stitle" style="color:#fff;" [innerHTML]="'HOME.ABOUT_TITLE' | translate"></h2>
+      <p class="s-ssub" style="color:rgba(255,255,255,.65);">{{ 'HOME.ABOUT_SUBTITLE' | translate }}</p>
+      <div class="about-highlight" [innerHTML]="'HOME.ABOUT_HIGHLIGHT' | translate"></div>
       <div class="about-pts">
         <div class="about-pt">
           <div class="about-chk"><svg viewBox="0 0 24 24">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div><span>We built Booklean so you never have to worry about your finances again.</span>
+            </svg></div><span>{{ 'HOME.ABOUT_P1' | translate }}</span>
         </div>
         <div class="about-pt">
           <div class="about-chk"><svg viewBox="0 0 24 24">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div><span>From Day 1, your books are accurate, your taxes are compliant, your reports are
-            ready.</span>
+            </svg></div><span>{{ 'HOME.ABOUT_P2' | translate }}</span>
         </div>
         <div class="about-pt">
           <div class="about-chk"><svg viewBox="0 0 24 24">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div><span>Your financial data is 100% secure — UAE PDPL-compliant, AES-256 encrypted.</span>
+            </svg></div><span>{{ 'HOME.ABOUT_P3' | translate }}</span>
         </div>
         <div class="about-pt">
           <div class="about-chk"><svg viewBox="0 0 24 24">
               <polyline points="20 6 9 17 4 12" />
-            </svg></div><span>Three global offices serving clients in UAE 🇦🇪, India 🇮🇳, and United Kingdom
-            🇬🇧.</span>
+            </svg></div><span>{{ 'HOME.ABOUT_P4' | translate }}</span>
         </div>
       </div>
       <div
         style="margin-top:20px;padding:14px 18px;background:#EEF5FF;border-radius:10px;border:1px solid rgba(0,79,225,.15);display:flex;align-items:center;gap:10px;">
         <span style="font-size:18px;">💼</span>
-        <div style="font-size:12px;color:#3A4A5A;font-family:var(--fb);">Our founders prefer to let client results speak
-          first. <a href="#contact" style="color:#004FE1;font-weight:700;text-decoration:none;">Meet the team on a free
-            discovery call →</a></div>
+        <div style="font-size:12px;color:#3A4A5A;font-family:var(--fb);"
+          [innerHTML]="'HOME.ABOUT_FOUNDER_BOX' | translate"></div>
       </div>
       <div style="margin-top:16px;">
         <div
           style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--b4);font-weight:800;margin-bottom:14px;font-family:var(--fb);">
-          Our Founding Team</div>
+          {{ 'HOME.ABOUT_FOUNDER_HEADER' | translate }}</div>
         <div style="display:flex;flex-direction:column;gap:9px;">
           <div class="founder-card">
             <div class="founder-av" style="background:none;border:none;padding:0;overflow:hidden;"><img
@@ -1663,28 +1586,28 @@
                 style="width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:center top;display:block;" />
             </div>
             <div style="flex:1;">
-              <div class="founder-name">Sunil P Radhakrishnan</div>
-              <div class="founder-role">Tax Manager · Co-Founder · Chartered Accountant · 8+ Yrs · UAE Regulatory
-                Compliance</div>
-            </div><a href="#contact" class="founder-link">Connect →</a>
+              <div class="founder-name">{{ 'ABOUT_FOUNDER1_NAME' | translate }}</div>
+              <div class="founder-role">{{ 'ABOUT_FOUNDER1_ROLE' | translate }}</div>
+            </div><a href="#contact" class="founder-link">{{ 'CONNECT' | translate }}</a>
           </div>
           <div class="founder-card">
             <div class="founder-av founder-av-blue">CA</div>
             <div style="flex:1;">
-              <div class="founder-name">Co-Founder · AI &amp; CFO Lead</div>
-              <div class="founder-role">Chartered Accountant · 8+ Years · CFO Advisory · AI Implementation</div>
-            </div><a href="#contact" class="founder-link">Connect →</a>
+              <div class="founder-name">{{ 'ABOUT_FOUNDER2_NAME' | translate }}</div>
+              <div class="founder-role">{{ 'ABOUT_FOUNDER2_ROLE' | translate }}</div>
+            </div><a href="#contact" class="founder-link">{{ 'CONNECT' | translate }}</a>
           </div>
           <div class="founder-card">
             <div class="founder-av founder-av-cyan">BD</div>
             <div style="flex:1;">
-              <div class="founder-name">Co-Founder · Growth &amp; Partnerships</div>
-              <div class="founder-role">Business Development · UAE Market Entry · Strategic Networking</div>
-            </div><a href="#contact" class="founder-link">Connect →</a>
+              <div class="founder-name">{{ 'ABOUT_FOUNDER3_NAME' | translate }}</div>
+              <div class="founder-role">{{ 'ABOUT_FOUNDER3_ROLE' | translate }}</div>
+            </div><a href="#contact" class="founder-link">{{ 'CONNECT' | translate }}</a>
           </div>
         </div>
       </div>
-      <div style="margin-top:26px;"><a href="#contact" class="btn-primary">Talk to a Real Expert Today →</a></div>
+      <div style="margin-top:26px;"><a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{
+          'TALK_EXPERT_TODAY' | translate }}</a></div>
     </div>
     <div class="about-right">
       <div style="position:relative;">
@@ -1692,44 +1615,40 @@
           alt="Dubai Business Bay Office — BookLean Global UAE" loading="lazy" />
         <div class="about-badge">
           <div class="about-badge-num">2026</div>
-          <div class="about-badge-txt">Founded · Business Bay, Dubai</div>
+          <div class="about-badge-txt">{{ 'FOUNDED_LOC' | translate }}</div>
         </div>
       </div>
       <div style="margin-top:52px;">
         <div
           style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--b4);font-weight:800;margin-bottom:16px;font-family:var(--fb);">
-          Credentials &amp; Authorisations</div>
+          {{ 'ABOUT_CREDENTIALS' | translate }}</div>
         <div style="display:flex;flex-direction:column;gap:7px;">
           <div class="value-card">
             <div class="value-icon">🎓</div>
             <div>
-              <div class="value-name">ICAI · ACCA · CPA Qualified</div>
-              <div class="value-desc">Our Chartered Accountants hold internationally recognised professional
-                qualifications and bring Big 4 firm experience.</div>
+              <div class="value-name">{{ 'ABOUT_V0_TITLE' | translate }}</div>
+              <div class="value-desc">{{ 'ABOUT_V0_DESC' | translate }}</div>
             </div>
           </div>
           <div class="value-card">
             <div class="value-icon">🇦🇪</div>
             <div>
-              <div class="value-name">UAE FTA Registered Tax Agent</div>
-              <div class="value-desc">Authorised to handle VAT, Corporate Tax filing, and FTA audit representation on
-                your behalf.</div>
+              <div class="value-name">{{ 'ABOUT_V1_TITLE' | translate }}</div>
+              <div class="value-desc">{{ 'ABOUT_V1_DESC' | translate }}</div>
             </div>
           </div>
           <div class="value-card">
             <div class="value-icon">🔒</div>
             <div>
-              <div class="value-name">UAE PDPL Compliant</div>
-              <div class="value-desc">AES-256 encrypted, UAE-hosted data, zero-retention AI. Your financial data never
-                leaves UAE servers.</div>
+              <div class="value-name">{{ 'ABOUT_V2_TITLE' | translate }}</div>
+              <div class="value-desc">{{ 'ABOUT_V2_DESC' | translate }}</div>
             </div>
           </div>
           <div class="value-card accent">
             <div class="value-icon">🌍</div>
             <div>
-              <div class="value-name">Three Hubs · One Standard</div>
-              <div class="value-desc">UAE · India · UK — coordinated as one team. Cross-border tax, holding structures,
-                and compliance handled seamlessly.</div>
+              <div class="value-name">{{ 'ABOUT_V3_TITLE' | translate }}</div>
+              <div class="value-desc">{{ 'ABOUT_V3_DESC' | translate }}</div>
             </div>
           </div>
         </div>
@@ -1742,28 +1661,28 @@
 <div class="perf-strip">
   <div class="perf-inner">
     <div class="perf-item">
-      <div class="perf-val">99.5%+</div>
-      <div class="perf-lbl">Accuracy Rate</div>
+      <div class="perf-val">{{ 'PERF_STAT1_VAL' | translate }}</div>
+      <div class="perf-lbl">{{ 'PERF_STAT1_LBL' | translate }}</div>
     </div>
     <div class="perf-item">
-      <div class="perf-val">24hrs</div>
-      <div class="perf-lbl">Financial Close</div>
+      <div class="perf-val">{{ 'PERF_STAT2_VAL' | translate }}</div>
+      <div class="perf-lbl">{{ 'PERF_STAT2_LBL' | translate }}</div>
     </div>
     <div class="perf-item">
-      <div class="perf-val">95%+</div>
-      <div class="perf-lbl">Client Satisfaction</div>
+      <div class="perf-val">{{ 'PERF_STAT3_VAL' | translate }}</div>
+      <div class="perf-lbl">{{ 'PERF_STAT3_LBL' | translate }}</div>
     </div>
     <div class="perf-item">
-      <div class="perf-val">92%+</div>
-      <div class="perf-lbl">Client Retention</div>
+      <div class="perf-val">{{ 'PERF_STAT4_VAL' | translate }}</div>
+      <div class="perf-lbl">{{ 'PERF_STAT4_LBL' | translate }}</div>
     </div>
     <div class="perf-item">
-      <div class="perf-val">&lt;4hrs</div>
-      <div class="perf-lbl">Response SLA</div>
+      <div class="perf-val">{{ 'PERF_STAT5_VAL' | translate }}</div>
+      <div class="perf-lbl">{{ 'PERF_STAT5_LBL' | translate }}</div>
     </div>
     <div class="perf-item" style="border-right:none;">
-      <div class="perf-val">50+</div>
-      <div class="perf-lbl">NPS Score</div>
+      <div class="perf-val">{{ 'PERF_STAT6_VAL' | translate }}</div>
+      <div class="perf-lbl">{{ 'PERF_STAT6_LBL' | translate }}</div>
     </div>
   </div>
 </div>
@@ -1775,50 +1694,41 @@
   <div class="si">
     <div class="careers-hero" data-aos="fade-up">
       <div data-aos="fade-right" data-aos-delay="200">
-        <div class="s-stag">Join Our Team</div>
-        <h2 class="s-stitle" style="color:white !important;">Grow Your Career<br>at <span
-            style="background:linear-gradient(90deg,#08A1F7,#004FE1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Booklean
-            Global</span></h2>
-        <p class="s-ssub" style="max-width:100%;margin-top:14px;margin-bottom:26px;">Join a
-          team that's changing how UAE businesses manage their finances. We're growing fast — and we want people who
-          care about making a difference.</p>
-        <a href="#" class="btn-primary">View All Open Roles</a>
+        <div class="s-stag">{{ 'CAREERS_TAG' | translate }}</div>
+        <h2 class="s-stitle" style="color:white !important;" [innerHTML]="'CAREERS_TITLE' | translate"></h2>
+        <p class="s-ssub" style="max-width:100%;margin-top:14px;margin-bottom:26px;">{{ 'CAREERS_SUBTITLE' | translate
+          }}</p>
+        <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'CAREERS_VIEW_ALL' | translate
+          }}</a>
       </div>
-      <img class="careers-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="BookLean Global Team — UAE Chartered Accountants Dubai"
-        data-aos="fade-left" data-aos-delay="400" loading="lazy" />
+      <img class="careers-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80"
+        alt="BookLean Global Team — UAE Chartered Accountants Dubai" data-aos="fade-left" data-aos-delay="400"
+        loading="lazy" />
     </div>
 
-    <div class="s-stag" style="color:var(--b2);" data-aos="fade-up">Why Booklean</div>
-    <h2 class="s-stitle" style="margin-bottom:32px;" data-aos="fade-up" data-aos-delay="100">What We Offer
-    </h2>
+    <div class="s-stag" style="color:var(--b2);" data-aos="fade-up">{{ 'CAREERS_BENEFIT_TAG' | translate }}</div>
+    <h2 class="s-stitle" style="margin-bottom:32px;" data-aos="fade-up" data-aos-delay="100">{{ 'CAREERS_BENEFIT_TITLE'
+      | translate }}</h2>
     <div class="benefit-grid">
       <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
         <div class="benefit-icon">📈</div>
-        <div class="benefit-title">Clear Career Progression</div>
-        <div class="benefit-desc">Structured pathways from associate to partner, supported by
-          ongoing training and
-          mentorship programmes.</div>
+        <div class="benefit-title">{{ 'CAREERS_B1_TITLE' | translate }}</div>
+        <div class="benefit-desc">{{ 'CAREERS_B1_DESC' | translate }}</div>
       </div>
       <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
         <div class="benefit-icon">🌍</div>
-        <div class="benefit-title">International Exposure</div>
-        <div class="benefit-desc">Work with multinational clients and cross-border projects
-          across UAE, India, and the
-          United Kingdom.</div>
+        <div class="benefit-title">{{ 'CAREERS_B2_TITLE' | translate }}</div>
+        <div class="benefit-desc">{{ 'CAREERS_B2_DESC' | translate }}</div>
       </div>
       <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
         <div class="benefit-icon">🎓</div>
-        <div class="benefit-title">Learning &amp; Development</div>
-        <div class="benefit-desc">Fully funded professional qualifications — ACCA, CPA, CFA, CISA
-          — with dedicated study
-          leave.</div>
+        <div class="benefit-title">{{ 'CAREERS_B3_TITLE' | translate }}</div>
+        <div class="benefit-desc">{{ 'CAREERS_B3_DESC' | translate }}</div>
       </div>
       <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
         <div class="benefit-icon">⚖️</div>
-        <div class="benefit-title">Work-Life Balance</div>
-        <div class="benefit-desc">Flexible work arrangements, generous annual leave, and a
-          culture that values you as a
-          whole person.</div>
+        <div class="benefit-title">{{ 'CAREERS_B4_TITLE' | translate }}</div>
+        <div class="benefit-desc">{{ 'CAREERS_B4_DESC' | translate }}</div>
       </div>
     </div>
 
@@ -1826,48 +1736,51 @@
       <div
         style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:22px;">
         <div>
-          <div class="s-stag" style="color:var(--b2);">Open Positions</div>
-          <h3 style="font-family:var(--fh);font-size:24px;font-weight:800;">Current Vacancies</h3>
+          <div class="s-stag" style="color:var(--b2);">{{ 'CAREERS_VACANCIES_TAG' | translate }}</div>
+          <h3 style="font-family:var(--fh);font-size:24px;font-weight:800;">{{ 'CAREERS_VACANCIES_TITLE' | translate }}
+          </h3>
         </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;"><button class="filter-btn active">All</button><button
-            class="filter-btn">Audit</button><button class="filter-btn">Tax</button><button class="filter-btn">Digital
-            &amp; AI</button></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;"><button class="filter-btn active">{{ 'CAREERS_ALL' | translate
+            }}</button><button class="filter-btn">{{ 'CAREERS_AUDIT' | translate }}</button><button
+            class="filter-btn">{{ 'CAREERS_TAX' | translate }}</button><button class="filter-btn">{{
+            'CAREERS_DIGITAL_AI' | translate }}</button></div>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:12px;">
-        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="100"><span
-            class="job-pill-icon">🔍</span>
+        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="100"
+          (click)="openBookingModal($event)"><span class="job-pill-icon">🔍</span>
           <div>
-            <div class="job-title">Senior Audit Manager</div>
-            <div class="job-dept">Audit · Dubai</div>
-          </div><span class="job-type" style="color:var(--b4);">Full-time</span>
+            <div class="job-title">{{ 'CAREERS_J1_TITLE' | translate }}</div>
+            <div class="job-dept">{{ 'CAREERS_J1_DEPT' | translate }}</div>
+          </div><span class="job-type" style="color:var(--b4);">{{ 'CAREERS_FULLTIME' | translate }}</span>
         </a>
-        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="200"><span
-            class="job-pill-icon">🧾</span>
+        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="200"
+          (click)="openBookingModal($event)"><span class="job-pill-icon">🧾</span>
           <div>
-            <div class="job-title">VAT &amp; Corporate Tax Consultant</div>
-            <div class="job-dept">Tax · Abu Dhabi</div>
-          </div><span class="job-type" style="color:var(--b4);">Full-time</span>
+            <div class="job-title">{{ 'CAREERS_J2_TITLE' | translate }}</div>
+            <div class="job-dept">{{ 'CAREERS_J2_DEPT' | translate }}</div>
+          </div><span class="job-type" style="color:var(--b4);">{{ 'CAREERS_FULLTIME' | translate }}</span>
         </a>
-        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="300"><span
-            class="job-pill-icon">🤖</span>
+        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="300"
+          (click)="openBookingModal($event)"><span class="job-pill-icon">🤖</span>
           <div>
-            <div class="job-title">AI Finance Automation Specialist</div>
-            <div class="job-dept">Digital &amp; AI · Dubai</div>
-          </div><span class="job-type" style="color:var(--b4);">Full-time</span>
+            <div class="job-title">{{ 'CAREERS_J3_TITLE' | translate }}</div>
+            <div class="job-dept">{{ 'CAREERS_J3_DEPT' | translate }}</div>
+          </div><span class="job-type" style="color:var(--b4);">{{ 'CAREERS_FULLTIME' | translate }}</span>
         </a>
-        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="400"><span
-            class="job-pill-icon">📚</span>
+        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="400"
+          (click)="openBookingModal($event)"><span class="job-pill-icon">📚</span>
           <div>
-            <div class="job-title">Bookkeeping &amp; Accounts Executive</div>
-            <div class="job-dept">Accounting · Sharjah</div>
-          </div><span class="job-type" style="color:var(--b4);">Full-time</span>
+            <div class="job-title">{{ 'CAREERS_J4_TITLE' | translate }}</div>
+            <div class="job-dept">{{ 'CAREERS_J4_DEPT' | translate }}</div>
+          </div><span class="job-type" style="color:var(--b4);">{{ 'CAREERS_FULLTIME' | translate }}</span>
         </a>
-        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="500"><span
-            class="job-pill-icon">🎓</span>
+        <a href="#contact" class="job-pill" data-aos="fade-up" data-aos-delay="500"
+          (click)="openBookingModal($event)"><span class="job-pill-icon">🎓</span>
           <div>
-            <div class="job-title">Graduate Trainee — Audit</div>
-            <div class="job-dept">Audit · Dubai</div>
-          </div><span class="job-type" style="background:rgba(255,255,255,.10);color:var(--b4);">Graduate</span>
+            <div class="job-title">{{ 'CAREERS_J5_TITLE' | translate }}</div>
+            <div class="job-dept">{{ 'CAREERS_J5_DEPT' | translate }}</div>
+          </div><span class="job-type" style="background:rgba(255,255,255,.10);color:var(--b4);">{{ 'CAREERS_GRADUATE' |
+            translate }}</span>
         </a>
       </div>
     </div>
@@ -1883,10 +1796,9 @@
 
       <!-- Left col -->
       <div data-aos="fade-right">
-        <div class="s-stag" style="color:#004FE1;">Common Questions</div>
-        <h2 class="s-stitle" style="color:#051C2A;">Real Questions from<br><span>UAE Business Owners</span></h2>
-        <p class="s-ssub" style="margin-top:14px;margin-bottom:32px;color:#3A4A5A;">No jargon. Just simple, direct
-          answers to what UAE founders ask us most — from FTA concerns to free zone rules.</p>
+        <div class="s-stag" style="color:#004FE1;">{{ 'FAQ_TAG' | translate }}</div>
+        <h2 class="s-stitle" style="color:#051C2A;" [innerHTML]="'FAQ_TITLE' | translate"></h2>
+        <p class="s-ssub" style="margin-top:14px;margin-bottom:32px;color:#3A4A5A;">{{ 'FAQ_SUBTITLE' | translate }}</p>
         <div
           style="background:var(--grad-premium);border-radius:14px;padding:28px 24px;position:relative;overflow:hidden;">
           <div
@@ -1894,14 +1806,14 @@
           </div>
           <div
             style="font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--b4);margin-bottom:14px;font-family:var(--fb);">
-            Still have questions?</div>
-          <div style="font-family:var(--fh);font-size:18px;font-weight:700;color:#fff;margin-bottom:12px;">Talk to a
-            Real Expert — Free</div>
+            {{ 'FAQ_STILL_QUESTIONS' | translate }}</div>
+          <div style="font-family:var(--fh);font-size:18px;font-weight:700;color:#fff;margin-bottom:12px;">{{
+            'FAQ_TALK_EXPERT' | translate }}</div>
           <p
             style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.75;font-family:var(--fb);margin-bottom:20px;">
-            Book a free 30-minute call with one of our Chartered Accountants. No sales pitch — just honest advice for
-            your business.</p>
-          <a href="#contact" class="btn-primary" style="display:inline-block;" (click)="openBookingModal($event)">Book My Free 30-Min Review →</a>
+            {{ 'FAQ_TALK_EXPERT_DESC' | translate }}</p>
+          <a href="#contact" class="btn-primary" style="display:inline-block;" (click)="openBookingModal($event)">{{
+            'DIFF_BTN_CALL' | translate }}</a>
         </div>
       </div>
 
@@ -1912,90 +1824,73 @@
           data-aos="fade-up" data-aos-delay="100">
           <button class="faq-q" onclick="toggleFAQ(this)"
             style="width:100%;text-align:left;padding:18px 20px;background:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--navy);">
-            Are you licensed to handle UAE Corporate Tax?
+            {{ 'FAQ_Q1' | translate }}
             <span class="faq-arrow"
               style="font-size:18px;color:var(--b1);transition:transform .25s;flex-shrink:0;margin-left:12px;">+</span>
           </button>
           <div class="faq-a"
             style="display:none;padding:0 20px 18px;font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);background:var(--light);">
-            Yes. Booklean's team includes Chartered Accountants (ICAI, ACCA, CPA qualified) with direct experience in
-            UAE Corporate Tax (9%), VAT, and FTA compliance. We handle Corporate Tax registration, structuring, filing,
-            and audit representation. Our AI platform is trained specifically on UAE VAT and CT law and is supervised by
-            qualified tax experts — not generic tools.</div>
+            {{ 'FAQ_A1' | translate }}</div>
         </div>
 
         <div class="faq-item" style="border:1.5px solid var(--border);border-radius:12px;overflow:hidden;">
           <button class="faq-q" onclick="toggleFAQ(this)"
             style="width:100%;text-align:left;padding:18px 20px;background:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--navy);">
-            How is this different from just using accounting software?
+            {{ 'FAQ_Q2' | translate }}
             <span class="faq-arrow"
               style="font-size:18px;color:var(--b1);transition:transform .25s;flex-shrink:0;margin-left:12px;">+</span>
           </button>
           <div class="faq-a"
             style="display:none;padding:0 20px 18px;font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);background:var(--light);">
-            Software processes transactions — it doesn't think, advise, or take responsibility. Booklean gives you the
-            technology (AI bookkeeping, dashboards, automated reconciliation) plus a team of Chartered Accountants who
-            review every report, handle your FTA filings, and call you when something looks off. Think of us as your
-            full finance department — not a tool you manage.</div>
+            {{ 'FAQ_A2' | translate }}</div>
         </div>
 
         <div class="faq-item" style="border:1.5px solid var(--border);border-radius:12px;overflow:hidden;">
           <button class="faq-q" onclick="toggleFAQ(this)"
             style="width:100%;text-align:left;padding:18px 20px;background:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--navy);">
-            Can you work alongside my existing free zone auditor?
+            {{ 'FAQ_Q3' | translate }}
             <span class="faq-arrow"
               style="font-size:18px;color:var(--b1);transition:transform .25s;flex-shrink:0;margin-left:12px;">+</span>
           </button>
           <div class="faq-a"
             style="display:none;padding:0 20px 18px;font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);background:var(--light);">
-            Absolutely. Many of our clients have a free zone registered auditor for statutory requirements, and we
-            handle their day-to-day bookkeeping, VAT, Corporate Tax, and CFO advisory. We deliver clean, audit-ready
-            books that make your annual audit faster and cheaper. We can also take over the full statutory audit if
-            you'd like to consolidate.</div>
+            {{ 'FAQ_A3' | translate }}</div>
         </div>
 
         <div class="faq-item" style="border:1.5px solid var(--border);border-radius:12px;overflow:hidden;">
           <button class="faq-q" onclick="toggleFAQ(this)"
             style="width:100%;text-align:left;padding:18px 20px;background:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--navy);">
-            How long before my books are fully cleaned up?
+            {{ 'FAQ_Q4' | translate }}
             <span class="faq-arrow"
               style="font-size:18px;color:var(--b1);transition:transform .25s;flex-shrink:0;margin-left:12px;">+</span>
           </button>
           <div class="faq-a"
             style="display:none;padding:0 20px 18px;font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);background:var(--light);">
-            For most businesses, the initial cleanup and system setup takes 2–4 weeks depending on how much history
-            needs to be corrected. After that, your books stay clean automatically — no backlogs, no catching up. We'll
-            give you a specific timeline after your free discovery call once we've assessed your current situation.
-          </div>
+            {{ 'FAQ_A4' | translate }}</div>
         </div>
 
         <div class="faq-item" style="border:1.5px solid var(--border);border-radius:12px;overflow:hidden;">
           <button class="faq-q" onclick="toggleFAQ(this)"
             style="width:100%;text-align:left;padding:18px 20px;background:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--navy);">
-            Do you handle 0% Corporate Tax for Qualifying Free Zone companies?
+            {{ 'FAQ_Q5' | translate }}
             <span class="faq-arrow"
               style="font-size:18px;color:var(--b1);transition:transform .25s;flex-shrink:0;margin-left:12px;">+</span>
           </button>
           <div class="faq-a"
             style="display:none;padding:0 20px 18px;font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);background:var(--light);">
-            Yes. Free Zone companies may qualify for 0% Corporate Tax as a Qualifying Free Zone Person (QFZP) under UAE
-            CT Law Article 18. We assess your eligibility, ensure substance requirements are met, and handle
-            registration and filing. If you don't qualify for 0%, we optimise your position under the 9% rate. We also
-            handle mixed-activity entities where some income qualifies and some doesn't.</div>
+            {{ 'FAQ_A5' | translate }}</div>
         </div>
 
         <div class="faq-item" style="border:1.5px solid var(--border);border-radius:12px;overflow:hidden;">
           <button class="faq-q" onclick="toggleFAQ(this)"
             style="width:100%;text-align:left;padding:18px 20px;background:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--navy);">
-            Is my financial data safe with Booklean?
+            {{ 'FAQ_Q6' | translate }}
             <span class="faq-arrow"
               style="font-size:18px;color:var(--b1);transition:transform .25s;flex-shrink:0;margin-left:12px;">+</span>
           </button>
           <div class="faq-a"
             style="display:none;padding:0 20px 18px;font-size:13px;color:var(--t-body);line-height:1.80;font-family:var(--fb);background:var(--light);">
-            Completely. All data is stored in UAE-based servers (Azure/AWS UAE), encrypted with AES-256, and fully
-            compliant with UAE PDPL regulations. We operate a zero-knowledge architecture — your data is yours. We never
-            share, sell, or retain it beyond our service agreement.</div>
+            {{ 'FAQ_A6' | translate }}</div>
         </div>
 
       </div>
@@ -2008,20 +1903,16 @@
 ╚══════════════════════════════════════════ -->
 <div id="bk-diff" data-aos="fade-up">
   <div class="bkd-inner">
-    <div class="bkd-stag">Take the First Step</div>
-    <h2 class="bkd-title">
-      Your UAE Business Deserves<br>
-      <span class="bkd-bk">Financial</span> Clarity.
-    </h2>
-    <p class="bkd-sub">500+ UAE businesses have already made the switch. Clean books, zero FTA stress, real-time
-      insights. Getting started takes one 30-minute call.</p>
+    <div class="bkd-stag">{{ 'DIFF_TAG' | translate }}</div>
+    <h2 class="bkd-title" [innerHTML]="'DIFF_TITLE' | translate"></h2>
+    <p class="bkd-sub">{{ 'DIFF_SUBTITLE' | translate }}</p>
     <div class="bkd-btns">
-      <a href="#" class="bkd-btn-white">
+      <a href="#" class="bkd-btn-white" (click)="openBookingModal($event)">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path
             d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.69A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
         </svg>
-        Book My Free 30-Min Review → →
+        {{ 'DIFF_BTN_CALL' | translate }}
       </a>
       <a href="https://wa.me/971526203995" target="_blank" class="bkd-btn-white">
         <svg width="16" height="16" viewBox="0 0 32 32" fill="none">
@@ -2029,35 +1920,31 @@
             d="M16 3C8.82 3 3 8.82 3 16c0 2.35.63 4.55 1.73 6.46L3 29l6.73-1.7A12.93 12.93 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3z"
             fill="rgba(255,255,255,.7)" />
         </svg>
-        💬 WhatsApp Our Team — Responds Within 1 Hour
+        {{ 'DIFF_BTN_WA' | translate }}
       </a>
     </div>
     <div class="bkd-cards">
       <div class="bkd-card">
         <div class="bkd-card-ico">📅</div>
-        <div class="bkd-card-title">Free 30-Min UAE Finance Review</div>
-        <div class="bkd-card-desc">Talk to a Chartered Accountant about your VAT, Corporate Tax, or bookkeeping. No
-          sales pitch — just honest answers about your specific situation.</div>
-        <a href="#" class="bkd-card-btn" (click)="openBookingModal($event)">Book My Free Review →</a>
+        <div class="bkd-card-title">{{ 'DIFF_C1_TITLE' | translate }}</div>
+        <div class="bkd-card-desc">{{ 'DIFF_C1_DESC' | translate }}</div>
+        <a href="#" class="bkd-card-btn" (click)="openBookingModal($event)">{{ 'DIFF_C1_BTN' | translate }}</a>
       </div>
       <div class="bkd-card">
         <div class="bkd-card-ico">💬</div>
-        <div class="bkd-card-title">Ask on WhatsApp — Instant</div>
-        <div class="bkd-card-desc">Have a quick question about FTA, VAT, or Corporate Tax? WhatsApp our team and get a
-          real answer within the hour. 24/7.</div>
-        <a href="https://wa.me/971526203995" target="_blank" class="bkd-card-btn">WhatsApp Now →</a>
+        <div class="bkd-card-title">{{ 'DIFF_C2_TITLE' | translate }}</div>
+        <div class="bkd-card-desc">{{ 'DIFF_C2_DESC' | translate }}</div>
+        <a href="https://wa.me/971526203995" target="_blank" class="bkd-card-btn">{{ 'DIFF_C2_BTN' | translate }}</a>
       </div>
       <div class="bkd-card">
         <div class="bkd-card-ico">📋</div>
-        <div class="bkd-card-title">Get a Tailored UAE Plan</div>
-        <div class="bkd-card-desc">Tell us about your business structure and we'll send a transparent, fixed-fee
-          proposal within 24 hours. No jargon. No surprises.</div>
-        <a href="#" class="bkd-card-btn">Get My Custom Plan →</a>
+        <div class="bkd-card-title">{{ 'DIFF_C3_TITLE' | translate }}</div>
+        <div class="bkd-card-desc">{{ 'DIFF_C3_DESC' | translate }}</div>
+        <a href="#" class="bkd-card-btn" (click)="openBookingModal($event)">{{ 'DIFF_C3_BTN' | translate }}</a>
       </div>
     </div>
-    <div id="contact" style="margin-top:28px;font-size:12px;color:rgba(255,255,255,.35);font-family:var(--fb);">🇦🇪
-      Arabic support available on request &nbsp;·&nbsp; Business Bay, Dubai, UAE &nbsp;·&nbsp; bookleanglobal.com
-      &nbsp;·&nbsp; +971 52 620 3995</div>
+    <div id="contact" style="margin-top:28px;font-size:12px;color:rgba(255,255,255,.35);font-family:var(--fb);"
+      [innerHTML]="'DIFF_FOOTER' | translate"></div>
   </div>
 </div>
 <!-- 22. FOOTER -->

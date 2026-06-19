@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.bookleanglobal.com/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.bookleanglobal.com/uae/home</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.bookleanglobal.com/in/home</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bookleanglobal.com/uk/home</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/tax</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/bso</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/digital</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/advisory</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/audit</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/corporate</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/regulatory</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/service/industry</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/restaurant</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/retail</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/ecommerce</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/hospitality</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/realestate</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/tech</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/healthcare</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/logistics</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/banking</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/manufacturing</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/oilgas</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/industry/freelancer</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/corporate-tax</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/vat</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/peppol</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/esr-aml</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/transfer-pricing</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/mainland-freezone</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/payroll-wps</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/cashflow</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/startup-uae</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/golden-visa</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/restaurant-vat</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/ecommerce-tax</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/realestate-vat</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/freelancer-tax</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bookleanglobal.com/uae/insight/healthcare-vat</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

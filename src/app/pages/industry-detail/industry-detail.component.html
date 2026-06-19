@@ -1,0 +1,87 @@
+<div class="detail-page page-shell industry-page">
+  @if (currentIndustry(); as industry) {
+    <main class="detail-main industry-main">
+      <div class="detail-topbar">
+        <div class="detail-container detail-topbar-inner">
+          <div class="detail-crumbs">
+            <a class="detail-back" [routerLink]="['/', regionDataService.currentRegion(), 'home']">
+              <span aria-hidden="true">&larr;</span> Back to Website
+            </a>
+            <span class="detail-divider"></span>
+            <span>Industries &rsaquo; {{ industry.title }}</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="industry-case-shell">
+        <div class="industry-case-card">
+          <header class="industry-case-hero">
+            <div class="industry-kicker">{{ displayTag(industry) }}</div>
+            <h1>{{ displayTitle(industry) }}</h1>
+            <p>{{ displaySummary(industry) }}</p>
+          </header>
+
+          <div class="industry-badges">
+            @for (badge of industryBadges(industry); track badge) {
+              <span>{{ badge }}</span>
+            }
+          </div>
+
+          <section class="industry-block">
+            <h2 class="industry-block-title industry-title-red">Pain Points We See Every Day</h2>
+            <div class="industry-card-grid">
+              @for (card of painCards(industry); track card.title) {
+                <article class="industry-mini-card industry-pain-card">
+                  <h3>{{ card.title }}</h3>
+                  <p>{{ card.description }}</p>
+                </article>
+              }
+            </div>
+          </section>
+
+          <section class="industry-block">
+            <h2 class="industry-block-title industry-title-green">How BookLean Solves This</h2>
+            <div class="industry-card-grid">
+              @for (outcome of solutionCards(industry); track outcome.title) {
+                <article class="industry-mini-card industry-solution-card">
+                  <h3>{{ outcome.title }}</h3>
+                  <p>{{ outcome.description }}</p>
+                </article>
+              }
+            </div>
+          </section>
+
+          <section class="industry-law-box">
+            <h2>{{ lawTitle(industry) }}</h2>
+            <div class="industry-law-grid">
+              @for (point of lawPoints(industry); track point) {
+                <div class="industry-law-item"><span>&check;</span>{{ point }}</div>
+              }
+            </div>
+          </section>
+
+          <section class="industry-story-box">
+            <h2>{{ storyTitle(industry) }}</h2>
+            <p>{{ storyText(industry) }}</p>
+          </section>
+
+          <div class="industry-actions">
+            <a href="#contact" class="industry-primary-btn" (click)="openBookingModal($event)">
+              {{ ctaLabel(industry) }}
+            </a>
+            <a href="https://wa.me/971526203995" target="_blank" class="industry-whatsapp-btn">
+              WhatsApp Us Now
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  } @else {
+    <div class="detail-container detail-missing">
+      <h3>Industry not found.</h3>
+      <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">Return Home</a>
+    </div>
+  }
+
+  <app-footer></app-footer>
+</div>

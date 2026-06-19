@@ -19,6 +19,14 @@ export const routes: Routes = [
                 loadComponent: () => import('./pages/service-detail/service-detail.component').then(m => m.ServiceDetailComponent)
             },
             {
+                path: 'industry/:id',
+                loadComponent: () => import('./pages/industry-detail/industry-detail.component').then(m => m.IndustryDetailComponent)
+            },
+            {
+                path: 'insight/:id',
+                loadComponent: () => import('./pages/insight-detail/insight-detail.component').then(m => m.InsightDetailComponent)
+            },
+            {
                 path: '',
                 redirectTo: 'home',
                 pathMatch: 'full'

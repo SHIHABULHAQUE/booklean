@@ -21,9 +21,10 @@
         <div class="s-desc" [innerHTML]="'HERO.DESC_SLIDE1' | translate"></div>
         <div class="s-tagline"><span class="ai">{{ 'HERO.TAGLINE_SLIDE1' | translate }}</span></div>
         <div class="s-btns">
-          <a href="#contact" class="btn-primary"
-            (click)="openBookingModal($event)">{{ 'HERO.BTN_SLIDE1' | translate }} →</a>
-          <a href="https://wa.me/971526203995" target="_blank" class="btn-outline">💬 {{ 'HERO.WHATSAPP_TEAM' | translate }}</a>
+          <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'HERO.BTN_SLIDE1' | translate }}
+            →</a>
+          <a href="https://wa.me/971526203995" target="_blank" class="btn-outline">💬 {{ 'HERO.WHATSAPP_TEAM' |
+            translate }}</a>
         </div>
       </div>
       <div class="h-panel">
@@ -81,7 +82,8 @@
         <div class="s-btns">
           <a href="#problem" class="btn-primary">{{ 'HERO.SEE_FIX' | translate
             }} →</a>
-          <a href="https://wa.me/971526203995" target="_blank" class="btn-outline btn-whatsapp-hero">💬 {{ 'HERO.WHATSAPP_TEAM' | translate }}</a>
+          <a href="https://wa.me/971526203995" target="_blank" class="btn-outline btn-whatsapp-hero">💬 {{
+            'HERO.WHATSAPP_TEAM' | translate }}</a>
         </div>
       </div>
       <div class="h-panel">
@@ -89,28 +91,32 @@
         <div class="h-stat" style="opacity:.6;text-decoration:line-through;text-decoration-color:rgba(255,80,80,.5);">
           <div class="h-stat-ico">😰</div>
           <div>
-            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_RISK_NUM' | translate }}</div>
+            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_RISK_NUM' | translate
+              }}</div>
             <div class="h-stat-lbl">{{ 'HERO.OUTCOME_RISK_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat" style="opacity:.6;text-decoration:line-through;text-decoration-color:rgba(255,80,80,.5);">
           <div class="h-stat-ico">🚨</div>
           <div>
-            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_RISK2_NUM' | translate }}</div>
+            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_RISK2_NUM' |
+              translate }}</div>
             <div class="h-stat-lbl">{{ 'HERO.OUTCOME_RISK2_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat">
           <div class="h-stat-ico">✅</div>
           <div>
-            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_CLEAN_NUM' | translate }}</div>
+            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_CLEAN_NUM' |
+              translate }}</div>
             <div class="h-stat-lbl">{{ 'HERO.OUTCOME_CLEAN_LBL' | translate }}</div>
           </div>
         </div>
         <div class="h-stat">
           <div class="h-stat-ico">🚀</div>
           <div>
-            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_CLEAN2_NUM' | translate }}</div>
+            <div class="h-stat-num" style="font-size:14px;font-family:var(--fb);">{{ 'HERO.OUTCOME_CLEAN2_NUM' |
+              translate }}</div>
             <div class="h-stat-lbl">{{ 'HERO.OUTCOME_CLEAN2_LBL' | translate }}</div>
           </div>
         </div>
@@ -361,7 +367,7 @@
         <div class="problem-help-card">
           <span class="problem-help-icon">💬</span>
           <div>
-            <div class="problem-help-title" style="color:var(--gold2) !important;">{{ 'HOME.PROBLEM_HELP_TITLE' |
+            <div class="problem-help-title">{{ 'HOME.PROBLEM_HELP_TITLE' |
               translate }}</div>
             <div class="problem-help-copy">{{ 'HOME.PROBLEM_HELP_COPY' | translate }}</div>
           </div>
@@ -463,27 +469,26 @@
       <div class="s-stag stakes-tag" data-aos="fade-up">{{ 'HOME.STAKES_TAG' | translate }}</div>
       <h2 class="s-stitle stakes-title" data-aos="fade-up" data-aos-delay="100" style="color:#FFFFFF !important;"
         [innerHTML]="'HOME.STAKES_TITLE' | translate"></h2>
-      <p class="stakes-subtitle" data-aos="fade-up" data-aos-delay="200"
-        style="color:rgba(255,255,255,0.7) !important;">{{ 'HOME.STAKES_SUBTITLE' | translate }}</p>
+      <p class="stakes-subtitle" data-aos="fade-up" data-aos-delay="200">{{ 'HOME.STAKES_SUBTITLE' | translate }}</p>
     </div>
     <div class="stakes-grid">
       <div class="stakes-card" data-aos="fade-right" data-aos-delay="300">
         <div class="stakes-card-line"></div>
         <div class="stakes-card-icon">🚨</div>
-        <div class="stakes-card-title" style="color:inherit;">{{ 'HOME.STAKES_C1_TITLE' | translate }}</div>
-        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.STAKES_C1_DESC' | translate }}</p>
+        <div class="stakes-card-title">{{ 'HOME.STAKES_C1_TITLE' | translate }}</div>
+        <p class="stakes-card-copy">{{ 'HOME.STAKES_C1_DESC' | translate }}</p>
       </div>
       <div class="stakes-card" data-aos="fade-up" data-aos-delay="400">
         <div class="stakes-card-line"></div>
         <div class="stakes-card-icon">🏛️</div>
-        <div class="stakes-card-title" style="color:inherit;">{{ 'HOME.STAKES_C2_TITLE' | translate }}</div>
-        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.STAKES_C2_DESC' | translate }}</p>
+        <div class="stakes-card-title">{{ 'HOME.STAKES_C2_TITLE' | translate }}</div>
+        <p class="stakes-card-copy">{{ 'HOME.STAKES_C2_DESC' | translate }}</p>
       </div>
       <div class="stakes-card" data-aos="fade-left" data-aos-delay="500">
         <div class="stakes-card-line"></div>
         <div class="stakes-card-icon">💸</div>
-        <div class="stakes-card-title" style="color:inherit;">{{ 'HOME.STAKES_C3_TITLE' | translate }}</div>
-        <p class="stakes-card-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.STAKES_C3_DESC' | translate }}</p>
+        <div class="stakes-card-title">{{ 'HOME.STAKES_C3_TITLE' | translate }}</div>
+        <p class="stakes-card-copy">{{ 'HOME.STAKES_C3_DESC' | translate }}</p>
       </div>
     </div>
     <div class="stakes-cta" style="margin-top:52px;text-align:center;">
@@ -600,7 +605,8 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:12px;">
-      <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'HOME.PROBLEM_SOLUTION_BTN' | translate }}</a>
+      <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'HOME.PROBLEM_SOLUTION_BTN' |
+        translate }}</a>
       <div class="timeline-badge">{{ 'HOME.HOW_TIMELINE_BADGE' | translate }}</div>
     </div>
   </div>
@@ -622,7 +628,7 @@
   <div class="si" style="position:relative;z-index:2;">
     <div class="success-grid">
       <div class="success-copy" data-aos="fade-right">
-        <div class="s-stag success-tag" style="color:var(--b4);">{{ 'HOME.SUCCESS_TAG' | translate }}</div>
+        <div class="s-stag success-tag">{{ 'HOME.SUCCESS_TAG' | translate }}</div>
         <h2 class="s-stitle success-title" style="color:#FFFFFF !important;"
           [innerHTML]="'HOME.SUCCESS_TITLE' | translate"></h2>
         <p class="success-text" style="color:rgba(255,255,255,0.7) !important;">{{ 'HOME.SUCCESS_DESC1' | translate }}
@@ -638,32 +644,32 @@
         <div class="success-item" data-aos="fade-up" data-aos-delay="100">
           <div class="success-item-icon">🌙</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM1_TITLE' | translate }}</div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM1_DESC' | translate
+            <div class="success-item-title">{{ 'HOME.SUCCESS_ITEM1_TITLE' | translate }}</div>
+            <div class="success-item-copy">{{ 'HOME.SUCCESS_ITEM1_DESC' | translate
               }}</div>
           </div>
         </div>
         <div class="success-item" data-aos="fade-up" data-aos-delay="200">
           <div class="success-item-icon">🚀</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM2_TITLE' | translate }}</div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM2_DESC' | translate
+            <div class="success-item-title">{{ 'HOME.SUCCESS_ITEM2_TITLE' | translate }}</div>
+            <div class="success-item-copy">{{ 'HOME.SUCCESS_ITEM2_DESC' | translate
               }}</div>
           </div>
         </div>
         <div class="success-item" data-aos="fade-up" data-aos-delay="300">
           <div class="success-item-icon">🏦</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM3_TITLE' | translate }}</div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM3_DESC' | translate
+            <div class="success-item-title">{{ 'HOME.SUCCESS_ITEM3_TITLE' | translate }}</div>
+            <div class="success-item-copy">{{ 'HOME.SUCCESS_ITEM3_DESC' | translate
               }}</div>
           </div>
         </div>
         <div class="success-item" data-aos="fade-up" data-aos-delay="400">
           <div class="success-item-icon">💎</div>
           <div>
-            <div class="success-item-title" style="color:inherit;">{{ 'HOME.SUCCESS_ITEM4_TITLE' | translate }}</div>
-            <div class="success-item-copy" style="color:inherit; opacity:0.8;">{{ 'HOME.SUCCESS_ITEM4_DESC' | translate
+            <div class="success-item-title">{{ 'HOME.SUCCESS_ITEM4_TITLE' | translate }}</div>
+            <div class="success-item-copy">{{ 'HOME.SUCCESS_ITEM4_DESC' | translate
               }}</div>
           </div>
         </div>
@@ -686,9 +692,9 @@
     <!-- Urgency trigger -->
     <div style="text-align:center;margin-bottom:32px;">
       <div
-        style="display:inline-flex;align-items:center;gap:10px;background:rgba(201,168,76,.10);border:1.5px solid rgba(201,168,76,.30);border-radius:50px;padding:10px 24px;">
+        style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(255,248,224,.98) 0%,rgba(255,238,190,.96) 100%);border:1.5px solid rgba(173,122,20,.48);border-radius:50px;padding:10px 24px;box-shadow:0 10px 24px rgba(173,122,20,.12);">
         <span style="font-size:16px;">⏳</span>
-        <span style="font-family:var(--fb);font-size:13px;font-weight:700;color:var(--gold2);">{{ 'HOME.PKG_URGENCY' |
+        <span style="font-family:var(--fb);font-size:13.5px;font-weight:900;color:#6F4700;text-shadow:0 1px 0 rgba(255,255,255,.75);letter-spacing:.01em;">{{ 'HOME.PKG_URGENCY' |
           translate }}</span>
       </div>
     </div>
@@ -741,7 +747,7 @@
       <!-- Tier 2: Growing SMEs (Featured) -->
       <div class="pkg-card featured">
         <div
-          style="position:absolute;top:16px;right:16px;background:rgba(201,168,76,.20);border:1px solid rgba(201,168,76,.40);color:var(--gold2);font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:50px;font-family:var(--fb);">
+          style="position:absolute;top:16px;right:16px;background:rgba(255,238,190,.96);border:1px solid rgba(173,122,20,.48);color:#8A5B00;font-size:9px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:50px;font-family:var(--fb);">
           {{ 'PRICING.POPULAR' | translate }}</div>
         <div class="pkg-badge pkg-badge-gold">{{ 'HOME.PKG2_BADGE' | translate }}</div>
         <div class="pkg-name">{{ 'HOME.PKG2_NAME' | translate }}</div>
@@ -787,7 +793,7 @@
           <div class="pkg-price-value">{{ 'HOME.PKG_PRICE_GROWTH_VAL' | translate }}</div>
         </div>
         <a href="#contact" class="btn-primary"
-          style="display:block;text-align:center;margin-top:20px;font-size:12px;background:linear-gradient(135deg,#C9A84C,#E8C67A);box-shadow:0 6px 20px rgba(201,168,76,.30);">{{
+          style="display:block;text-align:center;margin-top:20px;font-size:12px;background:linear-gradient(135deg,#C9A84C,#E8C67A);box-shadow:0 6px 20px rgba(201,168,76,.30);color:#ffffff;font-weight:900;text-shadow:0 1px 8px rgba(88,57,0,.28);">{{
           'HOME.PKG2_QUOTE' | translate }}</a>
       </div>
 
@@ -1044,34 +1050,37 @@
     <!-- Service Cards — enriched with capability detail -->
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-bottom:14px;">
 
-      <a href="#" class="svc-card" onclick="showSvc('audit');return false;">
+      <a routerLink="/uae/service/audit" class="svc-card">
         <div class="svc-icon">🔍</div>
         <div class="svc-title">{{ 'HOME.SERVICES_AUDIT_TITLE' | translate }}</div>
         <div class="svc-desc">{{ 'HOME.SERVICES_AUDIT_DESC' | translate }}</div>
         <div class="svc-tags"><span class="tag">Statutory Audit UAE</span><span class="tag">Internal Audit</span><span
-            class="tag">IFRS Compliance</span><span class="tag">FTA Audit Defence</span><span class="tag">Risk Assurance UAE</span></div>
+            class="tag">IFRS Compliance</span><span class="tag">FTA Audit Defence</span><span class="tag">Risk Assurance
+            UAE</span></div>
         <div class="svc-more">{{ 'HOME.SERVICES_AUDIT_MORE' | translate }}</div>
       </a>
 
-      <a href="#" class="svc-card" onclick="showSvc('tax');return false;">
+      <a routerLink="/uae/service/tax" class="svc-card">
         <div class="svc-icon">🧾</div>
         <div class="svc-title">{{ 'HOME.SERVICES_TAX_TITLE' | translate }}</div>
         <div class="svc-desc">{{ 'HOME.SERVICES_TAX_DESC' | translate }}</div>
-        <div class="svc-tags"><span class="tag">Corporate Tax UAE 9%</span><span class="tag">VAT Filing Dubai</span><span
-            class="tag">FTA Compliance</span><span class="tag">PEPPOL UAE 2026 🔥</span><span class="tag">Tax Advisory UAE</span></div>
+        <div class="svc-tags"><span class="tag">Corporate Tax UAE 9%</span><span class="tag">VAT Filing
+            Dubai</span><span class="tag">FTA Compliance</span><span class="tag">PEPPOL UAE 2026 🔥</span><span
+            class="tag">Tax Advisory UAE</span></div>
         <div class="svc-more">{{ 'HOME.SERVICES_TAX_MORE' | translate }}</div>
       </a>
 
-      <a href="#" class="svc-card" onclick="showSvc('bso');return false;">
+      <a routerLink="/uae/service/bso" class="svc-card">
         <div class="svc-icon">📚</div>
         <div class="svc-title">{{ 'HOME.SERVICES_ACCG_TITLE' | translate }}</div>
         <div class="svc-desc">{{ 'HOME.SERVICES_ACCG_DESC' | translate }}</div>
         <div class="svc-tags"><span class="tag">AI Bookkeeping UAE</span><span class="tag">Payroll WPS UAE</span><span
-            class="tag">Cloud Accounting UAE</span><span class="tag">Zoho Books UAE</span><span class="tag">IFRS Reporting</span></div>
+            class="tag">Cloud Accounting UAE</span><span class="tag">Zoho Books UAE</span><span class="tag">IFRS
+            Reporting</span></div>
         <div class="svc-more">{{ 'HOME.SERVICES_ACCG_MORE' | translate }}</div>
       </a>
 
-      <a href="#" class="svc-card" onclick="showSvc('digital');return false;">
+      <a routerLink="/uae/service/digital" class="svc-card">
         <div class="svc-badge-ai">🚀 AI-POWERED ADVANTAGE</div>
         <div class="svc-icon">🤖</div>
         <div class="svc-title">{{ 'HOME.SERVICES_AI_TITLE' | translate }}</div>
@@ -1086,7 +1095,7 @@
         <div class="svc-more">{{ 'HOME.SERVICES_AI_MORE' | translate }}</div>
       </a>
 
-      <a href="#" class="svc-card" onclick="showSvc('advisory');return false;">
+      <a routerLink="/uae/service/advisory" class="svc-card">
         <div class="svc-icon">📈</div>
         <div class="svc-title">{{ 'HOME.SERVICES_CFO_TITLE' | translate }}</div>
         <div class="svc-desc">{{ 'HOME.SERVICES_CFO_DESC' | translate }}</div>
@@ -1100,7 +1109,7 @@
         <div class="svc-more">{{ 'HOME.SERVICES_CFO_MORE' | translate }}</div>
       </a>
 
-      <a href="#" class="svc-card" onclick="showSvc('corporate');return false;">
+      <a routerLink="/uae/service/corporate" class="svc-card">
         <div class="svc-icon">🚀</div>
         <div class="svc-title">{{ 'HOME.SERVICES_SETUP_TITLE' | translate }}</div>
         <div class="svc-desc">{{ 'HOME.SERVICES_SETUP_DESC' | translate }}</div>
@@ -1114,7 +1123,7 @@
         <div class="svc-more">{{ 'HOME.SERVICES_SETUP_MORE' | translate }}</div>
       </a>
 
-      <a href="#" class="svc-card" onclick="showSvc('compliance');return false;">
+      <a routerLink="/uae/service/regulatory" class="svc-card">
         <div class="svc-icon">🛡️</div>
         <div class="svc-title">{{ 'HOME.SERVICES_COMPLIANCE_TITLE' | translate }}</div>
         <div class="svc-desc">{{ 'HOME.SERVICES_COMPLIANCE_DESC' | translate }}</div>
@@ -1128,7 +1137,7 @@
         <div class="svc-more">{{ 'HOME.SERVICES_COMPLIANCE_MORE' | translate }}</div>
       </a>
 
-      <a href="#" class="svc-card" onclick="showSvc('industry');return false;">
+      <a routerLink="/uae/service/industry" class="svc-card">
         <div class="svc-icon">🏭</div>
         <div class="svc-title">{{ 'HOME.SERVICES_INDUSTRY_TITLE' | translate }}</div>
         <div class="svc-desc">{{ 'HOME.SERVICES_INDUSTRY_DESC' | translate }}</div>
@@ -1191,7 +1200,8 @@
         <div class="s-stag" style="color:#004FE1;">{{ 'HOME.INDUSTRIES_TAG' | translate }}</div>
         <h2 class="s-stitle" style="color:#051C2A;" [innerHTML]="'HOME.INDUSTRIES_TITLE' | translate"></h2>
         <p class="s-ssub" style="color:#3A4A5A;margin-bottom:12px;">{{ 'HOME.INDUSTRIES_SUBTITLE' | translate }}</p>
-        <p class="s-serving" style="font-size:13px;color:#4A5A6A;font-family:var(--fb);margin-top:10px;" [innerHTML]="'HOME.INDUSTRIES_SERVING' | translate"></p>
+        <p class="s-serving" style="font-size:13px;color:#4A5A6A;font-family:var(--fb);margin-top:10px;"
+          [innerHTML]="'HOME.INDUSTRIES_SERVING' | translate"></p>
       </div>
       <a href="#" class="see-all">{{ 'HOME.INDUSTRIES_ALL' | translate }}</a>
     </div>
@@ -1476,7 +1486,8 @@
             'HOME.WHY_DL_BTN' | translate }}</a>
         </div>
         <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'HOME.WHY_BOOK_REVIEW' | translate }}
+          <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'HOME.WHY_BOOK_REVIEW' |
+            translate }}
             →</a>
           <a href="#services"
             style="padding:14px 28px;border:2px solid rgba(8,161,247,.55);color:#004FE1;font-size:13px;font-weight:700;font-family:var(--fb);text-decoration:none;border-radius:8px;letter-spacing:.04em;transition:all .2s;background:#EEF5FF;"
@@ -1578,7 +1589,6 @@
       <div class="s-stag">{{ 'HOME.ABOUT_TAG' | translate }}</div>
       <h2 class="s-stitle" style="color:#fff;" [innerHTML]="'HOME.ABOUT_TITLE' | translate"></h2>
       <p class="s-ssub" style="color:rgba(255,255,255,.65);">{{ 'HOME.ABOUT_SUBTITLE' | translate }}</p>
-      <div class="about-highlight" [innerHTML]="'HOME.ABOUT_HIGHLIGHT' | translate"></div>
       <div class="about-pts">
         <div class="about-pt">
           <div class="about-chk"><svg viewBox="0 0 24 24">
@@ -1646,10 +1656,6 @@
       <div style="position:relative;">
         <img class="about-img" src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=700&q=85"
           alt="Dubai Business Bay — BookLean Global UAE Office" loading="lazy" />
-        <div class="about-badge">
-          <div class="about-badge-num">2026</div>
-          <div class="about-badge-txt">{{ 'FOUNDED_LOC' | translate }}</div>
-        </div>
       </div>
       <div style="margin-top:52px;">
         <div
@@ -1770,7 +1776,7 @@
         style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:22px;">
         <div>
           <div class="s-stag" style="color:var(--b2);">{{ 'CAREERS_VACANCIES_TAG' | translate }}</div>
-          <h3 style="font-family:var(--fh);font-size:24px;font-weight:800;">{{ 'CAREERS_VACANCIES_TITLE' | translate }}
+          <h3 class="careers-vacancies-title">{{ 'CAREERS_VACANCIES_TITLE' | translate }}
           </h3>
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;"><button class="filter-btn active">{{ 'CAREERS_ALL' | translate
@@ -1823,6 +1829,17 @@
 <!-- ╔══════════════════════════════════════════
      FAQ — Common Questions (StoryBrand clarity)
 ╚══════════════════════════════════════════ -->
+<div class="peppol-urgency-strip">
+  <div class="peppol-urgency-content">
+    <span class="peppol-urgency-icon">🔥</span>
+    <div class="peppol-urgency-copy">
+      <div class="peppol-urgency-title">UAE PEPPOL E-Invoicing 2026 — Is Your Business Compliant?</div>
+      <div class="peppol-urgency-desc">FTA mandatory digital invoicing is rolling out now. BookLean implements complete PEPPOL XML setup, ERP integration &amp; ongoing FTA compliance management.</div>
+    </div>
+    <a href="#contact" class="peppol-urgency-btn" (click)="openBookingModal($event)">Get PEPPOL Ready →</a>
+  </div>
+</div>
+
 <section id="faq" style="background:var(--white);padding:90px 0;">
   <div class="si">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
@@ -2008,18 +2025,9 @@
 <!-- ╔══════════════════════════════════════════
      GUIDES SECTION 1 (EXPERT GUIDES)
 ╚══════════════════════════════════════════ -->
-<section id="expert-guides" class="guides-section">
+<section id="expert-guides" class="guides-section" style="display:none;">
   <div class="si">
-    <div class="s-hdr" data-aos="fade-up">
-      <div>
-        <div class="s-stag">{{ 'GUIDES.TAG_HUB' | translate }}</div>
-        <h2 class="s-stitle" [innerHTML]="'GUIDES.TITLE_EXPERT' | translate"></h2>
-        <p class="s-ssub">{{ 'GUIDES.SUBTITLE_EXPERT' | translate }}</p>
-      </div>
-      <a href="#contact" (click)="openBookingModal($event)" class="btn-outline-blue" data-aos="zoom-in">{{ 'GUIDES.VIEW_ALL' | translate }}</a>
-    </div>
-
-    <div class="guides-grid">
+    <div class="guides-grid" style="display:none;">
       <!-- Card 1 -->
       <div class="guide-card card-red" data-aos="fade-up" data-aos-delay="100">
         <div class="guide-card-header">
@@ -2027,7 +2035,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.CARD1_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.CARD1_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
 
       <!-- Card 2 -->
@@ -2037,7 +2046,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.CARD2_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.CARD2_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
 
       <!-- Card 3 -->
@@ -2047,7 +2057,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.CARD3_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.CARD3_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
     </div>
 
@@ -2055,13 +2066,20 @@
     <div class="also-read-row" data-aos="fade-up">
       <span class="also-read-label">{{ 'GUIDES.ALSO_READ' | translate }}</span>
       <div class="also-read-pills">
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_MAINLAND_FREEZONE' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_FTA_PENALTY_WAIVER' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_PAYROLL_WPS' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_RESTAURANT_VAT' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_ECOMMERCE_ACCOUNTING' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_STARTUP_ACCOUNTING' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_FREELANCER_TAX' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_MAINLAND_FREEZONE'
+          | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_FTA_PENALTY_WAIVER'
+          | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_PAYROLL_WPS' |
+          translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_RESTAURANT_VAT' |
+          translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{
+          'GUIDES.PILL_ECOMMERCE_ACCOUNTING' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_STARTUP_ACCOUNTING'
+          | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_FREELANCER_TAX' |
+          translate }}</a>
       </div>
     </div>
   </div>
@@ -2078,7 +2096,8 @@
         <h2 class="s-stitle" [innerHTML]="'GUIDES.TITLE_TAX_ACCOUNTING' | translate"></h2>
         <p class="s-ssub">{{ 'GUIDES.SUBTITLE_TAX_ACCOUNTING' | translate }}</p>
       </div>
-      <a href="#contact" (click)="openBookingModal($event)" class="btn-outline-blue" data-aos="zoom-in">{{ 'GUIDES.VIEW_ALL' | translate }}</a>
+      <a href="#contact" (click)="openBookingModal($event)" class="btn-outline-blue" data-aos="zoom-in">{{
+        'GUIDES.VIEW_ALL' | translate }}</a>
     </div>
 
     <div class="guides-grid-6">
@@ -2090,7 +2109,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.SEC2_CARD1_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.SEC2_CARD1_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
 
       <!-- Card 2 -->
@@ -2101,7 +2121,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.SEC2_CARD2_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.SEC2_CARD2_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
 
       <!-- Card 3 -->
@@ -2112,7 +2133,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.SEC2_CARD3_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.SEC2_CARD3_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
 
       <!-- Card 4 -->
@@ -2123,7 +2145,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.SEC2_CARD4_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.SEC2_CARD4_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
 
       <!-- Card 5 -->
@@ -2134,7 +2157,8 @@
         </div>
         <h3 class="guide-card-title">{{ 'GUIDES.SEC2_CARD5_TITLE' | translate }}</h3>
         <p class="guide-card-desc">{{ 'GUIDES.SEC2_CARD5_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="guide-card-link">{{ 'GUIDES.READ_GUIDE' | translate
+          }}</a>
       </div>
 
       <!-- Card 6 (Navy download card) -->
@@ -2142,7 +2166,8 @@
         <div class="navy-card-icon">📋</div>
         <h3 class="navy-card-title">{{ 'GUIDES.CHECKLIST_TITLE' | translate }}</h3>
         <p class="navy-card-desc">{{ 'GUIDES.CHECKLIST_DESC' | translate }}</p>
-        <a href="#contact" (click)="openBookingModal($event)" class="btn-cyan">{{ 'GUIDES.CHECKLIST_BTN' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="btn-cyan">{{ 'GUIDES.CHECKLIST_BTN' | translate
+          }}</a>
       </div>
     </div>
 
@@ -2150,14 +2175,22 @@
     <div class="also-read-row" data-aos="fade-up">
       <span class="also-read-label">{{ 'GUIDES.ALSO_READ' | translate }}</span>
       <div class="also-read-pills">
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_PAYROLL_WPS' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_RESTAURANT_VAT' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_ECOMMERCE_ACCOUNTING' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_ESR_FILING' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_STARTUP_ACCOUNTING' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_FREELANCER_TAX' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_VIRTUAL_CFO' | translate }}</a>
-        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_AI_ACCOUNTING' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_PAYROLL_WPS' |
+          translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_RESTAURANT_VAT' |
+          translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{
+          'GUIDES.PILL_ECOMMERCE_ACCOUNTING' | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_ESR_FILING' |
+          translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_STARTUP_ACCOUNTING'
+          | translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_FREELANCER_TAX' |
+          translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_VIRTUAL_CFO' |
+          translate }}</a>
+        <a href="#contact" (click)="openBookingModal($event)" class="also-read-pill">{{ 'GUIDES.PILL_AI_ACCOUNTING' |
+          translate }}</a>
       </div>
     </div>
   </div>

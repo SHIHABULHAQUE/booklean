@@ -1,85 +1,138 @@
 <div class="service-detail-page page-shell">
-  @if (currentService(); as svc) {
-    <section class="service-hero">
-      <div class="container">
-        <div class="hero-content content-surface-dark" data-aos="fade-up">
-          <div class="breadcrumb">
-            <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">{{ 'NAV.HOME' | translate }}</a> /
-            <span class="active">{{ 'SERVICES.' + svc.id.toUpperCase().replace('-', '_') | translate }}</span>
+  @if (currentService(); as service) {
+    <main class="tax-detail">
+      <div class="tax-topbar">
+        <div class="tax-container tax-topbar-inner">
+          <div class="tax-crumbs">
+            <a class="tax-back" [routerLink]="['/', regionDataService.currentRegion(), 'home']">
+              <span aria-hidden="true">&larr;</span> Back to Website
+            </a>
+            <span class="tax-divider"></span>
+            <span>Services &rsaquo; {{ service.shortTitle }}</span>
           </div>
-          <h1>{{ 'SERVICES.' + svc.id.toUpperCase().replace('-', '_') | translate }}</h1>
-          <p class="hero-sub">{{ 'SERVICES.PROPOSAL_DESC' | translate }}</p>
         </div>
       </div>
-    </section>
 
-    <div class="container main-layout">
-      <div class="main-content content-surface" data-aos="fade-up" data-aos-delay="100">
-        @if (activeTab(); as tab) {
-          <div class="tab-content-wrapper">
-            <div class="content-header">
-              <span class="category-tag">{{ 'SERVICES.' + svc.id.toUpperCase().replace('-', '_') | translate }}</span>
-              <h2>{{ 'SERVICES.' + tab.id.toUpperCase().replace('-', '_') + '_TITLE' | translate }}</h2>
+      <section class="tax-hero-section">
+        <div class="tax-container">
+          <div class="tax-hero">
+            <div class="tax-hero-copy">
+              <div class="tax-kicker">BookLean Global &middot; UAE Financial Services</div>
+              <div class="tax-title-row">
+                <span class="tax-icon-box" aria-hidden="true">{{ service.icon }}</span>
+                <h1>{{ service.title }}</h1>
+              </div>
+              <p class="tax-quote">&ldquo;{{ service.pain }}&rdquo;</p>
+              <div class="tax-actions">
+                <a href="#contact" class="tax-btn tax-btn-primary" (click)="openBookingModal($event)">
+                  Book Free 30-Min Strategy Call <span aria-hidden="true">&rarr;</span>
+                </a>
+                <a href="https://wa.me/971526203995" target="_blank" class="tax-btn tax-btn-whatsapp">
+                  WhatsApp Now
+                </a>
+              </div>
             </div>
-            
-            <p class="tab-desc">{{ 'SERVICES.' + tab.id.toUpperCase().replace('-', '_') + '_DESC' | translate }}</p>
 
-            <img [src]="tab.image" [alt]="tab.title" class="content-img">
-
-            <h3>{{ 'SERVICES.CAPABILITIES' | translate }}</h3>
-            <ul class="service-list">
-              @for (feat of tab.features; track feat) {
-                <li><strong>{{ feat.split(': ')[0] }}:</strong> {{ feat.split(': ')[1] || '' }}</li>
-              }
-            </ul>
-
-            <div class="promo-box">
-              <h4>{{ 'SERVICES.READY_TO_DISCUSS' | translate }}</h4>
-              <p>{{ 'SERVICES.SPECIALISTS_STANDBY' | translate }}</p>
-              <a href="#contact" class="btn btn-primary" (click)="openBookingModal($event)">{{ 'SERVICES.SCHEDULE_CALL' | translate }}</a>
+            <div class="tax-proof-card">
+              <div class="tax-proof-icon" aria-hidden="true">{{ service.icon }}</div>
+              <strong>{{ service.tagline }}</strong>
+              <div class="tax-stars" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span>4.9/5 &middot; 500+ UAE Clients</span>
             </div>
           </div>
-        }
-      </div>
+        </div>
+      </section>
 
-      <aside class="sidebar" data-aos="fade-left" data-aos-delay="200">
-        <div class="sidebar-widget nav-widget content-surface">
-          <h4 class="widget-title">{{ 'SERVICES.EXPLORE' | translate }}</h4>
-          <ul class="side-nav">
-            @for (sub of svc.subServices; track sub.id) {
-              <li>
-                <button 
-                  type="button" 
-                  class="tab-btn" 
-                  [class.active]="activeTab()?.id === sub.id"
-                  (click)="selectTab(sub.id)">
-                  {{ 'SERVICES.' + sub.id.toUpperCase().replace('-', '_') + '_TITLE' | translate }}
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="tab-chev">
-                    <path d="M4 2L8 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </li>
+      <section class="tax-split-section">
+        <div class="tax-container tax-split-grid">
+          <article class="tax-info-panel tax-problem-panel">
+            <div class="tax-panel-label tax-panel-label-red">
+              <span></span> The real problem you're facing
+            </div>
+            <p>{{ service.pain }}</p>
+          </article>
+
+          <article class="tax-info-panel tax-solution-panel">
+            <div class="tax-panel-label tax-panel-label-blue">
+              <span>✓</span> How BookLean solves this for you
+            </div>
+            <p>{{ service.guide }}</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tax-benefits-section">
+        <div class="tax-container">
+          <h2 class="tax-section-label">What changes for your business from day one</h2>
+          <div class="tax-benefit-grid">
+            @for (outcome of service.outcomes; track outcome.title) {
+              <article class="tax-benefit-card">
+                <div class="tax-benefit-icon">{{ outcome.icon }}</div>
+                <h3>{{ outcome.title }}</h3>
+                <p>{{ outcome.description }}</p>
+              </article>
             }
-          </ul>
+          </div>
         </div>
+      </section>
 
-        <div class="sidebar-widget contact-widget content-surface-dark" id="contact">
-          <h4 class="widget-title">{{ 'SERVICES.PROPOSAL' | translate }}</h4>
-          <p>{{ 'SERVICES.PROPOSAL_DESC' | translate }}</p>
-          <form class="quick-form">
-            <input class="field-control" type="text" [placeholder]="'BOOKING.NAME' | translate">
-            <input class="field-control" type="email" [placeholder]="'BOOKING.EMAIL' | translate">
-            <textarea class="field-control" [placeholder]="'SERVICES.PROPOSAL_DESC' | translate"></textarea>
-            <button class="btn btn-primary w-100" style="border: none;">{{ 'SERVICES.SEND_INQUIRY' | translate }}</button>
-          </form>
+      <section class="tax-included-section">
+        <div class="tax-container">
+          <h2 class="tax-section-label">Complete service list, everything included</h2>
+          <div class="tax-included-box">
+            @for (item of service.services; track item) {
+              <div class="tax-check-item"><span>✓</span> {{ item }}</div>
+            }
+          </div>
         </div>
-      </aside>
-    </div>
+      </section>
+
+      <section class="tax-final-section" id="contact">
+        <div class="tax-container">
+          <div class="tax-stats-strip">
+            <div class="tax-stat-item">
+              <strong>500+</strong>
+              <span>UAE businesses trust BookLean</span>
+            </div>
+            <div class="tax-stat-item">
+              <strong>Zero</strong>
+              <span>FTA penalties across all client accounts</span>
+            </div>
+            <div class="tax-stat-item">
+              <strong>Big 4</strong>
+              <span>Trained chartered accountants on your team</span>
+            </div>
+            <div class="tax-stat-item">
+              <strong>2-4w</strong>
+              <span>Full onboarding timeline, free zone or mainland</span>
+            </div>
+          </div>
+
+          <div class="tax-final-cta">
+            <h2>Ready to fix this once and for all?</h2>
+            <p>
+              Book a free 30-minute strategy call with a senior BookLean CA. We'll assess your
+              situation, identify compliance gaps, and tell you exactly what needs to happen at no
+              cost to you.
+            </p>
+            <div class="tax-final-actions">
+              <a href="#contact" class="tax-btn tax-btn-light" (click)="openBookingModal($event)">
+                Book My Free 30-Min Review <span aria-hidden="true">&rarr;</span>
+              </a>
+              <a href="https://wa.me/971526203995" target="_blank" class="tax-btn tax-btn-whatsapp tax-btn-final">
+                WhatsApp Our Team
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   } @else {
     <div class="container py-5 text-center">
       <h3>Service category not found.</h3>
-      <a routerLink="/" class="btn btn-primary mt-3">Return Home</a>
+      <a [routerLink]="['/', regionDataService.currentRegion(), 'home']" class="btn btn-primary mt-3">Return Home</a>
     </div>
   }
+
   <app-footer></app-footer>
 </div>

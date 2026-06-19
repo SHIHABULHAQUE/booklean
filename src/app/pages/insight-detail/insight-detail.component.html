@@ -1,0 +1,86 @@
+<div class="detail-page page-shell insight-reference-page">
+  @if (currentInsight(); as insight) {
+    <main class="detail-main insight-guide-main">
+      <div class="detail-topbar">
+        <div class="detail-container detail-topbar-inner">
+          <div class="detail-crumbs">
+            <a class="detail-back" [routerLink]="['/', regionDataService.currentRegion(), 'home']">
+              <span aria-hidden="true">&larr;</span> Back to Website
+            </a>
+            <span class="detail-divider"></span>
+            <span>Insights &rsaquo; {{ displayTitle(insight) }}</span>
+          </div>
+        </div>
+      </div>
+
+      @if (referencePanel(insight); as panel) {
+        <article class="insight-guide-panel" (click)="handleGuideClick($event)">
+          <div [innerHTML]="panel.heroHtml"></div>
+          <div [innerHTML]="panel.bodyHtml"></div>
+        </article>
+      } @else {
+        <article class="insight-guide-panel">
+          <div class="guide-hero">
+            <div class="guide-hero-inner">
+              <div class="guide-hero-breadcrumb">BookLean Global &rsaquo; <span>UAE Financial Intelligence Hub</span> &rsaquo; Guide</div>
+              <div class="guide-hero-tag">{{ displayTag(insight) }}</div>
+              <h1 class="guide-hero-h1">{{ displayTitle(insight) }}</h1>
+              <p class="guide-hero-sub">{{ displaySummary(insight) }}</p>
+              <div class="guide-hero-meta">
+                <span><strong>Updated June 2026</strong></span>
+                <span><strong>{{ insight.readTime }}</strong></span>
+                <span><strong>Written by BookLean CAs</strong></span>
+                <span><strong>UAE-specific guidance</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-body">
+            <div class="guide-toc">
+              <h4>What's in This Guide</h4>
+              <ol>
+                @for (section of guideSections(insight); track section.title) {
+                  <li>{{ section.title }}</li>
+                }
+              </ol>
+            </div>
+
+            @for (section of guideSections(insight); track section.title; let idx = $index) {
+              <div class="guide-section">
+                <div class="guide-section-num">Section {{ (idx + 1).toString().padStart(2, '0') }}</div>
+                <h2>{{ section.title }}</h2>
+                <p>{{ section.body }}</p>
+                @if (section.points.length) {
+                  <ul>
+                    @for (point of section.points; track point) {
+                      <li>{{ point }}</li>
+                    }
+                  </ul>
+                }
+              </div>
+            }
+
+            <div class="guide-cta-strip">
+              <div class="guide-cta-inner">
+                <div class="label">Guides are helpful. Having a CA who knows your business is better.</div>
+                <h3>Ready to get your UAE tax &amp; accounting sorted properly?</h3>
+                <p>Book a free 30-minute strategy call with a senior BookLean CA.</p>
+              </div>
+              <div class="guide-cta-btns">
+                <button class="btn-cta-primary" type="button" (click)="bookingService.open()">Book My Free Strategy Call</button>
+                <a href="https://wa.me/971526203995" target="_blank" class="btn-cta-wa">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      }
+    </main>
+  } @else {
+    <div class="detail-container detail-missing">
+      <h3>Insight not found.</h3>
+      <a [routerLink]="['/', regionDataService.currentRegion(), 'home']">Return Home</a>
+    </div>
+  }
+
+  <app-footer></app-footer>
+</div>

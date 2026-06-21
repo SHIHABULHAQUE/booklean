@@ -5,12 +5,7 @@ import { BookingModalService } from '../../services/booking-modal.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-booking-modal',
-  standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule],
-  templateUrl: './booking-modal.component.html',
-  styleUrl: './booking-modal.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-booking-modal', standalone: true, imports: [CommonModule, FormsModule, TranslateModule], templateUrl: './booking-modal.component.html', styleUrl: './booking-modal.component.scss', changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BookingModalComponent {
   bookingService = inject(BookingModalService);
@@ -49,11 +44,7 @@ export class BookingModalComponent {
 
     try {
       await this.bookingService.sendBooking({
-        name: this.name().trim(),
-        company: this.company().trim(),
-        mobile: this.mobile().trim(),
-        email: this.email().trim(),
-        message: this.message().trim()
+        name: this.name().trim(), company: this.company().trim(), mobile: this.mobile().trim(), email: this.email().trim(), message: this.message().trim()
       });
       this.isSuccess.set(true);
     } catch (error: any) {

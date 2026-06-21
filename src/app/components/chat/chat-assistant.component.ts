@@ -4,12 +4,7 @@ import { RegionDataService } from '../../services/region-data.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-chat-assistant',
-  standalone: true,
-  imports: [CommonModule, TranslateModule],
-  templateUrl: './chat-assistant.component.html',
-  styleUrl: './chat-assistant.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-chat-assistant', standalone: true, imports: [CommonModule, TranslateModule], templateUrl: './chat-assistant.component.html', styleUrl: './chat-assistant.component.scss', changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChatAssistantComponent implements OnInit {
   private translateService = inject(TranslateService);

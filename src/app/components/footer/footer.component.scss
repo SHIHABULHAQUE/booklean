@@ -19,18 +19,16 @@ footer {
 
 /* Logo — sits in a white pill so it's visible on both dark & light footer */
 .f-logo {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 8px 20px;
   display: inline-flex;
   align-items: center;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
 .f-logo img {
-  height: 34px;
+  display: block;
+  height: 46px;
   width: auto;
   object-fit: contain;
+  filter: drop-shadow(0 10px 22px rgba(8, 161, 247, 0.18));
 }
 
 /* Address */

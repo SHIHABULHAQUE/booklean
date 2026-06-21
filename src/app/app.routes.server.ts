@@ -42,6 +42,13 @@ export const serverRoutes: ServerRoute[] = [
     }
   },
   {
+    path: ':region/faq',
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      return REGIONS.map((region) => ({ region }));
+    }
+  },
+  {
     path: '**',
     renderMode: RenderMode.Prerender
   }

@@ -243,7 +243,7 @@
 
 :host .n-logo img {
   display: block;
-  height: clamp(32px, 5vw, 44px);
+  height: clamp(24px, 3.2vw, 30px);
   width: auto;
   object-fit: contain;
 }
@@ -322,6 +322,26 @@
   display: flex;
 }
 
+:host .n-item.is-open>.n-btn,
+:host .n-item:hover>.n-btn,
+:host .n-item:focus-within>.n-btn {
+  color: #004fe1;
+  border-bottom-color: #004fe1;
+}
+
+:host .n-item.is-open>.n-btn svg,
+:host .n-item:hover>.n-btn svg,
+:host .n-item:focus-within>.n-btn svg {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1025px) {
+  :host .n-item:hover .mega,
+  :host .n-item:focus-within .mega {
+    display: flex;
+  }
+}
+
 :host .mega-services {
   grid-template-columns: minmax(230px, 0.95fr) repeat(4, minmax(150px, 1fr)) minmax(240px, 0.95fr);
   align-items: stretch;
@@ -329,6 +349,13 @@
 
 :host .n-item.is-open .mega-services {
   display: grid;
+}
+
+@media (min-width: 1025px) {
+  :host .n-item:hover .mega-services,
+  :host .n-item:focus-within .mega-services {
+    display: grid;
+  }
 }
 
 :host .mega-service-rail {
@@ -899,7 +926,7 @@
   }
 
   :host .n-logo img {
-    height: 38px;
+    height: 28px;
   }
 
   :host .theme-toggle,

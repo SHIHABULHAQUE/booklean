@@ -1,0 +1,41 @@
+<section class="faq-page" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="faq-shell">
+    <aside class="faq-intro">
+      <div class="faq-kicker">AEO Optimised &middot; Featured Snippet Targets</div>
+      <h1>Common UAE Tax &amp;<span>Finance Questions.</span><small>Answered Honestly.</small></h1>
+      <p>Written by Big 4-trained Chartered Accountants. No jargon. No sales language. The exact information UAE business owners need to make confident financial decisions.</p>
+
+      <div class="faq-help">
+        <div class="faq-help__title">Your question not listed here?</div>
+        <p>Our CAs answer your specific UAE tax, VAT, or compliance question free, with no obligation, within 24 hours.</p>
+        <a href="#contact" class="faq-help__primary" (click)="openBookingModal($event)">Ask Our Expert CAs &rarr;</a>
+        <a href="https://wa.me/971526203995" target="_blank" class="faq-help__whatsapp">💬 WhatsApp: We Respond Within 1 Hour</a>
+      </div>
+
+      <div class="faq-facts">
+        <div class="faq-facts__title">📊 UAE Tax Quick Facts 2026</div>
+        <ul>
+          @for (fact of quickFacts; track fact) {
+          <li>{{ fact }}</li>
+          }
+        </ul>
+      </div>
+    </aside>
+
+    <div class="faq-list" id="faq-list">
+      @for (faq of faqs; track faq.question; let i = $index) {
+      <article class="faq-item" [class.faq-item--open]="activeFaq() === i" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button type="button" class="faq-q" (click)="toggleFaq(i)" [attr.aria-expanded]="activeFaq() === i" [attr.aria-controls]="'faq-answer-' + i">
+          <span itemprop="name">{{ faq.question }}</span>
+          <span class="faq-arrow" aria-hidden="true">⌄</span>
+        </button>
+        <div class="faq-a" [id]="'faq-answer-' + i" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">{{ faq.answer }}</p>
+        </div>
+      </article>
+      }
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

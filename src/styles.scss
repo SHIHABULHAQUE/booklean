@@ -406,7 +406,7 @@ body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .pkg-card.
   box-shadow: var(--shadow-card), inset 0 1px 0 rgba(255, 255, 255, .88) !important;
 }
 
-body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover {
+body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item):hover {
   background: var(--grad-premium) !important;
   background-image: linear-gradient(rgba(5, 42, 72, 0.88), rgba(0, 79, 225, 0.72)), url('/images/storybrand_problem_bg.png') !important;
   background-size: cover !important;
@@ -419,7 +419,7 @@ body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-c
   overflow: hidden !important;
 }
 
-body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover::after {
+body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .global-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item):hover::after {
   content: '';
   position: absolute;
   top: 0;
@@ -430,7 +430,7 @@ body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-c
   z-index: 2;
 }
 
-body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item, .faq-item, .faq-q):hover :is(h1, h2, h3, h4, p, span, div, strong, li, i, em, .s-stitle, .s-ssub, .svc-title, .svc-desc, .svc-more, .tag, .svc-badge-ai, .pkg-name, .pkg-subtitle, .pkg-price-label, .pkg-price-value, .pkg-outcome, .founder-name, .founder-role, .global-country, .global-city, .g-rect-title, .g-rect-num, .bkd-title, .bkd-card-title, .benefit-title, .wb-promise-title, .lean-feat-title, .g-val, .g-lbl, .success-item-title, .success-item-copy, .faq-q, .faq-a) {
+body.theme-light :is(.glass-card, .glass-rect, .stat-card, .pkg-card, .benefit-card, .value-card, .bkd-card, .lean-feat, .lean-feat-hl, .svc-card, .svc-card-dark, .ind-card, .wb-val-card, .founder-card, .g-wide-item):hover :is(h1, h2, h3, h4, p, span, div, strong, li, i, em, .s-stitle, .s-ssub, .svc-title, .svc-desc, .svc-more, .tag, .svc-badge-ai, .pkg-name, .pkg-subtitle, .pkg-price-label, .pkg-price-value, .pkg-outcome, .founder-name, .founder-role, .global-country, .global-city, .g-rect-title, .g-rect-num, .bkd-title, .bkd-card-title, .benefit-title, .wb-promise-title, .lean-feat-title, .g-val, .g-lbl, .success-item-title, .success-item-copy) {
   color: #FFFFFF !important;
   -webkit-text-fill-color: #FFFFFF !important;
   opacity: 1 !important;

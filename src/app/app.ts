@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, signal, OnInit, inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs';
+import { filter, take } from 'rxjs';
 import { ThemeService } from './services/theme.service';
 import { TranslationService } from './services/translation.service';
 
@@ -15,25 +15,23 @@ import { TranslationService } from './services/translation.service';
 })
 export class App implements OnInit {
   protected readonly title = signal('booklean');
-  protected readonly isLoading = signal(true);
+  protected readonly showLaunchLoader = signal(true);
+  protected readonly launchExiting = signal(false);
   private router = inject(Router);
   private platformId = inject(PLATFORM_ID);
   private themeService = inject(ThemeService);
   private translationService = inject(TranslationService);
+  private launchCloseScheduled = false;
 
   ngOnInit() {
     this.translationService.init();
     if (isPlatformBrowser(this.platformId)) {
-      const hasLoaded = sessionStorage.getItem('hasLoaded');
-      
-      if (hasLoaded) {
-        this.isLoading.set(false);
-      } else {
-        setTimeout(() => {
-          this.isLoading.set(false);
-          sessionStorage.setItem('hasLoaded', 'true');
-        }, 300);
-      }
+      this.router.events.pipe(
+        filter(event => event instanceof NavigationEnd),
+        take(1)
+      ).subscribe(() => this.scheduleLaunchClose());
+
+      setTimeout(() => this.scheduleLaunchClose(), 2800);
 
       import('aos').then((AOS: any) => {
         // Handle Vite chunking dynamic import differences between module types
@@ -60,6 +58,19 @@ export class App implements OnInit {
         });
       });
     }
+  }
+
+  private scheduleLaunchClose() {
+    if (this.launchCloseScheduled) return;
+    this.launchCloseScheduled = true;
+
+    setTimeout(() => {
+      this.launchExiting.set(true);
+    }, 1500);
+
+    setTimeout(() => {
+      this.showLaunchLoader.set(false);
+    }, 2200);
   }
 }
 

@@ -27,6 +27,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./pages/insight-detail/insight-detail.component').then(m => m.InsightDetailComponent)
             },
             {
+                path: 'faq',
+                loadComponent: () => import('./pages/faq/faq.component').then(m => m.FaqComponent)
+            },
+            {
                 path: '',
                 redirectTo: 'home',
                 pathMatch: 'full'

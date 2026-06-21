@@ -1,10 +1,13 @@
 /
 /uae
 /uae/home
+/uae/faq
 /in
 /in/home
+/in/faq
 /uk
 /uk/home
+/uk/faq
 /uae/service/tax
 /uae/service/bso
 /uae/service/digital

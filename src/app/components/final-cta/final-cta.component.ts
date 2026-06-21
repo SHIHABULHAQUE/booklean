@@ -2,12 +2,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-final-cta',
-    standalone: true,
-    imports: [CommonModule],
-    templateUrl: './final-cta.component.html',
-    styleUrl: './final-cta.component.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-final-cta', standalone: true, imports: [CommonModule], templateUrl: './final-cta.component.html', styleUrl: './final-cta.component.scss', changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FinalCtaComponent {
     bookDiscoveryCall() {

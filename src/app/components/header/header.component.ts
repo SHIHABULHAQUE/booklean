@@ -8,13 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-header',
-    standalone: true,
-    imports: [RouterLink, TranslateModule, CommonModule],
-    templateUrl: './header.component.html',
-    styleUrl: './header.component.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush,
-})
+    selector: 'app-header', standalone: true, imports: [RouterLink, TranslateModule, CommonModule], templateUrl: './header.component.html', styleUrl: './header.component.scss', changeDetection: ChangeDetectionStrategy.OnPush, })
 export class HeaderComponent {
     translationService = inject(TranslationService);
     isMenuOpen = signal(false);

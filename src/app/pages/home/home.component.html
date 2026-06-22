@@ -23,7 +23,7 @@
         <div class="s-btns">
           <a href="#contact" class="btn-primary" (click)="openBookingModal($event)">{{ 'HERO.BTN_SLIDE1' | translate }}
             →</a>
-          <a href="https://wa.me/971526203995" target="_blank" class="btn-outline">💬 {{ 'HERO.WHATSAPP_TEAM' |
+          <a href="https://wa.me/971526203995" target="_blank" class="btn-outline btn-whatsapp-hero">💬 {{ 'HERO.WHATSAPP_TEAM' |
             translate }}</a>
         </div>
       </div>
@@ -157,28 +157,48 @@
       <div class="h-panel einvoice-panel">
         <div class="h-panel-lbl">UAE E-Invoicing, Critical Deadlines</div>
         <div class="h-stat">
-          <div class="h-stat-ico">Jul</div>
+          <div class="h-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="4" y="5" width="16" height="15" rx="2"></rect>
+              <path d="M8 3v4M16 3v4M4 10h16"></path>
+              <path d="M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"></path>
+            </svg>
+          </div>
           <div>
             <div class="h-stat-num">1 Jul 2026</div>
             <div class="h-stat-lbl">Voluntary phase opens, any business can go live early</div>
           </div>
         </div>
         <div class="h-stat">
-          <div class="h-stat-ico">Oct</div>
+          <div class="h-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 21V8l8-4 8 4v13"></path>
+              <path d="M9 21v-6h6v6M8 10h.01M12 10h.01M16 10h.01M8 13h.01M16 13h.01"></path>
+            </svg>
+          </div>
           <div>
             <div class="h-stat-num">31 Oct 2026</div>
             <div class="h-stat-lbl">AED 50M+ revenue: ASP appointment deadline</div>
           </div>
         </div>
         <div class="h-stat">
-          <div class="h-stat-ico">Jan</div>
+          <div class="h-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M13 2 5 14h6l-1 8 9-13h-6l0-7Z"></path>
+            </svg>
+          </div>
           <div>
             <div class="h-stat-num">1 Jan 2027</div>
             <div class="h-stat-lbl">Phase 1 mandatory go-live for AED 50M+ businesses</div>
           </div>
         </div>
         <div class="h-stat">
-          <div class="h-stat-ico">All</div>
+          <div class="h-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 3h7l4 4v14H7z"></path>
+              <path d="M14 3v5h4M10 12h5M10 16h5"></path>
+            </svg>
+          </div>
           <div>
             <div class="h-stat-num">1 Jul 2027</div>
             <div class="h-stat-lbl">Full mandatory rollout for all remaining businesses</div>

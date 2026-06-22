@@ -2,7 +2,15 @@
   <div class="topbar-inner">
     <div class="tb-left">
       <div class="tb-dot"></div>
-      <span>{{ 'NAV.TAG_SLIDE1' | translate }}</span>
+      <span class="tb-service-line" [attr.aria-label]="'NAV.TAG_SLIDE1' | translate">
+        <span>Audit</span>
+        <span class="tb-sep" aria-hidden="true"></span>
+        <span>Tax</span>
+        <span class="tb-sep" aria-hidden="true"></span>
+        <span>Advisory</span>
+        <span class="tb-sep" aria-hidden="true"></span>
+        <span>Digital &amp; AI Solutions</span>
+      </span>
     </div>
     <div class="tb-right">
       <a [routerLink]="['/', regionDataService.currentRegion(), 'home']" fragment="bk-diff" class="tb-portal">{{
@@ -47,7 +55,7 @@
       <img src="assets/images/booklean-logo.svg" alt="BookLean Global, AI-Powered Accounting and Tax Consultancy UAE" />
     </a>
 
-    <ul class="nav-list">
+    <ul class="nav-list" (click)="closeMobileMenu()">
       <li class="n-item" [class.is-open]="openMenu() === 's'">
         <button type="button" class="n-btn" (click)="toggleMega('s'); $event.stopPropagation()">
           {{ 'NAV.SERVICES' | translate }}

@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, signal, inject, HostListener, ElementRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, signal, inject, HostListener, HostBinding, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { RegionDataService } from '../../services/region-data.service';
 import { ThemeService } from '../../services/theme.service';
@@ -13,6 +13,7 @@ export class HeaderComponent {
     translationService = inject(TranslationService);
     isMenuOpen = signal(false);
     openMenu = signal('');
+    suppressMegaHover = signal(false);
     countryMenuOpen = signal(false);
     langMenuOpen = signal(false);
     isScrolled = signal(false);
@@ -21,6 +22,12 @@ export class HeaderComponent {
     themeService = inject(ThemeService);
     bookingService = inject(BookingModalService);
     private elementRef = inject(ElementRef);
+    private hoverSuppressTimer: ReturnType<typeof setTimeout> | undefined;
+
+    @HostBinding('class.mega-hover-suppressed')
+    get megaHoverSuppressed() {
+        return this.suppressMegaHover();
+    }
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
@@ -57,6 +64,7 @@ export class HeaderComponent {
     }
 
     toggleMega(menu: string) {
+        this.suppressMegaHover.set(false);
         this.openMenu.update((value) => value === menu ? '' : menu);
     }
 
@@ -87,6 +95,15 @@ export class HeaderComponent {
         this.openMenu.set('');
         this.countryMenuOpen.set(false);
         this.langMenuOpen.set(false);
+        this.suppressMegaHover.set(true);
+
+        if (this.hoverSuppressTimer) {
+            clearTimeout(this.hoverSuppressTimer);
+        }
+
+        this.hoverSuppressTimer = setTimeout(() => {
+            this.suppressMegaHover.set(false);
+        }, 450);
     }
 
     openBookingModal(event: Event) {

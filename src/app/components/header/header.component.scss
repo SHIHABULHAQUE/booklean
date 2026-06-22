@@ -40,20 +40,47 @@
 }
 
 :host .tb-left {
-  font-size: 12px;
-  letter-spacing: 0.04em;
+  padding: 5px 12px 5px 10px;
+  border: 1px solid rgba(8, 161, 247, 0.20);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(8, 161, 247, 0.12), rgba(0, 79, 225, 0.08));
+  box-shadow: 0 8px 22px rgba(0, 79, 225, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12.5px;
+  letter-spacing: 0.055em;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 :host .tb-dot {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: linear-gradient(135deg, #004fe1, #08a1f7);
-  box-shadow: 0 0 10px rgba(3, 193, 244, 0.6);
+  background: linear-gradient(135deg, #5fb2ff, #08e0ff);
+  box-shadow: 0 0 0 4px rgba(8, 161, 247, 0.13), 0 0 14px rgba(8, 224, 255, 0.9);
   animation: pulse 2s infinite;
 
+}
+
+:host .tb-service-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #ffffff 0%, #dff5ff 46%, #9deeff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+:host .tb-sep {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  flex: 0 0 5px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #5fb2ff, #08e0ff);
+  box-shadow: 0 0 0 3px rgba(8, 161, 247, 0.12), 0 0 12px rgba(8, 224, 255, 0.78);
 }
 
 @keyframes pulse {
@@ -340,6 +367,11 @@
   :host .n-item:focus-within .mega {
     display: flex;
   }
+
+  :host(.mega-hover-suppressed) .n-item:hover .mega,
+  :host(.mega-hover-suppressed) .n-item:focus-within .mega {
+    display: none !important;
+  }
 }
 
 :host .mega-services {
@@ -355,6 +387,11 @@
   :host .n-item:hover .mega-services,
   :host .n-item:focus-within .mega-services {
     display: grid;
+  }
+
+  :host(.mega-hover-suppressed) .n-item:hover .mega-services,
+  :host(.mega-hover-suppressed) .n-item:focus-within .mega-services {
+    display: none !important;
   }
 }
 
@@ -707,6 +744,25 @@
   color: #004fe1;
 }
 
+:host-context(body.theme-light) .tb-left {
+  border-color: rgba(0, 79, 225, 0.20);
+  background: linear-gradient(135deg, rgba(0, 79, 225, 0.08), rgba(8, 161, 247, 0.08));
+  color: #051c2a;
+  box-shadow: 0 8px 22px rgba(0, 79, 225, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+:host-context(body.theme-light) .tb-service-line {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: #17324d;
+}
+
+:host-context(body.theme-light) .tb-sep {
+  background: linear-gradient(135deg, #004fe1, #08a1f7);
+  box-shadow: 0 0 0 3px rgba(0, 79, 225, 0.11), 0 0 12px rgba(8, 161, 247, 0.48);
+}
+
 :host-context(body.theme-light) .tb-portal {
   color: #004fe1;
   background: rgba(0, 79, 225, 0.08);
@@ -913,6 +969,24 @@
     color: #128c4a;
     font-weight: 600;
     font-family: var(--fb);
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 1025px) {
+  :host .tb-left {
+    max-width: 52vw;
+    overflow: hidden;
+  }
+
+  :host .tb-service-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  :host .tb-service-line span:not(.tb-sep) {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

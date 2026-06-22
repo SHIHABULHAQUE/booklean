@@ -4,7 +4,7 @@
       <div class="detail-topbar">
         <div class="detail-container detail-topbar-inner">
           <div class="detail-crumbs">
-            <a class="detail-back" [routerLink]="['/', regionDataService.currentRegion(), 'home']">
+            <a class="detail-back" [routerLink]="['/', regionDataService.currentRegion(), 'home']" [fragment]="backFragment()">
               <span aria-hidden="true">&larr;</span> Back to Website
             </a>
             <span class="detail-divider"></span>
@@ -67,7 +67,7 @@
                 <p>Book a free 30-minute strategy call with a senior BookLean CA.</p>
               </div>
               <div class="guide-cta-btns">
-                <button class="btn-cta-primary" type="button" (click)="bookingService.open()">Book My Free Strategy Call</button>
+                <button class="btn-cta-primary" type="button" (click)="openBookingModal($event)">Book My Free Strategy Call</button>
                 <a href="https://api.whatsapp.com/send?phone=971526203995&text=Hello%20BookLean%20team%2C%20I%20need%20help%20with%20UAE%20tax%20and%20accounting." target="_blank" rel="noopener noreferrer" class="btn-cta-wa">WhatsApp</a>
               </div>
             </div>

@@ -1287,13 +1287,13 @@
         <p class="s-ssub">Real answers for UAE Corporate Tax, VAT, PEPPOL e-invoicing, business setup, payroll, and
           compliance, written for business owners, not just accountants.</p>
       </div>
-      <a [routerLink]="['/', 'uae', 'insight', 'corporate-tax']" class="btn-outline-blue" data-aos="zoom-in">Start with
+      <a [routerLink]="['/', 'uae', 'insight', 'corporate-tax']" [queryParams]="{ from: 'guides' }" class="btn-outline-blue" data-aos="zoom-in">Start with
         Corporate Tax</a>
     </div>
 
     <div class="insight-5card-grid">
       @for (card of insightCards.slice(0, 6); track card.id; let idx = $index) {
-        <a [routerLink]="['/', 'uae', 'insight', card.id]" class="ins-card"
+        <a [routerLink]="['/', 'uae', 'insight', card.id]" [queryParams]="{ from: 'guides' }" class="ins-card"
           [style.--ins-accent]="card.accent" data-aos="fade-up" [attr.data-aos-delay]="100 + (idx * 50)">
           <div class="ins-card-meta">
             <span class="ins-card-tag">{{ card.badge }}</span>
@@ -1308,10 +1308,16 @@
 
     <!-- Also Read links -->
     <div class="also-read-row" data-aos="fade-up">
-      <span class="also-read-label">Also Read</span>
+      <h3 class="also-read-title">Also Read &mdash; 10 Essential UAE Tax &amp; Compliance Guides</h3>
       <div class="also-read-pills">
         @for (topic of insightTopics; track topic.id) {
-          <a [routerLink]="['/', 'uae', 'insight', topic.id]" class="also-read-pill">{{ topic.title }}</a>
+          <a [routerLink]="['/', 'uae', 'insight', topic.id]" [queryParams]="{ from: 'guides' }" class="also-read-pill">
+            <span class="also-read-icon">{{ topic.icon }}</span>
+            <span class="also-read-copy">
+              <span class="also-read-name">{{ topic.title }}</span>
+              <span class="also-read-sub">{{ topic.sub }}</span>
+            </span>
+          </a>
         }
       </div>
     </div>
@@ -1332,69 +1338,24 @@
         <p class="s-serving" style="font-size:13px;color:#4A5A6A;font-family:var(--fb);margin-top:10px;"
           [innerHTML]="'HOME.INDUSTRIES_SERVING' | translate"></p>
       </div>
-      <a href="#" class="see-all">{{ 'HOME.INDUSTRIES_ALL' | translate }}</a>
+      <a href="#industries" class="see-all">{{ 'HOME.INDUSTRIES_ALL' | translate }}</a>
     </div>
     <div class="ind-grid">
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="100"><img class="ind-bg"
-          src="assets/images/ind-banking.jpg" alt="Banking &amp; Financial Services, BookLean Global UAE"
-          loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.FINANCIAL_SERVICES' | translate }}</div>
-          <div class="ind-count">12 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="150"><img class="ind-bg"
-          src="assets/images/ind-realestate.jpg" alt="Real Estate &amp; Construction, BookLean Global UAE"
-          loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.REAL_ESTATE' | translate }}</div>
-          <div class="ind-count">9 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="200"><img class="ind-bg"
-          src="assets/images/ind-healthcare.jpg" alt="Healthcare &amp; Life Sciences, BookLean Global UAE"
-          loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.HEALTHCARE' | translate }}</div>
-          <div class="ind-count">8 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="250"><img class="ind-bg"
-          src="assets/images/ind-technology.jpg" alt="Technology &amp; Media, BookLean Global UAE" loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.TECH_MEDIA' | translate }}</div>
-          <div class="ind-count">11 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="300"><img class="ind-bg"
-          src="assets/images/ind-energy.jpg" alt="Oil, Gas &amp; Energy, BookLean Global UAE" loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.ENERGY_OIL_GAS' | translate }}</div>
-          <div class="ind-count">7 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="350"><img class="ind-bg"
-          src="assets/images/ind-retail.jpg" alt="Retail &amp; Consumer, BookLean Global UAE" loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.RETAIL_ECOM' | translate }}</div>
-          <div class="ind-count">10 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="400"><img class="ind-bg"
-          src="assets/images/ind-hospitality.jpg" alt="Hospitality &amp; Tourism, BookLean Global UAE"
-          loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.HOSPITALITY' | translate }}</div>
-          <div class="ind-count">6 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
-      <a href="#" class="ind-card" data-aos="fade-up" data-aos-delay="450"><img class="ind-bg"
-          src="assets/images/ind-manufacturing.jpg" alt="Manufacturing, BookLean Global UAE" loading="lazy" />
-        <div class="ind-overlay">
-          <div class="ind-name">{{ 'HOME.SECTORS.MANUFACTURING' | translate }}</div>
-          <div class="ind-count">5 {{ 'HOME.INDUSTRIES_SPECIALISTS' | translate }}</div>
-        </div>
-      </a>
+      @for (industry of industryCards; track industry.id; let idx = $index) {
+        <a
+          [routerLink]="['/', 'uae', 'industry', industry.id]"
+          [queryParams]="{ from: 'industries' }"
+          class="ind-card"
+          data-aos="fade-up"
+          [attr.data-aos-delay]="100 + (idx * 50)"
+        >
+          <img class="ind-bg" [src]="industry.image" [alt]="industry.alt" loading="lazy" />
+          <div class="ind-overlay">
+            <div class="ind-name">{{ industry.name }}</div>
+            <div class="ind-count">{{ industry.sub }}</div>
+          </div>
+        </a>
+      }
     </div>
   </div>
 </section>

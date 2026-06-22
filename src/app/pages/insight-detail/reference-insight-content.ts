@@ -13,197 +13,496 @@ export interface ReferenceInsightContent {
 
 export const referenceInsightContent: Record<string, ReferenceInsightContent> = {
   "corporate-tax": {
-    "tag": "🔥 Most Read · UAE Corporate Tax 2026", "title": "UAE Corporate Tax 9%, The Complete Guide Every SME Needs Right Now", "summary": "Before BookLean, most of our clients had no idea they were already late on Corporate Tax registration. This guide covers who must register, what income is taxable, free zone exemption rules, Small Business Relief, and every critical deadline, in plain language.", "sections": [
+    "tag": "🔥 Most Read · UAE Corporate Tax 2026",
+    "title": "UAE Corporate Tax 9% — The Complete Guide Every SME Needs Right Now",
+    "summary": "Before BookLean, most of our clients had no idea they were already late on Corporate Tax registration. This guide covers who must register, what income is taxable, free zone exemption rules, Small Business Relief, and every critical deadline — in plain language.",
+    "sections": [
       {
-        "title": "Who Must Register for UAE Corporate Tax?", "body": "UAE Corporate Tax (CT) applies to all UAE-incorporated companies, foreign companies with a permanent establishment in the UAE, and individuals conducting business activities in the UAE under a trade licence or permit. This means: if you have a Dubai Mainland LLC, a free zone company, a sole establishment, or a partnership, you are within scope. There is no turnover threshold for registration . You must register regardless of profit level. Critical: CT registration and filing are two separate obligations. Even if your profits are below the taxable threshold, you must still register with the FTA and file a Corporate Tax return every year.", "points": []
-      }, {
-        "title": "What Counts as Taxable Income?", "body": "Taxable income is your accounting net profit (prepared under IFRS or an accepted accounting standard), with specific adjustments required by UAE CT law. Key adjustments include: Watch out: Interest deductibility is capped at 30% of EBITDA under the General Interest Limitation Rule. Businesses with significant loan financing need to model this carefully.", "points": [
-          "Add back: Non-deductible expenses (entertainment above 50% of actual cost, fines & penalties, personal expenses mixed with business)", "Deduct: Qualifying dividends received from UAE and qualifying foreign subsidiaries", "Exempt income: Capital gains on qualifying shareholdings (Participation Exemption)", "Carry forward losses: Tax losses can be offset against up to 75% of future year taxable income"
+        "title": "Who Must Register for UAE Corporate Tax?",
+        "body": "UAE Corporate Tax (CT) applies to all UAE-incorporated companies, foreign companies with a permanent establishment in the UAE, and individuals conducting business activities in the UAE under a trade licence or permit.",
+        "points": []
+      },
+      {
+        "title": "What Counts as Taxable Income?",
+        "body": "Taxable income is your accounting net profit (prepared under IFRS or an accepted accounting standard), with specific adjustments required by UAE CT law. Key adjustments include:",
+        "points": [
+          "Add back: Non-deductible expenses (entertainment above 50% of actual cost, fines & penalties, personal expenses mixed with business)",
+          "Deduct: Qualifying dividends received from UAE and qualifying foreign subsidiaries",
+          "Exempt income: Capital gains on qualifying shareholdings (Participation Exemption)",
+          "Carry forward losses: Tax losses can be offset against up to 75% of future year taxable income"
         ]
-      }, {
-        "title": "Free Zone Exemptions, The Real Rules", "body": "Free zone companies do NOT automatically get 0% Corporate Tax. To qualify for 0% as a Qualifying Free Zone Person (QFZP), you must meet ALL of the following conditions simultaneously: Common mistake: Many free zone companies earn income from UAE mainland clients. This is non-qualifying income. If it exceeds the 5%/AED 5M threshold, the entire entity loses QFZP status and pays 9% on ALL income for that year.", "points": [
-          "Maintain adequate substance in the free zone (real office, employees, decision-making)", "Earn only qualifying income (income from other free zone entities, exports, qualifying intellectual property)", "Non-qualifying income must not exceed the lower of: 5% of total revenue OR AED 5 million", "Prepare and maintain audited financial statements", "Comply with UAE transfer pricing rules on related party transactions"
+      },
+      {
+        "title": "The 9% Rate — What Applies and What Doesn't",
+        "body": "",
+        "points": []
+      },
+      {
+        "title": "Free Zone Exemptions — The Real Rules",
+        "body": "Free zone companies do NOT automatically get 0% Corporate Tax. To qualify for 0% as a Qualifying Free Zone Person (QFZP), you must meet ALL of the following conditions simultaneously:",
+        "points": [
+          "Maintain adequate substance in the free zone (real office, employees, decision-making)",
+          "Earn only qualifying income (income from other free zone entities, exports, qualifying intellectual property)",
+          "Non-qualifying income must not exceed the lower of: 5% of total revenue OR AED 5 million",
+          "Prepare and maintain audited financial statements",
+          "Comply with UAE transfer pricing rules on related party transactions"
         ]
-      }, {
-        "title": "Small Business Relief, Who Qualifies?", "body": "If your business revenue is below AED 3 million for the relevant tax period AND you elect for Small Business Relief, your entire taxable income is treated as zero, effectively 0% tax regardless of profit. This relief is available for tax periods ending on or before 31 December 2026. You must still register and file a CT return, but you elect for SBR in the return itself. Important: Small Business Relief is not available to members of multinational enterprise groups or qualifying free zone persons. You can only elect for it if you are a standalone UAE business below AED 3M revenue.", "points": []
-      }, {
-        "title": "Key Deadlines You Must Not Miss", "body": "Khalid runs a trading company in IFZA Free Zone with AED 4.2M annual revenue. When he came to BookLean in early 2025, he believed his free zone status meant he had no Corporate Tax obligations. We found he had never registered with the FTA, his financial years were wrong for CT purposes, and his sales to UAE mainland clients exceeded the 5% threshold, meaning he didn't qualify for QFZP 0% status anyway. We registered him, restructured his client contracts, filed his first CT return correctly, and got him compliant before the FTA identified the breach. He avoided AED 30,000+ in penalties. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs. Book a free 30-minute strategy call. We'll review your position, find compliance gaps, and tell you exactly what your business needs.", "points": []
+      },
+      {
+        "title": "Small Business Relief — Who Qualifies?",
+        "body": "If your business revenue is below AED 3 million for the relevant tax period AND you elect for Small Business Relief, your entire taxable income is treated as zero — effectively 0% tax regardless of profit.",
+        "points": []
+      },
+      {
+        "title": "Key Deadlines You Must Not Miss",
+        "body": "",
+        "points": []
       }
     ]
-  }, "vat": {
-    "tag": "VAT · FTA Compliance · UAE", "title": "UAE VAT Filing, Deadlines, Common Mistakes & What the FTA Actually Checks", "summary": "One wrong VAT return can trigger an FTA audit. After handling hundreds of UAE VAT filings, we know exactly where businesses go wrong. This guide covers everything from registration to audits, in plain language.", "sections": [
+  },
+  "vat": {
+    "tag": "VAT · FTA Compliance · UAE",
+    "title": "UAE VAT Filing — Deadlines, Common Mistakes & What the FTA Actually Checks",
+    "summary": "One wrong VAT return can trigger an FTA audit. After handling hundreds of UAE VAT filings, we know exactly where businesses go wrong. This guide covers everything from registration to audits — in plain language.",
+    "sections": [
       {
-        "title": "UAE VAT Basics Every Business Owner Must Know", "body": "UAE VAT was introduced on 1 January 2018 at a standard rate of 5%. It is a consumption tax collected by businesses on behalf of the Federal Tax Authority (FTA). You charge VAT on your taxable sales (output VAT), and you reclaim VAT on your business purchases (input VAT). The difference goes to the FTA. The key concept: VAT is not a cost to your business, it is collected from your customers and passed to the government. The risk comes from getting the collection and reporting wrong.", "points": []
-      }, {
-        "title": "VAT Registration, Thresholds & Process", "body": "Registration is done on the EmaraTax portal. Once registered, you receive a Tax Registration Number (TRN). This TRN must appear on every tax invoice you issue, without exception.", "points": []
-      }, {
-        "title": "The 10 Most Common UAE VAT Mistakes", "body": "", "points": [
-          "1. Missing TRN on invoices, Every tax invoice must show your TRN and your customer's TRN if B2B. Missing TRNs invalidate input VAT claims.", "2. Late VAT registration, The penalty is AED 20,000 for late mandatory registration. Many businesses cross the threshold without noticing.", "3. Wrong VAT on exempt supplies, Applying 5% VAT on residential rent, local passenger transport, or bare land sales. These are exempt, not standard-rated.", "4. Missing zero-rated exports, Exports of goods and services are zero-rated. Many businesses charge 5% on exports unnecessarily, creating a cash flow disadvantage.", "5. Claiming input VAT on entertainment, Entertainment expenses (meals, events for clients) are specifically blocked for input VAT recovery.", "6. Employee benefits VAT, Mobile phones, gym memberships, and meals provided to employees can restrict input VAT recovery if not structured correctly.", "7. Wrong VAT period for revenue recognition, VAT arises at the earliest of invoice date, payment date, or delivery. Getting the timing wrong means filing errors.", "8. Not reconciling VAT return to accounts, Your VAT return must agree to your accounting records. Unexplained differences are a red flag in FTA audits."
-        ]
-      }, {
-        "title": "Zero-Rated vs Exempt vs Standard-Rated", "body": "Critical distinction: Zero-rated and exempt both result in no VAT charged to the customer, but zero-rated allows full input VAT recovery while exempt blocks it. Confusing these two costs you real money.", "points": []
-      }, {
-        "title": "FTA Audits, What Triggers Them", "body": "The FTA conducts desk audits and field audits. Common triggers include: BookLean tip: The best audit defence is a clean, reconciled VAT return filed on time every period, with proper documentation for every input VAT claim. We build this for every client from day one. Sara runs a digital marketing agency in Business Bay. She'd been filing her own VAT returns using spreadsheets for two years. When the FTA sent a clarification notice about AED 180,000 in input VAT claims over 18 months, she had no organised documentation. BookLean reconstructed her records, provided a complete audit defence file with supplier TRN verification and input VAT schedule, and responded to the FTA on her behalf. The audit closed with zero additional liability and no penalties.", "points": [
-          "Consistent VAT refund claims without matching export documentation", "Input VAT significantly higher than output VAT without explanation", "Late filing of VAT returns (three or more in any 12-month period)", "TRN mismatches on invoices between supplier and customer records", "Unexplained large variances between VAT returns in consecutive periods", "Industry-specific screening (restaurants, real estate, financial services)"
-        ]
-      }
-    ]
-  }, "peppol": {
-    "tag": "⚡ Mandatory 2026 · UAE E-Invoicing", "title": "PEPPOL E-Invoicing UAE 2026, Is Your Business Ready for Mandatory Digital Tax?", "summary": "The UAE is rolling out mandatory PEPPOL e-invoicing. This isn't optional, and the window to get compliant is closing. This guide breaks down exactly what PEPPOL means, who is affected first, and the 5-step checklist to get ready.", "sections": [
+        "title": "UAE VAT Basics Every Business Owner Must Know",
+        "body": "UAE VAT was introduced on 1 January 2018 at a standard rate of 5%. It is a consumption tax collected by businesses on behalf of the Federal Tax Authority (FTA). You charge VAT on your taxable sales (output VAT), and you reclaim VAT on your business purchases (input VAT). The difference goes to the FTA.",
+        "points": []
+      },
       {
-        "title": "What Is PEPPOL and Why Is UAE Mandating It?", "body": "PEPPOL (Pan-European Public Procurement On-Line) is a global standard for structured electronic invoicing. In UAE, the FTA is implementing a mandatory e-invoicing framework based on PEPPOL for B2B and B2G transactions, as part of its digital tax compliance agenda for 2026. The shift means businesses can no longer send PDF invoices by email and call it \"e-invoicing.\" A PEPPOL-compliant invoice is a structured XML data file transmitted through a certified PEPPOL access point, automatically readable by both the recipient's accounting system and the FTA's tax intelligence systems. Why it matters: PEPPOL gives the FTA real-time visibility of your invoicing. It eliminates invoice fraud, reduces VAT gaps, and forms the basis for future pre-populated VAT returns. This is the biggest change to UAE tax administration since VAT was introduced in 2018.", "points": []
-      }, {
-        "title": "Timeline & Which Businesses Are Affected", "body": "Don't wait for your phase: PEPPOL implementation requires system changes, access point registration, and testing. Businesses that start preparing 3–6 months early avoid the compliance crunch.", "points": []
-      }, {
-        "title": "5-Step PEPPOL Compliance Checklist", "body": "A manufacturing company in JAFZA came to BookLean after receiving a FTA compliance notice. Their legacy ERP system had no PEPPOL output capability. BookLean implemented a middleware connector between their ERP and a UAE-certified access point, set up XML invoice generation, and ran a 3-week testing cycle. They went live with full PEPPOL compliance 6 weeks after engagement, before the FTA deadline. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs. Book a free 30-minute strategy call. We'll review your position, find compliance gaps, and tell you exactly what your business needs.", "points": []
-      }
-    ]
-  }, "mainland-freezone": {
-    "tag": "Business Setup · Dubai Mainland vs Free Zone", "title": "Mainland vs Freezone UAE, The Honest Comparison Most Consultants Won't Give You", "summary": "Freezone sounds cheaper. Mainland sounds complicated. The truth is more nuanced, and the wrong choice costs more than money. We've set up 300+ UAE companies. Here's the real comparison.", "sections": [
+        "title": "VAT Registration — Thresholds & Process",
+        "body": "Registration is done on the EmaraTax portal. Once registered, you receive a Tax Registration Number (TRN). This TRN must appear on every tax invoice you issue — without exception.",
+        "points": []
+      },
       {
-        "title": "The Key Structural Differences", "body": "The most important distinction: a mainland company (issued by DED or equivalent Emirate authority) can do business anywhere in the UAE with no restrictions. A free zone company can only trade freely with other free zone entities or internationally, selling directly to UAE mainland customers requires a local distributor or a mainland branch. The myth: \"Free zones are always cheaper.\" Often false. Once you factor in yearly licence renewal, admin fees, mandatory office costs, and the need for a mainland branch to serve UAE clients, the total cost comparison reverses.", "points": []
-      }, {
-        "title": "Which Structure Suits Your Business?", "body": "The honest truth from 300+ setups: Most UAE SMEs serving local clients belong on the mainland. The corporate tax advantage of free zones is real but conditional, and many businesses discover they don't actually qualify for QFZP after setup. Priya runs a B2B services company. A business setup agent had incorporated her in a free zone, citing the \"0% tax advantage.\" Six months later, she couldn't invoice UAE mainland corporate clients directly without violating free zone rules. BookLean set up a mainland branch, restructured her invoicing to flow correctly, and completed a proper QFZP eligibility review, she qualified, but only for 40% of her revenue. We built her the right dual-entity structure, compliant from day one. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs.", "points": [
-          "Choose Mainland if: Your primary customers are UAE mainland businesses or consumers, you need a physical retail presence, you want the simplest VAT and CT compliance, or you're in a regulated profession (legal, medical, engineering)", "Choose Free Zone if: You primarily export or serve international clients, you operate digitally with no physical UAE customer interaction, you want potential 0% Corporate Tax (and genuinely qualify for QFZP), or you want flexibility to restructure internationally"
+        "title": "The 10 Most Common UAE VAT Mistakes",
+        "body": "",
+        "points": [
+          "1. Missing TRN on invoices — Every tax invoice must show your TRN and your customer's TRN if B2B. Missing TRNs invalidate input VAT claims.",
+          "2. Late VAT registration — The penalty is AED 20,000 for late mandatory registration. Many businesses cross the threshold without noticing.",
+          "3. Wrong VAT on exempt supplies — Applying 5% VAT on residential rent, local passenger transport, or bare land sales. These are exempt, not standard-rated.",
+          "4. Missing zero-rated exports — Exports of goods and services are zero-rated. Many businesses charge 5% on exports unnecessarily, creating a cash flow disadvantage.",
+          "5. Claiming input VAT on entertainment — Entertainment expenses (meals, events for clients) are specifically blocked for input VAT recovery.",
+          "6. Employee benefits VAT — Mobile phones, gym memberships, and meals provided to employees can restrict input VAT recovery if not structured correctly.",
+          "7. Wrong VAT period for revenue recognition — VAT arises at the earliest of invoice date, payment date, or delivery. Getting the timing wrong means filing errors.",
+          "8. Not reconciling VAT return to accounts — Your VAT return must agree to your accounting records. Unexplained differences are a red flag in FTA audits.",
+          "9. Missing reverse charge on imported services — If you receive services from outside the UAE (consultancy, software, advertising), you must self-account for VAT at 5% under the reverse charge mechanism.",
+          "10. Incorrect partial exemption calculation — Businesses with both VATable and exempt supplies (e.g. healthcare, financial services) must calculate what proportion of input VAT they can recover. Most get this wrong."
         ]
-      }
-    ]
-  }, "payroll-wps": {
-    "tag": "Payroll · WPS · UAE Labour Law", "title": "UAE Payroll & WPS Compliance Guide 2026, What Every UAE Employer Must Know", "summary": "WPS non-compliance can freeze your hiring and suspend your licence. This guide explains how the Wage Protection System works, how to generate SIF files, gratuity rules, and how to stay fully compliant.", "sections": [
+      },
       {
-        "title": "UAE Wage Protection System (WPS), What Every Employer Must Know", "body": "The Wage Protection System (WPS) is a UAE Ministry of Human Resources electronic salary transfer system that ensures employees are paid on time, in full, and through a compliant bank or exchange house. It is mandatory for all private sector companies in UAE with employees. Non-compliance with WPS is serious: Failure to pay salaries on time through WPS can result in ban from hiring new staff, suspension of business licence, and ultimately company closure. The Ministry monitors WPS in real time.", "points": []
-      }, {
-        "title": "How WPS Works, Step by Step", "body": "Timing: Salaries must be paid within 15 days of the end of the salary period. If your payment cycle is monthly (calendar month), salaries must be paid by the 10th of the following month.", "points": [
-          "Step 1: Prepare your monthly payroll, calculate basic salary, allowances, deductions, and overtime for each employee", "Step 2: Generate the Salary Information File (SIF), a structured CSV file in the exact MOHRE-mandated format", "Step 3: Upload the SIF to your bank or approved exchange house", "Step 4: Bank processes and credits all employee salaries on the same day", "Step 5: WPS system confirms payment, your company is marked compliant for that month"
-        ]
-      }, {
-        "title": "End-of-Service Gratuity, UAE Law Explained", "body": "Gratuity is calculated on basic salary only, not total package (excluding housing, transport, and other allowances). It must be accrued monthly in your books and paid on the last day of employment. A restaurant group with 45 employees had been processing salaries manually, submitting SIF files late, and incorrectly calculating gratuity accruals. When MOHRE inspected, they found 8 months of late WPS submissions and AED 180,000 in underaccrued gratuity. BookLean reconstructed all payroll records, corrected gratuity calculations, filed corrected SIF data, and implemented automated WPS processing going forward. The MOHRE case was closed without penalty after remediation. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs.", "points": []
-      }
-    ]
-  }, "esr-aml": {
-    "tag": "Compliance · ESR · UBO · AML · UAE", "title": "ESR, UBO & AML in UAE, What Every Company Must Do to Stay Compliant", "summary": "Three compliance obligations that catch most UAE businesses unprepared. This guide explains Economic Substance Regulation, UBO registration, and AML requirements, with deadlines, penalties, and exactly what BookLean does for you.", "sections": [
+        "title": "Zero-Rated vs Exempt vs Standard-Rated",
+        "body": "Critical distinction: Zero-rated and exempt both result in no VAT charged to the customer — but zero-rated allows full input VAT recovery while exempt blocks it. Confusing these two costs you real money.",
+        "points": []
+      },
       {
-        "title": "Economic Substance Regulation (ESR), What It Is", "body": "ESR was introduced in UAE in 2019 to ensure that companies earning certain types of income, called \"Relevant Activities\", have genuine economic substance in the UAE and are not being used purely as paper entities to shift profits. If your company earns income from a Relevant Activity, you must demonstrate: adequate employees in UAE, adequate expenditure in UAE, core income-generating activities are conducted in UAE, and management and control exercised in UAE.", "points": []
-      }, {
-        "title": "The 9 Relevant Activities Under ESR", "body": "Important: \"Holding Company\" is the most common trigger for UAE businesses. If your company holds shares in subsidiaries and earns dividends or capital gains, it is likely a Holding Company under ESR and must file, even if it has no employees.", "points": []
-      }, {
-        "title": "UBO Registry, Who Must Register", "body": "All UAE companies (mainland and most free zones) must maintain an internal UBO (Ultimate Beneficial Owner) register and file it with their licensing authority. A UBO is any natural person who ultimately owns or controls 25% or more of the company, directly or indirectly. Penalty for missing UBO filing: AED 100,000 for first offence, AED 200,000 for repeat offence (Cabinet Decision No. 109 of 2023). The UBO register must be updated within 15 days of any change in ownership.", "points": []
-      }, {
-        "title": "AML Compliance, Who Is Obligated in UAE", "body": "Under UAE AML law, Designated Non-Financial Businesses and Professions (DNFBPs) must register on the goAML portal and have an AML compliance programme in place. DNFBPs include: BookLean is a registered DNFBP. We maintain full AML compliance programmes for ourselves and help our clients understand their own AML obligations, particularly real estate, financial services, and trading company clients. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs.", "points": [
-          "Lawyers and legal professionals handling client funds", "Accountants and auditors handling client funds or providing company formation services", "Real estate agents and developers", "Dealers in precious metals and stones", "Company formation agents"
-        ]
-      }
-    ]
-  }, "transfer-pricing": {
-    "tag": "Transfer Pricing · UAE Corporate Tax · Related Parties", "title": "Transfer Pricing in UAE, Rules, Documentation & What the FTA Expects", "summary": "Related party transactions are one of the FTA's top audit priorities. This guide explains the arm's length principle, who must prepare documentation, and how to avoid the most expensive mistakes under UAE CT law.", "sections": [
-      {
-        "title": "What Is Transfer Pricing?", "body": "Transfer pricing refers to the prices charged between related parties (group companies, related companies, associates) for goods, services, intellectual property, and financing. UAE Corporate Tax law requires that all transactions between related parties are conducted at arm's length, meaning at the same price that would apply between independent parties in the open market. Why it matters: If a UAE company pays excessive management fees to a parent company or charges below-market prices to a related party, the FTA can adjust the taxable income of the UAE entity to reflect arm's length pricing, potentially creating significant additional CT liability.", "points": []
-      }, {
-        "title": "Who Must Comply with UAE Transfer Pricing Rules?", "body": "All UAE taxable persons with related party transactions must apply the arm's length principle. Additionally, specific documentation requirements apply if: If these thresholds are met, you must prepare and maintain a Local File and, in certain cases, a Master File, both prepared in accordance with OECD Guidelines.", "points": [
-          "Total value of all related party transactions exceeds AED 40 million in the tax period, OR", "Any single category of related party transactions (e.g. services, financing, goods) exceeds AED 4 million"
-        ]
-      }, {
-        "title": "Common Related Party Transactions in UAE Businesses", "body": "Common mistake: Many UAE SMEs pay \"management fees\" to a parent or related holding company without any documentation or economic substance behind the service. The FTA can disallow these deductions entirely if they are not arm's length and properly documented. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs. Book a free 30-minute strategy call. We'll review your position, find compliance gaps, and tell you exactly what your business needs.", "points": [
-          "Management fees paid to a parent company or holding entity", "Loans and interest between group companies", "Shared services (IT, HR, finance) allocated across group members", "Royalties or licence fees paid for use of brand, IP, or technology", "Purchase or sale of goods between UAE entity and overseas group members", "Guarantees provided between group companies"
-        ]
-      }
-    ]
-  }, "cashflow": {
-    "tag": "📊 Cash Flow · Virtual CFO · UAE SMEs", "title": "Cash Flow Management for UAE SMEs, Why Profitable Businesses Run Out of Cash and How to Fix It", "summary": "Profit on paper does not equal cash in the bank. In UAE, where VAT is quarterly, payment terms are long, and payroll is mandatory, the gap between revenue and cash can destroy a business. Here's how to fix it.", "sections": [
-      {
-        "title": "Why Cash Flow, Not Profit, Is What Kills UAE Businesses", "body": "Most UAE SMEs that fail are not failing because they have no revenue or no customers. They fail because the cash that should be in their bank account isn't there when they need it. Profit on paper does not equal cash in the bank, and in UAE, where payment terms are long, VAT must be paid quarterly, and Corporate Tax is annual, the gap between invoiced revenue and received cash can destroy a business. The UAE reality: A business with AED 5M annual revenue, 60-day payment terms, quarterly VAT of AED 60,000 due, and payroll on the 10th can run out of cash in a month where everything looks fine on the P&L.", "points": []
-      }, {
-        "title": "The 3 Types of Cash Flow You Must Monitor", "body": "", "points": [
-          "Operating Cash Flow: Cash generated from your core business operations, sales collections minus payments to suppliers and employees. This is the most important number. Positive operating cash flow means your business model works.", "Investing Cash Flow: Cash spent on or received from assets, buying equipment, investing in another company, or selling a fixed asset. Usually negative for a growing business.", "Financing Cash Flow: Cash from loans, investor funding, or repayment of debt. A business relying on financing cash flow to cover operating shortfalls has a structural problem."
-        ]
-      }, {
-        "title": "The 5 Biggest Cash Flow Destroyers for UAE SMEs", "body": "A construction subcontractor in Dubai had AED 8M in outstanding invoices to three main contractors, all with 90-day payment terms. When two main contractors delayed payment simultaneously, the business couldn't cover its AED 600K monthly payroll. BookLean built a 13-week rolling cash flow model, identified the structural debtor gap, introduced invoice financing on the largest receivables, and implemented a weekly cash position dashboard. Within 60 days the business had a clear forward cash visibility and had recovered its working capital position. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs. Book a free 30-minute strategy call. We'll review your position, find compliance gaps, and tell you exactly what your business needs.", "points": [
-          "Long debtor days: Customers paying in 60–90 days while you pay suppliers in 30 days creates a structural cash gap that grows with revenue.", "VAT as working capital: Many UAE businesses spend the VAT they have collected from customers before the quarterly return is due. VAT collected belongs to the FTA, spending it as working capital creates a cash crisis every quarter and risks late payment surcharges.", "Inventory over-investment: Retail and trading businesses often hold 3–4 months of stock when 6 weeks would suffice. The difference is cash locked in a warehouse.", "No visibility until month-end: If you only know your cash position when your accountant sends the month-end report on the 15th, you are always 6 weeks behind.", "Gratuity not accrued: Businesses that don't accrue employee gratuity monthly get a shock when a long-serving employee resigns. A single gratuity payment can destroy a month's cash position."
+        "title": "FTA Audits — What Triggers Them",
+        "body": "The FTA conducts desk audits and field audits. Common triggers include:",
+        "points": [
+          "Consistent VAT refund claims without matching export documentation",
+          "Input VAT significantly higher than output VAT without explanation",
+          "Late filing of VAT returns (three or more in any 12-month period)",
+          "TRN mismatches on invoices between supplier and customer records",
+          "Unexplained large variances between VAT returns in consecutive periods",
+          "Industry-specific screening (restaurants, real estate, financial services)"
         ]
       }
     ]
-  }, "startup-uae": {
-    "tag": "🚀 UAE Startup · Financial Setup · 2026", "title": "Startup in UAE, The Complete Financial Setup Checklist Every Founder Needs", "summary": "Most UAE startup financial mistakes happen in the first 6 months, wrong structure, no bookkeeping, missed registrations. This guide gives you the complete checklist and what to do in what order.", "sections": [
+  },
+  "peppol": {
+    "tag": "⚡ Mandatory 2026 · UAE E-Invoicing",
+    "title": "PEPPOL E-Invoicing UAE 2026 — Is Your Business Ready for Mandatory Digital Tax?",
+    "summary": "The UAE is rolling out mandatory PEPPOL e-invoicing. This isn't optional — and the window to get compliant is closing. This guide breaks down exactly what PEPPOL means, who is affected first, and the 5-step checklist to get ready.",
+    "sections": [
       {
-        "title": "Bank Account Opening, The UAE Reality", "body": "UAE business bank account opening is notoriously difficult for new businesses. Banks conduct thorough KYC and AML checks. Common rejection reasons: BookLean tip: We prepare a complete bank account opening package, company documents, business plan, projected financials, source of funds declaration, and UBO certificates, that significantly increases approval rates. We have relationships with UAE bankers at multiple institutions.", "points": [
-          "Vague or generic business activities on the licence", "Directors with no UAE presence or credit history", "Missing audited financials (for established businesses)", "Business activity seen as high-risk (crypto, money transfer, certain trading)", "Incomplete KYC documentation for UBO"
-        ]
-      }, {
-        "title": "The 6 Most Expensive Startup Financial Mistakes in UAE", "body": "Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs. Book a free 30-minute strategy call. We'll review your position, find compliance gaps, and tell you exactly what your business needs.", "points": [
-          "Starting bookkeeping late: Reconstructing 12 months of transactions from bank statements costs 3x what proper monthly bookkeeping would have cost", "Wrong business activity on licence: If your actual revenue doesn't match your licensed activity, you have a VAT and CT problem from day one", "No separation of personal and business accounts: The single most common mistake, and the most expensive to fix at year end", "Missing CT registration deadline: AED 10,000 penalty, and it can only go up", "No investor-grade financials: When a VC asks for 2 years of IFRS financials and you don't have them, you lose the deal", "Ignoring gratuity accrual: Hire 5 employees at Year 1 and by Year 3 you have a AED 150,000+ gratuity liability that's never been in your books"
+        "title": "What Is PEPPOL and Why Is UAE Mandating It?",
+        "body": "PEPPOL (Pan-European Public Procurement On-Line) is a global standard for structured electronic invoicing. In UAE, the FTA is implementing a mandatory e-invoicing framework based on PEPPOL for B2B and B2G transactions, as part of its digital tax compliance agenda for 2026.",
+        "points": []
+      },
+      {
+        "title": "Timeline & Which Businesses Are Affected",
+        "body": "Don't wait for your phase: PEPPOL implementation requires system changes, access point registration, and testing. Businesses that start preparing 3–6 months early avoid the compliance crunch.",
+        "points": []
+      },
+      {
+        "title": "5-Step PEPPOL Compliance Checklist",
+        "body": "",
+        "points": []
+      }
+    ]
+  },
+  "mainland-freezone": {
+    "tag": "Business Setup · Dubai Mainland vs Free Zone",
+    "title": "Mainland vs Freezone UAE — The Honest Comparison Most Consultants Won't Give You",
+    "summary": "Freezone sounds cheaper. Mainland sounds complicated. The truth is more nuanced — and the wrong choice costs more than money. We've set up 300+ UAE companies. Here's the real comparison.",
+    "sections": [
+      {
+        "title": "The Key Structural Differences",
+        "body": "The most important distinction: a mainland company (issued by DED or equivalent Emirate authority) can do business anywhere in the UAE with no restrictions. A free zone company can only trade freely with other free zone entities or internationally — selling directly to UAE mainland customers requires a local distributor or a mainland branch.",
+        "points": []
+      },
+      {
+        "title": "Cost Comparison (Setup + Annual)",
+        "body": "",
+        "points": []
+      },
+      {
+        "title": "Which Structure Suits Your Business?",
+        "body": "The honest truth from 300+ setups: Most UAE SMEs serving local clients belong on the mainland. The corporate tax advantage of free zones is real but conditional — and many businesses discover they don't actually qualify for QFZP after setup.",
+        "points": [
+          "Choose Mainland if: Your primary customers are UAE mainland businesses or consumers, you need a physical retail presence, you want the simplest VAT and CT compliance, or you're in a regulated profession (legal, medical, engineering)",
+          "Choose Free Zone if: You primarily export or serve international clients, you operate digitally with no physical UAE customer interaction, you want potential 0% Corporate Tax (and genuinely qualify for QFZP), or you want flexibility to restructure internationally"
         ]
       }
     ]
-  }, "golden-visa": {
-    "tag": "🌍 UAE Golden Visa · 2026 · All Categories", "title": "UAE Golden Visa, Who Qualifies, What It Costs & How to Apply", "summary": "The UAE Golden Visa is one of the most valuable residency programmes in the world, no personal income tax, renewable 5 or 10-year residency, and no local sponsor required. Here's everything you need to know about qualifying in 2026.", "sections": [
+  },
+  "payroll-wps": {
+    "tag": "Payroll · WPS · UAE Labour Law",
+    "title": "UAE Payroll & WPS Compliance Guide 2026 — What Every UAE Employer Must Know",
+    "summary": "WPS non-compliance can freeze your hiring and suspend your licence. This guide explains how the Wage Protection System works, how to generate SIF files, gratuity rules, and how to stay fully compliant.",
+    "sections": [
       {
-        "title": "UAE Golden Visa, What It Is", "body": "The UAE Golden Visa is a long-term residency visa (5 or 10 years, renewable) that allows qualifying individuals to live, work, and study in UAE without a local sponsor. It was introduced in 2019 and significantly expanded in 2022.", "points": []
-      }, {
-        "title": "UAE Tax Residency, Why the Golden Visa Matters for International Clients", "body": "UAE has no personal income tax. For business owners and professionals from high-tax jurisdictions, UAE tax residency can legitimately reduce their global tax burden, but only if structured correctly and in compliance with the home country's tax rules. Important: UAE tax residency requires genuine physical presence (at least 183 days per year in UAE) and financial substance in UAE. Simply holding a Golden Visa without genuine UAE residence does not establish tax residency in most jurisdictions. BookLean can help: We prepare UAE Tax Residency Certificates from the Ministry of Finance for clients who qualify, which is the official document required to claim UAE tax treaty benefits in your home country.", "points": []
+        "title": "UAE Wage Protection System (WPS) — What Every Employer Must Know",
+        "body": "The Wage Protection System (WPS) is a UAE Ministry of Human Resources electronic salary transfer system that ensures employees are paid on time, in full, and through a compliant bank or exchange house. It is mandatory for all private sector companies in UAE with employees.",
+        "points": []
+      },
+      {
+        "title": "How WPS Works — Step by Step",
+        "body": "Timing: Salaries must be paid within 15 days of the end of the salary period. If your payment cycle is monthly (calendar month), salaries must be paid by the 10th of the following month.",
+        "points": [
+          "Step 1: Prepare your monthly payroll — calculate basic salary, allowances, deductions, and overtime for each employee",
+          "Step 2: Generate the Salary Information File (SIF) — a structured CSV file in the exact MOHRE-mandated format",
+          "Step 3: Upload the SIF to your bank or approved exchange house",
+          "Step 4: Bank processes and credits all employee salaries on the same day",
+          "Step 5: WPS system confirms payment — your company is marked compliant for that month"
+        ]
+      },
+      {
+        "title": "End-of-Service Gratuity — UAE Law Explained",
+        "body": "Gratuity is calculated on basic salary only — not total package (excluding housing, transport, and other allowances). It must be accrued monthly in your books and paid on the last day of employment.",
+        "points": []
       }
     ]
-  }, "restaurant-vat": {
-    "tag": "🍽 Restaurant & F&B · VAT · UAE", "title": "Restaurant & F&B VAT in UAE, What Every Owner Must Know Before Their Next FTA Filing", "summary": "UAE restaurant VAT has more complexity than most owners realise, dine-in, takeaway, delivery platforms, staff meals, tourist refund and excise tax all have different rules. Getting any one wrong costs money. Here's the complete guide.", "sections": [
+  },
+  "esr-aml": {
+    "tag": "Compliance · ESR · UBO · AML · UAE",
+    "title": "ESR, UBO & AML in UAE — What Every Company Must Do to Stay Compliant",
+    "summary": "Three compliance obligations that catch most UAE businesses unprepared. This guide explains Economic Substance Regulation, UBO registration, and AML requirements — with deadlines, penalties, and exactly what BookLean does for you.",
+    "sections": [
       {
-        "title": "Tourist Tax Refund (TRF), Why F&B Is NOT Eligible", "body": "This is one of the most common misconceptions in UAE restaurant accounting: food and beverage supplied at restaurants and cafés is NOT eligible for the UAE Tourist Tax Refund scheme. TRF applies only to retail goods, physical goods such as clothing, electronics, jewellery, and similar tangible products purchased from registered retailers. Restaurant meals, café drinks, hotel food and beverage, and any form of food service are specifically excluded from TRF eligibility. A tourist dining at your restaurant cannot claim a VAT refund on their food bill through the Planet Payment system, regardless of how much they spend. This is confirmed by the FTA and Planet Payment operator guidelines. Do not display TRF signage in your restaurant and do not issue TRF receipts for food and beverage, this creates incorrect customer expectations and potential compliance issues. What IS eligible for TRF: Retail goods purchased by tourists, clothing, electronics, jewellery, cosmetics, and similar tangible goods, from registered retail outlets. Minimum spend AED 250 per tax invoice. Registration with Planet Payment required.", "points": []
-      }
-    ]
-  }, "ecommerce-tax": {
-    "tag": "🛒 Ecommerce · Amazon FBA · UAE Tax", "title": "Ecommerce & Amazon Sellers in UAE, Your Complete Tax & VAT Guide", "summary": "UAE ecommerce VAT is more complex than most sellers realise. Platform commissions, import VAT, FBA obligations, and digital service rules all need correct handling. Here's the complete breakdown.", "sections": [
+        "title": "Economic Substance Regulation (ESR) — What It Is",
+        "body": "ESR was introduced in UAE in 2019 to ensure that companies earning certain types of income — called \"Relevant Activities\" — have genuine economic substance in the UAE and are not being used purely as paper entities to shift profits.",
+        "points": []
+      },
       {
-        "title": "Import VAT Reclaim, The Money Most Sellers Leave Behind", "body": "Every time you import goods into UAE for your ecommerce business, you pay VAT at the customs point (at 5% of the customs value plus duty). This import VAT is fully reclaimable as input VAT on your quarterly VAT return, provided you have the correct customs documentation. What you need to reclaim import VAT: UAE Customs Declaration (bill of entry), your TRN on the import declaration, commercial invoice showing the value of goods, and packing list. Missing any of these means the FTA can disallow the reclaim.", "points": []
-      }, {
-        "title": "Amazon FBA in UAE, Your Tax Obligations", "body": "If you use Amazon FBA (Fulfilled by Amazon) in UAE, Amazon stores your inventory in their UAE warehouses. This creates a UAE fixed establishment and means you must be VAT-registered in UAE, regardless of where you are incorporated. Amazon UAE issues VAT invoices for their FBA fees, which you can reclaim as input VAT. They also collect and remit VAT on sales in some circumstances, but this does not remove your own UAE VAT registration and filing obligation. Common mistake: Many non-UAE businesses using Amazon UAE FBA believe that Amazon handles all their UAE tax obligations. Amazon handles VAT collection on marketplace sales, it does NOT file your VAT return, handle your import declarations, or manage your corporate compliance.", "points": []
-      }
-    ]
-  }, "realestate-vat": {
-    "tag": "🏗 Real Estate · VAT · UAE Property", "title": "Real Estate VAT in UAE, What Developers, Investors & Agents Must Know", "summary": "UAE property VAT has some of the most complex rules in the region. First supply, subsequent supply, residential vs commercial, getting it wrong creates real liability. Here's the complete guide.", "sections": [
+        "title": "The 9 Relevant Activities Under ESR",
+        "body": "",
+        "points": []
+      },
       {
-        "title": "The Most Important UAE Real Estate VAT Rule, First vs Subsequent Supply", "body": "Critical consequence: If you sell a residential property as a second or later sale, the transaction is VAT-exempt, meaning you cannot recover any input VAT on costs related to that sale. Developers who plan to sell multiple times face a significant VAT cost that reduces margin.", "points": []
-      }, {
-        "title": "DLD Transfer Fee, Is It VATable?", "body": "The Dubai Land Department (DLD) transfer fee of 4% of the property value is a government fee, it is NOT subject to VAT and should not appear on a VAT return. Many developers and buyers incorrectly include DLD fees in the VAT calculation, which is wrong in both directions.", "points": []
-      }, {
-        "title": "Input VAT Recovery for Real Estate Developers", "body": "Real estate developers building mixed-use projects (some commercial, some residential) must apportion their input VAT recovery based on the proportion of taxable vs exempt supplies. The calculation method must be agreed with the FTA and applied consistently. BookLean approach: We build input VAT recovery models for UAE real estate developers from the project outset, not at VAT return time. Getting the apportionment right from day one can mean the difference of hundreds of thousands of dirhams in recovered input VAT over a large development. Book a free 30-minute strategy call with a senior BookLean CA. We'll review your current tax position, identify compliance gaps, and tell you exactly what your business needs.", "points": []
-      }
-    ]
-  }, "healthcare-vat": {
-    "tag": "🩺 Healthcare · VAT Exemptions · UAE Clinics", "title": "Healthcare VAT Exemptions in UAE, Zero-Rated Services, Cosmetic Procedures & What Your Clinic Must Know", "summary": "UAE healthcare VAT has three categories, zero-rated, standard-rated, and exempt, and applying the wrong one to any service creates liability or refund obligations. Here's the complete guide written for UAE clinic owners and practice managers.", "sections": [
+        "title": "UBO Registry — Who Must Register",
+        "body": "All UAE companies (mainland and most free zones) must maintain an internal UBO (Ultimate Beneficial Owner) register and file it with their licensing authority. A UBO is any natural person who ultimately owns or controls 25% or more of the company, directly or indirectly.",
+        "points": []
+      },
       {
-        "title": "UAE Healthcare VAT, The Three Categories Every Clinic Must Know", "body": "Healthcare VAT in UAE is divided into three distinct categories, and which one applies to a specific service determines whether you charge VAT, claim input VAT, and how you file your return. Getting this wrong is one of the most common (and costly) mistakes we see in UAE healthcare accounting.", "points": []
-      }, {
-        "title": "Zero-Rated Healthcare Services, What Qualifies", "body": "UAE VAT law zero-rates healthcare services that are preventive or curative and provided by a licensed healthcare provider. Qualifying services include: Key rule: Zero-rating requires the service to be provided by a licensed healthcare provider under UAE DHA, DOH, or equivalent authority. Services provided by unlicensed individuals or facilities do not qualify.", "points": [
-          "General practitioner consultations and specialist appointments", "Surgical procedures (medically necessary)", "Diagnostic tests, blood tests, imaging, pathology", "Dental treatments (restorative and medically necessary, not cosmetic whitening)", "Mental health consultations and therapy", "Physiotherapy and rehabilitation", "Maternity and obstetric care", "Vaccinations and immunisations"
-        ]
-      }, {
-        "title": "Cosmetic & Elective Procedures, Standard 5% VAT", "body": "Any procedure that is not medically necessary is subject to standard 5% VAT. This includes: The line is blurry: A rhinoplasty for a patient with a deviated septum causing breathing difficulties may be medically necessary (zero-rated). The same procedure for cosmetic reasons is 5% VAT. The distinction must be documented in patient records and supported by clinical notes. BookLean helps clinics build the documentation framework to support their VAT treatment across mixed-service practices.", "points": [
-          "Cosmetic surgery (rhinoplasty, liposuction, breast augmentation)", "Teeth whitening and cosmetic dentistry", "Botox and filler treatments for aesthetic purposes", "Hair transplants", "Laser hair removal", "Non-medically necessary dermatology treatments"
-        ]
-      }, {
-        "title": "Insurance Billing, How VAT Works", "body": "When a patient's treatment is covered by health insurance, the flow of VAT depends on the structure of the arrangement: Common mistake: Some clinics apply different VAT treatment to insured vs self-pay patients. The VAT treatment follows the nature of the service, not the payment method. A zero-rated medical service is zero-rated whether paid by insurance, cash, or credit card.", "points": [
-          "Direct billing to insurer: The healthcare provider invoices the insurance company for the full treatment cost (zero-rated if qualifying service). The insurer pays directly.", "Co-payment from patient: The portion paid by the patient as a co-pay is treated the same way as the insured amount, zero-rated if the service is qualifying healthcare.", "Insurance reimbursement: If the patient pays first and claims reimbursement, the original supply (clinic to patient) is still zero-rated. The insurance payment to the patient is not a VAT supply."
-        ]
-      }, {
-        "title": "Input VAT Recovery for Mixed Healthcare Practices", "body": "A clinic that provides both zero-rated services (medically necessary) and standard-rated services (cosmetic) has a partial exemption position, meaning some input VAT is fully recoverable and some must be apportioned. The standard UAE partial exemption method apportions input VAT based on the ratio of taxable turnover (zero-rated + standard-rated) to total turnover. This calculation must be done for every VAT return period and an annual adjustment made at year end. Why this matters: A large clinic spending AED 2M per year on medical equipment, supplies, and fit-out costs can recover significantly more input VAT if the partial exemption is calculated correctly from the start. We've seen clinics recovering AED 80,000–150,000+ more per year simply by implementing the correct apportionment methodology.", "points": []
-      }, {
-        "title": "The 5 Most Common Healthcare VAT Mistakes in UAE", "body": "A multi-specialty clinic in Dubai Healthcare City came to BookLean after a new practice manager flagged inconsistencies in their billing. The clinic had been applying standard 5% VAT to all services, including zero-rated diagnostic tests, GP consultations, and physiotherapy, for 14 months. BookLean conducted a full VAT review, reclassified all services correctly, filed voluntary disclosures, and built a new billing template with correct VAT codes for each service type. The clinic refunded affected patients through credit notes and avoided an FTA penalty by proactive disclosure. Book a free 30-minute strategy call. We'll review your current position, find compliance gaps, and tell you exactly what your business needs. Book a free 30-minute strategy call. We'll review your position, find compliance gaps, and tell you exactly what your business needs.", "points": [
-          "Applying 5% VAT to zero-rated services: Charging patients VAT on medically necessary consultations when none should apply. Creates client complaints, refund obligations, and inflated VAT return figures.", "Not separating cosmetic from medical revenue: Lumping all clinic revenue under one VAT code makes it impossible to apply the correct rate and calculate partial exemption correctly.", "Claiming input VAT on employee health insurance: Employee health insurance premiums are specifically blocked from input VAT recovery. Many clinic owners claim this in error.", "Missing reverse charge on imported medical equipment: Medical equipment sourced from overseas is subject to reverse charge VAT. Many clinics pay import VAT at customs but forget to include it correctly in the VAT return.", "No documentation for VAT treatment decisions: The FTA expects clinics to have documented policies for how they classify services. Without these, a routine audit becomes a major issue."
+        "title": "AML Compliance — Who Is Obligated in UAE",
+        "body": "Under UAE AML law, Designated Non-Financial Businesses and Professions (DNFBPs) must register on the goAML portal and have an AML compliance programme in place. DNFBPs include:",
+        "points": [
+          "Lawyers and legal professionals handling client funds",
+          "Accountants and auditors handling client funds or providing company formation services",
+          "Real estate agents and developers",
+          "Dealers in precious metals and stones",
+          "Company formation agents"
         ]
       }
     ]
-  }, "freelancer-tax": {
-    "tag": "🧑‍💻 Freelancer · UAE Tax · Sole Establishment · 2026", "title": "Freelancer Tax & Accounting in UAE 2026, Everything You Need to Know", "summary": "Freelancing in UAE has never been more popular, but the tax compliance requirements are real and often misunderstood. This guide covers Corporate Tax, VAT registration, deductible expenses, and exactly what every UAE freelancer must do to stay compliant.", "sections": [
+  },
+  "transfer-pricing": {
+    "tag": "Transfer Pricing · UAE Corporate Tax · Related Parties",
+    "title": "Transfer Pricing in UAE — Rules, Documentation & What the FTA Expects",
+    "summary": "Related party transactions are one of the FTA's top audit priorities. This guide explains the arm's length principle, who must prepare documentation, and how to avoid the most expensive mistakes under UAE CT law.",
+    "sections": [
       {
-        "title": "Freelance Permit vs Sole Establishment vs LLC, What's the Difference?", "body": "Key point: All three structures are treated the same under UAE Corporate Tax law, your business income is taxable at 9% above AED 375,000. The structure choice affects your banking, visa options, and legal liability, not your tax rate.", "points": []
-      }, {
-        "title": "UAE Corporate Tax for Freelancers, The Facts", "body": "UAE Corporate Tax at 9% applies to individuals conducting business activities through a trade licence, freelance permit, or sole establishment. If your annual net business profit exceeds AED 375,000, you pay 9% on the amount above that threshold. However, most freelancers in UAE qualify for Small Business Relief, which means zero tax if your total revenue is below AED 3 million for the tax period (for periods ending on or before 31 December 2026). You must still register: Small Business Relief does not exempt you from CT registration. Every freelance and sole establishment holder must register for Corporate Tax with the FTA, failure to do so triggers a mandatory AED 10,000 penalty.", "points": []
-      }, {
-        "title": "VAT for UAE Freelancers, Should You Register?", "body": "Many freelancers earning AED 200,000–375,000 benefit from voluntary VAT registration because they can reclaim input VAT on significant business expenses, laptops, software subscriptions, coworking space, professional development, which reduces their effective cost.", "points": []
-      }, {
-        "title": "What Expenses Can Freelancers Deduct from UAE Corporate Tax?", "body": "UAE CT law allows deduction of expenses that are wholly, exclusively, and necessarily incurred for the purpose of the business. For freelancers, qualifying deductions typically include: What you cannot deduct: Personal expenses mixed with business, entertainment above 50% of actual cost, fines and penalties, capital items (these are depreciated not expensed), and personal income tax paid in another country.", "points": [
-          "Freelance licence and visa renewal fees", "Coworking space rental or home office (proportionate)", "Software and cloud subscriptions used for work", "Professional development, courses, and certifications", "Laptop, phone, and equipment (depreciated over useful life)", "Professional indemnity and liability insurance", "Accountant and legal fees", "Marketing, website, and business development costs"
+        "title": "What Is Transfer Pricing?",
+        "body": "Transfer pricing refers to the prices charged between related parties (group companies, related companies, associates) for goods, services, intellectual property, and financing. UAE Corporate Tax law requires that all transactions between related parties are conducted at arm's length — meaning at the same price that would apply between independent parties in the open market.",
+        "points": []
+      },
+      {
+        "title": "Who Must Comply with UAE Transfer Pricing Rules?",
+        "body": "All UAE taxable persons with related party transactions must apply the arm's length principle. Additionally, specific documentation requirements apply if:",
+        "points": [
+          "Total value of all related party transactions exceeds AED 40 million in the tax period, OR",
+          "Any single category of related party transactions (e.g. services, financing, goods) exceeds AED 4 million"
         ]
-      }, {
-        "title": "Do Freelancers Need WPS in UAE?", "body": "If you are the sole owner and only person working in your business (no employees), you do not need to process your own drawings through WPS. WPS is mandatory only for employees, people engaged under employment contracts with work permits. However, if you hire even one part-time employee or assistant with a UAE work visa, WPS becomes mandatory for that employee's salary. Freelancers who grow and start hiring must implement WPS from the first employee payroll. Amira is a freelance UX designer based in Dubai with a TECOM freelance permit. She earned AED 420,000 in her first year, was thrilled with her income, and assumed she had no tax obligations in UAE. In month 14, she received an FTA penalty notice for AED 10,000 for failure to register for Corporate Tax. BookLean registered her immediately, elected Small Business Relief (her revenue was below AED 3M), filed her first return showing zero tax liability, and successfully applied for a penalty reconsideration, which was partially upheld, reducing the penalty to AED 5,000.", "points": []
+      },
+      {
+        "title": "Common Related Party Transactions in UAE Businesses",
+        "body": "Common mistake: Many UAE SMEs pay \"management fees\" to a parent or related holding company without any documentation or economic substance behind the service. The FTA can disallow these deductions entirely if they are not arm's length and properly documented.",
+        "points": [
+          "Management fees paid to a parent company or holding entity",
+          "Loans and interest between group companies",
+          "Shared services (IT, HR, finance) allocated across group members",
+          "Royalties or licence fees paid for use of brand, IP, or technology",
+          "Purchase or sale of goods between UAE entity and overseas group members",
+          "Guarantees provided between group companies"
+        ]
+      }
+    ]
+  },
+  "cashflow": {
+    "tag": "📊 Cash Flow · Virtual CFO · UAE SMEs",
+    "title": "Cash Flow Management for UAE SMEs — Why Profitable Businesses Run Out of Cash and How to Fix It",
+    "summary": "Profit on paper does not equal cash in the bank. In UAE, where VAT is quarterly, payment terms are long, and payroll is mandatory, the gap between revenue and cash can destroy a business. Here's how to fix it.",
+    "sections": [
+      {
+        "title": "Why Cash Flow — Not Profit — Is What Kills UAE Businesses",
+        "body": "Most UAE SMEs that fail are not failing because they have no revenue or no customers. They fail because the cash that should be in their bank account isn't there when they need it. Profit on paper does not equal cash in the bank — and in UAE, where payment terms are long, VAT must be paid quarterly, and Corporate Tax is annual, the gap between invoiced revenue and received cash can destroy a business.",
+        "points": []
+      },
+      {
+        "title": "The 3 Types of Cash Flow You Must Monitor",
+        "body": "",
+        "points": [
+          "Operating Cash Flow: Cash generated from your core business operations — sales collections minus payments to suppliers and employees. This is the most important number. Positive operating cash flow means your business model works.",
+          "Investing Cash Flow: Cash spent on or received from assets — buying equipment, investing in another company, or selling a fixed asset. Usually negative for a growing business.",
+          "Financing Cash Flow: Cash from loans, investor funding, or repayment of debt. A business relying on financing cash flow to cover operating shortfalls has a structural problem."
+        ]
+      },
+      {
+        "title": "The 5 Biggest Cash Flow Destroyers for UAE SMEs",
+        "body": "",
+        "points": [
+          "Long debtor days: Customers paying in 60–90 days while you pay suppliers in 30 days creates a structural cash gap that grows with revenue.",
+          "VAT as working capital: Many UAE businesses spend the VAT they have collected from customers before the quarterly return is due. VAT collected belongs to the FTA — spending it as working capital creates a cash crisis every quarter and risks late payment surcharges.",
+          "Inventory over-investment: Retail and trading businesses often hold 3–4 months of stock when 6 weeks would suffice. The difference is cash locked in a warehouse.",
+          "No visibility until month-end: If you only know your cash position when your accountant sends the month-end report on the 15th, you are always 6 weeks behind.",
+          "Gratuity not accrued: Businesses that don't accrue employee gratuity monthly get a shock when a long-serving employee resigns. A single gratuity payment can destroy a month's cash position."
+        ]
+      }
+    ]
+  },
+  "startup-uae": {
+    "tag": "🚀 UAE Startup · Financial Setup · 2026",
+    "title": "Startup in UAE — The Complete Financial Setup Checklist Every Founder Needs",
+    "summary": "Most UAE startup financial mistakes happen in the first 6 months — wrong structure, no bookkeeping, missed registrations. This guide gives you the complete checklist and what to do in what order.",
+    "sections": [
+      {
+        "title": "The UAE Startup Financial Setup Checklist",
+        "body": "",
+        "points": []
+      },
+      {
+        "title": "Bank Account Opening — The UAE Reality",
+        "body": "UAE business bank account opening is notoriously difficult for new businesses. Banks conduct thorough KYC and AML checks. Common rejection reasons:",
+        "points": [
+          "Vague or generic business activities on the licence",
+          "Directors with no UAE presence or credit history",
+          "Missing audited financials (for established businesses)",
+          "Business activity seen as high-risk (crypto, money transfer, certain trading)",
+          "Incomplete KYC documentation for UBO"
+        ]
+      },
+      {
+        "title": "The 6 Most Expensive Startup Financial Mistakes in UAE",
+        "body": "",
+        "points": [
+          "Starting bookkeeping late: Reconstructing 12 months of transactions from bank statements costs 3x what proper monthly bookkeeping would have cost",
+          "Wrong business activity on licence: If your actual revenue doesn't match your licensed activity, you have a VAT and CT problem from day one",
+          "No separation of personal and business accounts: The single most common mistake — and the most expensive to fix at year end",
+          "Missing CT registration deadline: AED 10,000 penalty — and it can only go up",
+          "No investor-grade financials: When a VC asks for 2 years of IFRS financials and you don't have them, you lose the deal",
+          "Ignoring gratuity accrual: Hire 5 employees at Year 1 and by Year 3 you have a AED 150,000+ gratuity liability that's never been in your books"
+        ]
+      }
+    ]
+  },
+  "golden-visa": {
+    "tag": "🌍 UAE Golden Visa · 2026 · All Categories",
+    "title": "UAE Golden Visa — Who Qualifies, What It Costs & How to Apply",
+    "summary": "The UAE Golden Visa is one of the most valuable residency programmes in the world — no personal income tax, renewable 5 or 10-year residency, and no local sponsor required. Here's everything you need to know about qualifying in 2026.",
+    "sections": [
+      {
+        "title": "UAE Golden Visa — What It Is",
+        "body": "The UAE Golden Visa is a long-term residency visa (5 or 10 years, renewable) that allows qualifying individuals to live, work, and study in UAE without a local sponsor. It was introduced in 2019 and significantly expanded in 2022.",
+        "points": []
+      },
+      {
+        "title": "Who Qualifies — Full 2026 Categories",
+        "body": "",
+        "points": []
+      },
+      {
+        "title": "UAE Tax Residency — Why the Golden Visa Matters for International Clients",
+        "body": "UAE has no personal income tax. For business owners and professionals from high-tax jurisdictions, UAE tax residency can legitimately reduce their global tax burden — but only if structured correctly and in compliance with the home country's tax rules.",
+        "points": []
+      }
+    ]
+  },
+  "restaurant-vat": {
+    "tag": "🍽 Restaurant & F&B · VAT · UAE",
+    "title": "Restaurant & F&B VAT in UAE — What Every Owner Must Know Before Their Next FTA Filing",
+    "summary": "UAE restaurant VAT has more complexity than most owners realise — dine-in, takeaway, delivery platforms, staff meals, tourist refund and excise tax all have different rules. Getting any one wrong costs money. Here's the complete guide.",
+    "sections": [
+      {
+        "title": "VAT on Different Revenue Types in UAE F&B",
+        "body": "",
+        "points": []
+      },
+      {
+        "title": "Tourist Tax Refund (TRF) — Why F&B Is NOT Eligible",
+        "body": "This is one of the most common misconceptions in UAE restaurant accounting: food and beverage supplied at restaurants and cafés is NOT eligible for the UAE Tourist Tax Refund scheme. TRF applies only to retail goods — physical goods such as clothing, electronics, jewellery, and similar tangible products purchased from registered retailers.",
+        "points": []
+      }
+    ]
+  },
+  "ecommerce-tax": {
+    "tag": "🛒 Ecommerce · Amazon FBA · UAE Tax",
+    "title": "Ecommerce & Amazon Sellers in UAE — Your Complete Tax & VAT Guide",
+    "summary": "UAE ecommerce VAT is more complex than most sellers realise. Platform commissions, import VAT, FBA obligations, and digital service rules all need correct handling. Here's the complete breakdown.",
+    "sections": [
+      {
+        "title": "UAE VAT for Ecommerce Sellers — The Full Picture",
+        "body": "",
+        "points": []
+      },
+      {
+        "title": "Import VAT Reclaim — The Money Most Sellers Leave Behind",
+        "body": "Every time you import goods into UAE for your ecommerce business, you pay VAT at the customs point (at 5% of the customs value plus duty). This import VAT is fully reclaimable as input VAT on your quarterly VAT return — provided you have the correct customs documentation.",
+        "points": []
+      },
+      {
+        "title": "Amazon FBA in UAE — Your Tax Obligations",
+        "body": "If you use Amazon FBA (Fulfilled by Amazon) in UAE, Amazon stores your inventory in their UAE warehouses. This creates a UAE fixed establishment and means you must be VAT-registered in UAE — regardless of where you are incorporated.",
+        "points": []
+      }
+    ]
+  },
+  "realestate-vat": {
+    "tag": "🏗 Real Estate · VAT · UAE Property",
+    "title": "Real Estate VAT in UAE — What Developers, Investors & Agents Must Know",
+    "summary": "UAE property VAT has some of the most complex rules in the region. First supply, subsequent supply, residential vs commercial — getting it wrong creates real liability. Here's the complete guide.",
+    "sections": [
+      {
+        "title": "The Most Important UAE Real Estate VAT Rule — First vs Subsequent Supply",
+        "body": "Critical consequence: If you sell a residential property as a second or later sale, the transaction is VAT-exempt — meaning you cannot recover any input VAT on costs related to that sale. Developers who plan to sell multiple times face a significant VAT cost that reduces margin.",
+        "points": []
+      },
+      {
+        "title": "DLD Transfer Fee — Is It VATable?",
+        "body": "The Dubai Land Department (DLD) transfer fee of 4% of the property value is a government fee — it is NOT subject to VAT and should not appear on a VAT return. Many developers and buyers incorrectly include DLD fees in the VAT calculation, which is wrong in both directions.",
+        "points": []
+      },
+      {
+        "title": "Input VAT Recovery for Real Estate Developers",
+        "body": "Real estate developers building mixed-use projects (some commercial, some residential) must apportion their input VAT recovery based on the proportion of taxable vs exempt supplies. The calculation method must be agreed with the FTA and applied consistently.",
+        "points": []
+      }
+    ]
+  },
+  "healthcare-vat": {
+    "tag": "🩺 Healthcare · VAT Exemptions · UAE Clinics",
+    "title": "Healthcare VAT Exemptions in UAE — Zero-Rated Services, Cosmetic Procedures & What Your Clinic Must Know",
+    "summary": "UAE healthcare VAT has three categories — zero-rated, standard-rated, and exempt — and applying the wrong one to any service creates liability or refund obligations. Here's the complete guide written for UAE clinic owners and practice managers.",
+    "sections": [
+      {
+        "title": "UAE Healthcare VAT — The Three Categories Every Clinic Must Know",
+        "body": "Healthcare VAT in UAE is divided into three distinct categories — and which one applies to a specific service determines whether you charge VAT, claim input VAT, and how you file your return. Getting this wrong is one of the most common (and costly) mistakes we see in UAE healthcare accounting.",
+        "points": []
+      },
+      {
+        "title": "Zero-Rated Healthcare Services — What Qualifies",
+        "body": "UAE VAT law zero-rates healthcare services that are preventive or curative and provided by a licensed healthcare provider. Qualifying services include:",
+        "points": [
+          "General practitioner consultations and specialist appointments",
+          "Surgical procedures (medically necessary)",
+          "Diagnostic tests — blood tests, imaging, pathology",
+          "Dental treatments (restorative and medically necessary — not cosmetic whitening)",
+          "Mental health consultations and therapy",
+          "Physiotherapy and rehabilitation",
+          "Maternity and obstetric care",
+          "Vaccinations and immunisations",
+          "Emergency medical services"
+        ]
+      },
+      {
+        "title": "Cosmetic & Elective Procedures — Standard 5% VAT",
+        "body": "Any procedure that is not medically necessary is subject to standard 5% VAT. This includes:",
+        "points": [
+          "Cosmetic surgery (rhinoplasty, liposuction, breast augmentation)",
+          "Teeth whitening and cosmetic dentistry",
+          "Botox and filler treatments for aesthetic purposes",
+          "Hair transplants",
+          "Laser hair removal",
+          "Non-medically necessary dermatology treatments"
+        ]
+      },
+      {
+        "title": "Insurance Billing — How VAT Works",
+        "body": "When a patient's treatment is covered by health insurance, the flow of VAT depends on the structure of the arrangement:",
+        "points": [
+          "Direct billing to insurer: The healthcare provider invoices the insurance company for the full treatment cost (zero-rated if qualifying service). The insurer pays directly.",
+          "Co-payment from patient: The portion paid by the patient as a co-pay is treated the same way as the insured amount — zero-rated if the service is qualifying healthcare.",
+          "Insurance reimbursement: If the patient pays first and claims reimbursement, the original supply (clinic to patient) is still zero-rated. The insurance payment to the patient is not a VAT supply."
+        ]
+      },
+      {
+        "title": "Input VAT Recovery for Mixed Healthcare Practices",
+        "body": "A clinic that provides both zero-rated services (medically necessary) and standard-rated services (cosmetic) has a partial exemption position — meaning some input VAT is fully recoverable and some must be apportioned.",
+        "points": []
+      },
+      {
+        "title": "The 5 Most Common Healthcare VAT Mistakes in UAE",
+        "body": "",
+        "points": [
+          "Applying 5% VAT to zero-rated services: Charging patients VAT on medically necessary consultations when none should apply. Creates client complaints, refund obligations, and inflated VAT return figures.",
+          "Not separating cosmetic from medical revenue: Lumping all clinic revenue under one VAT code makes it impossible to apply the correct rate and calculate partial exemption correctly.",
+          "Claiming input VAT on employee health insurance: Employee health insurance premiums are specifically blocked from input VAT recovery. Many clinic owners claim this in error.",
+          "Missing reverse charge on imported medical equipment: Medical equipment sourced from overseas is subject to reverse charge VAT. Many clinics pay import VAT at customs but forget to include it correctly in the VAT return.",
+          "No documentation for VAT treatment decisions: The FTA expects clinics to have documented policies for how they classify services. Without these, a routine audit becomes a major issue."
+        ]
+      }
+    ]
+  },
+  "freelancer-tax": {
+    "tag": "🧑‍💻 Freelancer · UAE Tax · Sole Establishment · 2026",
+    "title": "Freelancer Tax & Accounting in UAE 2026 — Everything You Need to Know",
+    "summary": "Freelancing in UAE has never been more popular — but the tax compliance requirements are real and often misunderstood. This guide covers Corporate Tax, VAT registration, deductible expenses, and exactly what every UAE freelancer must do to stay compliant.",
+    "sections": [
+      {
+        "title": "Freelance Permit vs Sole Establishment vs LLC — What's the Difference?",
+        "body": "Key point: All three structures are treated the same under UAE Corporate Tax law — your business income is taxable at 9% above AED 375,000. The structure choice affects your banking, visa options, and legal liability — not your tax rate.",
+        "points": []
+      },
+      {
+        "title": "UAE Corporate Tax for Freelancers — The Facts",
+        "body": "UAE Corporate Tax at 9% applies to individuals conducting business activities through a trade licence, freelance permit, or sole establishment. If your annual net business profit exceeds AED 375,000, you pay 9% on the amount above that threshold.",
+        "points": []
+      },
+      {
+        "title": "VAT for UAE Freelancers — Should You Register?",
+        "body": "Many freelancers earning AED 200,000–375,000 benefit from voluntary VAT registration because they can reclaim input VAT on significant business expenses — laptops, software subscriptions, coworking space, professional development — which reduces their effective cost.",
+        "points": []
+      },
+      {
+        "title": "What Expenses Can Freelancers Deduct from UAE Corporate Tax?",
+        "body": "UAE CT law allows deduction of expenses that are wholly, exclusively, and necessarily incurred for the purpose of the business. For freelancers, qualifying deductions typically include:",
+        "points": [
+          "Freelance licence and visa renewal fees",
+          "Coworking space rental or home office (proportionate)",
+          "Software and cloud subscriptions used for work",
+          "Professional development, courses, and certifications",
+          "Laptop, phone, and equipment (depreciated over useful life)",
+          "Professional indemnity and liability insurance",
+          "Accountant and legal fees",
+          "Marketing, website, and business development costs",
+          "Business travel (flights, accommodation) for client meetings"
+        ]
+      },
+      {
+        "title": "Do Freelancers Need WPS in UAE?",
+        "body": "If you are the sole owner and only person working in your business (no employees), you do not need to process your own drawings through WPS. WPS is mandatory only for employees — people engaged under employment contracts with work permits.",
+        "points": []
       }
     ]
   }

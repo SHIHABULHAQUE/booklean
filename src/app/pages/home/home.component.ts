@@ -54,7 +54,31 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
   ];
 
   readonly insightTopics = [
-    { id: 'payroll-wps', icon: 'WPS', title: 'UAE Payroll & WPS Compliance 2026', sub: 'SIF files, gratuity, MOHRE-facing records' }, { id: 'ecommerce-tax', icon: 'ECOM', title: 'Ecommerce & Amazon FBA, UAE VAT Guide', sub: 'Import VAT, marketplace reconciliation' }, { id: 'realestate-vat', icon: 'RE', title: 'Real Estate VAT UAE, Developer Guide', sub: 'First supply, exempt supply, DLD records' }, { id: 'healthcare-vat', icon: 'VAT', title: 'Healthcare VAT Exemptions UAE', sub: 'Zero-rated care, cosmetic VAT, insurance' }, { id: 'esr-aml', icon: 'AML', title: 'ESR, UBO & AML, UAE Compliance Guide', sub: 'Registers, policies, filings, bank reviews' }, { id: 'golden-visa', icon: 'VISA', title: 'UAE Golden Visa 2026, Who Qualifies', sub: 'Investor, founder, professional routes' }, { id: 'cashflow', icon: 'CFO', title: 'Cash Flow Management for UAE SMEs', sub: 'VAT trap, 13-week forecast, debtor days' }, { id: 'transfer-pricing', icon: 'TP', title: 'Transfer Pricing UAE, Rules & Documentation', sub: "Arm's length principle and related parties" }
+    { id: 'payroll-wps', icon: '💼', title: 'UAE Payroll & WPS Compliance 2026', sub: 'SIF files, gratuity 21 days/year, MOHRE penalties' },
+    { id: 'ecommerce-tax', icon: '🛒', title: 'Ecommerce & Amazon FBA — UAE VAT Guide', sub: 'Import VAT reclaim, FBA obligations, marketplace reconciliation' },
+    { id: 'realestate-vat', icon: '🏗️', title: 'Real Estate VAT UAE — Developer Guide', sub: 'First supply zero-rated, subsequent exempt, DLD fees not VATable' },
+    { id: 'healthcare-vat', icon: '🩺', title: 'Healthcare VAT Exemptions UAE', sub: 'Zero-rated curative care, cosmetic 5%, employee insurance blocked' },
+    { id: 'esr-aml', icon: '🛡️', title: 'ESR, UBO & AML — UAE Compliance Guide', sub: 'ESR 9 activities, UBO penalty AED 100,000 first offence' },
+    { id: 'golden-visa', icon: '🌍', title: 'UAE Golden Visa 2026 — Who Qualifies', sub: 'Property AED 2M+, skilled salary AED 30K+, 5 or 10-year residency' },
+    { id: 'cashflow', icon: '📊', title: 'Cash Flow Management for UAE SMEs', sub: 'VAT working capital trap, 13-week forecast, debtor days UAE' },
+    { id: 'transfer-pricing', icon: '🎯', title: 'Transfer Pricing UAE — Rules & Documentation', sub: "Arm's length principle, AED 40M threshold, Local File required" },
+    { id: 'startup-uae', icon: '🚀', title: 'Startup in UAE — Financial Setup Checklist', sub: 'Entity choice, CT registration, VAT setup, banking checklist' },
+    { id: 'freelancer-tax', icon: '👨‍💻', title: 'Freelancer Tax & Accounting UAE 2026', sub: 'CT registration, VAT threshold, freelance permit vs sole establishment' }
+  ];
+
+  readonly industryCards = [
+    { id: 'restaurant', image: 'assets/images/ind-hospitality.jpg', name: 'Restaurants & F&B · VAT & POS', sub: 'Restaurant Accounting UAE', alt: 'Restaurant and F&B accounting UAE' },
+    { id: 'ecommerce', image: 'assets/images/ind-retail.jpg', name: 'Ecommerce & Amazon Sellers', sub: 'Ecommerce Accounting Dubai', alt: 'Ecommerce and Amazon sellers accounting Dubai' },
+    { id: 'realestate', image: 'assets/images/ind-realestate.jpg', name: 'Real Estate & Construction', sub: 'Construction Accounting UAE', alt: 'Real estate and construction accounting UAE' },
+    { id: 'healthcare', image: 'assets/images/ind-healthcare.jpg', name: 'Healthcare & Clinics', sub: 'Medical Practice Accounting UAE', alt: 'Healthcare and clinic accounting UAE' },
+    { id: 'tech', image: 'assets/images/ind-technology.jpg', name: 'Technology & SaaS Startups', sub: 'Startup Accounting UAE', alt: 'Technology and SaaS startup accounting UAE' },
+    { id: 'retail', image: 'assets/images/ind-retail.jpg', name: 'Retail & Consumer Brands', sub: 'Retail Accounting UAE', alt: 'Retail and consumer brand accounting UAE' },
+    { id: 'hospitality', image: 'assets/images/ind-hospitality.jpg', name: 'Hospitality & Tourism', sub: 'Hotel Accounting Dubai', alt: 'Hospitality and tourism accounting Dubai' },
+    { id: 'freelancer', image: 'assets/images/hero-slide2-business.jpg', name: 'Freelancers & Sole Establishments', sub: 'Freelancer Tax UAE', alt: 'Freelancer and sole establishment tax UAE' },
+    { id: 'logistics', image: 'assets/images/ind-manufacturing.jpg', name: 'Logistics & Transportation', sub: 'Multi-Emirate Accounting UAE', alt: 'Logistics and transportation accounting UAE' },
+    { id: 'banking', image: 'assets/images/ind-banking.jpg', name: 'Banking & Financial Services', sub: 'AML & DFSA Compliance UAE', alt: 'Banking and financial services accounting UAE' },
+    { id: 'manufacturing', image: 'assets/images/ind-manufacturing.jpg', name: 'Manufacturing & Trading', sub: 'Import VAT Accounting UAE', alt: 'Manufacturing and trading accounting UAE' },
+    { id: 'oilgas', image: 'assets/images/ind-energy.jpg', name: 'Oil, Gas & Energy', sub: 'Complex VAT Structures UAE', alt: 'Oil gas and energy accounting UAE' }
   ];
 
   constructor(

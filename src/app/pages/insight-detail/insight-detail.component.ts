@@ -35,6 +35,7 @@ export class InsightDetailComponent {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
   private params = toSignal(this.route.paramMap);
+  private queryParams = toSignal(this.route.queryParamMap);
 
   readonly insights: InsightDetail[] = [
     {
@@ -74,6 +75,8 @@ export class InsightDetailComponent {
     const id = this.params()?.get('id') || 'corporate-tax';
     return this.insights.find((insight) => insight.id === id);
   });
+
+  backFragment = computed(() => this.queryParams()?.get('from') === 'guides' ? 'tax-accounting-guides' : undefined);
 
   constructor() {
     effect(() => {
@@ -161,11 +164,13 @@ export class InsightDetailComponent {
   handleGuideClick(event: Event) {
     const target = event.target as HTMLElement | null;
     const guideLink = target?.closest<HTMLElement>('[data-guide-id]');
-    const bookingLink = target?.closest<HTMLElement>('[data-booking-cta]');
+    const bookingLink = target?.closest<HTMLElement>('[data-booking-cta], .btn-cta-primary, a.btn-primary[href="#contact"]');
 
     if (guideLink?.dataset['guideId']) {
       event.preventDefault();
-      this.router.navigate(['/', this.regionDataService.currentRegion(), 'insight', guideLink.dataset['guideId']]);
+      this.router.navigate(['/', this.regionDataService.currentRegion(), 'insight', guideLink.dataset['guideId']], {
+        queryParams: this.queryParams()?.get('from') === 'guides' ? { from: 'guides' } : undefined
+      });
       return;
     }
 

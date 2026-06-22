@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation, computed, effect, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { BookingModalService } from '../../services/booking-modal.service';
 import { RegionDataService } from '../../services/region-data.service';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { type ReferenceIndustryContent, referenceIndustryContent } from './reference-industry-content';
+import { type ReferenceIndustryPanel, referenceIndustryPanels } from './reference-industry-panels';
 import { SeoService } from '../../services/seo.service';
 
 interface DetailCard {
@@ -32,7 +33,7 @@ interface DetailSection {
 }
 
 @Component({
-  selector: 'app-industry-detail', standalone: true, imports: [RouterLink, FooterComponent], templateUrl: './industry-detail.component.html', styleUrl: './industry-detail.component.scss', changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-industry-detail', standalone: true, imports: [RouterLink, FooterComponent], templateUrl: './industry-detail.component.html', styleUrl: './industry-detail.component.scss', encapsulation: ViewEncapsulation.None, changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IndustryDetailComponent {
   regionDataService = inject(RegionDataService);
@@ -40,6 +41,7 @@ export class IndustryDetailComponent {
   private seoService = inject(SeoService);
   private route = inject(ActivatedRoute);
   private params = toSignal(this.route.paramMap);
+  private queryParams = toSignal(this.route.queryParamMap);
 
   readonly industries: IndustryDetail[] = [
     {
@@ -98,6 +100,8 @@ export class IndustryDetailComponent {
     return this.industries.find((industry) => industry.id === id);
   });
 
+  backFragment = computed(() => this.queryParams()?.get('from') === 'industries' ? 'industries' : undefined);
+
   constructor() {
     effect(() => {
       const industry = this.currentIndustry();
@@ -111,6 +115,10 @@ export class IndustryDetailComponent {
 
   referenceContent(industry: IndustryDetail): ReferenceIndustryContent | undefined {
     return referenceIndustryContent[industry.id];
+  }
+
+  referencePanel(industry: IndustryDetail): ReferenceIndustryPanel | undefined {
+    return referenceIndustryPanels[industry.id];
   }
 
   displayTag(industry: IndustryDetail): string {
@@ -243,5 +251,15 @@ export class IndustryDetailComponent {
   openBookingModal(event: Event) {
     event.preventDefault();
     this.bookingService.open(event);
+  }
+
+  handleIndustryClick(event: Event) {
+    const target = event.target as HTMLElement | null;
+    const bookingLink = target?.closest<HTMLElement>('[data-booking-cta], .btn-cta-primary, a.btn-primary[href="#contact"], a.industry-primary-btn');
+
+    if (bookingLink) {
+      event.preventDefault();
+      this.bookingService.open(event);
+    }
   }
 }

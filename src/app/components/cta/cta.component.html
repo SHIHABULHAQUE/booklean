@@ -14,8 +14,8 @@
             <div class="cta-buttons">
                 <a [href]="'tel:' + regionDataService.data().phone" class="btn-cta-white">📞 Book 30 Mins Free
                     Consultation</a>
-                <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
-                    class="btn-cta-outline" target="_blank">💬 WhatsApp Us Now</a>
+                <a [href]="'https://api.whatsapp.com/send?phone=' + regionDataService.data().whatsapp.replace('+', '') + '&text=Hello%20BookLean%20team%2C%20I%20need%20help%20with%20UAE%20tax%20and%20accounting.'"
+                    class="btn-cta-outline" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us Now</a>
             </div>
             <div class="cta-options">
                 <div class="cta-opt">
@@ -34,8 +34,8 @@
                     <div class="cta-opt-desc">Get instant answers about services and compliance from
                         our AI
                         assistant. 24/7.</div>
-                    <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
-                        class="cta-opt-link" target="_blank"
+                    <a [href]="'https://api.whatsapp.com/send?phone=' + regionDataService.data().whatsapp.replace('+', '') + '&text=Hello%20BookLean%20team%2C%20I%20need%20help%20with%20UAE%20tax%20and%20accounting.'"
+                        class="cta-opt-link" target="_blank" rel="noopener noreferrer"
                         style="display:block; text-align:center; padding: 12px 20px;">Start Chat →</a>
                 </div>
                 <div class="cta-opt">

@@ -5,9 +5,21 @@ import { Injectable, signal } from '@angular/core';
 })
 export class BookingModalService {
   readonly isOpen = signal(false);
+  readonly originX = signal(0);
+  readonly originY = signal(0);
   private readonly ACCESS_KEY = 'bf602868-9d37-45e6-a954-f7d08af1ed38';
 
-  open() {
+  open(event?: Event) {
+    const mouseEvent = event instanceof MouseEvent ? event : null;
+    const viewportWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
+    const viewportHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
+    const fallbackX = viewportWidth / 2;
+    const fallbackY = viewportHeight / 2;
+    const clickX = mouseEvent?.clientX ?? fallbackX;
+    const clickY = mouseEvent?.clientY ?? fallbackY;
+
+    this.originX.set(clickX);
+    this.originY.set(clickY);
     this.isOpen.set(true);
   }
 

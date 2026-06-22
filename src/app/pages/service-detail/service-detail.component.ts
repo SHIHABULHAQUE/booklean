@@ -96,6 +96,6 @@ export class ServiceDetailComponent {
 
   openBookingModal(event: Event) {
     event.preventDefault();
-    this.bookingService.open();
+    this.bookingService.open(event);
   }
 }

@@ -62,6 +62,6 @@ export class FaqComponent {
 
   openBookingModal(event: Event): void {
     event.preventDefault();
-    this.bookingService.open();
+    this.bookingService.open(event);
   }
 }

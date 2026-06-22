@@ -56,6 +56,7 @@ export class ChatAssistantComponent implements OnInit {
 
   openWhatsApp() {
     const phone = this.regionDataService.data().whatsapp.replace('+', '');
-    window.open(`https://wa.me/${phone}`, '_blank');
+    const message = encodeURIComponent('Hello BookLean team, I need help with UAE tax and accounting.');
+    window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${message}`, '_blank', 'noopener,noreferrer');
   }
 }

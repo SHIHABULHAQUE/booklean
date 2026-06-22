@@ -155,7 +155,7 @@ export class InsightDetailComponent {
 
   openBookingModal(event: Event) {
     event.preventDefault();
-    this.bookingService.open();
+    this.bookingService.open(event);
   }
 
   handleGuideClick(event: Event) {
@@ -171,7 +171,7 @@ export class InsightDetailComponent {
 
     if (bookingLink) {
       event.preventDefault();
-      this.bookingService.open();
+      this.bookingService.open(event);
     }
   }
 }

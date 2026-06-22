@@ -108,6 +108,6 @@ export class HeaderComponent {
 
     openBookingModal(event: Event) {
         event.preventDefault();
-        this.bookingService.open();
+        this.bookingService.open(event);
     }
 }

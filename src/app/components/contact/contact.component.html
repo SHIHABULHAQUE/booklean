@@ -31,8 +31,8 @@
                     <div class="info-text">
                         <h4>WhatsApp 24/7 Support</h4>
                         <p>Skip the forms. Message us right now.</p>
-                        <a [href]="'https://wa.me/' + regionDataService.data().whatsapp.replace('+', '')"
-                            class="btn-whatsapp" target="_blank">
+                        <a [href]="'https://api.whatsapp.com/send?phone=' + regionDataService.data().whatsapp.replace('+', '') + '&text=Hello%20BookLean%20team%2C%20I%20need%20help%20with%20UAE%20tax%20and%20accounting.'"
+                            class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
                             Chat on WhatsApp
                         </a>
                     </div>

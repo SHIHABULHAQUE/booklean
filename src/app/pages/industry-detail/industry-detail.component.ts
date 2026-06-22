@@ -242,6 +242,6 @@ export class IndustryDetailComponent {
 
   openBookingModal(event: Event) {
     event.preventDefault();
-    this.bookingService.open();
+    this.bookingService.open(event);
   }
 }

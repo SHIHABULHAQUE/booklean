@@ -1266,11 +1266,15 @@ body::after {
   position: absolute;
   inset: 0;
   opacity: 0;
+  z-index: 0;
+  pointer-events: none;
   transition: opacity .9s ease;
 }
 
 .slide.active {
   opacity: 1;
+  z-index: 2;
+  pointer-events: auto;
 }
 
 .slide-bg {
@@ -1340,6 +1344,7 @@ body::after {
 .slide-overlay {
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background:
     linear-gradient(115deg, rgba(5, 28, 42, .78) 0%, rgba(5, 28, 42, .62) 40%, rgba(0, 79, 225, .18) 72%, rgba(3, 193, 244, .08) 100%),
     radial-gradient(ellipse at 80% 50%, rgba(8, 161, 247, .10) 0%, transparent 55%),
@@ -1430,6 +1435,7 @@ body::after {
   grid-template-columns: 1fr 320px;
   gap: 48px;
   align-items: center;
+  z-index: 3;
 }
 
 .einvoice-content {

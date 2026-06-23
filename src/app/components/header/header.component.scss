@@ -40,25 +40,25 @@
 }
 
 :host .tb-left {
-  padding: 5px 12px 5px 10px;
+  padding: 3px 10px 3px 8px;
   border: 1px solid rgba(8, 161, 247, 0.20);
   border-radius: 999px;
   background: linear-gradient(135deg, rgba(8, 161, 247, 0.12), rgba(0, 79, 225, 0.08));
   box-shadow: 0 8px 22px rgba(0, 79, 225, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.92);
-  font-size: 12.5px;
-  letter-spacing: 0.055em;
+  font-size: 10.5px;
+  letter-spacing: 0.045em;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 :host .tb-dot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   flex-shrink: 0;
   background: linear-gradient(135deg, #5fb2ff, #08e0ff);
-  box-shadow: 0 0 0 4px rgba(8, 161, 247, 0.13), 0 0 14px rgba(8, 224, 255, 0.9);
+  box-shadow: 0 0 0 3px rgba(8, 161, 247, 0.13), 0 0 10px rgba(8, 224, 255, 0.75);
   animation: pulse 2s infinite;
 
 }
@@ -66,7 +66,7 @@
 :host .tb-service-line {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   background: linear-gradient(90deg, #ffffff 0%, #dff5ff 46%, #9deeff 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -74,13 +74,13 @@
 }
 
 :host .tb-sep {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   display: inline-block;
-  flex: 0 0 5px;
+  flex: 0 0 4px;
   border-radius: 999px;
   background: linear-gradient(135deg, #5fb2ff, #08e0ff);
-  box-shadow: 0 0 0 3px rgba(8, 161, 247, 0.12), 0 0 12px rgba(8, 224, 255, 0.78);
+  box-shadow: 0 0 0 2px rgba(8, 161, 247, 0.12), 0 0 8px rgba(8, 224, 255, 0.62);
 }
 
 @keyframes pulse {

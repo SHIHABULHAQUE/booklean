@@ -1262,10 +1262,10 @@
         <div style="font-size:12px;color:rgba(255,255,255,.50);font-family:var(--fb);margin-top:6px;">{{
           'HOME.SERVICES_BOTTOM_DESC' | translate }}</div>
       </div>
-      <div style="display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap;">
-        <a href="#contact" class="btn-primary" style="white-space:nowrap;" (click)="openBookingModal($event)">Book My
+      <div class="services-bottom-actions" style="display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap;">
+        <a href="#contact" class="btn-primary services-bottom-primary" (click)="openBookingModal($event)">Book My
           Free 30-Min Review →</a>
-        <a href="https://api.whatsapp.com/send?phone=971526203995&text=Hello%20BookLean%20team%2C%20I%20need%20help%20with%20UAE%20tax%20and%20accounting." target="_blank" rel="noopener noreferrer"
+        <a href="https://api.whatsapp.com/send?phone=971526203995&text=Hello%20BookLean%20team%2C%20I%20need%20help%20with%20UAE%20tax%20and%20accounting." target="_blank" rel="noopener noreferrer" class="services-bottom-whatsapp"
           style="padding:13px 24px;background:rgba(37,211,102,.15);border:2px solid rgba(37,211,102,.35);color:#25D366;font-size:12px;font-weight:800;font-family:var(--fb);text-decoration:none;border-radius:10px;white-space:nowrap;letter-spacing:.04em;transition:all .22s;"
           onmouseover="this.style.background='rgba(37,211,102,.25)'"
           onmouseout="this.style.background='rgba(37,211,102,.15)'">💬 WhatsApp</a>
@@ -1292,7 +1292,7 @@
     </div>
 
     <div class="insight-5card-grid">
-      @for (card of insightCards.slice(0, 6); track card.id; let idx = $index) {
+      @for (card of insightCards.slice(0, 5); track card.id; let idx = $index) {
         <a [routerLink]="['/', 'uae', 'insight', card.id]" [queryParams]="{ from: 'guides' }" class="ins-card"
           [style.--ins-accent]="card.accent" data-aos="fade-up" [attr.data-aos-delay]="100 + (idx * 50)">
           <div class="ins-card-meta">
@@ -1338,7 +1338,6 @@
         <p class="s-serving" style="font-size:13px;color:#4A5A6A;font-family:var(--fb);margin-top:10px;"
           [innerHTML]="'HOME.INDUSTRIES_SERVING' | translate"></p>
       </div>
-      <a href="#industries" class="see-all">{{ 'HOME.INDUSTRIES_ALL' | translate }}</a>
     </div>
     <div class="ind-grid">
       @for (industry of industryCards; track industry.id; let idx = $index) {

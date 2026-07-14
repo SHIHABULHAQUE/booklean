@@ -6,6 +6,8 @@ interface SeoPageConfig {
   title: string;
   description: string;
   path: string;
+  canonicalUrl?: string;
+  structuredData?: unknown[];
 }
 
 @Injectable({
@@ -13,6 +15,13 @@ interface SeoPageConfig {
 })
 export class SeoService {
   private readonly siteUrl = 'https://www.bookleanglobal.com';
+  private readonly structuredDataScriptId = 'booklean-page-jsonld';
+  private readonly hreflangUrls = [
+    { hreflang: 'en-ae', href: 'https://www.bookleanglobal.com/uae/home' },
+    { hreflang: 'en-in', href: 'https://www.bookleanglobal.com/in/home' },
+    { hreflang: 'en-gb', href: 'https://www.bookleanglobal.com/uk/home' },
+    { hreflang: 'x-default', href: 'https://www.bookleanglobal.com/' },
+  ];
 
   constructor(
     private title: Title,
@@ -22,6 +31,7 @@ export class SeoService {
 
   setPage(config: SeoPageConfig) {
     const url = `${this.siteUrl}${config.path}`;
+    const canonicalUrl = config.canonicalUrl || url;
     const title = this.clean(config.title);
     const description = this.clean(config.description);
 
@@ -34,7 +44,12 @@ export class SeoService {
     this.meta.updateTag({ name: 'twitter:title', content: title });
     this.meta.updateTag({ name: 'twitter:description', content: description });
     this.meta.updateTag({ name: 'twitter:url', content: url });
-    this.setCanonical(url);
+    this.setCanonical(canonicalUrl);
+    this.setHreflangLinks();
+
+    if (config.structuredData?.length) {
+      this.setStructuredData(config.structuredData);
+    }
   }
 
   private setCanonical(url: string) {
@@ -45,6 +60,32 @@ export class SeoService {
       this.document.head.appendChild(link);
     }
     link.setAttribute('href', url);
+  }
+
+  private setHreflangLinks() {
+    this.document
+      .querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]')
+      .forEach((link) => link.remove());
+
+    for (const alternate of this.hreflangUrls) {
+      const link = this.document.createElement('link');
+      link.setAttribute('rel', 'alternate');
+      link.setAttribute('hreflang', alternate.hreflang);
+      link.setAttribute('href', alternate.href);
+      this.document.head.appendChild(link);
+    }
+  }
+
+  private setStructuredData(data: unknown[]) {
+    let script = this.document.getElementById(this.structuredDataScriptId) as HTMLScriptElement | null;
+    if (!script) {
+      script = this.document.createElement('script');
+      script.id = this.structuredDataScriptId;
+      script.type = 'application/ld+json';
+      this.document.head.appendChild(script);
+    }
+
+    script.textContent = JSON.stringify(data).replace(/</g, '\\u003c');
   }
 
   private clean(value: string) {

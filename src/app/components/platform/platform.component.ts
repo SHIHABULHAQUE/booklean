@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 export class PlatformComponent {
   features = [
     {
-      icon: '🧠', title: 'Multi-Model AI Orchestration', desc: 'Routes queries between GPT-4o, Claude 3, Gemini, and DeepSeek, using fast models for triage and reasoning models for complex tax queries.'
+      icon: '🧠', title: 'ChatGPT + Gemini Orchestration', desc: 'Routes client questions through ChatGPT first, then Gemini as fallback, keeping LeanBot live for UAE tax and finance queries.'
     }, {
       icon: '📄', title: 'Intelligent OCR & Document Processing', desc: 'Extracts invoice data, receipt information, and financial documents automatically with 99%+ accuracy, zero manual entry required.'
     }, {
@@ -19,5 +19,5 @@ export class PlatformComponent {
     }
   ];
 
-  models = ['GPT-4o', 'Claude 3', 'Gemini 1.5', 'DeepSeek', 'Llama 3.3', 'Botpress'];
+  models = ['ChatGPT', 'Gemini'];
 }

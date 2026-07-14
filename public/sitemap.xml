@@ -18,6 +18,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://www.bookleanglobal.com/uae/faq</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url><loc>https://www.bookleanglobal.com/uae/service/tax</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bookleanglobal.com/uae/service/bso</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.bookleanglobal.com/uae/service/digital</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

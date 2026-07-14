@@ -4,7 +4,7 @@
 }
 
 :host .topbar {
-  background: #051C2A;
+  background: #051c2a;
   color: rgba(255, 255, 255, 0.72);
   font-size: 12px;
   font-family: var(--fb);
@@ -41,14 +41,16 @@
 
 :host .tb-left {
   padding: 3px 10px 3px 8px;
-  border: 1px solid rgba(8, 161, 247, 0.20);
+  border: 1px solid rgba(8, 161, 247, 0.2);
   border-radius: 999px;
   background: linear-gradient(135deg, rgba(8, 161, 247, 0.12), rgba(0, 79, 225, 0.08));
-  box-shadow: 0 8px 22px rgba(0, 79, 225, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 8px 22px rgba(0, 79, 225, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.92);
-  font-size: 10.5px;
+  font-size: 11px;
   letter-spacing: 0.045em;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -58,9 +60,10 @@
   border-radius: 50%;
   flex-shrink: 0;
   background: linear-gradient(135deg, #5fb2ff, #08e0ff);
-  box-shadow: 0 0 0 3px rgba(8, 161, 247, 0.13), 0 0 10px rgba(8, 224, 255, 0.75);
+  box-shadow:
+    0 0 0 3px rgba(8, 161, 247, 0.13),
+    0 0 10px rgba(8, 224, 255, 0.75);
   animation: pulse 2s infinite;
-
 }
 
 :host .tb-service-line {
@@ -80,11 +83,12 @@
   flex: 0 0 4px;
   border-radius: 999px;
   background: linear-gradient(135deg, #5fb2ff, #08e0ff);
-  box-shadow: 0 0 0 2px rgba(8, 161, 247, 0.12), 0 0 8px rgba(8, 224, 255, 0.62);
+  box-shadow:
+    0 0 0 2px rgba(8, 161, 247, 0.12),
+    0 0 8px rgba(8, 224, 255, 0.62);
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     opacity: 1;
@@ -221,7 +225,10 @@
   border: 1px solid transparent;
   color: #1a3868;
   font-size: 12px;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    border-color 0.15s;
 }
 
 :host .cp-item:hover {
@@ -246,7 +253,10 @@
   backdrop-filter: blur(24px) saturate(200%);
   -webkit-backdrop-filter: blur(24px) saturate(200%);
   border-bottom: 1px solid #e6f0ff;
-  transition: background 0.3s, box-shadow 0.3s, border-color 0.3s;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s,
+    border-color 0.3s;
 }
 
 :host #navbar.scrolled {
@@ -307,7 +317,9 @@
   cursor: pointer;
   white-space: nowrap;
   border-bottom: 2px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
 }
 
 :host .n-btn:hover,
@@ -316,7 +328,7 @@
   border-bottom-color: #004fe1;
 }
 
-:host .n-item.is-open>.n-btn {
+:host .n-item.is-open > .n-btn {
   color: #004fe1;
   border-bottom-color: #004fe1;
 }
@@ -325,7 +337,7 @@
   transition: transform 0.25s;
 }
 
-:host .n-item.is-open>.n-btn svg {
+:host .n-item.is-open > .n-btn svg {
   transform: rotate(180deg);
 }
 
@@ -349,16 +361,16 @@
   display: flex;
 }
 
-:host .n-item.is-open>.n-btn,
-:host .n-item:hover>.n-btn,
-:host .n-item:focus-within>.n-btn {
+:host .n-item.is-open > .n-btn,
+:host .n-item:hover > .n-btn,
+:host .n-item:focus-within > .n-btn {
   color: #004fe1;
   border-bottom-color: #004fe1;
 }
 
-:host .n-item.is-open>.n-btn svg,
-:host .n-item:hover>.n-btn svg,
-:host .n-item:focus-within>.n-btn svg {
+:host .n-item.is-open > .n-btn svg,
+:host .n-item:hover > .n-btn svg,
+:host .n-item:focus-within > .n-btn svg {
   transform: rotate(180deg);
 }
 
@@ -432,7 +444,11 @@
   font-weight: 800;
   line-height: 1.2;
   text-decoration: none;
-  transition: background 0.16s, border-color 0.16s, color 0.16s, transform 0.16s;
+  transition:
+    background 0.16s,
+    border-color 0.16s,
+    color 0.16s,
+    transform 0.16s;
 }
 
 :host .mega-service-chip:hover {
@@ -490,7 +506,9 @@
   text-transform: uppercase;
   margin-bottom: 18px;
   text-decoration: none;
-  transition: color 0.15s, transform 0.15s;
+  transition:
+    color 0.15s,
+    transform 0.15s;
   cursor: pointer;
 }
 
@@ -532,7 +550,9 @@
   font-size: 13.5px;
   font-weight: 500;
   font-family: var(--fb);
-  transition: color 0.15s, transform 0.15s;
+  transition:
+    color 0.15s,
+    transform 0.15s;
 }
 
 :host .mega-list a::before {
@@ -648,7 +668,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   box-shadow: 0 6px 18px rgba(0, 79, 225, 0.24);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 :host .n-cta-btn:hover,
@@ -673,7 +695,10 @@
   border-radius: 999px;
   background: rgba(0, 79, 225, 0.04);
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    border-color 0.2s;
 }
 
 :host .theme-toggle:hover {
@@ -710,7 +735,9 @@
   margin: 4px auto;
   background: #051c2a;
   border-radius: 999px;
-  transition: transform 0.2s, opacity 0.2s;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
 }
 
 :host .hamburger.is-open span:nth-child(1) {
@@ -745,10 +772,12 @@
 }
 
 :host-context(body.theme-light) .tb-left {
-  border-color: rgba(0, 79, 225, 0.20);
+  border-color: rgba(0, 79, 225, 0.2);
   background: linear-gradient(135deg, rgba(0, 79, 225, 0.08), rgba(8, 161, 247, 0.08));
   color: #051c2a;
-  box-shadow: 0 8px 22px rgba(0, 79, 225, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 8px 22px rgba(0, 79, 225, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 :host-context(body.theme-light) .tb-service-line {
@@ -760,7 +789,9 @@
 
 :host-context(body.theme-light) .tb-sep {
   background: linear-gradient(135deg, #004fe1, #08a1f7);
-  box-shadow: 0 0 0 3px rgba(0, 79, 225, 0.11), 0 0 12px rgba(8, 161, 247, 0.48);
+  box-shadow:
+    0 0 0 3px rgba(0, 79, 225, 0.11),
+    0 0 12px rgba(8, 161, 247, 0.48);
 }
 
 :host-context(body.theme-light) .tb-portal {
@@ -794,7 +825,9 @@
     border-radius: 50%;
     background: #004fe1;
     opacity: 0.4;
-    transition: opacity 0.15s, background-color 0.15s;
+    transition:
+      opacity 0.15s,
+      background-color 0.15s;
   }
   .mega-list a:hover::before {
     opacity: 1;
@@ -860,7 +893,10 @@
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
-    transition: opacity 0.22s, transform 0.22s, visibility 0.22s;
+    transition:
+      opacity 0.22s,
+      transform 0.22s,
+      visibility 0.22s;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(24px) saturate(180%);
     -webkit-backdrop-filter: blur(24px) saturate(180%);
@@ -991,7 +1027,6 @@
 }
 
 @media (max-width: 640px) {
-
   :host .nav-wrap,
   :host .mobile-menu-inner,
   :host .topbar-inner {
@@ -1021,7 +1056,7 @@
 /* 1. Topbar Language Switcher (Responsive Colors) */
 :host .lang-switch-btn {
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
   padding: 4px 12px;
   border-radius: 999px;
@@ -1032,7 +1067,7 @@
   justify-content: center;
   font-weight: 600;
   transition: all 0.2s;
-  
+
   &:hover {
     background: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.35);
@@ -1043,7 +1078,7 @@
   background: rgba(0, 79, 225, 0.08);
   border-color: rgba(0, 79, 225, 0.25);
   color: #004fe1;
-  
+
   &:hover {
     background: rgba(0, 79, 225, 0.15);
     border-color: rgba(0, 79, 225, 0.4);
@@ -1071,16 +1106,16 @@
   font-size: 13px;
   font-weight: 700;
   transition: all 0.2s;
-  
+
   .lang-icon {
     opacity: 0.85;
   }
-  
+
   .cb-chev {
     opacity: 0.7;
     transition: transform 0.2s;
   }
-  
+
   &:hover {
     background: rgba(0, 79, 225, 0.1);
     border-color: rgba(0, 79, 225, 0.25);
@@ -1091,12 +1126,12 @@
   .nav-lang-btn {
     background: rgba(0, 79, 225, 0.12);
     border-color: rgba(0, 79, 225, 0.3);
-    
+
     .cb-chev {
       transform: rotate(180deg);
     }
   }
-  
+
   .lang-panel {
     display: block;
     opacity: 1;
@@ -1122,7 +1157,7 @@
 }
 
 /* RTL overrides */
-:host-context(html[dir="rtl"]) .lang-panel {
+:host-context(html[dir='rtl']) .lang-panel {
   right: auto;
   left: 0;
 }
@@ -1141,19 +1176,19 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.15s;
-  
+
   &:hover {
     background: rgba(0, 79, 225, 0.06);
     color: #004fe1;
   }
-  
+
   &.is-active {
     background: rgba(0, 79, 225, 0.1);
     color: #004fe1;
   }
 }
 
-:host-context(html[dir="rtl"]) .lang-item {
+:host-context(html[dir='rtl']) .lang-item {
   text-align: right;
 }
 
@@ -1181,14 +1216,14 @@
     cursor: pointer;
     z-index: 645;
     transition: all 0.2s;
-    
+
     &:hover {
       background: rgba(0, 79, 225, 0.1);
     }
   }
 }
 
-:host-context(html[dir="rtl"]) .mobile-nav-lang-btn {
+:host-context(html[dir='rtl']) .mobile-nav-lang-btn {
   right: auto;
   left: 74px;
 }

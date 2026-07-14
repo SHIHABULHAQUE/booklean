@@ -17,7 +17,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     provideHttpClient(withFetch()),
     provideTranslateService({
-      defaultLanguage: 'en',
+      fallbackLang: 'en',
       loader: {
         provide: TranslateLoader,
         useClass: TranslateHttpLoader
@@ -26,7 +26,7 @@ export const appConfig: ApplicationConfig = {
     {
       provide: TRANSLATE_HTTP_LOADER_CONFIG,
       useValue: {
-        prefix: './assets/i18n/',
+        prefix: '/assets/i18n/',
         suffix: '.json'
       }
     }

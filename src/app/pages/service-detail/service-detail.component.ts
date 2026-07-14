@@ -89,9 +89,69 @@ export class ServiceDetailComponent {
       if (!service) return;
 
       this.seoService.setPage({
-        title: `${service.title} | BookLean Global UAE`, description: service.guide, path: `/${this.regionDataService.currentRegion()}/service/${service.id}`
+        title: `${service.title} | BookLean Global UAE`,
+        description: service.guide,
+        path: `/${this.regionDataService.currentRegion()}/service/${service.id}`,
+        structuredData: this.serviceStructuredData(service),
       });
     });
+  }
+
+  private serviceStructuredData(service: RichService): unknown[] {
+    const siteUrl = 'https://www.bookleanglobal.com';
+    const url = `${siteUrl}/${this.regionDataService.currentRegion()}/service/${service.id}`;
+
+    return [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${url}#service`,
+        name: service.title,
+        description: service.guide,
+        serviceType: service.shortTitle,
+        areaServed: {
+          '@type': 'Country',
+          name: 'United Arab Emirates',
+        },
+        provider: {
+          '@type': 'AccountingService',
+          '@id': `${siteUrl}/#organization`,
+          name: 'BookLean Global',
+          url: siteUrl,
+          telephone: '+971526203995',
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: `${service.shortTitle} services`,
+          itemListElement: service.services.map((item, index) => ({
+            '@type': 'Offer',
+            position: index + 1,
+            itemOffered: {
+              '@type': 'Service',
+              name: item,
+            },
+          })),
+        },
+      },
+      this.breadcrumbStructuredData([
+        { name: 'Home', url: `${siteUrl}/uae/home` },
+        { name: 'Services', url: `${siteUrl}/uae/home#services` },
+        { name: service.shortTitle, url },
+      ]),
+    ];
+  }
+
+  private breadcrumbStructuredData(items: { name: string; url: string }[]): unknown {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: item.url,
+      })),
+    };
   }
 
   openBookingModal(event: Event) {

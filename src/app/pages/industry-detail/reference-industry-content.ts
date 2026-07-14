@@ -67,292 +67,23 @@ export const referenceIndustryContent: Record<string, ReferenceIndustryContent> 
     ],
     lawTitle: '📋 UAE Laws & FTA Rules — Restaurants & F&B (Verified)',
     laws: [
-      '1. Standard VAT rate – 5%:UAE VAT Law (Federal Decree Law No. 8 of 2017) sets a standard VAT rate of 5% on most supplies of goods and services, including restaurant food and beverage.',
-      '2. Mandatory VAT registration – AED 375,000:Restaurants must register for VAT when taxable supplies in the last 12 months exceed AED 375,000, as per FTA guidance and Cabinet Decision No. 52 of 2017 (Executive Regulations).',
-      '3. VAT filing – VAT201 returns (usually quarterly):Most F&B businesses file VAT201 returns every quarter via the FTA portal; wrong or late returns can trigger administrative penalties under the Tax Procedures Law and updated FTA fine schedule.',
-      '4. Staff meals and hospitality – deemed supplies rules\nFree or discounted staff meals and hospitality can be treated as “deemed supplies” if they go beyond normal business needs, and may require output VAT at 5% under VAT Law Articles on deemed supply and the Executive Regulations.',
-      '5. Promotional free meals & discounts\nPromotional meals given free or at deep discount to customers must follow specific VAT rules; some are taxable deemed supplies, others can be treated as normal taxable supplies with discounted value.',
-      '6. Input VAT recovery on costs\nRestaurants can usually recover input VAT on ingredients, rent, utilities, and equipment that are used for taxable supplies, following the input tax recovery conditions in the VAT Executive Regulations.',
-      '7. Excise tax – energy & carbonated drinks\nExcise tax is 100% on energy drinks and 50% on carbonated drinks, with an additional sugar based excise from 1 January 2026 that charges up to AED 1.09 per litre on high sugar beverages.',
-      '8. Sugar based excise – 2026 bands\nNew 2026 model:\no 8g or more sugar per 100 ml → AED 1.09 per litre.\no 5g to less than 8g per 100 ml → AED 0.79 per litre.\no Less than 5g sugar or only artificial sweeteners → 0 AED per litre.',
-      '9. Tourist VAT Refund Scheme – Planet Tax Free\nOverseas tourists (18+) can reclaim VAT on eligible retail purchases through the Planet Tax Free system; restaurant meals and most F&B services are generally excluded from refunds.',
-      '10. Tourism Dirham & hotel fees\nTourism Dirham and hotel tourism fees apply to accommodation under DET resolutions, but food and beverage sold by the restaurant is still subject to 5% VAT unless specifically exempt or zero rated.',
-      '11. FTA penalties – updated schedule\nThe FTA penalty framework (including Cabinet Decisions and 2026 updates) sets fines for late registration, late filing, late payment and incorrect VAT returns; staying compliant avoids cumulative % penalties on unpaid tax.',
-      '12. E invoicing mandate – Peppol 2026–2027\nUAE has announced Peppol based e invoicing legislation (Ministerial Decisions 243 & 244 of 2025); phases start from July 2026 with full mandatory B2B/B2G e invoicing for larger businesses from January 2027.',
+      'Standard VAT rate – 5%\nUAE VAT Law (Federal Decree Law No. 8 of 2017) sets a standard VAT rate of 5% on most supplies of goods and services, including restaurant food and beverage.',
+      'Mandatory VAT registration – AED 375,000\nRestaurants must register for VAT when taxable supplies in the last 12 months exceed AED 375,000, as per FTA guidance and Cabinet Decision No. 52 of 2017 (Executive Regulations).',
+      'VAT filing – VAT201 returns (usually quarterly)\nMost F&B businesses file VAT201 returns every quarter via the FTA portal; wrong or late returns can trigger administrative penalties under the Tax Procedures Law and updated FTA fine schedule.',
+      'Staff meals and hospitality – deemed supplies rules\nFree or discounted staff meals and hospitality can be treated as “deemed supplies” if they go beyond normal business needs, and may require output VAT at 5% under VAT Law Articles on deemed supply and the Executive Regulations.',
+      'Promotional free meals & discounts\nPromotional meals given free or at deep discount to customers must follow specific VAT rules; some are taxable deemed supplies, others can be treated as normal taxable supplies with discounted value.',
+      'Input VAT recovery on costs\nRestaurants can usually recover input VAT on ingredients, rent, utilities, and equipment that are used for taxable supplies, following the input tax recovery conditions in the VAT Executive Regulations.',
+      'Excise tax – energy & carbonated drinks\nExcise tax is 100% on energy drinks and 50% on carbonated drinks, with an additional sugar based excise from 1 January 2026 that charges up to AED 1.09 per litre on high sugar beverages.',
+      'Sugar based excise – 2026 bands\nNew 2026 model:\no 8g or more sugar per 100 ml → AED 1.09 per litre.\no 5g to less than 8g per 100 ml → AED 0.79 per litre.\no Less than 5g sugar or only artificial sweeteners → 0 AED per litre.',
+      'Tourist VAT Refund Scheme – Planet Tax Free\nOverseas tourists (18+) can reclaim VAT on eligible retail purchases through the Planet Tax Free system; restaurant meals and most F&B services are generally excluded from refunds.',
+      'Tourism Dirham & hotel fees\nTourism Dirham and hotel tourism fees apply to accommodation under DET resolutions, but food and beverage sold by the restaurant is still subject to 5% VAT unless specifically exempt or zero rated.',
+      'FTA penalties – updated schedule\nThe FTA penalty framework (including Cabinet Decisions and 2026 updates) sets fines for late registration, late filing, late payment and incorrect VAT returns; staying compliant avoids cumulative % penalties on unpaid tax.',
+      'E invoicing mandate – Peppol 2026–2027\nUAE has announced Peppol based e invoicing legislation (Ministerial Decisions 243 & 244 of 2025); phases start from July 2026 with full mandatory B2B/B2G e invoicing for larger businesses from January 2027.',
     ],
     storyTitle: 'How BookLean Helped This Restaurant Owner — Real Story',
     story:
       'When Rajan opened his second outlet in JBR, his accountant could not keep up with multi-location reconciliation. VAT returns were based on bank deposits, staff meals were not accounted for under the deemed supply rule, and he had no idea which outlet was profitable. Three months after joining BookLean, he had a real-time cost dashboard, correct VAT filings for both locations, and discovered that his Marina outlet was cross-subsidising JBR by AED 18,000 per month. He renegotiated his JBR supplier contracts and restructured the menu. Both outlets were cash-positive within 60 days. Clarity does that. BookLean does not just file your returns — we become the financial partner your restaurant actually needs to grow.',
     cta: 'Book a Free Restaurant Finance Review →',
-  },
-  ecommerce: {
-    tag: 'Ecommerce & Amazon Sellers UAE · Verified UAE Tax Laws 2026',
-    title: 'Ecommerce & Amazon Sellers — UAE VAT, FBA Obligations & Marketplace Accounting',
-    sub: 'UAE ecommerce is one of the fastest-growing sectors in the region — but the VAT obligations are complex and widely misunderstood. Amazon FBA UAE, Noon, Shopify, and cross-border digital services each carry distinct UAE VAT treatment. Most UAE sellers are non-compliant without knowing it. BookLean specialises in marketplace accounting and UAE ecommerce tax compliance.',
-    pain: [
-      {
-        title: 'Marketplace Payouts Never Match Bank Deposits',
-        description:
-          'Platform fees, FBA storage charges, return reversals, and currency conversion mean your bank deposits never match your Seller Central dashboard. Even a small monthly mismatch undetected across four VAT periods creates a material return error — and the FTA can cross-reference your data.',
-      },
-      {
-        title: 'VAT on Electronic Services — Widely Misunderstood',
-        description:
-          'Under UAE VAT Law Article 49, electronic services supplied to UAE consumers by overseas businesses are subject to UAE VAT — and the overseas supplier must register with the FTA. Many UAE-based ecommerce businesses also misclassify their supply type between goods, services, and digital supplies — applying the wrong rate as a result.',
-      },
-      {
-        title: 'Import VAT Paid at Customs — Never Reclaimed',
-        description:
-          'VAT paid at UAE customs on imported goods is reclaimable as input VAT — but only if your TRN is referenced on the customs declaration. Most ecommerce sellers pay import VAT every shipment and never reclaim it. This is real cash left with the FTA every single quarter.',
-      },
-      {
-        title: 'No True Inventory Costing = No True Margin',
-        description:
-          'Most online sellers track sales revenue but not true landed cost — purchase price, freight, customs duty, FBA storage, and return rate. Without proper COGS accounting, your stated margin is not your real margin, and pricing and sourcing decisions are made without accurate data.',
-      },
-    ],
-    sol: [
-      {
-        title: 'Marketplace Payout Reconciliation',
-        description:
-          'We reconcile Amazon Seller Central, Noon, and Shopify payouts to your UAE bank statement monthly — every fee, return, storage charge, and FX difference accounted for correctly in your books and VAT return.',
-      },
-      {
-        title: 'Correct UAE VAT Treatment by Supply Type',
-        description:
-          'We determine the correct VAT treatment for your specific supply — B2B goods, B2C goods, digital services, exports — and ensure your quarterly VAT returns reflect the right output VAT liability and input VAT recovery position.',
-      },
-      {
-        title: 'Import VAT Reclaim — Every Quarter',
-        description:
-          'We ensure your import declarations carry your TRN and reclaim every dirham of eligible input VAT on imported stock — with FTA-compliant customs documentation for every claim, every quarter.',
-      },
-      {
-        title: 'Landed Cost COGS Accounting',
-        description:
-          'We set up inventory accounting with true landed cost per unit — purchase price, freight, customs duty, import VAT — so your P&L shows your real margin per SKU, not just gross revenue minus supplier invoices.',
-      },
-    ],
-    lawTitle: '📋 UAE Laws — Ecommerce & Amazon Sellers (Verified)',
-    laws: [
-      'Supply of goods to UAE consumers: Standard rated — 5% VAT (UAE VAT Law Art. 3)',
-      'Mandatory VAT registration: Taxable supplies exceeding AED 375,000 in any 12-month period',
-      'Voluntary VAT registration: Available above AED 187,500 — recommended for input VAT recovery',
-      'Electronic services to UAE consumers (B2C): 5% UAE VAT — overseas supplier must register (Art. 49)',
-      'B2B digital services to UAE VAT-registered businesses: Reverse charge applies — buyer accounts for VAT',
-      'Export of goods outside UAE: Zero-rated — documentary proof of export required (Art. 30)',
-      'Import VAT (5%) at UAE customs: Fully reclaimable — TRN must be referenced on import declaration',
-      'Amazon FBA storage in UAE: Creates a fixed establishment — UAE VAT registration required',
-      'Customs duty on non-GCC imports: Standard rate 5% (alcohol, tobacco significantly higher)',
-      'UAE Corporate Tax at 9% on net business profit above AED 375,000 (Decree-Law 47/2022)',
-      'PEPPOL e-invoicing: Mandatory for B2B tax invoices — phased rollout from 2026',
-    ],
-    storyTitle: 'How BookLean Helped This Ecommerce Seller — Real Story',
-    story:
-      'Mia was selling AED 2.1M per year across Amazon UAE and Noon but had no clear picture of her actual profitability after platform fees, returns, and import costs. Her VAT returns were based on bank deposits — not gross marketplace revenue. Her import VAT had never been reclaimed across 18 months of shipments. BookLean set up automated marketplace reconciliation, corrected her VAT filing methodology, recovered AED 28,000 in import VAT she had been leaving with the FTA each quarter, and built a real-time COGS dashboard by SKU. She discontinued three unprofitable product lines within one quarter and reinvested in her top performers. Her net margin improved from 6% to 14% in four months. That is what proper ecommerce accounting looks like.',
-    cta: 'Book a Free Ecommerce Finance Review →',
-  },
-  realestate: {
-    tag: 'Real Estate & Construction Accounting UAE · Verified UAE Tax Laws 2026',
-    title: 'Real Estate & Construction — Property VAT, DLD Fees & Project Accounting',
-    sub: 'UAE real estate and construction carry some of the most complex VAT rules in the region. First supply, subsequent supply, commercial versus residential, bare land — each category has a completely different VAT treatment. Getting it wrong creates liability or permanently blocks input tax recovery. BookLean has handled VAT for UAE developers, main contractors, and subcontractors since 2018.',
-    pain: [
-      {
-        title: 'First vs Subsequent Supply — Developers Get This Wrong',
-        description:
-          'The first supply of a newly built commercial building: 5% VAT. First supply of a new residential building: zero-rated. Any subsequent supply of residential property: exempt — meaning no VAT charged AND no input VAT recovery on any related costs. Most developers do not plan their portfolio VAT position upfront and lose significant recoverable input tax on mixed-use projects.',
-      },
-      {
-        title: 'Retention Payments — VAT Timing Errors Are Common',
-        description:
-          'Under UAE VAT Executive Regulations, VAT on construction retention payments becomes due at the earlier of the date of invoice or the date of payment. This is not at project completion or defects liability period end. Most contractors defer retention VAT to when cash is actually received — creating a systematic under-declaration of output VAT each period.',
-      },
-      {
-        title: 'DLD Fee Included in VAT — A Direct Error',
-        description:
-          'The Dubai Land Department transfer fee (4%) is a government fee under Dubai Law No. 4 of 2014. It is NOT a taxable supply and must NOT appear in your VAT return. Many transactions are incorrectly processed with VAT applied to the DLD fee — an error that is difficult to correct retroactively.',
-      },
-      {
-        title: 'Project Cost Tracking Without Proper Costing',
-        description:
-          'Construction projects span years, involve dozens of subcontractors, variation orders, and retention releases. Without project-level cost accounting, you cannot track real profitability, correctly allocate input VAT between taxable and exempt use, or provide the audit trail the FTA expects during a review.',
-      },
-    ],
-    sol: [
-      {
-        title: 'Property VAT Structuring from Day One',
-        description:
-          'Before a development project starts, we map the VAT treatment of every supply type — commercial units, residential units, mixed-use floors — and build the input VAT apportionment model that maximises legitimate recovery from the outset.',
-      },
-      {
-        title: 'Correct Retention VAT Timing',
-        description:
-          'We track retention invoices and payments and declare VAT at the correct tax point — the earlier of invoice date or payment date — so your VAT returns always reflect the legally correct position, not a cash-basis approximation.',
-      },
-      {
-        title: 'Project-Level Cost Accounting',
-        description:
-          'We set up project accounting with cost codes for every contractor, variation, and material category — giving you real-time profitability per project and the correct VAT input allocation between taxable and exempt use for partial exemption purposes.',
-      },
-      {
-        title: 'Input VAT Apportionment Calculation',
-        description:
-          'For mixed-use developments, we calculate and apply the FTA-accepted partial exemption method each quarter — ensuring you recover the maximum allowable input VAT on shared costs such as design, infrastructure, and professional fees.',
-      },
-    ],
-    lawTitle: '📋 UAE Laws — Real Estate & Construction (Verified)',
-    laws: [
-      'First supply of new commercial building: Standard rated — 5% VAT (UAE VAT Law Art. 45)',
-      'First supply of new residential building (within 3 years of completion): Zero-rated — input VAT fully recoverable (Cabinet Decision 52/2017, Sch. 3)',
-      'Subsequent supply of residential property: Exempt — NO VAT charged, NO input VAT recovery (Art. 46)',
-      'Bare undeveloped land: Exempt from VAT — not a taxable supply',
-      'Commercial real estate rental: Standard rated — 5% VAT',
-      'Residential property long-term rental: Exempt from VAT (Cabinet Decision 52/2017)',
-      'Construction services: Standard rated — 5% VAT (Art. 3)',
-      'DLD transfer fee (4% in Dubai): NOT subject to VAT — government fee (Dubai Law No. 4/2014)',
-      'Retention payment VAT tax point: Earlier of invoice date or payment date (Art. 25, Exec. Reg.)',
-      'Off-plan sales instalments: VAT due at each instalment payment — not at handover',
-      'Mixed-use development: Partial exemption required — apportion input VAT by taxable vs exempt use',
-      'UAE Corporate Tax at 9% on trading profits above AED 375,000 (Decree-Law 47/2022)',
-    ],
-    storyTitle: 'How BookLean Helped This Real Estate Developer — Real Story',
-    story:
-      'A UAE property developer approached BookLean mid-project having applied 5% VAT on all units in a mixed residential-commercial development. The residential units on first supply should have been zero-rated — not standard rated. BookLean identified AED 340,000 in incorrectly charged output VAT, filed voluntary disclosures with the FTA, issued corrected tax invoices to buyers, and rebuilt the input VAT apportionment model — recovering AED 180,000 in input tax that had never been claimed on shared infrastructure costs. The FTA accepted the voluntary disclosures without penalties. The lesson: VAT planning before a development begins is not optional — it determines your actual project margin. Once units are sold at the wrong VAT rate, the correction is costly and time-consuming.',
-    cta: 'Book a Free Property Finance Review →',
-  },
-  healthcare: {
-    tag: 'Healthcare & Clinics Accounting UAE · Verified UAE Tax Laws 2026',
-    title: 'Healthcare & Clinics — Zero-Rated Services, Cosmetic VAT & Insurance Billing',
-    sub: 'UAE healthcare VAT has three categories — zero-rated, standard-rated (5%), and exempt — and the boundary between them is not always clear. Most clinics are either charging VAT on zero-rated services, claiming input VAT they are not entitled to, or both. BookLean specialises in UAE healthcare accounting for DHA, DOH, and MOH-licensed facilities across Dubai and Abu Dhabi.',
-    pain: [
-      {
-        title: 'Charging 5% VAT on Zero-Rated Medical Services',
-        description:
-          'Under Cabinet Decision No. 52 of 2017 (Schedule 3), preventive and curative healthcare services supplied by a licensed healthcare provider are zero-rated — not 5%. Many clinics apply 5% across all consultations and procedures, overcharging patients and overstating output VAT on their returns. Both need to be corrected — and the patient correction is the harder one.',
-      },
-      {
-        title: 'Cosmetic vs Medical — Documentation Is Everything',
-        description:
-          'A cosmetic rhinoplasty: 5% VAT. The same procedure to correct a deviated septum with documented breathing impairment: zero-rated as a curative supply. The law does not draw a bright line — clinical documentation supporting medical necessity is what determines the VAT treatment. Most clinics do not have this documentation framework in place.',
-      },
-      {
-        title: 'Employee Health Insurance — Input VAT Claimed Incorrectly',
-        description:
-          'Under Article 53 of the UAE VAT Executive Regulations, input VAT on employee health insurance premiums is specifically blocked from recovery. This is one of the most commonly misunderstood blocked input VAT categories — many clinics and businesses claim it routinely, creating a liability discovered only at audit.',
-      },
-      {
-        title: 'Insurance Billing Reconciliation — Revenue Distorted',
-        description:
-          'Insurance claim submissions, partial approvals, co-payment splits, rejections, and resubmissions create a reconciliation challenge that most clinic accounting systems cannot handle without specialist configuration. Without clean reconciliation, VAT returns are based on incorrect revenue figures — an automatic FTA audit risk.',
-      },
-    ],
-    sol: [
-      {
-        title: 'Service Classification Framework',
-        description:
-          'We build a documented VAT classification matrix for every service your clinic provides — zero-rated preventive/curative, standard-rated cosmetic/elective, out-of-scope government fees — with clinical criteria and FTA guidance references for each. Audit-ready from day one.',
-      },
-      {
-        title: 'Insurance Reconciliation — Clean Monthly',
-        description:
-          'We reconcile insurance claims, approvals, co-pays, rejections, and resubmissions against your PMS and accounting system every month. Your VAT return is always based on actual collected revenue — not billed amounts or bank receipts alone.',
-      },
-      {
-        title: 'Partial Exemption Calculation',
-        description:
-          'For clinics providing both zero-rated medical and standard-rated cosmetic services, we calculate the correct input VAT recovery ratio every quarter and perform the required annual adjustment — so you recover exactly what you are entitled to, and nothing more.',
-      },
-      {
-        title: 'Medical Equipment Import VAT Reclaim',
-        description:
-          'Approved medical equipment and pharmaceuticals imported from overseas attract import VAT at customs — and it is reclaimable. We ensure every import declaration references your TRN and that all eligible input VAT claims are captured in your quarterly return.',
-      },
-    ],
-    lawTitle: '📋 UAE Laws — Healthcare & Clinics (Verified)',
-    laws: [
-      'Preventive & curative healthcare by licensed facility: Zero-rated — 0% VAT (Cabinet Dec. 52/2017, Sch. 3)',
-      'Cosmetic & elective procedures (not medically necessary): Standard rated — 5% VAT',
-      'Approved human medicines: Zero-rated (FTA Taxable Goods and Services Guide)',
-      'Approved medical equipment: Zero-rated (FTA Taxable Goods and Services Guide)',
-      'Non-approved supplements, general wellness products: Standard rated — 5% VAT',
-      'Patient co-payment: Same VAT rate as the underlying medical service supplied',
-      'Employee health insurance premiums: Input VAT BLOCKED — NOT reclaimable (Art. 53, Exec. Reg.)',
-      'DHA, DOH, MOH licence and regulatory fees: Outside scope of VAT — government fees',
-      'Services by unlicensed provider: Standard rated — zero-rating requires valid licence',
-      'Mixed services clinic (medical + cosmetic): Partial exemption — input VAT apportionment required',
-      'UAE Corporate Tax at 9% on clinic net profit above AED 375,000 (Decree-Law 47/2022)',
-    ],
-    storyTitle: 'How BookLean Helped This Clinic — Real Story',
-    story:
-      "A multi-specialty clinic in Dubai Healthcare City had been applying 5% VAT to all services for 14 months — including zero-rated GP consultations, diagnostic tests, and physiotherapy sessions. BookLean's review identified AED 164,000 in incorrectly collected output VAT and AED 38,000 in input VAT incorrectly claimed on employee health insurance premiums. We filed voluntary disclosures with the FTA, issued corrected tax invoices to patients as credit notes, rebuilt the billing system with correct VAT codes per service, and restructured the insurance reconciliation process. The FTA accepted all disclosures. No penalties were issued. Getting healthcare VAT right from the start matters — the cost of corrections is high, and the reputational risk with patients even higher.",
-    cta: 'Book a Free Healthcare Finance Review →',
-  },
-  tech: {
-    tag: 'Technology & SaaS Startup Accounting UAE · 2026',
-    title: 'Technology & SaaS Startups — Investor-Ready Financials & UAE Tax Structuring',
-    sub: 'UAE tech startups need more than bookkeeping. They need IFRS-compliant financials, correct SaaS revenue recognition, a correctly structured entity, and a clear UAE Corporate Tax position before a due diligence team arrives. BookLean has helped UAE startups close angel rounds and Series A raises with financial statements that pass investor scrutiny.',
-    pain: [
-      {
-        title: 'Investor Due Diligence Fails — Messy Books Kill Deals',
-        description:
-          'Most UAE startup founders focus on product and growth and discover — when an investor requests financial statements — that they have 18 months of unreconciled bank transactions, no revenue recognition policy, and a spreadsheet. Clean books close rounds. Messy books lose them. We have seen both outcomes.',
-      },
-      {
-        title: 'SaaS Revenue Recognition Is Complex',
-        description:
-          'Under IFRS 15, SaaS subscription revenue must be recognised over the service period — not on receipt of cash. Annual subscriptions collected upfront create deferred revenue. Multi-element arrangements (software + implementation + support) require revenue allocation. Standard bookkeeping software without specialist configuration gets this wrong consistently.',
-      },
-      {
-        title: 'Free Zone 0% CT — Most Startups Do Not Actually Qualify',
-        description:
-          'Free zone companies qualify for 0% Corporate Tax as a Qualifying Free Zone Person (QFZP) only if they earn qualifying income exclusively and maintain genuine economic substance. A UAE startup with paying UAE mainland customers almost certainly earns non-qualifying income. If this exceeds 5% of total revenue or AED 5 million, the entire entity is taxed at 9% on all income for that year.',
-      },
-      {
-        title: 'ESOP Accounting Ignored Until Due Diligence',
-        description:
-          'Employee share options and phantom equity create share-based payment expenses under IFRS 2 that must be recognised in the P&L. Most UAE startups issue options with no accounting entries at all — creating a restatement risk that surfaces exactly when an investor runs due diligence. Not the right moment to discover a material accounting adjustment.',
-      },
-    ],
-    sol: [
-      {
-        title: 'Investor-Ready Financials from Month One',
-        description:
-          'We set up your chart of accounts, revenue recognition policy, and monthly close process from day one — so when an investor requests 18 months of financials, you send them in 48 hours, not six weeks.',
-      },
-      {
-        title: 'IFRS 15 Revenue Recognition for SaaS',
-        description:
-          'We configure your accounting system to correctly recognise subscription revenue over the service period, defer upfront annual payments as deferred revenue, and allocate multi-element arrangements correctly — IFRS 15 compliant from the start.',
-      },
-      {
-        title: 'QFZP Eligibility Assessment & CT Structuring',
-        description:
-          'We assess your actual qualifying income percentage based on your specific revenue streams, advise on the most tax-efficient UAE entity structure for your business model, and handle Corporate Tax registration and annual filing.',
-      },
-      {
-        title: 'Virtual CFO for Fundraising',
-        description:
-          'We prepare investor data rooms, financial models, board reports, and cap table analysis — acting as your outsourced CFO through the fundraising process without the cost of a full-time senior hire.',
-      },
-    ],
-    lawTitle: '📋 UAE Laws — Technology & SaaS Startups (Verified)',
-    laws: [
-      'B2B SaaS to UAE-registered businesses: Standard rated — 5% VAT (UAE VAT Law Art. 3)',
-      'B2C electronic/digital services to UAE consumers: 5% VAT — overseas supplier must register (Art. 49)',
-      'Free zone company: 0% CT only if QFZP — qualifying income only, genuine substance required',
-      'Non-qualifying income exceeding 5% of revenue OR AED 5M: Entire entity taxed at 9% on all income',
-      'UAE CT Small Business Relief: Revenue below AED 3M — elect 0% CT (valid to 31 Dec 2026)',
-      'Tax Group formation: Available under UAE CT for commonly-owned UAE entities (Art. 40)',
-      "Transfer pricing: Related party transactions must be at arm's length — documentation required",
-      'R&D expenditure: Expensed or capitalised — affects taxable income; R&D tax credits available',
-      'ESOP/VSOP: Share-based payment expense — IFRS 2 accounting required',
-      'DIFC/ADGM entities: Separate regulatory regime under DFSA/FSRA — different CT treatment',
-      'PEPPOL e-invoicing: Mandatory for B2B tax invoices — phased rollout from 2026',
-    ],
-    storyTitle: 'How BookLean Helped This UAE Startup — Real Story',
-    story:
-      "Ahmed's SaaS company was 18 months old and closing a Series A when his lead investor requested IFRS-compliant financial statements for the prior two years. He had a spreadsheet. BookLean reconstructed 20 months of records from bank statements and payment processor exports, implemented IFRS 15 revenue recognition with correct deferred revenue accounting, produced two-year comparative financial statements, and prepared the complete investor data room — in five weeks. Ahmed closed the round. That is what being investor-ready actually means — and it starts on month one, not month 18.",
-    cta: 'Book a Free Startup Finance Review →',
   },
   retail: {
     tag: 'Retail & Consumer Brands Accounting UAE · Verified UAE Tax Laws 2026',
@@ -360,67 +91,135 @@ export const referenceIndustryContent: Record<string, ReferenceIndustryContent> 
     sub: 'UAE retail means managing VAT across in-store, online, and marketplace channels simultaneously. Promotional discounts, gift cards, stock write-offs, and the Tourist Tax Refund scheme all carry specific VAT rules under UAE law that most retailers handle incorrectly. BookLean has handled retail accounting from single-store boutiques to multi-emirate chains.',
     pain: [
       {
-        title: 'VAT on Discounts — Paying Tax on Money Not Collected',
+        title: 'VAT on discounts – paying tax on money not collected',
         description:
-          'Under UAE VAT Executive Regulations Article 28, VAT applies to the discounted amount actually charged to the customer — not the original list price. Many retailers issue invoices at full price and apply discounts in the POS without reflecting them on the tax invoice — meaning they declare and pay VAT on revenue they never actually collected.',
+          'UAE VAT rules say VAT is charged on the taxable amount after valid discounts funded by the retailer, but many outlets still pay VAT on the full list price even when coupons or promo codes reduce what the customer actually pays.',
       },
       {
-        title: 'Gift Cards — VAT Deferred to Redemption, Not Sale',
+        title: 'Gift cards – VAT deferred to redemption, not sale',
         description:
-          'Under the FTA Vouchers Guide, VAT on gift cards and vouchers is due at the point of redemption — not when the card is sold. Most retailers account for gift card VAT at point of sale, creating a systematic overpayment that accumulates every quarter.',
+          'Under UAE VAT rules on vouchers, VAT is normally due when the card is redeemed for goods or services, not when the card is sold, yet many retailers treat gift card sales as fully taxable and mis time their VAT.',
       },
       {
-        title: 'Stock Write-Offs — VAT Adjustment Ignored',
+        title: 'Stock write offs – VAT adjustment ignored',
         description:
-          'When goods are written off as damage or wastage, the input VAT originally claimed on purchasing those goods must be adjusted. When goods are stolen, the input VAT clawback is NOT required — but the theft must be properly documented. Most retailers write off stock with no VAT adjustment of any kind, creating a liability that builds over time.',
+          'Damaged, expired or obsolete stock is often written off in the accounts with no review of VAT; retailers either reverse too much input VAT or keep claiming VAT on stock that is no longer usable, creating inconsistent positions if the FTA reviews their inventory records.',
       },
       {
-        title: 'Tourist Tax Refund — Not Set Up for Eligible Retailers',
+        title: 'Tourist VAT refund – not set up for eligible retailers',
         description:
-          'The UAE TRF scheme allows tourists to reclaim VAT on retail purchases of goods — clothing, electronics, jewellery, and similar — at qualifying UAE retailers registered with Planet Payment. Many eligible UAE retailers are not registered and their international customers are asking for TRF receipts that cannot be issued.',
+          'Many fashion, electronics and jewellery stores qualify for the UAE Tourist Refund Scheme but are not registered with Planet Tax Free or do not issue compliant tax invoices, meaning tourists cannot reclaim VAT and retailers lose a key competitive advantage.',
       },
     ],
     sol: [
       {
-        title: 'Correct VAT on Every Promotion Type',
+        title: 'Correct VAT on every promotion type',
         description:
-          'We configure your billing system to apply UAE VAT correctly on every promotion — discounts, buy-one-get-one, free gifts with purchase, loyalty point redemptions, and gift cards — with correct tax invoice formats for each scenario.',
+          'We configure your billing systems so percentage discounts, coupons, “VAT on us” offers and loyalty points follow Article 28 of the Executive Regulations – VAT on net price when you fund the discount, VAT on the full pre discount price when a brand or third party funds it.',
       },
       {
-        title: 'Gift Card Revenue Recognition & VAT',
+        title: 'Gift card revenue recognition & VAT',
         description:
-          'We set up deferred revenue accounting for gift card sales and apply VAT correctly at redemption — not at sale — so your VAT return, revenue recognition, and financial statements are all correct and consistent.',
+          'We set clear rules for gift card sales and redemptions: VAT recognised when goods or services are supplied, breakage handled correctly, and POS reports linked to your accounting system so gift card liability and VAT are always aligned.',
       },
       {
-        title: 'Stock Write-Off VAT Adjustments',
+        title: 'Stock write off VAT adjustments',
         description:
-          'We process monthly write-offs with the correct VAT treatment — input VAT adjustment for wastage and damage, documentation protocol for theft (where input VAT clawback is not required) — so your VAT return reflects your actual stock position correctly.',
+          'We design a documented process for stock write offs, separating normal shrinkage and damage from non business use, so you only adjust input VAT when required and can show the FTA why your VAT recovery on written off stock is still valid.',
       },
       {
-        title: 'Tourist Refund Scheme Registration',
+        title: 'Tourist refund scheme registration',
         description:
-          'We register your retail outlets with Planet Payment for the UAE TRF scheme and configure your POS to issue compliant TRF tax invoices — opening your business to international tourist VAT refund claims on eligible retail purchases.',
+          'We register your store with Planet Tax Free, configure POS tax invoices to TRR standards, and train your staff so eligible tourists can reclaim VAT smoothly while you keep full, compliant records for each tax free sale.',
       },
     ],
-    lawTitle: '📋 UAE Laws — Retail & Consumer Brands (Verified)',
+    lawTitle: 'UAE Laws — Retail & Consumer Brands (Verified)',
     laws: [
-      'Standard retail goods supplied in UAE: Standard rated — 5% VAT (UAE VAT Law Art. 3)',
-      'Promotional discounts: VAT applies to actual discounted amount charged — not list price (Art. 28, Exec. Reg.)',
-      'Gift cards & vouchers: VAT due at redemption — not at point of sale (FTA Vouchers Public Clarification)',
-      'Stock written off as wastage/damage: Input VAT adjustment required — clawback applies',
-      'Stock written off as theft: Input VAT clawback NOT required — must be evidenced as theft',
-      'Tourist Tax Refund (TRF): Available on retail goods (clothing, electronics, jewellery) — minimum AED 250',
-      'TRF: NOT applicable to food & beverage, services, or consumables',
-      'TRF: Planet Payment registration required — specific POS invoice format mandatory',
-      'Import duty on non-GCC goods: 5% standard rate (alcohol/tobacco significantly higher)',
-      'Import VAT (5%) at UAE customs: Fully reclaimable — TRN must appear on customs declaration',
-      'Input VAT on store fit-out, fixtures, signage: Fully reclaimable as business expenses',
-      'UAE Corporate Tax at 9% on net profit above AED 375,000 (Decree-Law 47/2022)',
+      'Standard VAT rate – 5% on most retail sales\nRetail goods in the UAE are generally standard rated at 5% VAT at the point of sale, except specific exempt or zero rated items.',
+      'VAT on discounts – Executive Regulations Article 28\nThe value of supply can be reduced for discounts only when the customer benefits and the supplier funds the discount; otherwise VAT applies on the pre discount price.',
+      'Third party funded promotions (brands, issuers)\nWhere a brand or card issuer reimburses part of the price, that reimbursement is still consideration for the supply, so VAT is due on the full price before discount, not just what the shopper pays.',
+      'Gift cards and vouchers – VAT at redemption\nSingle purpose vouchers and gift cards follow special rules – VAT is generally recognised when the goods/services are supplied, and retailers must track redemptions carefully for correct VAT timing.',
+      '“VAT free” or “VAT on us” offers – VATP020\nFTA Public Clarification VATP020 confirms that “VAT free” offers are not truly VAT free; businesses must still charge 5% VAT and treat the offer as a discount that reduces the taxable value.',
+      'Stock write offs – documentation and VAT recovery\nUAE VAT law does not automatically treat damaged or expired stock write offs as deemed supplies, but businesses must keep strong records to show that input VAT was originally incurred for taxable supplies and remains recoverable.',
+      'Returns and refunds – credit notes\nWhen customers return goods, retailers must issue tax credit notes and adjust output VAT to match the reduced consideration, following invoice rules in the Executive Regulations.',
+      'Tourist VAT Refund Scheme – Planet Tax Free\nVAT registered retailers selling eligible goods (such as clothing, electronics, jewellery) can offer tax free shopping by integrating with the Planet Tax Free system and meeting TRR invoice and process requirements.',
+      'TRR scope – goods only, not services or food\nThe tourist refund scheme applies to qualifying goods that tourists export with them; services and most food & beverage are excluded, so retail invoices must clearly show what is eligible.',
+      'Tax invoice format – Article 59 requirements\nRetail tax invoices must include the supplier’s TRN, date, a unique invoice number, VAT inclusive price, VAT amount and “Tax Invoice” wording to meet Article 59 of the Executive Regulations and TRR conditions.',
+      'Registration thresholds – AED 375,000 / 187,500\nVAT registration is mandatory when taxable supplies exceed AED 375,000 in 12 months; voluntary registration is allowed above AED 187,500, which many growing retailers choose to access input VAT recovery.',
+      'FTA penalties and audit risk\nIncorrect discounts, mis timed VAT on vouchers and poor documentation for stock write offs can attract FTA assessments and penalties under the updated penalty schedule for VAT compliance.',
     ],
     storyTitle: 'How BookLean Helped This Retailer — Real Story',
     story:
-      'A fashion retailer with four locations across Dubai and Abu Dhabi came to BookLean after the FTA issued a desk review notice querying their input VAT claims. Their previous accountant had been applying input VAT clawback to stock stolen from stores — which is not required under UAE VAT law when theft is properly documented. They had also been issuing full-price VAT invoices for discounted sales and paying VAT on the original list price rather than the discounted amount actually charged. BookLean corrected both positions through voluntary disclosures, recovered AED 22,000 in legitimately structured input VAT that had been missed, reconfigured the POS to generate correct UAE VAT invoices for every transaction type, and registered them for the Tourist Tax Refund scheme. The FTA desk review closed without penalties or additional assessments.',
+      'A fashion retailer with four locations in Dubai and Abu Dhabi noticed that VAT on discounts and gift cards never matched POS reports. Their accountant was unsure when to recognise VAT on vouchers and whether stock write offs required input tax reversal.\nBookLean reviewed three years of promotion data, mapped discounts to Article 28, fixed gift card revenue recognition, and introduced a proper stock write off approval workflow.\nWithin one quarter, their VAT returns matched POS data, tourist refund sales increased, and their next FTA review closed without penalties or additional assessments.',
     cta: 'Book a Free Retail Finance Review →',
+  },
+  ecommerce: {
+    tag: 'Ecommerce & Amazon Sellers UAE · Verified UAE Tax Laws 2026',
+    title: 'Ecommerce & Amazon Sellers — UAE VAT, FBA Obligations & Marketplace Accounting',
+    sub: 'UAE ecommerce is one of the fastest-growing sectors in the region — but the VAT obligations are complex and widely misunderstood. Amazon FBA UAE, Noon, Shopify, and cross-border digital services each carry distinct UAE VAT treatment. Most UAE sellers are non-compliant without knowing it. BookLean specialises in marketplace accounting and UAE ecommerce tax compliance.',
+    pain: [
+      {
+        title: 'Marketplace payouts never match bank deposits',
+        description:
+          'Amazon, Noon and other marketplaces pay out after deducting commissions, storage fees, shipping and sometimes import VAT charged to customers, so seller statements rarely match bank deposits or VAT returns.',
+      },
+      {
+        title: 'VAT on electronic services – widely misunderstood',
+        description:
+          'Many overseas SaaS, app and digital content providers sell to UAE consumers without realising that 5% UAE VAT can apply where the service is used or enjoyed in the UAE, and non resident suppliers may need UAE VAT registration.',
+      },
+      {
+        title: 'Import VAT paid at customs – never reclaimed',
+        description:
+          'E commerce sellers often pay 5% import VAT and customs duty on inbound shipments but do not record it properly, so they miss out on recovering eligible input VAT on goods they later sell.',
+      },
+      {
+        title: 'No true inventory costing = no true margin',
+        description:
+          'Without landed cost accounting (purchase price, freight, customs duty, import VAT and marketplace fees per SKU), sellers guess their margins and pricing decisions, and VAT returns do not clearly tie back to stock movements.',
+      },
+    ],
+    sol: [
+      {
+        title: 'Marketplace payout reconciliation',
+        description:
+          'We reconcile Amazon Seller Central, Noon, and other marketplace reports to your UAE bank account and accounting system every month, mapping fees, commissions, refunds and VAT so your sales and VAT201 return line up.',
+      },
+      {
+        title: 'Correct VAT treatment by supply type',
+        description:
+          'We classify each transaction correctly – goods in the UAE, cross border imports, B2B vs B2C, and digital services – so your invoices and marketplace settings apply 5% VAT, zero rate or “outside scope” exactly as the UAE VAT law requires.',
+      },
+      {
+        title: 'Import VAT reclaim – every quarter',
+        description:
+          'We capture import VAT from customs and courier statements, match it to TRN registered businesses, and document each shipment so eligible import VAT can be reclaimed in your VAT201 return instead of becoming a permanent cost.',
+      },
+      {
+        title: 'Landed cost & COGS accounting',
+        description:
+          'We build landed cost per unit (purchase price, freight, duty, import VAT, marketplace fees) and link it to your SKUs, giving you real margins by product and clean audit trails for inventory and VAT.',
+      },
+    ],
+    lawTitle: 'UAE laws — Ecommerce & Amazon sellers (verified)',
+    laws: [
+      'Supply of goods via ecommerce – 5% VAT\nMost online sales of goods to UAE customers are standard rated at 5% VAT under Federal Decree Law No. 8 of 2017 and its Executive Regulations.',
+      'Domestic sellers – registration thresholds\nUAE resident sellers must register for VAT once taxable supplies and imports exceed AED 375,000 (mandatory) or AED 187,500 (voluntary), thresholds that apply equally to ecommerce and offline businesses.',
+      'Non resident sellers – nil threshold\nNon resident sellers shipping goods located in the UAE to UAE customers must register for VAT from the first taxable supply – there is no registration threshold for non residents.',
+      'Marketplace vs seller VAT responsibility\nIn most Amazon and Noon marketplace models the seller, not the platform, is responsible for charging 5% VAT, issuing UAE tax invoices and reporting VAT, unless the platform is acting as principal reseller.',
+      'Prices must be VAT inclusive on marketplace listings\nMarketplace pricing policies require listed prices to be inclusive of any VAT, customs duty or other taxes, so VAT must be built into consumer prices and then correctly split in your accounts.',
+      'Import VAT and customs duty – input tax recovery\nImport VAT paid on goods brought into the UAE can generally be recovered by VAT registered sellers when those goods are used for taxable supplies, provided customs and courier documents are properly retained.',
+      'Digital services to UAE customers\nDigital services (apps, SaaS, streaming, downloads) supplied to UAE customers can be taxable in the UAE when the place of use/enjoyment is the UAE, and non resident digital suppliers may need UAE VAT registration.',
+      'B2B vs B2C – invoicing and VAT place of supply\nPlace of supply and invoicing rules differ for B2B (business) and B2C (consumer) transactions; correct classification is important for cross border ecommerce and digital services compliance.',
+      'Tax invoices and records – Executive Regulations\nOnline sellers must issue UAE compliant tax invoices (TRN, date, unique number, VAT inclusive price and VAT amount) and keep VAT records for at least 5–7 years under the VAT Executive Regulations and Tax Procedures Law.',
+      'E invoicing (Peppol) – 2026–2027 rollout\nMinisterial Decisions 243 and 244 of 2025 introduce a Peppol based electronic invoicing system: voluntary pilot from 1 July 2026, mandatory for large taxpayers (≥ AED 50m revenue) from 1 January 2027, and for remaining B2B/B2G taxpayers from 1 July 2027.',
+      'Penalties for non compliance\nFailure to register, issue proper invoices, or comply with e invoicing can lead to administrative penalties under the updated Tax Procedures Law and Cabinet penalty decisions, making accurate ecommerce records essential.',
+      'Tourist VAT refund – goods taken out of UAE\nThe Tourist Refund Scheme via Planet Tax Free applies to eligible goods physically taken out of the UAE; pure digital services and many courier shipped items do not qualify unless they meet scheme conditions.',
+    ],
+    storyTitle: 'How BookLean Helped This Ecommerce Seller — Real Story',
+    story:
+      'An Amazon/Noon seller shipping cosmetics into the UAE struggled to match marketplace payouts with bank deposits and VAT returns. Import VAT paid at customs was left as a cost, and digital add on services were not treated correctly for VAT.\nBookLean cleaned three years of marketplace data, built SKU level landed costs, registered the seller for UAE VAT, and set up quarterly import VAT recovery with full documentation.\nWithin one year, the seller’s VAT returns matched platform reports, margins by SKU were clear, and they were ready for the Peppol e invoicing pilot without penalties or surprise assessments.',
+    cta: 'Book a Free Ecommerce Finance Review →',
   },
   hospitality: {
     tag: 'Hospitality & Tourism Accounting UAE · Verified UAE Tax Laws 2026',
@@ -428,134 +227,268 @@ export const referenceIndustryContent: Record<string, ReferenceIndustryContent> 
     sub: 'Hotels, holiday homes, and tour operators in UAE face a unique combination of tax obligations — VAT on room revenue calculated on the gross amount, Tourism Dirham and municipality fees that are specifically not VATable, OTA commissions with their own input VAT treatment, and short-term versus long-term rental rules that change everything. BookLean understands the full hospitality accounting stack from PMS to FTA return.',
     pain: [
       {
-        title: 'OTA Commissions — VAT on Net Payout Is Wrong',
+        title: 'OTA commissions – VAT on net payout is wrong',
         description:
-          'When Booking.com or Expedia deducts its commission before paying out, your bank receives the net amount. But UAE VAT is due on the full room rate charged to the guest — the gross amount — not on the net payout after OTA commission. Hotels that declare output VAT based on bank receipts systematically understate their VAT liability every quarter.',
+          'Booking.com and other OTAs deduct commissions, card fees and sometimes Tourism Dirham before the hotel receives the net amount, but UAE VAT is due on the full room rate that the guest pays, not the net payout to the hotel.',
       },
       {
-        title: 'Tourism Dirham Included in VATable Revenue',
+        title: 'Tourism Dirham included in VATable revenue',
         description:
-          "The Dubai Tourism Dirham (AED 7–20 per room per night by hotel category) is collected by hotels on behalf of DTCM. It is not the hotel's income. It is NOT subject to VAT and must NOT be included in the VAT return as taxable turnover. Many hotels include it — overpaying VAT consistently with no easy mechanism to recover the overpayment.",
+          'Some hotels treat Tourism Dirham as part of taxable room revenue, but Tourism Dirham is a separate nightly fee collected for DET and should not be subject to 5% VAT.',
       },
       {
-        title: 'Holiday Home Operators — VAT Registration Ignored',
+        title: 'Holiday home operators – VAT registration ignored',
         description:
-          'Short-term rental operators providing accommodation for periods under 30 days are making taxable supplies at 5% VAT. If their annual taxable supplies exceed AED 375,000, VAT registration is mandatory. Many Dubai holiday home operators cross this threshold in their first year and do not register — accumulating backdated VAT liability and facing a fixed AED 20,000 late registration penalty.',
+          'Many Dubai holiday home hosts exceed the VAT threshold on short term stays but stay unregistered, mixing Tourism Dirham and income in one line and risking FTA penalties for undeclared 5% VAT on accommodation.',
       },
       {
-        title: 'Short-Term vs Long-Term Rental — VAT Changes',
+        title: 'Short term vs long term rental – VAT changes not understood',
         description:
-          'Short-term accommodation (under 30 consecutive days): 5% VAT standard rated. Residential accommodation under a long-term contract (30 days or more, residential purpose): Exempt from VAT. When hotels convert rooms to long-term leases, the VAT treatment changes completely — and so does the input VAT recovery position on costs relating to those rooms.',
+          'Hotels and serviced apartment operators often apply 5% VAT to long term residential leases, or fail to charge VAT on short term, hospitality style stays, because they do not clearly separate exempt residential rent from taxable short term accommodation.',
       },
     ],
     sol: [
       {
-        title: 'Gross Revenue VAT Reporting',
+        title: 'Cross revenue VAT reporting',
         description:
-          'We configure your revenue accounting to declare output VAT on gross room revenue — including the portion paid by OTAs as commission — and separately claim OTA commission as input VAT. Your return correctly reflects both sides of the transaction.',
+          'We configure hotel accounting so OTA gross room revenue, net payouts, Tourism Dirham, service charges and municipality fees are clearly separated, and VAT201 reflects the correct taxable base.',
       },
       {
-        title: 'Tourism Dirham & Municipality Fee Segregation',
+        title: 'Tourism Dirham & municipality fee segregation',
         description:
-          'We correctly classify Tourism Dirham and municipality fee collections as pass-through liabilities — outside your VATable turnover — and ensure they are reported separately and never included in output VAT calculations.',
+          'We design invoice and PMS reports so Tourism Dirham, city tax, municipality and service charges are booked as fees, not VATable revenue, keeping them separate from 5% VAT on accommodation.',
       },
       {
-        title: 'Holiday Home VAT Compliance',
+        title: 'Holiday home VAT compliance',
         description:
-          'We register holiday home operators for VAT, set up correct invoice templates, and ensure monthly VAT accounting matches your property management system — whether you manage one unit or a portfolio of fifty.',
+          'We review your holiday home turnover against AED 375,000 / 187,500 thresholds, help obtain VAT registration when required, and set up processes to charge 5% VAT on short term stays, issue tax invoices and file returns on time.',
       },
       {
-        title: 'PMS-to-Accounts Reconciliation',
+        title: 'PMS to accounts reconciliation',
         description:
-          'We reconcile your Property Management System revenue reports against bank statements and accounting records monthly — with full explanation of every OTA settlement, Tourism Dirham collection, municipality fee, and long-term vs short-term booking split.',
+          'We reconcile PMS revenue reports and OTA statements to bank deposits and the general ledger every month, so room revenue, Tourism Dirham, municipality fees and VAT all tie out before filing returns.',
       },
     ],
-    lawTitle: '📋 UAE Laws — Hospitality & Tourism (Verified)',
+    lawTitle: 'UAE laws — Hospitality & tourism (verified)',
     laws: [
-      'Short-term accommodation (under 30 consecutive days): Standard rated — 5% VAT (UAE VAT Law Art. 3)',
-      'Long-term residential rental (30+ days, residential purpose): Exempt from VAT (Cabinet Dec. 52/2017)',
-      'Output VAT on room revenue: Based on GROSS amount charged to guest — not net after OTA commission',
-      'OTA commissions (Booking.com, Expedia, Airbnb): 5% input VAT charged to hotel — fully reclaimable',
-      'Dubai Tourism Dirham (DTCM fee): NOT subject to VAT — collected as agent (AED 7–20/room/night)',
-      'Municipality fee (10% in Dubai): NOT subject to VAT — government levy, pass-through only',
-      'Food & beverage within hotel: Standard rated — 5% VAT',
-      'Holiday home short-term rental: Same VAT treatment as hotel — 5% on gross booking amount',
-      'Mandatory VAT registration: Taxable supplies above AED 375,000/year — AED 20,000 late penalty',
-      'Tourist Tax Refund (TRF): NOT applicable to accommodation or F&B — retail goods only',
-      'UAE Corporate Tax at 9% on hospitality profits above AED 375,000 (Decree-Law 47/2022)',
+      'Hotel accommodation – 5% VAT on short term stays\nShort term hotel, serviced apartment and holiday home stays supplied on a hospitality basis are taxable at 5% under UAE VAT real estate guidance.',
+      'Long term residential rent – VAT exempt\nStandard long term residential leases are exempt from VAT, so no 5% VAT should be charged on typical annual apartment or staff accommodation rentals.',
+      'Tourism Dirham – nightly fee, not VAT\nDubai Tourism Dirham is a per room nightly fee (generally AED 7–20 for hotels, AED 10–15 per occupied bedroom for holiday homes) collected and remitted to DET and shown separately from VAT on guest invoices.',
+      'Hotel taxes – service & municipality charges\nHotels may charge service charge, municipality fee and city/tourism fee on top of room rates; 5% VAT usually applies to the total, but Tourism Dirham itself is treated as a fee, not an additional VAT tax.',
+      'Holiday home permits & Tourism Dirham\nDubai holiday homes must be registered with DET, display a permit number, and remit Tourism Dirham each month (up to the first 30 consecutive nights per stay).',
+      'VAT registration thresholds for operators\nHospitality operators must register for VAT when taxable turnover (including short term accommodation and certain hotel fees) exceeds AED 375,000 in 12 months; voluntary registration is allowed from AED 187,500.',
+      'Real estate VAT: short term vs long term\nUAE real estate VAT guides confirm that long term residential rent is exempt, while short term, serviced or hotel style accommodation is taxed at 5%.',
+      'OTA/platform fees & VAT\nOTA and platform service fees (e.g., Booking.com, Airbnb fees) may themselves attract 5% VAT when charged to UAE registered hotels or hosts and should be treated as separate taxable expenses.',
+      'Tourist taxes differ by emirate\nAbu Dhabi, Ras Al Khaimah and other emirates have their own tourism fees (often 4–6% plus AED per night charges) which sit alongside 5% VAT on short term stays.',
+      'Corporate tax – 9% on hotel profits\nHospitality profits above AED 375,000 earned by UAE hotel and tourism businesses may be subject to the new 9% UAE corporate tax, separate from VAT and tourism fees.',
     ],
     storyTitle: 'How BookLean Helped This Hotel Group — Real Story',
     story:
-      'A boutique hotel group with three properties in Dubai Marina came to BookLean after an internal review found a AED 95,000 discrepancy between declared output VAT and PMS revenue. The cause: output VAT had been declared on net OTA payouts instead of gross room rates, and Tourism Dirham collections had been incorrectly included in taxable turnover. Both errors had been compounding each quarter. BookLean filed corrected VAT returns with full PMS reconciliation schedules, claimed input VAT on OTA commissions that had never been recovered, excluded Tourism Dirham from taxable turnover in all corrected periods, and restructured the monthly accounting process to prevent recurrence. The FTA accepted all corrections. The hotel group recovered a net AED 42,000 in VAT overpayments. These are not edge cases — they are the standard errors we find in UAE hospitality accounting.',
+      'A boutique hotel group in Dubai Marina found that declared output VAT did not match OTA statements because commissions and Tourism Dirham were mixed into room revenue.\nBookLean rebuilt their PMS to GL mapping, separated Tourism Dirham and municipality fees from VATable revenue, assessed short term vs long term leases, and aligned VAT201 with OTA and DET reports.\nAfter one filing cycle, their FTA review closed without adjustments, and management finally had a clear view of net room margin after VAT and tourism taxes.',
     cta: 'Book a Free Hospitality Finance Review →',
   },
-  freelancer: {
-    tag: 'Freelancer & Sole Establishment Accounting UAE · 2026',
-    title: 'Freelancers & Sole Establishments — UAE Corporate Tax, VAT & Structure',
-    sub: 'Freelancing in UAE is growing rapidly — but most freelancers do not realise they are operating as a business under UAE law, and the compliance obligations are real, immediate, and penalised without warning. UAE Corporate Tax registration is mandatory regardless of profit level. VAT registration is mandatory above AED 375,000 annual taxable turnover. Penalties begin on day one of non-compliance.',
+  realestate: {
+    tag: 'Real Estate & Construction Accounting UAE · Verified UAE Tax Laws 2026',
+    title: 'Real Estate & Construction — Property VAT, DLD Fees & Project Accounting',
+    sub: 'UAE real estate and construction carry some of the most complex VAT rules in the region. First supply, subsequent supply, commercial versus residential, bare land — each category has a completely different VAT treatment. Getting it wrong creates liability or permanently blocks input tax recovery. BookLean has handled VAT for UAE developers, main contractors, and subcontractors since 2018.',
     pain: [
       {
-        title: 'Corporate Tax Registration — Missed, Then Penalised',
+        title: 'First vs subsequent supply – developers get this wrong',
         description:
-          'Under Federal Decree-Law No. 47 of 2022, every UAE business — including freelancers, sole establishments, and individual licence holders — must register for Corporate Tax with the FTA regardless of income level. The penalty for failing to register by the required deadline is AED 10,000. Most freelancers discover this obligation only when the penalty notice arrives.',
+          'Many developers treat the first sale or lease of new residential units as exempt instead of zero rated, or miss the three year window from completion, losing the right to recover construction VAT and misclassifying later sales.',
       },
       {
-        title: 'Personal & Business Expenses Mixed — CT Deductibility at Risk',
+        title: 'DLD fee included in VAT – a direct error',
         description:
-          'Under Article 28 of the UAE CT Law, expenses are only deductible if they are incurred wholly and exclusively for the purposes of the business. When personal expenses go through the same bank account as business income — which is the default for most UAE freelancers — every personal transaction becomes a CT audit risk, and your real deductible expenses are buried inside mixed transactions.',
+          'Dubai Land Department transfer fees are often incorrectly added into the taxable base when calculating 5% VAT on commercial property sales, even though the buyer pays the DLD fee separately to the authority.',
       },
       {
-        title: 'VAT Registration Threshold Crossed Unknowingly',
+        title: 'Retention payments – VAT timing errors are common',
         description:
-          'Many UAE freelancers cross the AED 375,000 mandatory VAT registration threshold in year two or three of their business without realising it. The obligation arises at the end of any 12-month rolling period in which taxable turnover exceeded AED 375,000. The penalty for late registration is a fixed AED 20,000. The FTA has the data to identify unregistered businesses operating above threshold.',
+          'Construction contracts frequently treat retention amounts as non VAT or recognise output VAT only on release; under UAE VAT rules, VAT is due when consideration is received or invoice is issued, not when retention is later paid.',
       },
       {
-        title: 'Freelance Permit vs Sole Establishment — Wrong Structure Chosen',
+        title: 'Project cost tracking without proper coding',
         description:
-          'A freelance permit allows an individual to work in specified activities under their own name — it is personal, activity-restricted, and different from a trade licence. A sole establishment is a separate legal entity under DED with its own trade licence. The two have different banking implications, different VAT registration pathways, and different CT filing obligations. Many freelancers operate under the wrong structure for their actual activity and client base.',
+          'Inputs for mixed use projects (residential + commercial), infrastructure and common areas are booked without flags for taxable vs exempt use, making input VAT apportionment impossible and exposing developers to clawback under the Capital Assets Scheme.',
       },
     ],
     sol: [
       {
-        title: 'CT Registration — Done Immediately',
+        title: 'Property VAT structuring from day one',
         description:
-          'We register you for UAE Corporate Tax with the FTA, assess your eligibility for Small Business Relief (0% CT on revenue below AED 3M for periods to 31 Dec 2026), and file your annual CT return — so you are always compliant and never exposed to the AED 10,000 late registration penalty.',
+          'We map each project’s units to the correct VAT treatment – commercial, first supply residential (zero rated), subsequent residential (exempt), and bare land – and design invoicing so developers maximise lawful VAT recovery on construction while staying compliant.',
       },
       {
-        title: 'Clean Monthly Bookkeeping',
+        title: 'Correct retention VAT timing',
         description:
-          'We set up a dedicated business account structure, implement monthly bookkeeping that separates business and personal expenses cleanly, and produce monthly P&L statements — so your deductible expenses are clear, documented, and defensible.',
+          'We configure contracts and billing so retention amounts follow VAT date of supply rules, ensuring output VAT is recognised at the right time and VAT201 returns always reflect the legal position, not cash basis approximations.',
       },
       {
-        title: 'VAT Monitoring & Registration',
+        title: 'Project level cost accounting',
         description:
-          'We track your rolling 12-month taxable turnover every quarter. When you approach the AED 375,000 mandatory threshold — or the AED 187,500 voluntary threshold where registration is beneficial for input VAT recovery — we advise you in time and register you before the deadline.',
+          'We build cost centres for each tower, phase and asset class, tagging invoices to commercial, first supply residential or exempt use so you can clearly separate recoverable from blocked input VAT and support FTA reviews.',
       },
       {
-        title: 'Structure Advisory',
+        title: 'Input VAT apportionment calculation',
         description:
-          'We advise on the correct legal structure for your specific freelance activity, client base, and growth plans — freelance permit, sole establishment, or LLC — and handle the registration, bank account opening, and all compliance filings from day one.',
+          'For mixed use developments, we design FTA acceptable partial exemption and Capital Assets Scheme calculations using area or revenue based methods, helping you recover the maximum allowable VAT on shared costs such as infrastructure and professional fees.',
       },
     ],
-    lawTitle: '📋 UAE Laws — Freelancers & Sole Establishments (Verified)',
+    lawTitle: 'UAE laws — Real estate & construction (verified)',
     laws: [
-      'CT registration: Mandatory for ALL UAE businesses including freelancers — penalty AED 10,000 (Art. 51, CT Law)',
-      'CT rate: 9% on taxable income above AED 375,000 (Federal Decree-Law No. 47 of 2022)',
-      'Small Business Relief: Revenue below AED 3M — elect 0% CT — valid for tax periods to 31 Dec 2026',
-      'Mandatory VAT registration: Taxable turnover exceeding AED 375,000 in any 12-month period',
-      'Late VAT registration penalty: Fixed AED 20,000 (UAE VAT Law Administrative Penalties Schedule)',
-      'Voluntary VAT registration: Available above AED 187,500 taxable turnover — recommended for input VAT recovery',
-      'Deductible expenses: Must be wholly and exclusively incurred for business purposes (Art. 28, CT Law)',
-      'Entertainment expenses: Capped at 50% deductibility (Art. 32, CT Law)',
-      'Fines & penalties: NOT deductible under UAE CT Law',
-      'Freelance permit vs sole establishment: Different legal status, banking, and CT registration pathway',
-      'WPS (Wage Protection System): Required for employees on UAE work visas — NOT required for sole owners',
-      'Employee gratuity: 21 days basic salary per year for first 5 years, 30 days per year thereafter — capped at 2 years basic salary (Federal Decree-Law No. 33/2021, Art. 51). Must be paid within 14 days of contract end.',
+      'First supply of new residential buildings – zero rated\nThe first sale or lease of a new residential building within three years of completion is zero rated for VAT, allowing developers to recover input VAT on construction.',
+      'Subsequent supplies of residential property – exempt\nAny later sale or lease of the same residential building is exempt from VAT, and related input VAT is generally not recoverable.',
+      'Commercial real estate – standard rated 5%\nSales and leases of offices, shops, warehouses and commercial parts of mixed use projects are taxable at the 5% standard VAT rate.',
+      'Construction services – standard rated 5%\nMost construction, fit out and contracting services are taxable at 5% VAT; developers and contractors must register once taxable supplies exceed AED 375,000.',
+      'Retention payments – VAT on consideration, not cash only\nVAT applies to retention amounts as part of contract consideration; timing is determined by invoice and payment dates under VAT date of supply rules, not just final release.',
+      'Mixed use developments – partial exemption required\nFor projects with both commercial and residential units, input VAT must be apportioned between taxable and exempt activities using an approved method (area or revenue based).',
+      'Bare land – exempt supply\nSupplies of bare land are generally exempt from VAT, meaning input VAT directly related to bare land transactions is not recoverable.',
+      'Capital Assets Scheme – 10 year adjustment\nBuildings and major real estate assets fall under the Capital Assets Scheme; if use changes from taxable to exempt (or vice versa), input VAT recovered may need to be adjusted over a period of up to ten years.',
+      'VAT registration thresholds\nReal estate businesses must register for VAT when taxable supplies (including commercial rent and zero rated first supplies) exceed AED 375,000; voluntary registration is available from AED 187,500.',
+      'UAE corporate tax on real estate profits\nReal estate developers and landlords with business profits above AED 375,000 are generally subject to 9% UAE corporate tax, in addition to VAT obligations.',
+      'Capital Assets Scheme – AED 5m+ buildings: High value real estate projects (buildings and major improvements costing AED 5 million or more, excluding VAT) fall under the Capital Assets Scheme; input VAT is recovered upfront but must be monitored and adjusted over 10 years to reflect actual taxable vs exempt use.',
+      'Transfer of business as a going concern (TOGC):When a full real estate business (or an independent part of it) is transferred as a going concern to a VAT registered buyer who continues the same activity, the transfer can be treated as outside the scope of VAT under Article 7 — but a simple sale of a single property alone remains a normal Vatable/exempt supply.',
     ],
-    storyTitle: 'How BookLean Helped This Freelancer — Real Story',
+    storyTitle: 'How BookLean Helped This Real Estate Developer — Real Story',
     story:
-      'Amira is a UX designer with a TECOM freelance permit. In her second year she earned AED 480,000 — and like many UAE freelancers, she assumed there was no tax in UAE. In month 16, two FTA penalty notices arrived: AED 10,000 for failing to register for Corporate Tax, and AED 20,000 for failing to register for VAT after crossing the AED 375,000 mandatory threshold. Total penalties before any tax: AED 30,000. BookLean registered her for both immediately, elected Small Business Relief on the CT return (zero tax owed on her income level), filed a backdated VAT return for the period since the threshold was crossed, and submitted penalty reconsideration applications for both notices with supporting documentation. Both penalties were reduced. Total saved: AED 18,000. The cost of compliance is always lower than the cost of non-compliance — and it starts on day one, not when the penalty arrives.',
-    cta: 'Book a Free Freelancer Finance Review →',
+      'A UAE developer with a mixed use project in Dubai Marina was treating all unit sales as exempt, so construction VAT on residential towers was never recovered and commercial units were mis invoiced.\nBookLean reviewed the project, identified first supply residential units still within the three year window, recoded commercial leases, applied partial exemption and Capital Assets Scheme calculations, and corrected VAT returns before FTA review.\nThe developer recovered significant construction VAT legally and avoided clawback on mixed use assets, turning VAT from a cost into part of the project’s financing strategy.',
+    cta: 'Book a Free Property Finance Review →',
+  },
+  tech: {
+    tag: 'Technology & SaaS Startup Accounting UAE · 2026',
+    title: 'Technology & SaaS Startups — Investor-Ready Financials & UAE Tax Structuring',
+    sub: 'UAE tech startups need more than bookkeeping. They need IFRS-compliant financials, correct SaaS revenue recognition, a correctly structured entity, and a clear UAE Corporate Tax position before a due diligence team arrives. BookLean has helped UAE startups close angel rounds and Series A raises with financial statements that pass investor scrutiny.',
+    pain: [
+      {
+        title: 'Investor due diligence fails – messy books kill deals',
+        description:
+          'Many UAE tech startups run on product and growth but neglect clean accounting, so when investors request IFRS style financials and tax compliance, they discover missing revenue schedules, unreconciled bank statements and unrecorded reverse charge VAT on overseas SaaS tools.',
+      },
+      {
+        title: 'Free zone 0% CT – most startups do not actually qualify',
+        description:
+          'Founders assume their free zone licence automatically gives 0% corporate tax; in reality, only “Qualifying Free Zone Persons” get 0% on qualifying income and must meet substance, audited accounts and de minimis tests, otherwise 9% CT applies on all profits.',
+      },
+      {
+        title: 'SaaS revenue recognition is complex',
+        description:
+          'Subscription and usage based models need IFRS 15 treatment, recognising revenue over the contract term and separating one off setup fees, variable consideration and cancellation rights; many startups still book SaaS revenue on simple cash or invoice dates.',
+      },
+      {
+        title: 'ESOP accounting ignored until due diligence',
+        description:
+          'Employee stock option plans (ESOPs) and RSUs are often promised informally without IFRS 2 valuations or expense recognition, leading to unrecorded share based payment costs and cap table confusion when investors examine financial statements.',
+      },
+    ],
+    sol: [
+      {
+        title: 'Investor ready financials from month one',
+        description:
+          'We set up your chart of accounts, revenue recognition policies and tax processes so every month produces clean, investor grade management accounts and annual IFRS financials ready for due diligence.',
+      },
+      {
+        title: 'QFZP eligibility assessment & CT structuring',
+        description:
+          'We test your free zone entity against QFZP conditions (substance, qualifying income, de minimis limits, audited IFRS statements) and design a structure that either preserves 0% CT or prepares you for standard 9% CT with Small Business Relief where allowed.',
+      },
+      {
+        title: 'IFRS 15 revenue recognition for SaaS',
+        description:
+          'We build policies that correctly recognise subscription revenue over time, separate implementation and one off services, and handle upgrades, downgrades and churn so your ARR/MRR metrics align with IFRS.',
+      },
+      {
+        title: 'Virtual CFO for fundraising',
+        description:
+          'We support your board packs, investor data room, cap table modelling and ESOP accounting, and make sure tax (CT and VAT) is clean before you go into a fundraise.',
+      },
+    ],
+    lawTitle: 'UAE laws — Technology & SaaS startups (verified)',
+    laws: [
+      'Standard VAT on tech services – 5%\nDigital services, SaaS subscriptions, app licences and other tech services supplied to UAE customers are generally taxable at the 5% standard VAT rate.',
+      'VAT registration thresholds & non resident rules\nUAE businesses must register for VAT at AED 375,000 mandatory / AED 187,500 voluntary, while non resident B2C digital suppliers have no threshold and must register from the first taxable sale.',
+      'Reverse charge on overseas SaaS & cloud tools\nVAT registered UAE startups must self account 5% reverse charge VAT on imported services like AWS, Azure, Google Cloud and other overseas SaaS tools, reporting output and input VAT in the same return.',
+      'Zero rating of exported digital services\nDigital services supplied to non resident customers outside the UAE can be zero rated when Article 31 conditions are met (customer outside UAE, not linked to UAE real estate or goods, proper evidence of location).',
+      'UAE corporate tax – 9% above AED 375k profits\nUAE corporate tax applies at 0% on the first AED 375,000 of taxable profit and 9% above that for most startups, starting from financial years beginning on or after 1 June 2023.',
+      'Qualifying Free Zone Person (QFZP) – 0% CT route\nFree zone entities can access 0% CT on qualifying income if they meet QFZP tests: adequate substance, qualifying income, de minimis limits on non qualifying revenue, TP documentation and audited IFRS financial statements.',
+      'Small Business Relief for CT\nMainland or non QFZP startups with revenue below AED 3 million can elect Small Business Relief so CT is effectively 0%, while still registering and filing CT returns.',
+      'IFRS 15 for SaaS revenue\nIFRS 15 requires SaaS entities to identify performance obligations and recognise subscription revenue over the period of service, not upfront, with careful treatment of variable consideration and termination rights.',
+      'IFRS 2 for ESOPs and share based payments\nESOPs, RSUs and other employee equity plans must be measured at grant date fair value and expensed over vesting periods under IFRS 2, with proper valuation, disclosures and tax considerations.',
+      'E commerce & digital VAT guidance (FTA guide)\nThe FTA’s e commerce VAT guide clarifies place of supply and invoicing rules for online platforms, SaaS providers and marketplaces, including when platforms act as principal or agent.',
+      'Transfer pricing on related party tech transactions:\nIntercompany charges for development, management fees, IP royalties and group SaaS services must follow UAE corporate tax transfer pricing rules, using arm’s length pricing and maintaining TP documentation and disclosure forms.pwc+3',
+      'E invoicing (Peppol) for tech & SaaS billing:\nFrom the UAE e invoicing mandate starting 2026–2027, tech and SaaS companies issuing B2B/B2G invoices must send structured Peppol format e invoices via accredited service providers, aligning subscription billing and usage charges with FTA digital invoicing requirements.',
+    ],
+    storyTitle: 'How BookLean Helped This UAE Startup — Real Story',
+    story:
+      'A UAE SaaS startup in a Dubai free zone approached BookLean after an investor requested IFRS compliant financials and tax analysis. Their ARR numbers were based on invoicing, reverse charge VAT on cloud costs had never been booked, and QFZP status was assumed but not tested.\nBookLean cleaned two years of accounts, implemented IFRS 15 revenue recognition, set up ESOP accounting under IFRS 2, and tested QFZP with substance and de minimis calculations.\nThe startup entered due diligence with investor ready financials, clear VAT and CT positions, and a structure that preserved 0% CT on qualifying free zone income.',
+    cta: 'Book a Free Startup Finance Review →',
+  },
+  healthcare: {
+    tag: 'Healthcare & Clinics Accounting UAE · Verified UAE Tax Laws 2026',
+    title: 'Healthcare & Clinics — Zero-Rated Services, Cosmetic VAT & Insurance Billing',
+    sub: 'UAE healthcare VAT has three categories — zero-rated, standard-rated (5%), and exempt — and the boundary between them is not always clear. Most clinics are either charging VAT on zero-rated services, claiming input VAT they are not entitled to, or both. BookLean specialises in UAE healthcare accounting for DHA, DOH, and MOH-licensed facilities across Dubai and Abu Dhabi.',
+    pain: [
+      {
+        title: 'Charging 5% VAT on zero rated medical services',
+        description:
+          'Many clinics charge 5% VAT on preventive and curative healthcare services that should be zero rated (0%) under Cabinet Decision 56 of 2017, losing competitiveness and misclassifying VAT on invoices.',
+      },
+      {
+        title: 'Employee health insurance – input VAT claimed incorrectly',
+        description:
+          'Clinics often recover VAT on staff health insurance where it is treated as a personal benefit; without proper policy wording and HR documentation, this input VAT can be blocked in an FTA audit.',
+      },
+      {
+        title: 'Cosmetic vs medical – documentation is everything',
+        description:
+          'Cosmetic procedures and purely aesthetic treatments are standard rated at 5%, but many clinics either zero rate them or fail to separate cosmetic from medically necessary elements, creating exposure on under declared VAT.',
+      },
+      {
+        title: 'Insurance billing reconciliation – revenue distorted',
+        description:
+          'Claim submissions, approvals, rejections and resubmissions often do not match accounting system postings, resulting in revenue that does not align with insurer remittances and VAT returns.',
+      },
+    ],
+    sol: [
+      {
+        title: 'Service classification framework',
+        description:
+          'We build a documented VAT classification matrix for every service you offer – clearly separating zero rated preventive/curative healthcare, standard rated cosmetic services, exempt supplies and government funded services.',
+      },
+      {
+        title: 'Partial exemption calculation',
+        description:
+          'For clinics providing both zero rated medical and standard rated cosmetic services, we perform partial exemption and Capital Assets Scheme calculations so you recover the maximum allowable input VAT on mixed use costs.',
+      },
+      {
+        title: 'Insurance reconciliation – clean monthly close',
+        description:
+          'We reconcile claim submissions, approvals, rejections, resubmissions and cash receipts to your general ledger every month, so your VAT returns and management accounts always match insurer statements.',
+      },
+      {
+        title: 'Medical equipment import VAT reclaim',
+        description:
+          'We review imports of medical equipment and protective items, ensure they meet Cabinet Decision 56 zero rating conditions where applicable, and document import VAT so eligible amounts are fully reclaimed.',
+      },
+    ],
+    lawTitle: 'UAE laws — Healthcare & clinics (verified)',
+    laws: [
+      'Zero rated healthcare services – 0% VAT\nPreventive and curative healthcare services provided by licensed hospitals, clinics, dentists, nurses and pharmacies are zero rated at 0%, allowing providers to recover input VAT on related costs.',
+      'Zero rated medicines & medical equipment\nMedicines and medical equipment registered and approved by the Ministry of Health and Prevention (MoHAP) are zero rated; unregistered medicines and non medical health products are standard rated at 5%.',
+      'Cosmetic & non medical services – 5% VAT\nPurely cosmetic procedures (such as aesthetic surgery, botox, fillers and teeth whitening without medical indication), wellness services and non therapeutic treatments are standard rated at 5% VAT.',
+      'Hospital accommodation – patients vs non patients\nRoom and meals for admitted patients form part of zero rated healthcare; accommodation and meals for accompanying relatives or visitors are standard rated at 5%.',
+      'Administrative fees – incidental vs stand alone\nRegistration and administration fees that are incidental to zero rated treatment can be zero rated; stand alone admin or service charges not directly linked to treatment are standard rated at 5%.',
+      'Telemedicine & digital health\nTeleconsultations and remote monitoring supplied by licensed healthcare professionals as preventive/curative care can qualify as zero rated; purely wellness apps or non clinical services are standard rated.',
+      'Employee health insurance VAT\nInput VAT on staff health insurance is usually blocked when it is a personal benefit; recovery may be allowed only where it is required by law or forms part of taxable staff packages with proper documentation.',
+      'Partial exemption for mixed healthcare providers\nClinics that supply both zero rated medical services and standard rated cosmetic services must apply partial exemption methods to determine recoverable input VAT on shared costs.',
+      'Temporary zero rating of Covid 19 protective equipment (historic)\nCertain protective medical equipment (masks, gloves, disinfectants) were temporarily zero rated between 1 September 2020 and 31 December 2021; supplies outside that period are at 5% VAT.',
+      'VAT exemptions – transport & other sectors (context)\nHealthcare businesses may interact with exempt supplies such as local passenger transport and residential property; input VAT linked to exempt activities is not recoverable.',
+      'Corporate tax – 9% on healthcare profits\nUAE healthcare companies are subject to 9% corporate tax on taxable profits above AED 375,000, alongside their VAT obligations.',
+    ],
+    storyTitle: 'How BookLean Helped This Clinic — Real Story',
+    story:
+      'A multi specialty clinic in Dubai was charging 5% VAT on all services, mixing zero rated medical consultations with standard rated cosmetic treatments, and incorrectly reclaiming VAT on staff health insurance.\nBookLean re classified services, recalculated partial exemption, corrected import VAT on medical equipment, and rebuilt insurer billing reconciliations.\nWithin one year, the clinic’s VAT returns aligned with FTA rules, penalties were avoided, and margins improved as input VAT recovery matched the real mix of zero rated and standard rated services',
+    cta: 'Book a Free Healthcare Finance Review →',
   },
   logistics: {
     tag: 'Logistics & Transportation Accounting UAE · Multi-Emirate · 2026',
@@ -563,63 +496,64 @@ export const referenceIndustryContent: Record<string, ReferenceIndustryContent> 
     sub: 'Logistics and transportation businesses in the UAE operate across multiple emirates, manage import/export VAT, deal with customs duty, and handle multi-currency transactions — all of which create significant accounting complexity. Non-compliance with UAE VAT on cross-border freight and incorrect customs duty accounting are the most common triggers for FTA audit in this sector.',
     pain: [
       {
-        title: 'Import VAT on Goods — Missed Input VAT Recovery',
+        title: 'Import VAT on goods – missed input VAT recovery',
         description:
-          'When goods are imported into the UAE, import VAT at 5% is levied at the UAE border. VAT-registered businesses can recover this as input VAT in their VAT return — but only if the customs declaration and commercial invoice are correctly linked. Many logistics operators fail to recover legitimate import VAT because their documentation does not satisfy FTA requirements, leading to unnecessary cash flow pressure.',
+          'When goods are imported into the UAE, 5% VAT is triggered at the border and posted to the importer’s TRN, but many logistics and trading businesses fail to reconcile customs data to VAT returns and lose eligible input VAT.',
       },
       {
-        title: 'Zero-Rating of International Transport — Applied Incorrectly',
+        title: 'Multi emirate operations – incorrect place of supply',
         description:
-          'Under UAE VAT law, the international transportation of goods and the supply of related services may be zero-rated. However, this zero-rating applies only to specific legs of the journey and specific service types. UAE-to-UAE domestic freight is standard-rated at 5%. Many logistics businesses apply zero-rating to domestic legs of multi-segment shipments — creating a VAT exposure that the FTA will recover on audit.',
+          'Freight and transport services across Dubai, Abu Dhabi and other emirates are often treated as one generic supply; without correctly identifying where each leg starts, some services are wrongly zero rated or taxed, distorting VAT treatment.',
       },
       {
-        title: 'Multi-Emirate Operations — Incorrect Place of Supply',
+        title: 'Zero rating of international transport – applied incorrectly',
         description:
-          'Logistics businesses operating across Dubai, Abu Dhabi, Sharjah and other emirates must correctly apply UAE VAT place of supply rules. Where goods are delivered to a UAE customer from UAE stock, the supply is made in the UAE and VAT must be charged regardless of which emirate the warehouse is in. Businesses applying emirate-specific VAT treatment are non-compliant.',
+          'Businesses either zero rate purely domestic transport that does not qualify as international, or apply 5% VAT to freight that should be zero rated under Article 33, creating under  or over declared VAT.',
       },
       {
-        title: 'Multi-Currency Reconciliation — Exchange Rate Errors',
+        title: 'Multi currency reconciliation – exchange rate errors',
         description:
-          'Logistics businesses with international clients invoice and receive payment in USD, EUR, GBP, and other currencies. UAE VAT returns must report in AED — so all foreign currency transactions must be converted at the AED exchange rate published by the UAE Central Bank on the date of supply. Using incorrect exchange rates in VAT returns is a technical violation that creates penalties on FTA review.',
+          'Logistics companies bill in USD or EUR but report VAT in AED; mis using exchange rates or not matching FX to the FTA prescribed rates leads to mismatches between invoices, customs records and VAT returns.',
       },
     ],
     sol: [
       {
-        title: 'Import VAT Recovery — Full Documentation Package',
+        title: 'Import VAT recovery – full documentation package',
         description:
-          'We maintain your customs declaration registry, link import declarations to purchase invoices, and prepare complete input VAT schedules — so you recover every dirham of import VAT you are entitled to, every quarter.',
+          'We collect and reconcile customs declarations, import invoices and reverse charge entries so import VAT on goods is correctly booked and fully reclaimed for VAT registered businesses.',
       },
       {
-        title: 'VAT Zero-Rating Review',
+        title: 'VAT zero rating review',
         description:
-          'We review your supply contracts and shipment documentation to correctly identify zero-rated international transport legs vs standard-rated UAE domestic freight — protecting you from a VAT misclassification finding on FTA audit.',
+          'We review your service contracts and supporting documentation to correctly distinguish zero rated international transport and transport related services from standard rated domestic legs, reducing audit risk.',
       },
       {
-        title: 'Multi-Currency Bookkeeping',
+        title: 'Multi currency bookkeeping',
         description:
-          'We implement UAE Central Bank exchange rate conversion in your bookkeeping system, reconcile all multi-currency transactions monthly, and prepare FX-compliant VAT returns — eliminating exchange rate errors from your compliance.',
+          'We implement UAE Central Bank exchange rates in your bookkeeping system, reconcile FX gains/losses and ensure all foreign currency invoices and customs values translate to AED consistently for VAT and CT.',
       },
       {
-        title: 'Supply Chain Cost Accounting',
+        title: 'Supply chain cost accounting',
         description:
-          'We provide full cost accounting for logistics operations — fuel, driver costs, customs duties, warehousing — so you see your true margin per route and per client, and can identify unprofitable contracts before they compound.',
+          'We build cost accounting for logistics operations – fuel, driver costs, warehouse fees, duty and VAT – so you can see true margins per route or customer and link them cleanly to tax returns.',
       },
     ],
-    lawTitle: '📋 UAE Laws — Logistics & Transportation (Verified)',
+    lawTitle: 'UAE laws — Logistics & transportation (verified)',
     laws: [
-      'International transport zero-rating: Applicable to international legs only — UAE domestic freight 5% VAT (UAE VAT Executive Regulations, Art. 33)',
-      'Import VAT: Levied at UAE customs entry point — recoverable as input VAT by VAT-registered importers (UAE VAT Law, Art. 48)',
-      'Place of supply for goods: UAE if goods are located in UAE at time of supply (UAE VAT Law, Art. 26)',
-      'Currency conversion: Must use UAE Central Bank published rate on date of supply (UAE VAT Law, Art. 69)',
-      'CT registration: Mandatory for all UAE businesses — penalty AED 10,000 for late registration',
-      'VAT registration: Mandatory above AED 375,000 annual taxable turnover — AED 20,000 penalty for late registration',
-      'Employee gratuity: 21 days basic salary per year for first 5 years, 30 days thereafter (Federal Decree-Law No. 33/2021)',
-      'WPS compliance: Mandatory for all UAE private sector employers on visa sponsorship',
-      "Transfer pricing: Related-party transactions at arm's length — documentation required above AED 40M threshold",
+      'VAT on imports – 5% standard rate\nImports of goods into the UAE typically attract 5% VAT at the border, separate from customs duty; VAT registered businesses can self account and recover input VAT when goods are used for taxable supplies.',
+      'Zero rating international transport of goods and passengers\nInternational transport of passengers or goods to or from the UAE, and certain transport related services, are zero rated under Article 33 of the VAT Executive Regulations.',
+      'Domestic passenger transport – VAT exempt\nLocal passenger transport within the UAE by bus, metro, tram, taxi or ferry is exempt from VAT, so providers cannot recover input VAT on costs attributable to exempt services.',
+      'Domestic freight – standard rated 5%\nPurely domestic movement of goods within the UAE that is not part of an international transport leg is standard rated at 5% VAT.',
+      'Place of supply for transport services\nFor transport services, the place of supply is generally where the trip starts; mis identifying this across emirates or cross border journeys can cause incorrect VAT treatment.',
+      'VAT on agents importing on behalf of owners\nWhen freight forwarders use their TRN to clear goods for customers, FTA guidance allows specific procedures so import VAT is posted to the correct entity and can be recovered by the beneficial owner.',
+      'Reverse charge on imported services\nLogistics companies buying overseas freight, brokerage or consultancy services must apply 5% reverse charge VAT when registered in the UAE, reporting both output and input VAT in their return.',
+      'Zero rated supplies of qualifying means of transport\nThe supply or import of qualifying commercial aircraft, vessels and public transport buses/trains used for transporting passengers or goods can be zero rated, subject to FTA conditions.',
+      'Fuel and non qualifying vehicles – standard rated\nFuel and supplies for non qualifying or private vehicles (e.g., company buses for staff only, yachts) remain subject to the standard 5% VAT.',
+      'Corporate tax – logistics profits at 9%\nLogistics companies are subject to 9% UAE corporate tax on taxable profits above AED 375,000, with specific guidance on exempt international shipping income and deductible expenses.',
     ],
     storyTitle: 'How BookLean Helped This Logistics Business — Real Story',
     story:
-      'A Dubai-based freight forwarder with operations across three emirates came to BookLean after an FTA correspondence letter. They had been applying zero-rating to a significant portion of their UAE domestic delivery charges — treating them as part of international consignments — which is technically incorrect under UAE VAT law. BookLean conducted a full VAT review of their supply chain, reclassified the affected supplies, filed a voluntary disclosure with supporting documentation, and implemented a new VAT classification matrix in their invoicing system. The voluntary disclosure significantly reduced the penalty exposure. BookLean now handles their monthly VAT and CT compliance, multi-currency reconciliation, and quarterly import VAT recovery.',
+      'A UAE based freight forwarder was treating most cross border shipments as zero rated without checking Article 33 conditions and was not reconciling import VAT on behalf of customers.\nBookLean reviewed contracts and customs data, corrected zero rating, implemented import VAT recovery procedures for principal and agent arrangements, and aligned FX translations with Central Bank rates.\nThe business reduced VAT exposure, reclaimed significant import VAT for clients, and presented clean transport and tax data during its next FTA review.',
     cta: 'Book a Free Logistics Finance Review →',
   },
   banking: {
@@ -628,63 +562,64 @@ export const referenceIndustryContent: Record<string, ReferenceIndustryContent> 
     sub: 'Financial services businesses in the UAE — including banks, exchange houses, investment managers, insurance companies, and DIFC/ADGM-licensed entities — operate under some of the most demanding compliance frameworks in the world. AML obligations, DFSA or FSRA licensing requirements, ESR for financial services Relevant Activities, and UAE Corporate Tax rules for financial institutions all interact in ways that require specialist expertise.',
     pain: [
       {
-        title: 'AML Compliance — Gaps in Customer Due Diligence',
+        title: 'AML compliance – gaps in customer due diligence (CDD)',
         description:
-          'Under Federal Decree-Law No. 20 of 2018 (UAE AML Law), all Designated Non-Financial Businesses and Professions (DNFBPs) must implement Customer Due Diligence (CDD), Enhanced Due Diligence (EDD) for high-risk customers, and maintain transaction records for a minimum of five years. Many SME-level financial services firms have CDD policies on paper but not in practice — creating significant regulatory exposure.',
+          'Many financial services firms have incomplete KYC files and weak ongoing monitoring, falling short of Federal Decree Law No. 20 of 2018 and its Executive Regulations, and risking fines or licence issues.',
       },
       {
-        title: 'ESR for Financial Services — Notification Missed',
+        title: 'ESR for financial services – notification missed',
         description:
-          'Financial services businesses conducting Relevant Activities under UAE ESR (banking, insurance, investment fund management, lease-finance, holding company) must file annual ESR Notifications regardless of whether they have substance to report. The penalty for failing to file an ESR Notification is AED 50,000 for the first offence. Many smaller financial services businesses in free zones assume ESR does not apply to them — it does.',
+          'Banks, fund managers, leasing and financing businesses in the UAE often forget to file annual Economic Substance Regulation (ESR) notifications and reports for “relevant activities”, exposing themselves to penalties and information exchange.',
       },
       {
-        title: 'VAT Exemption on Financial Services — Misapplied',
+        title: 'VAT exemption on financial services – misapplied',
         description:
-          'Under UAE VAT law, most financial services supplied for an explicit fee are standard-rated at 5%. Implicit margin-based financial services (such as loan interest and foreign exchange margin) are exempt — meaning no VAT is charged and input VAT directly attributable to those supplies cannot be recovered. Many financial services firms either charge VAT where they should not, or attempt to recover input VAT on exempt supplies — both create FTA audit exposure.',
+          'Under UAE VAT law, many margin based financial services are exempt, but explicit fee based services are taxable at 5%; misclassifying fees as exempt or treating all services as exempt leads to incorrect VAT recovery and FTA risk.',
       },
       {
-        title: 'DIFC/ADGM Accounting — Different from UAE Mainland',
+        title: 'DFIC/ADGM accounting – different from UAE mainland',
         description:
-          'Entities licensed by the DFSA in DIFC, or by the FSRA in ADGM, are required to maintain financial statements prepared in accordance with IFRS as adopted in the respective free zone. The interaction between DIFC/ADGM accounting and UAE mainland CT obligations is a specialist area that generalist accountants frequently handle incorrectly.',
+          'DFSA and ADGM regimes require IFRS based financial reporting and specific prudential disclosures that differ from some mainland practices, and firms that do not align their accounting can struggle at regulatory reviews.',
       },
     ],
     sol: [
       {
-        title: 'AML Policy & CDD Implementation',
+        title: 'AML policy & CDD implementation',
         description:
-          'We assess your AML obligations under UAE law, implement a compliant Customer Due Diligence framework, prepare your AML policy documentation, and register your business with the UAE goAML system — ensuring you meet all mandatory AML reporting requirements.',
+          'We assess AML obligations under UAE law, design risk based CDD workflows, update policies and procedures, and make sure KYC files, monitoring and reporting all align with Central Bank and FIU guidance.',
       },
       {
-        title: 'ESR Assessment & Filing',
+        title: 'ESR assessment & filing',
         description:
-          'We assess whether your activities constitute a Relevant Activity under UAE ESR, prepare and submit annual ESR Notifications and Reports on time, and maintain the substance documentation you need to evidence genuine UAE economic activity if the FTA reviews your filing.',
+          'We identify whether your entity conducts “banking”, “investment fund management”, “lease finance” or other ESR relevant activities, prepare notifications and reports, and help you evidence real UAE economic substance.',
       },
       {
-        title: 'Financial Services VAT Advisory',
+        title: 'Financial services VAT advisory',
         description:
-          'We analyse your supply portfolio to correctly identify standard-rated, zero-rated, and exempt financial services — calculate your partial exemption input VAT recovery position — and prepare technically accurate VAT returns that reflect your actual liability.',
+          'We map your fee types to taxable vs exempt categories, design systems to separate VAT able fees from exempt interest/margins, and optimise input VAT recovery while staying compliant.',
       },
       {
-        title: 'DIFC/ADGM Compliant Accounts & CT Filing',
+        title: 'DFIC/ADGM compliant accounts & CT filing',
         description:
-          'We prepare IFRS-compliant financial statements for DIFC and ADGM entities, handle UAE Corporate Tax registration and annual CT return, and manage the interface between your free zone regulatory obligations and your UAE mainland tax position.',
+          'We prepare IFRS financial statements for DFIC/ADGM entities, reconcile them to UAE corporate tax returns and VAT filings, and manage regulator and FTA interactions.',
       },
     ],
-    lawTitle: '📋 UAE Laws — Banking & Financial Services (Verified)',
+    lawTitle: 'UAE laws — Banking & financial services (verified)',
     laws: [
-      'AML Law: Federal Decree-Law No. 20 of 2018 — CDD, EDD, goAML reporting mandatory for DNFBPs',
-      'UBO registration: Mandatory for all UAE companies — AED 100,000 penalty for first offence (Cabinet Decision No. 109/2023)',
-      'ESR Notification: Mandatory for all in-scope entities — AED 50,000 penalty for non-filing first offence',
-      'ESR Report: Required within 12 months of financial year-end for entities conducting Relevant Activities',
-      'VAT on financial services: Explicit fee = 5% standard-rated; implicit margin = exempt (UAE VAT Executive Regulations, Art. 42)',
-      'DIFC entities: DFSA regulated — IFRS financial statements required; UAE CT applies at entity level',
-      'ADGM entities: FSRA regulated — IFRS financial statements required; UAE CT applies at entity level',
-      'CT rate: 9% on taxable income above AED 375,000 (Federal Decree-Law No. 47 of 2022)',
-      "Transfer pricing: All related-party transactions at arm's length; documentation required above AED 40M threshold",
+      'AML law – Federal Decree Law No. 20 of 2018\nUAE AML law requires financial institutions and DNFBPs to perform CDD, monitor transactions, retain records and report suspicious activity to the FIU.',
+      'Economic Substance Regulations (ESR) – relevant activities\nBanking, insurance, investment fund management, lease finance, headquarters and holding company activities must file annual ESR notifications and reports and demonstrate real substance in the UAE.',
+      'ESR penalties – up to AED 400k and licence risk\nFailure to submit notifications or reports, or to meet substance tests, can trigger penalties from AED 20,000 to AED 400,000 and potential licence suspension or non renewal.',
+      'VAT on financial services – exempt vs standard rated\nMany financial services that earn margin or interest income (e.g., lending) are exempt from VAT, while explicit fees, advisory charges and some fund management services are standard rated at 5%.',
+      'Input VAT recovery for partly exempt institutions\nBanks and financial firms must apply partial exemption rules to determine how much input VAT is recoverable, given their mix of exempt interest and taxable fees.',
+      'UAE corporate tax – 9% on financial services profits\nFinancial services entities are subject to 9% UAE corporate tax on taxable profits above AED 375,000, with CT registration and annual CT return filing mandatory.',
+      'ESR & CT interaction – FTA as assessing authority\nThe UAE Federal Tax Authority now acts as National Assessing Authority for ESR, evaluating substance tests and imposing penalties alongside CT obligations.',
+      'DFSA / ADGM regulatory accounting\nFirms licensed in DFIC or ADGM must follow IFRS and specific regulatory reporting standards; misalignment between regulatory accounts and CT/VAT filings can cause issues.',
+      'Cross border information exchange\nESR and AML non compliance can lead to information being shared with foreign tax and regulatory authorities about parent companies and beneficial owners.',
+      'Corporate governance and record keeping obligations\nUAE AML and ESR frameworks require proper governance, documented policies, board oversight and robust record keeping across KYC, transaction monitoring and substance evidence.',
     ],
     storyTitle: 'How BookLean Helped This Financial Services Firm — Real Story',
     story:
-      'A DIFC-licensed investment advisory firm came to BookLean when their previous accountant filed a UAE Corporate Tax return without accounting for the interaction between their DIFC profit and UAE CT obligations. They had also never filed an ESR Notification — incorrectly assuming DIFC entities were outside UAE ESR scope. BookLean assessed their CT position, filed a corrected CT return, submitted both missed ESR Notifications with penalty mitigation documentation, implemented a partial VAT exemption calculation for their mixed standard-rated and exempt supplies, and registered them with goAML. The firm is now fully compliant across CT, VAT, ESR, and AML — with no outstanding exposure.',
+      'A DFIC licensed investment advisory firm had strong front office performance but inconsistent AML documentation and assumed all services were VAT exempt, leading to over claimed input VAT and unclear ESR status.\nBookLean rebuilt AML policies and CDD files, classified fee income into taxable vs exempt categories, implemented partial exemption for input VAT, and prepared ESR notifications and reports aligned with substance.\nThe firm’s next regulatory review and FTA filing were completed without penalties, and investors gained confidence in the robustness of its UAE compliance.',
     cta: 'Book a Free Financial Services Compliance Review →',
   },
   manufacturing: {
@@ -693,62 +628,64 @@ export const referenceIndustryContent: Record<string, ReferenceIndustryContent> 
     sub: 'Manufacturing and trading businesses in the UAE face a unique set of compliance challenges — import VAT on raw materials and goods, complex cost accounting for production, transfer pricing on intercompany transactions with overseas group entities, and VAT treatment of free zone vs mainland sales. Getting these right from day one prevents cash flow damage and FTA audit exposure.',
     pain: [
       {
-        title: 'Import VAT Not Recovered — Monthly Cash Drain',
+        title: 'Import VAT not recovered – monthly cash drain',
         description:
-          'Manufacturers importing raw materials and traders importing finished goods pay 5% import VAT at UAE customs. This is fully recoverable as input VAT — but only if the customs entry documents are properly reconciled to purchase invoices and recorded in the VAT return in the correct period. Many manufacturing businesses lose months of import VAT recovery simply through documentation mismatches and reconciliation failures.',
+          'Manufacturers importing raw materials often pay 5% VAT at customs or via reverse charge but fail to reconcile import data to VAT returns, leaving large amounts of recoverable input VAT stuck as a cost.',
       },
       {
-        title: 'Free Zone Manufacturing — QFZP Status at Risk',
+        title: 'Cost accounting – no visibility on unit costs',
         description:
-          'A UAE free zone manufacturer may qualify as a Qualifying Free Zone Person (QFZP) with 0% Corporate Tax — but only if it earns Qualifying Income, maintains genuine economic substance in the free zone, and its mainland UAE revenue does not exceed 5% of total revenue. Manufacturing businesses selling directly to UAE mainland customers without understanding this threshold lose QFZP status for the entire tax year and pay 9% CT on all income.',
+          'Without proper cost accounting, businesses cannot see true unit costs (materials, direct labour, overhead and landed costs), leading to weak pricing decisions and margin surprises.',
       },
       {
-        title: 'Cost Accounting — No Visibility on Unit Costs',
+        title: 'Free zone manufacturing – QFZP status at risk',
         description:
-          'Manufacturing businesses without proper cost accounting cannot accurately calculate cost of goods sold, production overhead absorption, or unit profitability. This creates pricing errors, undetected loss-making product lines, and CT returns that overstate or understate taxable profit. Many UAE manufacturers track revenue and supplier invoices but have no visibility on true production cost per unit.',
+          'Free zone manufacturers assume they automatically qualify for 0% corporate tax, but QFZP status requires qualifying activities, substance and limits on non qualifying mainland revenue; poor monitoring can convert all profits to 9% CT.',
       },
       {
-        title: 'Transfer Pricing on Intercompany Sales — No Documentation',
+        title: 'Transfer pricing on intercompany sales – no documentation',
         description:
-          "Manufacturing groups with a UAE entity buying from or selling to overseas related parties must price those transactions at arm's length under UAE CT Transfer Pricing rules. Where total related-party transactions exceed AED 40M, or any single category exceeds AED 4M, a Local File is mandatory. Most UAE manufacturing businesses with international group structures do not have this documentation.",
+          'Groups shifting inventory or finished goods between related entities frequently lack arm’s length pricing analyses and Local Files, exposing them to CT transfer pricing adjustments and penalties.',
       },
     ],
     sol: [
       {
-        title: 'Import VAT Recovery System',
+        title: 'Import VAT recovery system',
         description:
-          'We set up a structured import documentation process — matching customs declarations to purchase invoices — and prepare quarterly import VAT recovery schedules that ensure you claim every recoverable dirham on time.',
+          'We set up a structured import documentation process, reconcile customs declarations and reverse charge entries, and prepare quarterly VAT workings so every eligible import VAT amount is reclaimed.',
       },
       {
-        title: 'QFZP Monitoring & CT Filing',
+        title: 'Manufacturing cost accounting',
         description:
-          'We monitor your mainland UAE revenue as a percentage of total revenue on a rolling basis, alert you before you approach the 5% QFZP threshold, and file your annual CT return claiming the correct QFZP rate — 0% where you qualify, 9% where you do not.',
+          'We design cost accounting that allocates direct materials, labour, factory overhead and landed costs per SKU, giving you accurate COGS, unit margins and pricing insights.',
       },
       {
-        title: 'Manufacturing Cost Accounting',
+        title: 'QFZP monitoring & CT filing',
         description:
-          'We implement a cost accounting structure that allocates direct materials, direct labour, and manufacturing overhead to individual product lines — giving you accurate COGS, unit cost, and true gross margin per product so you price and plan correctly.',
+          'We track free zone manufacturing revenue by customer type, test it against qualifying income rules, and prepare CT returns so that where you qualify, 0% CT applies, and where not, 9% CT is correctly reported.',
       },
       {
-        title: 'Transfer Pricing Documentation',
+        title: 'Transfer pricing documentation',
         description:
-          "We assess your intercompany transactions, prepare Local File documentation where required, and benchmark your transfer prices against UAE and OECD arm's length standards — protecting you from the most common CT audit trigger for manufacturing groups.",
+          'We document intercompany transactions with arm’s length pricing, benchmarking and Local File/TP disclosures, reducing CT audit risk on cross border and domestic group trading.',
       },
     ],
-    lawTitle: '📋 UAE Laws — Manufacturing & Trading (Verified)',
+    lawTitle: 'UAE laws — Manufacturing & trading (verified)',
     laws: [
-      'Import VAT: 5% levied at UAE customs — recoverable by VAT-registered importers in same period (UAE VAT Law, Art. 48)',
-      'QFZP 0% CT: Free zone manufacturers qualifying only if mainland revenue &le;5% of total or AED 5M (Federal Decree-Law No. 47 of 2022, Art. 18)',
-      'QFZP threshold breach: Entire year taxed at 9% on all income — not just mainland revenue (Art. 20, CT Law)',
-      "Transfer pricing: Arm's length required for all related-party transactions (Art. 34-36, CT Law)",
-      'Local File: Required when related-party transactions exceed AED 40M total or AED 4M per category (Ministerial Decision No. 97/2023)',
-      'CT registration: Mandatory for ALL UAE businesses — penalty AED 10,000 for late registration',
-      'VAT registration: Mandatory above AED 375,000 annual taxable turnover',
-      'Employee gratuity: 21 days basic salary per year for first 5 years, 30 days thereafter (Federal Decree-Law No. 33/2021)',
+      'Import VAT on goods – 5% standard rate, recoverable\nImports of goods into the UAE are subject to 5% VAT, usually via reverse charge; VAT registered businesses can recover this input tax when goods are used for taxable supplies.',
+      'Input tax recovery – conditions & blocked items\nInput VAT is recoverable only where costs relate to taxable (standard  or zero rated) supplies and proper documentation exists; VAT on exempt or personal expenses is blocked.',
+      'Exports of goods – zero rated\nExports of goods from the UAE to outside the GCC are zero rated VAT, allowing full input VAT recovery on related production and logistics costs.',
+      'UAE corporate tax – 9% on manufacturing profits\nManufacturing and trading companies are subject to 9% corporate tax on taxable profits above AED 375,000, with CT registration and annual CT returns required.',
+      'Qualifying Free Zone Person (QFZP) – 0% CT route\nFree zone manufacturers can access 0% CT on qualifying income if they meet QFZP conditions under MD 265/2023 and related decisions: substance, qualifying activities, and de minimis thresholds on mainland/non qualifying revenue.',
+      'Inventory and cost capitalisation rules\nManufacturing inventory and cost treatment must follow IFRS and UAE CT guidance, with proper capitalisation of production costs and clear COGS calculations.',
+      'Transfer pricing – related party goods transactions\nIntercompany sales of goods must comply with UAE transfer pricing rules, using the arm’s length principle, approved methods and supporting TP documentation.',
+      'VAT records for imports and exports – 5 year retention\nBusinesses must keep customs and VAT records for imports and exports for at least five years, supporting input tax and zero rating positions.',
+      'Small Business Relief for CT (if not QFZP)\nSmaller mainland or non QFZP entities with revenue below AED 3 million may elect Small Business Relief, effectively paying 0% CT while still filing returns.',
+      'Capital asset & partial exemption rules (machines & mixed use)\nVAT on high value machinery and mixed use assets must follow Capital Assets Scheme and partial exemption rules, with adjustments if use shifts between taxable and exempt activities.',
     ],
     storyTitle: 'How BookLean Helped This Manufacturer — Real Story',
     story:
-      'A Jebel Ali free zone manufacturer producing industrial components came to BookLean after their CT registration was flagged by the FTA as overdue. Their previous accountant had filed nil VAT returns despite the business having significant import VAT to recover — meaning they had left over AED 180,000 of recoverable input VAT unclaimed across two years. BookLean conducted a full VAT return review, filed corrected returns to reclaim the missed input VAT, registered them for CT with Small Business Relief assessment, set up a cost accounting structure in their ERP, and prepared their first Local File for transfer pricing documentation — all within 8 weeks of engagement.',
+      'A UAE free zone manufacturer importing metals and exporting finished goods was paying import VAT but not reclaiming it, and assumed all profits qualified for 0% CT without monitoring mainland sales.\nBookLean reconciled three years of customs data to VAT returns, recovered missed input VAT, assessed QFZP status against qualifying income rules, and built transfer pricing documentation for intercompany sales.\nThe business improved cash flow through VAT recovery, kept 0% CT on qualifying income, and avoided CT and VAT adjustments in its next FTA review.',
     cta: 'Book a Free Manufacturing Finance Review →',
   },
   oilgas: {
@@ -757,62 +694,130 @@ export const referenceIndustryContent: Record<string, ReferenceIndustryContent> 
     sub: 'Oil, gas and energy businesses operating in the UAE — including upstream E&P concessionaires, midstream pipeline and storage operators, downstream refiners and distributors, and renewable energy project companies — face some of the most complex VAT and Corporate Tax structures in any UAE industry. Government-to-government concession arrangements, joint venture accounting, decommissioning provisions, and sovereign exemptions require specialist treatment.',
     pain: [
       {
-        title: 'UAE CT — Extractive Business Exemption & Sovereign Entities',
+        title: 'UAE CT – extractive business exemption misunderstood',
         description:
-          'The UAE Corporate Tax Law provides specific rules for extractive businesses — businesses engaged in the exploitation of UAE natural resources are generally subject to emirate-level taxation under existing concession agreements rather than federal CT. However, ancillary service companies, contractors, and oilfield service providers are subject to UAE federal CT at 9%. Many service companies incorrectly assume they benefit from the extractive exemption when they do not.',
+          'Many upstream and integrated energy companies assume all income is exempt from federal corporate tax; in reality, only extractive and qualifying non extractive natural resource activities taxed at Emirate level can be exempt, while downstream and service income is subject to 9% CT.',
       },
       {
-        title: 'VAT on Petroleum Products — Exempt vs Standard-Rated',
+        title: 'VAT on petroleum products – exempt vs standard rated',
         description:
-          'Crude oil and natural gas extracted from UAE fields are generally outside the scope of UAE VAT when supplied domestically. However, processed petroleum products, refined fuels, lubricants, and LPG supplied to UAE commercial customers are standard-rated at 5% VAT. The line between upstream exempt supplies and downstream standard-rated supplies is frequently misapplied — particularly for vertically integrated businesses.',
+          'Some entities treat all fuel and petroleum sales as exempt or “out of scope”; UAE VAT law generally taxes domestic supplies at 5% while certain international transport related fuel and exports may be zero rated, leading to frequent misclassification.',
       },
       {
-        title: 'Joint Venture Accounting — No Clear Cost Allocation',
+        title: 'Joint venture accounting – no clear cost allocation',
         description:
-          'Many UAE oil and gas projects operate under joint operating agreements (JOAs) with multiple participants. Each party must account for its working interest share of revenues, costs, and production — and must prepare its own VAT and CT returns reflecting only its proportionate share. Joint venture accounting failures — misallocated costs, incorrect operator fee treatment, and absent lifting accounting — are a persistent audit risk.',
+          'Oil and gas JVs often mix operator and non operator costs, interest and overhead without clear allocation, making it hard to separate exempt upstream income from taxable downstream or service income for CT and VAT purposes.',
       },
       {
-        title: 'Decommissioning Provisions — Not Recognised or Deductible',
+        title: 'Decommissioning provisions – not recognised or deductible',
         description:
-          'Under IFRS, oil and gas businesses must recognise a decommissioning provision at the present value of the expected cost of dismantling and abandoning assets at the end of their useful life. Under UAE CT law, the deductibility of decommissioning provisions is subject to specific conditions — and the timing of deductibility affects taxable profit significantly.',
+          'Long term decommissioning obligations are sometimes booked inconsistently or not recognised at all; incorrect accounting and tax treatment of decommissioning provisions can materially distort CT and IFRS results.',
       },
     ],
     sol: [
       {
-        title: 'CT Scope Assessment for Energy Businesses',
+        title: 'CT scope assessment for energy businesses',
         description:
-          'We assess whether your UAE energy business falls within the extractive exemption or is subject to federal CT, review any existing concession agreement provisions, and structure your CT position correctly — ensuring you pay what is legally owed and no more.',
+          'We analyse whether your UAE energy business qualifies as extractive or non extractive natural resource activity, separate Emirate taxed income from federal CT taxed income, and document exemption positions under Decree Law No. 47 of 2022.',
       },
       {
-        title: 'Petroleum VAT Classification',
+        title: 'Joint venture & working interest accounting',
         description:
-          'We review your supply chain to correctly classify each product and service supply — upstream out-of-scope, downstream standard-rated, or zero-rated export — and prepare technically accurate VAT returns that reflect the complex mixed-supply position of energy businesses.',
+          'We implement IFRS compliant working interest accounting that allocates revenues, costs and capital expenditure correctly between JVs and operators, supporting accurate CT and VAT treatment.',
       },
       {
-        title: 'Joint Venture & Working Interest Accounting',
+        title: 'Petroleum VAT classification',
         description:
-          'We implement JOA-compliant accounting that allocates revenues, costs, and production correctly to each working interest participant — with operator fee treatment, cash call accounting, and lifting imbalance recognition done to IFRS standards.',
+          'We review each product and service supply – fuel, lubricants, pipeline transport, bunkering, storage – and map them to standard rated, zero rated or exempt VAT categories with clear documentation.',
       },
       {
-        title: 'Decommissioning Provision & CT Deductibility',
+        title: 'Decommissioning provisions & CT deductibility',
         description:
-          'We prepare or review your decommissioning provision calculation under IFRS, advise on the CT deductibility position under UAE CT law, and ensure your CT return correctly reflects the timing difference between provision recognition and future expenditure.',
+          'We build decommissioning provision models under IFRS and align them with CT guidance, so provisions and actual spend are deductible in the right periods and supported for FTA review.',
       },
     ],
-    lawTitle: '📋 UAE Laws — Oil, Gas & Energy (Verified)',
+    lawTitle: 'UAE laws — Oil, gas & energy (verified)',
     laws: [
-      'CT extractive exemption: Businesses extracting UAE natural resources under emirate concessions — subject to emirate-level tax, not federal CT (Art. 7, Federal Decree-Law No. 47/2022)',
-      'Oilfield service contractors: Subject to federal UAE CT at 9% — extractive exemption does NOT apply',
-      'CT registration: Mandatory for ALL UAE businesses including energy service contractors — AED 10,000 penalty for late registration',
-      'VAT on crude oil/gas: Generally outside scope of UAE VAT for direct upstream domestic supplies',
-      'VAT on petroleum products: Refined fuels, lubricants, LPG supplied commercially — 5% standard-rated',
-      'Decommissioning provisions: IFRS recognition required; CT deductibility timing rules apply (Art. 28, CT Law)',
-      "Transfer pricing: Arm's length for all related-party transactions — Local File required above AED 40M threshold",
-      'ESR: Energy businesses may have ESR Relevant Activity obligations — annual Notification mandatory',
+      'Extractive business – Emirate level tax, CT exemption\nBusinesses engaged in exploring and extracting natural resources may be exempt from federal CT if they hold a concession/right, are taxed at Emirate level and notify the Ministry of Finance.',
+      'Non extractive natural resource business – conditional exemption\nCertain refining, processing or distribution activities can be exempt from federal CT when taxed by Emirate decrees and meeting Article 8 conditions; other downstream and service income remains subject to 9% CT.',
+      'Other business income – 9% corporate tax\nIncome from activities outside extractive/non extractive natural resource business (e.g. trading, transport services, consulting) is subject to standard 9% CT on profits above AED 375,000.',
+      'Separate financial records for exempt and taxable activities\nIntegrated energy companies must maintain separate financial statements for Emirate taxed exempt activities and federal taxable activities, allocating common costs on a reasonable basis.',
+      'VAT on fuel and petroleum products – generally 5%\nDomestic supplies of fuel and many petroleum products are standard rated at 5% VAT; only specific exports or international transport linked supplies can be zero rated.',
+      'VAT on international transport & bunkering\nFuel and transport services directly linked to international journeys can qualify for zero rating when Article 33 conditions and documentation are met.',
+      'Decommissioning and restoration costs – CT treatment\nDecommissioning provisions and actual abandonment costs must follow CT guidance; deductibility depends on timing, documentation and whether they relate to exempt extractive or taxable other business income.',
+      'Transfer pricing for intra group energy services\nIntercompany charges for drilling services, pipeline use, storage, trading and management must comply with CT transfer pricing rules and be supported by arm’s length documentation.',
+      'Record retention for energy tax records\nCorporate tax and Emirate level tax rules generally require energy companies to retain contracts, concession agreements and tax records for at least 5–7 years.',
+      'Pillar Two / global minimum tax for large groups\nMultinational energy groups with global revenue above EUR 750 million must consider 15% minimum effective tax rules; Emirate level taxes often cover this, but separate CT analysis is required.',
     ],
     storyTitle: 'How BookLean Helped This Energy Business — Real Story',
     story:
-      'An Abu Dhabi-based oilfield services contractor came to BookLean after receiving a UAE CT assessment from the FTA. Their previous advisors had incorrectly classified them as an extractive business exempt from federal CT — based on the fact that their primary client was ADNOC. BookLean reviewed the concession agreement structure, confirmed the contractor was not itself the concessionaire and was therefore fully subject to UAE federal CT, and filed a corrected CT return for the first year. BookLean simultaneously reviewed their VAT position on downstream petroleum product supplies, identified a partial exemption issue on mixed supplies, and implemented a new VAT classification matrix. The contractor now has a clean CT and VAT position with no outstanding exposure.',
+      'An Abu Dhabi based energy services company treated all revenues as exempt “oil and gas” income and did not separate Emirate taxed extraction concessions from taxable downstream services.\nBookLean reviewed concessions and service contracts, split extractive and non extractive income, corrected CT filings, and implemented proper VAT classification for fuel and service supplies.\nThe client avoided federal CT exposure on upstream operations, reported downstream profits correctly at 9%, and entered its next FTA and Emirate level review with clear, defensible tax positions.',
     cta: 'Book a Free Energy Sector Finance Review →',
+  },
+  freelancer: {
+    tag: 'Freelancer & Sole Establishment Accounting UAE · 2026',
+    title: 'Freelancers & Sole Establishments — UAE Corporate Tax, VAT & Structure',
+    sub: 'Freelancing in UAE is growing rapidly — but most freelancers do not realise they are operating as a business under UAE law, and the compliance obligations are real, immediate, and penalised without warning. UAE Corporate Tax registration is mandatory regardless of profit level. VAT registration is mandatory above AED 375,000 annual taxable turnover. Penalties begin on day one of non-compliance.',
+    pain: [
+      {
+        title: 'Corporate tax registration – missed, then penalised',
+        description:
+          'Many UAE freelancers and sole establishments assume CT is “only for companies” and do not register with the FTA, discovering CT obligations only when penalty letters arrive.',
+      },
+      {
+        title: 'VAT registration threshold crossed unknowingly',
+        description:
+          'Solo consultants and small service businesses often exceed the AED 375,000 VAT threshold without tracking revenue, missing the 30 day registration window and facing AED 10,000+ penalties plus back dated VAT.',
+      },
+      {
+        title: 'Personal & business expenses mixed – CT deductibility at risk',
+        description:
+          'Many sole owners use one bank account for both business and personal spending, making it hard to separate deductible business expenses from non deductible personal costs under CT rules.',
+      },
+      {
+        title: 'Freelance permit vs sole establishment – wrong structure chosen',
+        description:
+          'Some individuals hold multiple licences (freelance permit, sole establishment, LLC shareholdings) but do not understand when income is taxed as a natural person vs separate entity, leading to confusion about CT registration and Small Business Relief.',
+      },
+    ],
+    sol: [
+      {
+        title: 'CT registration – done immediately',
+        description:
+          'We register you for UAE Corporate Tax through EmaraTax, assess Small Business Relief eligibility and set up a simple CT reporting framework matched to your actual revenue and structure.',
+      },
+      {
+        title: 'VAT monitoring & registration',
+        description:
+          'We track your rolling 12 month revenue, alert you as you approach AED 187,500 (voluntary registration) and AED 375,000 (mandatory), and manage VAT registration and returns so you avoid penalties.',
+      },
+      {
+        title: 'Clean monthly bookkeeping',
+        description:
+          'We separate business income and expenses from personal transactions, implement monthly P&L and cash flow, and prepare defensible records for CT and VAT.',
+      },
+      {
+        title: 'Structure advisory',
+        description:
+          'We advise on the right legal form for your work – freelance permits, sole establishments or LLCs – and explain how CT applies to each, including when Small Business Relief and tax grouping may make sense.',
+      },
+    ],
+    lawTitle: 'UAE laws — Freelancers & sole establishments (verified)',
+    laws: [
+      'CT registration mandatory for all UAE businesses\nUnder Federal Decree Law No. 47 of 2022, all UAE businesses – including licensed freelancers and sole establishments – must register for Corporate Tax.',
+      'CT rates – 0% / 9% with Small Business Relief\nCT applies at 0% on the first AED 375,000 of taxable income and 9% on income above that; resident persons with revenue ≤ AED 3 million may elect Small Business Relief so taxable income is deemed nil for eligible years.',
+      'CT for natural persons (sole establishments)\nNatural persons conducting business via sole establishments become CT taxable once business income exceeds AED 1 million per year; LLCs are separate taxable persons.',
+      'Small Business Relief – conditions & traps\nSBR is available for resident persons (not QFZPs or large MNEs) with revenue ≤ AED 3 million per tax period up to 31 December 2026; exceeding the threshold in any period can permanently remove eligibility and anti abuse rules block artificial splitting.',
+      'Non deductible personal and penalty expenses\nPersonal expenses of the owner, fines and government penalties are non deductible for CT; entertainment is only partly deductible.',
+      'VAT registration thresholds for freelancers\nVAT registration is mandatory once taxable supplies exceed AED 375,000 in 12 months; voluntary registration is available from AED 187,500.',
+      'VAT applies regardless of “size”\nFreelance activities are treated as business income; crossing the threshold triggers VAT registration even for one person operations.',
+      'Record keeping and invoicing requirements\nVAT registered freelancers must issue compliant tax invoices with TRN, keep records for at least five years and file returns through EmaraTax.',
+      'CT & VAT interaction\nFreelancers who are both CT registered and VAT registered must align revenue and expense records across both taxes, with SBR elections affecting CT but not VAT obligations.',
+      'WPS for employees – labour compliance\nSole establishments employing staff must comply with UAE labour rules, including Wage Protection System for salary payments.',
+    ],
+    storyTitle: 'How BookLean Helped This Freelancer — Real Story',
+    story:
+      'A TECOM licensed freelancer earning around AED 480,000 per year assumed CT and VAT did not apply to her and received penalty notices for missing CT registration and late VAT registration.\nBookLean reconstructed her accounts, registered her for CT, elected Small Business Relief, registered for VAT with back dated filings, and separated personal from business expenses.\nShe cleared outstanding penalties, moved to clean monthly reporting, and kept full compliance without losing future SBR eligibility.',
+    cta: 'Book a Free Freelancer Finance Review →',
   },
 };

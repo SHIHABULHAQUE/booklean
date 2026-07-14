@@ -2,7 +2,10 @@
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "extends": "./tsconfig.json",
+  "basePath": "./",
   "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "./src",
     "outDir": "./out-tsc/app",
     "types": [
       "node"

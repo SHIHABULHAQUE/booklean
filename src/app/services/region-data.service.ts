@@ -159,17 +159,13 @@ export class RegionDataService {
     data = signal<RegionData>(this.uaeData);
 
     constructor() {
+        const initialRegion = this.router.url?.split('/').filter(Boolean)[0] || 'uae';
+        this.setRegion(initialRegion);
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd)
         ).subscribe((event: any) => {
-            const url = event.urlAfterRedirects || event.url;
-            if (url.includes('/uk/')) {
-                this.setRegion('uk');
-            } else if (url.includes('/in/')) {
-                this.setRegion('in');
-            } else {
-                this.setRegion('uae');
-            }
+            const region = event.urlAfterRedirects?.split('/').filter(Boolean)[0] || 'uae';
+            this.setRegion(region);
         });
     }
 

@@ -544,7 +544,6 @@ body.theme-light .lean-panel {
 }
 
 body.theme-light .lean-msgs,
-body.theme-light .lean-quick,
 body.theme-light .lean-input-row,
 body.theme-light .chat-footer {
   background: #ffffff !important;
@@ -924,23 +923,10 @@ body.theme-light .lean-bot-bubble {
   color: var(--ink2) !important;
 }
 
-body.theme-light .lean-quick,
 body.theme-light .lean-input-row,
 body.theme-light .chat-footer {
   background: #f7fbff !important;
   border-top-color: rgba(0, 79, 225, .08) !important;
-}
-
-body.theme-light .lean-quick-btn {
-  background: rgba(0, 79, 225, .06) !important;
-  border-color: rgba(0, 79, 225, .12) !important;
-  color: var(--b1) !important;
-}
-
-body.theme-light .lean-quick-btn:hover {
-  background: linear-gradient(135deg, rgba(0, 79, 225, .90) 0%, rgba(8, 161, 247, .85) 100%) !important;
-  border-color: rgba(8, 161, 247, .55) !important;
-  color: #FFFFFF !important;
 }
 
 body.theme-light .lean-input {

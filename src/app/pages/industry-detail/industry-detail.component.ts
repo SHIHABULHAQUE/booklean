@@ -58,24 +58,6 @@ export class IndustryDetailComponent {
   private route = inject(ActivatedRoute);
   private params = toSignal(this.route.paramMap);
   private queryParams = toSignal(this.route.queryParamMap);
-  private readonly restaurantLawPanelHtml = `<div class="ind-law-box">
-            <h5>📋 UAE Laws &amp; FTA Rules — Restaurants &amp; F&amp;B (Verified)</h5>
-            <ul>
-              <li><strong>1. Standard VAT rate – 5%:</strong>UAE VAT Law (Federal Decree Law No. 8 of 2017) sets a standard VAT rate of 5% on most supplies of goods and services, including restaurant food and beverage.</li>
-              <li><strong>2. Mandatory VAT registration – AED 375,000:</strong>Restaurants must register for VAT when taxable supplies in the last 12 months exceed AED 375,000, as per FTA guidance and Cabinet Decision No. 52 of 2017 (Executive Regulations).</li>
-              <li><strong>3. VAT filing – VAT201 returns (usually quarterly):</strong>Most F&amp;B businesses file VAT201 returns every quarter via the FTA portal; wrong or late returns can trigger administrative penalties under the Tax Procedures Law and updated FTA fine schedule.</li>
-              <li><strong>4. Staff meals and hospitality – deemed supplies rules</strong><br>Free or discounted staff meals and hospitality can be treated as “deemed supplies” if they go beyond normal business needs, and may require output VAT at 5% under VAT Law Articles on deemed supply and the Executive Regulations.</li>
-              <li><strong>5. Promotional free meals &amp; discounts</strong><br>Promotional meals given free or at deep discount to customers must follow specific VAT rules; some are taxable deemed supplies, others can be treated as normal taxable supplies with discounted value.</li>
-              <li><strong>6. Input VAT recovery on costs</strong><br>Restaurants can usually recover input VAT on ingredients, rent, utilities, and equipment that are used for taxable supplies, following the input tax recovery conditions in the VAT Executive Regulations.</li>
-              <li><strong>7. Excise tax – energy &amp; carbonated drinks</strong><br>Excise tax is 100% on energy drinks and 50% on carbonated drinks, with an additional sugar based excise from 1 January 2026 that charges up to AED 1.09 per litre on high sugar beverages.</li>
-              <li><strong>8. Sugar based excise – 2026 bands</strong><br>New 2026 model:<br>o 8g or more sugar per 100 ml → AED 1.09 per litre.<br>o 5g to less than 8g per 100 ml → AED 0.79 per litre.<br>o Less than 5g sugar or only artificial sweeteners → 0 AED per litre.</li>
-              <li><strong>9. Tourist VAT Refund Scheme – Planet Tax Free</strong><br>Overseas tourists (18+) can reclaim VAT on eligible retail purchases through the Planet Tax Free system; restaurant meals and most F&amp;B services are generally excluded from refunds.</li>
-              <li><strong>10. Tourism Dirham &amp; hotel fees</strong><br>Tourism Dirham and hotel tourism fees apply to accommodation under DET resolutions, but food and beverage sold by the restaurant is still subject to 5% VAT unless specifically exempt or zero rated.</li>
-              <li><strong>11. FTA penalties – updated schedule</strong><br>The FTA penalty framework (including Cabinet Decisions and 2026 updates) sets fines for late registration, late filing, late payment and incorrect VAT returns; staying compliant avoids cumulative % penalties on unpaid tax.</li>
-              <li><strong>12. E invoicing mandate – Peppol 2026–2027</strong><br>UAE has announced Peppol based e invoicing legislation (Ministerial Decisions 243 &amp; 244 of 2025); phases start from July 2026 with full mandatory B2B/B2G e invoicing for larger businesses from January 2027.</li>
-            </ul>
-          </div>`;
-
   readonly industries: IndustryDetail[] = [
     {
       id: 'restaurant',
@@ -615,8 +597,71 @@ export class IndustryDetailComponent {
         title: `${this.displayTitle(industry)} | BookLean Global UAE`,
         description: this.displaySummary(industry),
         path: `/${this.regionDataService.currentRegion()}/industry/${industry.id}`,
+        structuredData: this.industryStructuredData(industry),
       });
     });
+  }
+
+  private industryStructuredData(industry: IndustryDetail): unknown[] {
+    const siteUrl = 'https://www.bookleanglobal.com';
+    const url = `${siteUrl}/${this.regionDataService.currentRegion()}/industry/${industry.id}`;
+    const title = this.displayTitle(industry);
+
+    return [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${url}#service`,
+        name: title,
+        description: this.displaySummary(industry),
+        serviceType: industry.category,
+        areaServed: {
+          '@type': 'Country',
+          name: 'United Arab Emirates',
+        },
+        provider: {
+          '@type': 'AccountingService',
+          '@id': `${siteUrl}/#organization`,
+          name: 'BookLean Global',
+          url: siteUrl,
+          telephone: '+971526203995',
+        },
+        audience: {
+          '@type': 'BusinessAudience',
+          audienceType: industry.category,
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: `${industry.title} services`,
+          itemListElement: industry.services.map((item, index) => ({
+            '@type': 'Offer',
+            position: index + 1,
+            itemOffered: {
+              '@type': 'Service',
+              name: item,
+            },
+          })),
+        },
+      },
+      this.breadcrumbStructuredData([
+        { name: 'Home', url: `${siteUrl}/uae/home` },
+        { name: 'Industries', url: `${siteUrl}/uae/home#industries` },
+        { name: title, url },
+      ]),
+    ];
+  }
+
+  private breadcrumbStructuredData(items: { name: string; url: string }[]): unknown {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: item.url,
+      })),
+    };
   }
 
   referenceContent(industry: IndustryDetail): ReferenceIndustryContent | undefined {
@@ -624,17 +669,7 @@ export class IndustryDetailComponent {
   }
 
   referencePanel(industry: IndustryDetail): ReferenceIndustryPanel | undefined {
-    const panel = referenceIndustryPanels[industry.id];
-    if (!panel || industry.id !== 'restaurant') {
-      return panel;
-    }
-
-    return {
-      cardHtml: panel.cardHtml.replace(
-        /<div class="ind-law-box">[\s\S]*?<div class="ind-booklean-help">/,
-        `${this.restaurantLawPanelHtml}\n          <div class="ind-booklean-help">`,
-      ),
-    };
+    return referenceIndustryPanels[industry.id];
   }
 
   displayTag(industry: IndustryDetail): string {

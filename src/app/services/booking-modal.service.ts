@@ -7,7 +7,7 @@ export class BookingModalService {
   readonly isOpen = signal(false);
   readonly originX = signal(0);
   readonly originY = signal(0);
-  private readonly ACCESS_KEY = 'bf602868-9d37-45e6-a954-f7d08af1ed38';
+  private readonly ACCESS_KEY = '5e44c732-b994-4e0b-a475-e0aaedb95fbe';
 
   open(event?: Event) {
     const mouseEvent = event instanceof MouseEvent ? event : null;

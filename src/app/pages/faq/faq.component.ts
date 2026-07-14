@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { BookingModalService } from '../../services/booking-modal.service';
+import { SeoService } from '../../services/seo.service';
 
 interface FaqItem {
   question: string;
@@ -54,7 +55,57 @@ export class FaqComponent {
     }
   ];
 
-  constructor(private readonly bookingService: BookingModalService) {}
+  constructor(
+    private readonly bookingService: BookingModalService,
+    private readonly seoService: SeoService,
+  ) {
+    this.seoService.setPage({
+      title: 'UAE Tax and Accounting FAQ | BookLean Global UAE',
+      description:
+        'Answers to common UAE Corporate Tax, VAT, PEPPOL e-invoicing, ESR, UBO, payroll WPS, and accounting questions from BookLean Global.',
+      path: '/uae/faq',
+      structuredData: this.faqStructuredData(),
+    });
+  }
+
+  private faqStructuredData(): unknown[] {
+    const siteUrl = 'https://www.bookleanglobal.com';
+    const url = `${siteUrl}/uae/faq`;
+
+    return [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        mainEntity: this.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: `${siteUrl}/uae/home`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'FAQ',
+            item: url,
+          },
+        ],
+      },
+    ];
+  }
 
   toggleFaq(index: number): void {
     this.activeFaq.set(this.activeFaq() === index ? null : index);

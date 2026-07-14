@@ -1,6 +1,6 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
 
-const REGIONS = ['in', 'uae', 'uk'];
+const REGIONS = ['uae'];
 const SERVICE_IDS = ['tax', 'bso', 'digital', 'advisory', 'audit', 'corporate', 'regulatory', 'industry'];
 const INDUSTRY_IDS = ['restaurant', 'retail', 'ecommerce', 'hospitality', 'realestate', 'tech', 'healthcare', 'logistics', 'banking', 'manufacturing', 'oilgas', 'freelancer'];
 const INSIGHT_IDS = ['corporate-tax', 'vat', 'peppol', 'esr-aml', 'transfer-pricing', 'mainland-freezone', 'payroll-wps', 'cashflow', 'startup-uae', 'golden-visa', 'restaurant-vat', 'ecommerce-tax', 'realestate-vat', 'freelancer-tax', 'healthcare-vat'];
